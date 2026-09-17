@@ -1,0 +1,598 @@
+{
+  "1": {
+    "c_tag": 1,
+    "n": 100,
+    "C": 512,
+    "B": 584,
+    "task": "mark1",
+    "n_fields": null,
+    "n_records": 40,
+    "mean_n_ctx": 2073.25,
+    "floor_mean": 0.36,
+    "degenerate_floor": false,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.92,
+        "accuracy_ci": [
+          0.8925,
+          0.945
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.06,
+        "accuracy_ci": [
+          0.035,
+          0.085
+        ],
+        "p_g": 0.29,
+        "q_complete": 0.29,
+        "q_any": 0.29,
+        "eos_rate": 0.2775
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.105,
+        "accuracy_ci": [
+          0.065,
+          0.1475
+        ],
+        "p_g": 0.2875,
+        "q_complete": 0.2875,
+        "q_any": 0.2875,
+        "eos_rate": 0.315
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.36,
+        "accuracy_ci": [
+          0.325,
+          0.3975
+        ],
+        "p_g": 0.29,
+        "q_complete": 0.29,
+        "q_any": 0.29,
+        "eos_rate": 0.995
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.925,
+        "accuracy_ci": [
+          0.9,
+          0.9475
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.925,
+        "accuracy_ci": [
+          0.9,
+          0.9475
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "snapkv": {
+        "n": 100,
+        "accuracy": 0.9175,
+        "accuracy_ci": [
+          0.8925,
+          0.94
+        ],
+        "p_g": 0.7915169270833333,
+        "q_complete": 0.7915169270833333,
+        "q_any": 1.0,
+        "eos_rate": 0.95,
+        "ratio_vs_floor": 2.548611111111111,
+        "ratio_vs_floor_ci": [
+          2.3161290322580643,
+          2.8181818181818183
+        ]
+      },
+      "adakv_snapkv": {
+        "n": 100,
+        "accuracy": 0.9175,
+        "accuracy_ci": [
+          0.89,
+          0.9425
+        ],
+        "p_g": 0.7509049479166667,
+        "q_complete": 0.7509049479166667,
+        "q_any": 1.0,
+        "eos_rate": 0.98,
+        "ratio_vs_floor": 2.548611111111111,
+        "ratio_vs_floor_ci": [
+          2.3184713375796178,
+          2.838461538461538
+        ]
+      },
+      "expected_attn": {
+        "n": 100,
+        "accuracy": 0.9,
+        "accuracy_ci": [
+          0.87,
+          0.93
+        ],
+        "p_g": 0.8027799479166667,
+        "q_complete": 0.8027799479166667,
+        "q_any": 1.0,
+        "eos_rate": 0.9875,
+        "ratio_vs_floor": 2.5,
+        "ratio_vs_floor_ci": [
+          2.2704402515723268,
+          2.776923076923077
+        ]
+      },
+      "keydiff": {
+        "n": 100,
+        "accuracy": 0.89,
+        "accuracy_ci": [
+          0.86,
+          0.9175
+        ],
+        "p_g": 0.8663802083333333,
+        "q_complete": 0.8663802083333333,
+        "q_any": 1.0,
+        "eos_rate": 1.0,
+        "ratio_vs_floor": 2.4722222222222223,
+        "ratio_vs_floor_ci": [
+          2.235668789808917,
+          2.761194029850746
+        ]
+      }
+    }
+  },
+  "8": {
+    "c_tag": 8,
+    "n": 100,
+    "C": 512,
+    "B": 584,
+    "task": "ledger_c",
+    "n_fields": 1,
+    "n_records": 200,
+    "mean_n_ctx": 2070.61,
+    "floor_mean": 0.26,
+    "degenerate_floor": false,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.915,
+        "accuracy_ci": [
+          0.8875,
+          0.9425
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.015,
+        "accuracy_ci": [
+          0.005,
+          0.0275
+        ],
+        "p_g": 0.3129056120982117,
+        "q_complete": 0.31,
+        "q_any": 0.31,
+        "eos_rate": 0.1975
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.0175,
+        "accuracy_ci": [
+          0.0075,
+          0.0325
+        ],
+        "p_g": 0.28998581419371267,
+        "q_complete": 0.0475,
+        "q_any": 0.0475,
+        "eos_rate": 0.385
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.26,
+        "accuracy_ci": [
+          0.2175,
+          0.3025
+        ],
+        "p_g": 0.3073427311540452,
+        "q_complete": 0.3025,
+        "q_any": 0.3025,
+        "eos_rate": 0.725
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.925,
+        "accuracy_ci": [
+          0.9,
+          0.9475
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 0.91
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.925,
+        "accuracy_ci": [
+          0.9,
+          0.9475
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 0.91
+      },
+      "snapkv": {
+        "n": 100,
+        "accuracy": 0.13,
+        "accuracy_ci": [
+          0.1,
+          0.1625
+        ],
+        "p_g": 0.25467610984723343,
+        "q_complete": 0.12478515625,
+        "q_any": 0.9325,
+        "eos_rate": 0.81,
+        "ratio_vs_floor": 0.5,
+        "ratio_vs_floor_ci": [
+          0.3786407766990291,
+          0.6391752577319588
+        ]
+      },
+      "adakv_snapkv": {
+        "n": 100,
+        "accuracy": 0.1625,
+        "accuracy_ci": [
+          0.1275,
+          0.2
+        ],
+        "p_g": 0.25774749217238674,
+        "q_complete": 0.12445963541666666,
+        "q_any": 0.905,
+        "eos_rate": 0.805,
+        "ratio_vs_floor": 0.625,
+        "ratio_vs_floor_ci": [
+          0.4954128440366972,
+          0.7766990291262136
+        ]
+      },
+      "expected_attn": {
+        "n": 100,
+        "accuracy": 0.075,
+        "accuracy_ci": [
+          0.0525,
+          0.1
+        ],
+        "p_g": 0.25501482382038226,
+        "q_complete": 0.05342447916666667,
+        "q_any": 0.3025,
+        "eos_rate": 0.6075,
+        "ratio_vs_floor": 0.28846153846153844,
+        "ratio_vs_floor_ci": [
+          0.1981132075471698,
+          0.3917525773195876
+        ]
+      },
+      "keydiff": {
+        "n": 100,
+        "accuracy": 0.085,
+        "accuracy_ci": [
+          0.06,
+          0.11
+        ],
+        "p_g": 0.23886925316829902,
+        "q_complete": 0.05767578125,
+        "q_any": 0.2425,
+        "eos_rate": 0.94,
+        "ratio_vs_floor": 0.3269230769230769,
+        "ratio_vs_floor_ci": [
+          0.22400000000000003,
+          0.45
+        ]
+      }
+    }
+  },
+  "19": {
+    "c_tag": 19,
+    "n": 100,
+    "C": 512,
+    "B": 584,
+    "task": "ledger_c",
+    "n_fields": 3,
+    "n_records": 200,
+    "mean_n_ctx": 4155.96,
+    "floor_mean": 0.1025,
+    "degenerate_floor": false,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.885,
+        "accuracy_ci": [
+          0.85,
+          0.9175
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.015,
+        "accuracy_ci": [
+          0.0025,
+          0.03
+        ],
+        "p_g": 0.14048062427851243,
+        "q_complete": 0.14,
+        "q_any": 0.14,
+        "eos_rate": 0.4375
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ],
+        "p_g": 0.1253768182857119,
+        "q_complete": 0.0075,
+        "q_any": 0.0075,
+        "eos_rate": 0.3075
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.1025,
+        "accuracy_ci": [
+          0.075,
+          0.1325
+        ],
+        "p_g": 0.13956128046443178,
+        "q_complete": 0.1375,
+        "q_any": 0.1375,
+        "eos_rate": 0.96
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.905,
+        "accuracy_ci": [
+          0.8775,
+          0.9325
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.905,
+        "accuracy_ci": [
+          0.8775,
+          0.9325
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "snapkv": {
+        "n": 100,
+        "accuracy": 0.02,
+        "accuracy_ci": [
+          0.0075,
+          0.035
+        ],
+        "p_g": 0.12057307437608752,
+        "q_complete": 0.027233072916666667,
+        "q_any": 0.5725,
+        "eos_rate": 0.8425,
+        "ratio_vs_floor": 0.1951219512195122,
+        "ratio_vs_floor_ci": [
+          0.08108108108108109,
+          0.325
+        ]
+      },
+      "adakv_snapkv": {
+        "n": 100,
+        "accuracy": 0.0375,
+        "accuracy_ci": [
+          0.02,
+          0.055
+        ],
+        "p_g": 0.12272189949942999,
+        "q_complete": 0.026985677083333336,
+        "q_any": 0.475,
+        "eos_rate": 0.87,
+        "ratio_vs_floor": 0.36585365853658536,
+        "ratio_vs_floor_ci": [
+          0.22222222222222224,
+          0.5294117647058822
+        ]
+      },
+      "expected_attn": {
+        "n": 100,
+        "accuracy": 0.0075,
+        "accuracy_ci": [
+          0.0,
+          0.0175
+        ],
+        "p_g": 0.11481789138001387,
+        "q_complete": 0.00818359375,
+        "q_any": 0.1,
+        "eos_rate": 0.9525,
+        "ratio_vs_floor": 0.07317073170731707,
+        "ratio_vs_floor_ci": [
+          0.0,
+          0.15909090909090912
+        ]
+      },
+      "keydiff": {
+        "n": 100,
+        "accuracy": 0.0225,
+        "accuracy_ci": [
+          0.01,
+          0.0375
+        ],
+        "p_g": 0.10326541201839311,
+        "q_complete": 0.00939453125,
+        "q_any": 0.085,
+        "eos_rate": 0.6625,
+        "ratio_vs_floor": 0.21951219512195122,
+        "ratio_vs_floor_ci": [
+          0.09433962264150944,
+          0.38235294117647056
+        ]
+      }
+    }
+  },
+  "40": {
+    "c_tag": 40,
+    "n": 100,
+    "C": 512,
+    "B": 584,
+    "task": "ledger_c",
+    "n_fields": 8,
+    "n_records": 200,
+    "mean_n_ctx": 8358.06,
+    "floor_mean": 0.005,
+    "degenerate_floor": true,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.9125,
+        "accuracy_ci": [
+          0.885,
+          0.9375
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 1.0
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ],
+        "p_g": 0.07063793791982173,
+        "q_complete": 0.07,
+        "q_any": 0.07,
+        "eos_rate": 0.7575
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ],
+        "p_g": 0.06983840884190139,
+        "q_complete": 0.005,
+        "q_any": 0.005,
+        "eos_rate": 0.3575
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.005,
+        "accuracy_ci": [
+          0.0,
+          0.0125
+        ],
+        "p_g": 0.07039697406440004,
+        "q_complete": 0.07,
+        "q_any": 0.07,
+        "eos_rate": 0.955
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.1675,
+        "accuracy_ci": [
+          0.1275,
+          0.21
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 0.9925
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.1675,
+        "accuracy_ci": [
+          0.125,
+          0.21
+        ],
+        "p_g": 1.0,
+        "q_complete": 1.0,
+        "q_any": 1.0,
+        "eos_rate": 0.9925
+      },
+      "snapkv": {
+        "n": 100,
+        "accuracy": 0.0125,
+        "accuracy_ci": [
+          0.0025,
+          0.025
+        ],
+        "p_g": 0.061330694711586836,
+        "q_complete": 0.013776041666666667,
+        "q_any": 0.1975,
+        "eos_rate": 0.8725
+      },
+      "adakv_snapkv": {
+        "n": 100,
+        "accuracy": 0.015,
+        "accuracy_ci": [
+          0.005,
+          0.0275
+        ],
+        "p_g": 0.06253642610338399,
+        "q_complete": 0.013756510416666668,
+        "q_any": 0.1625,
+        "eos_rate": 0.945
+      },
+      "expected_attn": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ],
+        "p_g": 0.06068514202296042,
+        "q_complete": 0.005546875,
+        "q_any": 0.055,
+        "eos_rate": 0.9575
+      },
+      "keydiff": {
+        "n": 100,
+        "accuracy": 0.005,
+        "accuracy_ci": [
+          0.0,
+          0.0125
+        ],
+        "p_g": 0.04942880925704119,
+        "q_complete": 0.0051171875,
+        "q_any": 0.0225,
+        "eos_rate": 0.8075
+      }
+    }
+  }
+}
