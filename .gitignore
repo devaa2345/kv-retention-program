@@ -39,6 +39,9 @@ quarantine/
 !paper4/runs/nvidia/p4_keepsets_c40_M2.npz
 !paper4/runs/nvidia/p4_keepsets_c40_M3.npz
 
+# A40 stratum (Qwen2.5-14B scale replication) -- floor_pos keep-sets from the rate benchmark
+!a40/results/keepsets_floor_pos_c19_C512_rate200.npz
+
 # Run records < 10 MB read by analysis scripts (Stage 4 capture/plane files deliberately excluded)
 !paper2/runs/nvidia/grid_M3_ledger_agnostic.jsonl
 !paper2/runs/nvidia/grid_M2_ledger_agnostic.jsonl

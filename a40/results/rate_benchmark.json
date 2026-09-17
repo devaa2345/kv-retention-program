@@ -1,0 +1,14 @@
+{
+  "n": 200,
+  "C": 512,
+  "n_fields": 3,
+  "mean_n_ctx": 2071.065,
+  "mean_sec_per_record": 4.146753800120205,
+  "median_sec_per_record": 3.9196440712548792,
+  "stdev_sec_per_record": 0.5936624805913179,
+  "min_sec": 3.443129359744489,
+  "max_sec": 6.1243179095909,
+  "total_sec": 829.3507600240409,
+  "records_per_hour": 868.1489602531127,
+  "sample_first_score": 0.0
+}

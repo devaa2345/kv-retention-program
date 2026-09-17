@@ -1,0 +1,10 @@
+[
+  {
+    "N": 200,
+    "n": 50,
+    "accuracy": 0.89,
+    "in_band": true,
+    "mean_n_ctx": 4154.1,
+    "mean_sec_per_record": 5.035483887940646
+  }
+]

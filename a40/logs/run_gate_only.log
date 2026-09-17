@@ -1,0 +1,13 @@
+loading model...
+loaded.
+step 6: full_cache competence anchor gate, LEDGER-C, n=100 per cell
+  c=  1 (n_fields=None): accuracy=0.9325  IN BAND
+  c=  8 (n_fields= 1): accuracy=1.0000  OUT OF BAND
+  c= 19 (n_fields= 3): accuracy=0.9950  OUT OF BAND
+  c= 40 (n_fields= 8): accuracy=0.9900  OUT OF BAND
+=== GATE SUMMARY ===
+c=  1: acc=0.9325 n=100 IN band (0.55, 0.97)
+c=  8: acc=1.0000 n=100 OUT OF band (0.55, 0.97)
+c= 19: acc=0.9950 n=100 OUT OF band (0.55, 0.97)
+c= 40: acc=0.9900 n=100 OUT OF band (0.55, 0.97)
+AT LEAST ONE ANCHOR IS OUT OF BAND -- stop, do not start grid work.

@@ -1,0 +1,12 @@
+loading model...
+loaded.
+c=  1 (MARK-1, carried forward, N/A): accuracy=0.9325  IN BAND
+c=  8 (n_fields=1, N=200): accuracy=0.9275 L~2071  IN BAND
+c= 19 (n_fields=3, N=200): accuracy=0.9025 L~4156  IN BAND
+c= 40 (n_fields=8, N=200): accuracy=0.8900 L~8362  IN BAND
+=== GATE SUMMARY (N=200 for c=8/19/40 LEDGER-C; c=1 MARK-1 unaffected by N) ===
+c=  1: acc=0.9325 n=100 IN band (0.55, 0.97)
+c=  8: acc=0.9275 n=100 IN band (0.55, 0.97)
+c= 19: acc=0.9025 n=100 IN band (0.55, 0.97)
+c= 40: acc=0.8900 n=100 IN band (0.55, 0.97)
+All four anchors in band. STOP HERE per instructions -- do not start grid work.

@@ -1,0 +1,17 @@
+loading model...
+loaded. VRAM allocated: 29.54 GB
+calibrating n_fields for c in (1, 8, 19, 40)
+  target c=  1 -> n_fields= 1 achieved c=8.244
+  target c=  8 -> n_fields= 1 achieved c=8.244
+  target c= 19 -> n_fields= 3 achieved c=18.916
+  target c= 40 -> n_fields= 8 achieved c=39.513
+step 5: rate benchmark, 200 records, LEDGER-C c~19 (n_fields=3), floor_pos C=512
+  mean 4.1468 s/record (868.1 records/hour), median 3.9196 s, VRAM used 29.54 GB
+step 6: full_cache competence anchor gate, LEDGER-C, n=100 per cell
+Traceback (most recent call last):
+  File "/workspace/kv-retention-program/a40/run_stage0.py", line 233, in <module>
+    main()
+  File "/workspace/kv-retention-program/a40/run_stage0.py", line 211, in main
+    print(f"  c={t:3d} (n_fields={nf:2d}): accuracy={cell['accuracy']:.4f}  {band_txt}",
+                                 ^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__

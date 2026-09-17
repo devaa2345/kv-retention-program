@@ -1,0 +1,23 @@
+{
+  "backend": "cuda-12.8",
+  "device": "a40",
+  "gpu": {
+    "name": "NVIDIA A40",
+    "total_mem_mib": 49140,
+    "driver_version": "580.159.03"
+  },
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.2.0",
+    "kvpress": "0.5.4",
+    "accelerate": "1.14.0",
+    "datasets": "5.0.1",
+    "numpy": "2.5.2",
+    "safetensors": "0.8.0",
+    "scipy": "1.18.1",
+    "tokenizers": "0.22.2"
+  },
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-136-generic-x86_64",
+  "note": "Third stratum, distinct from Machine N (RTX 5070) and Machine A (RX 7900 XTX). No number produced here may ever be differenced against Machine N or Machine A numbers. RTX A6000 was requested but nvidia-smi reports NVIDIA A40 -- user confirmed proceeding with A40 as its own stratum."
+}

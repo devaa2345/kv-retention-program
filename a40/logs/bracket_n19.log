@@ -1,0 +1,4 @@
+loading model...
+loaded.
+N=  200: acc=0.8900 L~4154 5.04s/rec IN BAND
+CHOSEN N = 200 (c~19 acc=0.8900, L~4154)

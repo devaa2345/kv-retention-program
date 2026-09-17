@@ -1,0 +1,11 @@
+{
+  "c_tag": 19,
+  "n_fields": 3,
+  "N": 200,
+  "n": 100,
+  "accuracy": 0.9025,
+  "task": "ledger_c",
+  "mean_n_ctx": 4155.96,
+  "in_band": true,
+  "eos_rate": 1.0
+}
