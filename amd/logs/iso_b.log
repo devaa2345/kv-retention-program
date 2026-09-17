@@ -1,0 +1,49 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 24586.37it/s]
+iso-memory token counts: {154: 246, 257: 411, 514: 822}
+sensitivity T @257: {0.25: 411, 0.28: 402, 0.31: 392}
+750 cells -> results/bits4
+  [isomemory] 150/750 new=75 skip=75 fail=0 0.36/s eta=28.0min
+  [isomemory] 300/750 new=225 skip=75 fail=0 0.37/s eta=20.2min
+terminate called after throwing an instance of 'c10::AcceleratorError'
+  what():  CUDA error: unspecified launch failure
+Search for `hipErrorLaunchFailure' in https://rocm.docs.amd.com/projects/HIP/en/latest/index.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Device-side assertion tracking was not enabled by user.
+Exception raised from SetDevice at /__w/rockrel/rockrel/external-builds/pytorch/pytorch/c10/hip/HIPFunctions.cpp:334 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x73b6804d3bfd in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x12d6b (0x73b60f09cd6b in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libc10_hip.so)
+frame #2: c10::cuda::SetDevice(signed char, bool) + 0x51 (0x73b60f0e0691 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libc10_hip.so)
+frame #3: <unknown function> + 0xff7823 (0x73b5e6bf7823 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0x1dc095f (0x73b5e79c095f in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_hip.so)
+frame #5: <unknown function> + 0x1a78a32 (0x73b600e78a32 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: at::native::copy_(at::Tensor&, at::Tensor const&, bool) + 0x30 (0x73b600e7adb0 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: at::_ops::copy_::call(at::Tensor&, at::Tensor const&, bool) + 0x18a (0x73b601ccddea in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: at::native::_to_copy(at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, std::optional<c10::MemoryFormat>) + 0x16ca (0x73b6011ec05a in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0x2d7b75c (0x73b60217b75c in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #10: at::_ops::_to_copy::redispatch(c10::DispatchKeySet, at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, std::optional<c10::MemoryFormat>) + 0xe2 (0x73b60174dd82 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: <unknown function> + 0x2af6d3b (0x73b601ef6d3b in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #12: at::_ops::_to_copy::call(at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, std::optional<c10::MemoryFormat>) + 0x230 (0x73b60180bad0 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::to(at::Tensor const&, c10::Device, c10::ScalarType, bool, bool, std::optional<c10::MemoryFormat>) + 0x9b (0x73b6011c833b in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2ec54c8 (0x73b6022c54c8 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: at::_ops::to_device::call(at::Tensor const&, c10::Device, c10::ScalarType, bool, bool, std::optional<c10::MemoryFormat>) + 0x1d7 (0x73b6019c96c7 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0xe3332e (0x73b60e43332e in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_python.so)
+frame #17: <unknown function> + 0xe33f3b (0x73b60e433f3b in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_python.so)
+frame #18: <unknown function> + 0x857c63 (0x73b60de57c63 in /home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/lib/libtorch_python.so)
+frame #19: /home/kxrx26/quant-rocm/bin/python() [0x57750b]
+frame #20: _PyObject_MakeTpCall + 0x35c (0x52f6bc in /home/kxrx26/quant-rocm/bin/python)
+frame #21: _PyEval_EvalFrameDefault + 0x6648 (0x553378 in /home/kxrx26/quant-rocm/bin/python)
+frame #22: PyEval_EvalCode + 0x106 (0x547e46 in /home/kxrx26/quant-rocm/bin/python)
+frame #23: /home/kxrx26/quant-rocm/bin/python() [0x6cbf61]
+frame #24: /home/kxrx26/quant-rocm/bin/python() [0x6c8b11]
+frame #25: /home/kxrx26/quant-rocm/bin/python() [0x6c81bb]
+frame #26: /home/kxrx26/quant-rocm/bin/python() [0x6c7c89]
+frame #27: Py_RunMain + 0x349 (0x6c5949 in /home/kxrx26/quant-rocm/bin/python)
+frame #28: Py_BytesMain + 0x34 (0x674db4 in /home/kxrx26/quant-rocm/bin/python)
+frame #29: <unknown function> + 0x2a601 (0x73b69542a601 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #30: __libc_start_main + 0x88 (0x73b69542a718 in /usr/lib/x86_64-linux-gnu/libc.so.6)
+frame #31: _start + 0x25 (0x6741a5 in /home/kxrx26/quant-rocm/bin/python)
+
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-vc8gfupv'}
+  warnings.warn(

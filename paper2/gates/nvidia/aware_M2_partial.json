@@ -1,0 +1,207 @@
+{
+  "label": "M2 partial",
+  "budgets": [
+    128,
+    512
+  ],
+  "methods": [
+    "adakv_snapkv",
+    "expected_attn",
+    "keydiff",
+    "snapkv"
+  ],
+  "cells": {
+    "C128": {
+      "C": 128,
+      "n": 109,
+      "floor_aware": 0.1101,
+      "methods": {
+        "adakv_snapkv": {
+          "agnostic": 0.078,
+          "aware": 0.0436,
+          "protocol_delta": {
+            "mean": -0.0344,
+            "ci": [
+              -0.055,
+              -0.0161
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.0665,
+            "ci": [
+              -0.0917,
+              -0.0436
+            ],
+            "beats_floor": false
+          }
+        },
+        "expected_attn": {
+          "agnostic": 0.0505,
+          "aware": 0.039,
+          "protocol_delta": {
+            "mean": -0.0115,
+            "ci": [
+              -0.0229,
+              -0.0023
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.0711,
+            "ci": [
+              -0.0963,
+              -0.0482
+            ],
+            "beats_floor": false
+          }
+        },
+        "keydiff": {
+          "agnostic": 0.0505,
+          "aware": 0.039,
+          "protocol_delta": {
+            "mean": -0.0115,
+            "ci": [
+              -0.0275,
+              0.0046
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.0711,
+            "ci": [
+              -0.0963,
+              -0.0482
+            ],
+            "beats_floor": false
+          }
+        },
+        "snapkv": {
+          "agnostic": 0.0757,
+          "aware": 0.0436,
+          "protocol_delta": {
+            "mean": -0.0321,
+            "ci": [
+              -0.0528,
+              -0.0138
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.0665,
+            "ci": [
+              -0.0917,
+              -0.0436
+            ],
+            "beats_floor": false
+          }
+        }
+      }
+    },
+    "C512": {
+      "C": 512,
+      "n": 109,
+      "floor_aware": 0.2982,
+      "methods": {
+        "adakv_snapkv": {
+          "agnostic": 0.195,
+          "aware": 0.1651,
+          "protocol_delta": {
+            "mean": -0.0298,
+            "ci": [
+              -0.0665,
+              0.0069
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.133,
+            "ci": [
+              -0.172,
+              -0.094
+            ],
+            "beats_floor": false
+          }
+        },
+        "expected_attn": {
+          "agnostic": 0.1651,
+          "aware": 0.2844,
+          "protocol_delta": {
+            "mean": 0.1193,
+            "ci": [
+              0.0757,
+              0.1628
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.0138,
+            "ci": [
+              -0.0619,
+              0.0344
+            ],
+            "beats_floor": false
+          }
+        },
+        "keydiff": {
+          "agnostic": 0.0917,
+          "aware": 0.4587,
+          "protocol_delta": {
+            "mean": 0.367,
+            "ci": [
+              0.3211,
+              0.4128
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": 0.1606,
+            "ci": [
+              0.1055,
+              0.2133
+            ],
+            "beats_floor": true
+          }
+        },
+        "snapkv": {
+          "agnostic": 0.156,
+          "aware": 0.1537,
+          "protocol_delta": {
+            "mean": -0.0023,
+            "ci": [
+              -0.039,
+              0.0344
+            ]
+          },
+          "vs_floor_aware": {
+            "mean": -0.1445,
+            "ci": [
+              -0.1835,
+              -0.1055
+            ],
+            "beats_floor": false
+          }
+        }
+      }
+    }
+  },
+  "reference_check": {
+    "C": 512,
+    "observed_deltas": {
+      "adakv_snapkv": -0.0298,
+      "expected_attn": 0.1193,
+      "keydiff": 0.367,
+      "snapkv": -0.0023
+    },
+    "expected_order": [
+      "snapkv",
+      "adakv_snapkv",
+      "expected_attn",
+      "keydiff"
+    ],
+    "observed_order": [
+      "keydiff",
+      "expected_attn",
+      "snapkv",
+      "adakv_snapkv"
+    ],
+    "order_matches": false,
+    "snapkv_delta": -0.0023,
+    "snapkv_reference": 0.2,
+    "keydiff_delta": 0.367,
+    "keydiff_reference": 0.01
+  }
+}

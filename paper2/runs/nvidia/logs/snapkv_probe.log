@@ -1,0 +1,22 @@
+  baseline on disk: aware 400 cells, agnostic 1000 cells
+  resuming: 0 probe records present
+  [25/200]
+  [50/200]
+  [75/200]
+  [100/200]
+  [125/200]
+  [150/200]
+  [175/200]
+  [200/200]
+
+Qwen/Qwen2.5-3B-Instruct  aware protocol   SnapKV window_size: 64 (baseline) vs query length (20.0 tokens) 
+    C arm             agnostic    aware     delta               95% CI
+  128 snapkv w=64       0.0737   0.0387   -0.0350     [-0.05, -0.0213]   (n=200)
+  128 snapkv w=query    0.0737   0.0350   -0.0387    [-0.0537, -0.025]
+      probe - baseline = -0.0037 [-0.0088, 0.0000]   -> dilution does NOT explain it (delta still not positive)
+
+  512 snapkv w=64       0.1600   0.1525   -0.0075    [-0.0312, 0.0175]   (n=200)
+  512 snapkv w=query    0.1600   0.0400   -0.1200    [-0.145, -0.0963]
+      probe - baseline = -0.1125 [-0.1350, -0.0900]   -> dilution does NOT explain it (delta still not positive)
+
+  NOTE: this probe does not address KeyDiff's +0.3375; that is a separate mechanism.

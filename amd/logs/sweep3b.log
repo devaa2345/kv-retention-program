@@ -1,0 +1,77 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 27161.37it/s]
+3B sweep 8-bit: 50 cells -> results3b/bits8
+  [sweep_bits8] 25/50 new=25 skip=0 fail=0 0.23/s eta=1.8min
+  [sweep_bits8] 50/50 new=50 skip=0 fail=0 0.23/s eta=0.0min
+3B sweep 7-bit: 50 cells -> results3b/bits7
+  [sweep_bits7] 25/50 new=25 skip=0 fail=0 0.22/s eta=1.9min
+  [sweep_bits7] 50/50 new=50 skip=0 fail=0 0.23/s eta=0.0min
+3B sweep 6-bit: 50 cells -> results3b/bits6
+  [sweep_bits6] 25/50 new=25 skip=0 fail=0 0.24/s eta=1.7min
+  [sweep_bits6] 50/50 new=50 skip=0 fail=0 0.24/s eta=0.0min
+3B sweep 5-bit: 50 cells -> results3b/bits5
+  [sweep_bits5] 25/50 new=25 skip=0 fail=0 0.24/s eta=1.7min
+  [sweep_bits5] 50/50 new=50 skip=0 fail=0 0.24/s eta=0.0min
+3B sweep 4-bit: 50 cells -> results3b/bits4
+  [sweep_bits4] 25/50 new=25 skip=0 fail=0 0.22/s eta=1.9min
+  [sweep_bits4] 50/50 new=50 skip=0 fail=0 0.23/s eta=0.0min
+3B sweep 3-bit: 50 cells -> results3b/bits3
+  [sweep_bits3] 25/50 new=25 skip=0 fail=0 0.22/s eta=1.9min
+  [sweep_bits3] 50/50 new=50 skip=0 fail=0 0.22/s eta=0.0min
+[
+  {
+    "tag": "sweep_bits8",
+    "new": 50,
+    "skipped": 0,
+    "failed": 0,
+    "elapsed_s": 218.2677674293518,
+    "results": "results3b/bits8/sweep_bits8.jsonl",
+    "failures": "results3b/bits8/sweep_bits8.failures.jsonl"
+  },
+  {
+    "tag": "sweep_bits7",
+    "new": 50,
+    "skipped": 0,
+    "failed": 0,
+    "elapsed_s": 221.19821763038635,
+    "results": "results3b/bits7/sweep_bits7.jsonl",
+    "failures": "results3b/bits7/sweep_bits7.failures.jsonl"
+  },
+  {
+    "tag": "sweep_bits6",
+    "new": 50,
+    "skipped": 0,
+    "failed": 0,
+    "elapsed_s": 207.6338243484497,
+    "results": "results3b/bits6/sweep_bits6.jsonl",
+    "failures": "results3b/bits6/sweep_bits6.failures.jsonl"
+  },
+  {
+    "tag": "sweep_bits5",
+    "new": 50,
+    "skipped": 0,
+    "failed": 0,
+    "elapsed_s": 208.74247813224792,
+    "results": "results3b/bits5/sweep_bits5.jsonl",
+    "failures": "results3b/bits5/sweep_bits5.failures.jsonl"
+  },
+  {
+    "tag": "sweep_bits4",
+    "new": 50,
+    "skipped": 0,
+    "failed": 0,
+    "elapsed_s": 218.8337070941925,
+    "results": "results3b/bits4/sweep_bits4.jsonl",
+    "failures": "results3b/bits4/sweep_bits4.failures.jsonl"
+  },
+  {
+    "tag": "sweep_bits3",
+    "new": 50,
+    "skipped": 0,
+    "failed": 0,
+    "elapsed_s": 226.14454746246338,
+    "results": "results3b/bits3/sweep_bits3.jsonl",
+    "failures": "results3b/bits3/sweep_bits3.failures.jsonl"
+  }
+]
+total 21.7 min

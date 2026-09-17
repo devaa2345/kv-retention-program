@@ -1,0 +1,23 @@
+  PREREG_P3.md verified at c920c404fd43777e522916ef0188362805a958aa7253512ec2be40641a846eee
+  plane M2: 20 cells, 120 arm-cells, n=100 -> 12000 rows (240 already present)
+  [plane/M2] inst 5/100  written 360 skipped 240 failed 0  11.1 min  1.86 s/row  eta 211.6 min
+  [plane/M2] inst 10/100  written 960 skipped 240 failed 0  29.5 min  1.84 s/row  eta 265.2 min
+  [plane/M2] inst 15/100  written 1560 skipped 240 failed 0  47.6 min  1.83 s/row  eta 269.7 min
+  [plane/M2] inst 20/100  written 2160 skipped 240 failed 0  66.2 min  1.84 s/row  eta 264.8 min
+  [plane/M2] inst 25/100  written 2760 skipped 240 failed 0  84.2 min  1.83 s/row  eta 252.6 min
+  [plane/M2] inst 30/100  written 3360 skipped 240 failed 0  102.2 min  1.82 s/row  eta 238.4 min
+  [plane/M2] inst 35/100  written 3960 skipped 240 failed 0  120.4 min  1.82 s/row  eta 223.6 min
+  [plane/M2] inst 40/100  written 4560 skipped 240 failed 0  138.6 min  1.82 s/row  eta 208.0 min
+  [plane/M2] inst 45/100  written 5160 skipped 240 failed 0  156.6 min  1.82 s/row  eta 191.5 min
+  [plane/M2] inst 50/100  written 5760 skipped 240 failed 0  174.3 min  1.82 s/row  eta 174.3 min
+  [plane/M2] inst 55/100  written 6360 skipped 240 failed 0  193.3 min  1.82 s/row  eta 158.2 min
+  [plane/M2] inst 60/100  written 6960 skipped 240 failed 0  212.1 min  1.83 s/row  eta 141.4 min
+  [plane/M2] inst 65/100  written 7560 skipped 240 failed 0  230.2 min  1.83 s/row  eta 124.0 min
+  [plane/M2] inst 70/100  written 8160 skipped 240 failed 0  249.2 min  1.83 s/row  eta 106.8 min
+  [plane/M2] inst 75/100  written 8760 skipped 240 failed 0  267.0 min  1.83 s/row  eta 89.0 min
+  [plane/M2] inst 80/100  written 9360 skipped 240 failed 0  285.1 min  1.83 s/row  eta 71.3 min
+  [plane/M2] inst 85/100  written 9960 skipped 240 failed 0  303.6 min  1.83 s/row  eta 53.6 min
+  [plane/M2] inst 90/100  written 10560 skipped 240 failed 0  321.9 min  1.83 s/row  eta 35.8 min
+  [plane/M2] inst 95/100  written 11160 skipped 240 failed 0  340.2 min  1.83 s/row  eta 17.9 min
+  [plane/M2] inst 100/100  written 11760 skipped 240 failed 0  358.7 min  1.83 s/row  eta 0.0 min
+  DONE plane/M2: written 11760 skipped 240 failed 0 in 358.7 min

@@ -1,0 +1,37 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "n_instances": 25,
+  "H": 4,
+  "batch_size": 4,
+  "max_new": 32,
+  "prompts_compared": 100,
+  "prompts_identical": 92,
+  "instances_identical": 18,
+  "token_identical": false,
+  "first_divergence": {
+    "instance": "bid00010",
+    "variant": 1,
+    "batch1_ids": [
+      23,
+      16,
+      18,
+      24,
+      18,
+      16,
+      151645
+    ],
+    "batched_ids": [
+      24,
+      22,
+      15,
+      21,
+      20,
+      18,
+      151645
+    ],
+    "batch1_text": "813931",
+    "batched_text": "970653"
+  },
+  "verdict": "DO NOT batch silently -- outputs differ; batch_size must join the dedup key"
+}

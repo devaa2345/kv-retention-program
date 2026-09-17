@@ -1,0 +1,145 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n": 48,
+  "margin": 0.15,
+  "prereg_sha256": "b3f5fb3c1e949c94e0785ba7a9843cbcc2548103215100fe0ec1d42b47ba886e",
+  "instance_set": "s5_00000.. (identical to Stage 5)",
+  "budgets": {
+    "C32": {
+      "C": 32,
+      "B": 104,
+      "means": {
+        "floor_pos": 0.0312,
+        "protect_random": 0.0312,
+        "protect_gold": 0.9948
+      },
+      "gold_minus_random": {
+        "mean": 0.9635,
+        "ci": [
+          0.9323,
+          0.9896
+        ],
+        "n_differ": 48
+      },
+      "random_minus_floor": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_differ": 0
+      },
+      "pass": true
+    },
+    "C64": {
+      "C": 64,
+      "B": 136,
+      "means": {
+        "floor_pos": 0.0469,
+        "protect_random": 0.0417,
+        "protect_gold": 1.0
+      },
+      "gold_minus_random": {
+        "mean": 0.9583,
+        "ci": [
+          0.9271,
+          0.9844
+        ],
+        "n_differ": 48
+      },
+      "random_minus_floor": {
+        "mean": -0.0052,
+        "ci": [
+          -0.0156,
+          0.0
+        ],
+        "n_differ": 1
+      },
+      "pass": true
+    },
+    "C128": {
+      "C": 128,
+      "B": 200,
+      "means": {
+        "floor_pos": 0.0625,
+        "protect_random": 0.0625,
+        "protect_gold": 0.9948
+      },
+      "gold_minus_random": {
+        "mean": 0.9323,
+        "ci": [
+          0.8906,
+          0.9688
+        ],
+        "n_differ": 48
+      },
+      "random_minus_floor": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_differ": 0
+      },
+      "pass": true
+    },
+    "C256": {
+      "C": 256,
+      "B": 328,
+      "means": {
+        "floor_pos": 0.1615,
+        "protect_random": 0.1458,
+        "protect_gold": 0.9896
+      },
+      "gold_minus_random": {
+        "mean": 0.8438,
+        "ci": [
+          0.7969,
+          0.8906
+        ],
+        "n_differ": 48
+      },
+      "random_minus_floor": {
+        "mean": -0.0156,
+        "ci": [
+          -0.0365,
+          0.0
+        ],
+        "n_differ": 3
+      },
+      "pass": true
+    },
+    "C512": {
+      "C": 512,
+      "B": 584,
+      "means": {
+        "floor_pos": 0.2708,
+        "protect_random": 0.2656,
+        "protect_gold": 0.9896
+      },
+      "gold_minus_random": {
+        "mean": 0.724,
+        "ci": [
+          0.677,
+          0.7708
+        ],
+        "n_differ": 48
+      },
+      "random_minus_floor": {
+        "mean": -0.0052,
+        "ci": [
+          -0.0156,
+          0.0
+        ],
+        "n_differ": 1
+      },
+      "pass": true
+    }
+  },
+  "gate": {
+    "pass": true,
+    "criterion": "protect_gold - protect_random > 0.15 with a paired bootstrap CI excluding zero, at every admitted budget",
+    "if_fail": "protection is reserved capacity, not an importance signal; every G_m would be normalised against a misdescribed reference and the design is rebuilt"
+  }
+}

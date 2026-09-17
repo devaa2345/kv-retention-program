@@ -1,0 +1,16 @@
+device: cuda
+full_fraction: 0.5
+keep_sink: true
+max_answer_tokens: 22
+model_name: Qwen/Qwen2.5-1.5B-Instruct
+n_credentials: 6
+n_distractors: 20
+n_prompts: 10
+output_dir: results/phase0r_calibration
+protect_after_chars: 2
+rebalance_every: 1
+recency_window: 64
+seed_start: 2000
+total_budget: 280
+value_len: 14
+words_per_paragraph: 50

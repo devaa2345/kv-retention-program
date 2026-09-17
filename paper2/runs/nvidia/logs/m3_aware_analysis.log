@@ -1,0 +1,26 @@
+
+=== N8 M3 Llama-3.2-3B aware ===
+
+  C=128  n=200   floor_pos aware = 0.0900   (agnostic 0.0925)
+    method            agnostic    aware    delta               95% CI  vs floor(aware)
+    adakv_snapkv        0.0612   0.6212  +0.5600     [0.5238, 0.5962]   +0.5312  BEATS
+    expected_attn       0.0338   0.1288  +0.0950     [0.0725, 0.1175]   +0.0387  BEATS
+    keydiff             0.0275   0.1663  +0.1388       [0.1175, 0.16]   +0.0762  BEATS
+    snapkv                0.04   0.4913  +0.4512     [0.4163, 0.4875]   +0.4012  BEATS
+    tova                0.0325   0.9075  +0.8750     [0.8525, 0.8975]   +0.8175  BEATS
+
+  C=512  n=200   floor_pos aware = 0.2587   (agnostic 0.2700)
+    method            agnostic    aware    delta               95% CI  vs floor(aware)
+    adakv_snapkv        0.3962   0.8825  +0.4863      [0.4475, 0.525]   +0.6238  BEATS
+    expected_attn       0.3463   0.6550  +0.3088      [0.2725, 0.345]   +0.3962  BEATS
+    keydiff             0.2075   0.8625  +0.6550     [0.6212, 0.6875]   +0.6038  BEATS
+    snapkv              0.1388   0.8263  +0.6875       [0.6538, 0.72]   +0.5675  BEATS
+    tova                0.1025   0.9287  +0.8263     [0.8013, 0.8512]   +0.6700  BEATS
+
+  REFERENCE CHECK @C=512
+    expected order: ['snapkv', 'adakv_snapkv', 'tova', 'expected_attn', 'keydiff']
+    observed order: ['tova', 'snapkv', 'keydiff', 'adakv_snapkv', 'expected_attn']
+    ordering reproduces the literature: False
+    snapkv delta 0.6875 (ref ~+0.20); keydiff delta 0.655 (ref ~+0.01)
+
+  wrote runs/nvidia/analysis_aware_M3.json

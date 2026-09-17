@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 40967.34it/s]
+iso-memory token counts: {154: 246, 257: 411, 514: 822}
+sensitivity T @257: {0.25: 411, 0.28: 402, 0.31: 392}
+1500 cells -> results/bits4
+  [isomemory] 150/1500 new=150 skip=0 fail=0 0.53/s eta=42.6min
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-or4qbv8y'}
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 29277.49it/s]
+iso-memory token counts: {154: 246, 257: 411, 514: 822}
+sensitivity T @257: {0.25: 411, 0.28: 402, 0.31: 392}
+1500 cells -> results/bits4
+  [isomemory] 750/1500 new=207 skip=543 fail=0 0.42/s eta=29.7min
+  [isomemory] 900/1500 new=357 skip=543 fail=0 0.41/s eta=24.4min
+  [isomemory] 1050/1500 new=507 skip=543 fail=0 0.46/s eta=16.4min
+  [isomemory] 1200/1500 new=657 skip=543 fail=0 0.45/s eta=11.0min
+  [isomemory] 1350/1500 new=807 skip=543 fail=0 0.49/s eta=5.1min
+  [isomemory] 1500/1500 new=957 skip=543 fail=0 0.49/s eta=0.0min
+{
+  "tag": "isomemory",
+  "new": 957,
+  "skipped": 543,
+  "failed": 0,
+  "elapsed_s": 1960.7318661212921,
+  "results": "results/bits4/isomemory.jsonl",
+  "failures": "results/bits4/isomemory.failures.jsonl"
+}
+total 32.7 min

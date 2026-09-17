@@ -1,0 +1,33 @@
+[04:50:51] sensitivity done: c0.28=300/300 c0.31=300/300
+[04:50:51] === iso-memory + sensitivity ===
+=== iso-token vs iso-memory (tiered arms funded to equal bytes) ===
+T = budget / (f + (1-f)*cost); f=0.5, cost=0.25 -> T = 1.6*budget
+ budget     T  arm3 tok  arm3 mem  arm4 tok  arm4 mem  a4 mem-tok                 95% CI       p
+    154   246    0.0000    0.0000    0.0200    0.1000     +0.0800 [+0.0633,+0.0967]  0.0001
+    257   411    0.0000    0.0044    0.1189    0.1822     +0.0633 [+0.0411,+0.0867]  0.0001
+    514   822    0.0400    0.0367    0.2400    0.2989     +0.0589 [+0.0233,+0.0944]  0.0017
+
+=== interaction under each iso-condition (BH within condition, per §8) ===
+  iso_token   b154  interaction  -0.0067 [-0.0122,-0.0022]  n_differ=6
+  iso_token   b257  interaction  -0.0456 [-0.0611,-0.0311]  n_differ=47
+  iso_token   b514  interaction  -0.1156 [-0.1444,-0.0856]  n_differ=112
+  iso_memory  b154  interaction  +0.0733 [+0.0556,+0.0900]  n_differ=77
+  iso_memory  b257  interaction  +0.0133 [-0.0111,+0.0378]  n_differ=75
+  iso_memory  b514  interaction  -0.0533 [-0.0978,-0.0078]  n_differ=122
+
+=== [SPEC-GAP 3] quant_byte_cost sensitivity, budget 257 ===
+  cost     T     arm3     arm4   (0.25 is the registered value; §3 notes a real
+                                  int8 scheme with bf16 scales is nearer 0.28-0.31)
+  0.25   411   0.0044   0.1822
+  0.28   402   0.0033   0.1922
+  0.31   392   0.0033   0.1811
+
+wrote results/isomemory_analysis.json
+[04:50:54] === regen sections ===
+regenerated: ['10_three_factor.md', '20_sweep.md', '30_gapu_scoring.md', '40_ablation.md', '50_rho_manipulation.md', '60_threats.md', '70_isomemory.md', '80_phase2_corrected.md']
+[04:50:54] === reports ===
+wrote results/csv/all_runs.csv  (7300 rows)
+wrote FINDINGS.md (+8 narrative sections)
+wrote AGREEMENT.md
+wrote SUMMARY.md (7300 runs, 0 failures)
+[04:51:01] === EVERYTHING COMPLETE ===

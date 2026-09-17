@@ -1,0 +1,692 @@
+{
+  "tally": {
+    "fresh==causal only": 0,
+    "fresh==prescient only": 28,
+    "neither": 0,
+    "both": 0
+  },
+  "by_arm": {
+    "causal": [
+      68,
+      96
+    ],
+    "prescient": [
+      96,
+      96
+    ]
+  },
+  "rows": [
+    {
+      "C": 512,
+      "instance_id": "s4_00001",
+      "fresh_causal": [
+        "Barirdahl|Registry|186585|Harborline|Open",
+        "Barundahl | Reconciliation | 832384 | Pinebury | Cleared",
+        "Caldidker|335863|Elmsworth|Final",
+        "Dornorridge|Payments|770904|Northgate|Held"
+      ],
+      "fresh_prescient": [
+        "Barirdahl|Registry|186585|Harborline|Open",
+        "Barundahl | Reconciliation | 832384 | Pinebury | Cleared",
+        "Caldidker|335863|Elmsworth|Final",
+        "Dornorridge|Payments|770904|Northgate|Held"
+      ],
+      "stored_causal": [
+        "Barirdahl|Registry|186585|Harborline|Open",
+        "Barundahl | Reconciliation | 832384 | Pinebury | Cleared",
+        "Caldidker | Compliance | 335863 | Elmsworth | Final",
+        "Dornorridge|Payments|770904|Northgate|Held"
+      ],
+      "stored_prescient": [
+        "Barirdahl|Registry|186585|Harborline|Open",
+        "Barundahl | Reconciliation | 832384 | Pinebury | Cleared",
+        "Caldidker|335863|Elmsworth|Final",
+        "Dornorridge|Payments|770904|Northgate|Held"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00006",
+      "fresh_causal": [
+        "Dornolson | Procurement | 997306 | Granthill | Closed",
+        "Caldamson | Clearing | 913001 | Granthill | Open",
+        "Barolwell|708947|Fairhollow|Draft",
+        "R002 | Barirfield | Underwriting | 721228 | Harborline | Draft"
+      ],
+      "fresh_prescient": [
+        "Dornolson | Procurement | 997306 | Granthill | Closed",
+        "Caldamson | Clearing | 913001 | Granthill | Open",
+        "Barolwell|708947|Fairhollow|Draft",
+        "R002 | Barirfield | Underwriting | 721228 | Harborline | Draft"
+      ],
+      "stored_causal": [
+        "Dornolson | Procurement | 997306 | Granthill | Closed",
+        "Caldamson | Clearing | 913001 | Granthill | Open",
+        "Barolwell|Actuarial|708947|Fairhollow|Draft",
+        "R002 | Barirfield | Underwriting | 721228 | Harborline | Draft"
+      ],
+      "stored_prescient": [
+        "Dornolson | Procurement | 997306 | Granthill | Closed",
+        "Caldamson | Clearing | 913001 | Granthill | Open",
+        "Barolwell|708947|Fairhollow|Draft",
+        "R002 | Barirfield | Underwriting | 721228 | Harborline | Draft"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00007",
+      "fresh_causal": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ],
+      "fresh_prescient": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ],
+      "stored_causal": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl|Treasury|506815|Harborline|Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ],
+      "stored_prescient": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00010",
+      "fresh_causal": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Review"
+      ],
+      "fresh_prescient": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Review"
+      ],
+      "stored_causal": [
+        "Dornamstad|Treasury|270801|Kingsfell|Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Review"
+      ],
+      "stored_prescient": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Review"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00016",
+      "fresh_causal": [
+        "Ellenmont|Settlement|240326|Pinebury|Held",
+        "Dornorwell|Custody|670067|Fairhollow|Cleared|",
+        "239071 | Custody | Harborline | Held",
+        "Ellachardt|Payments|799802|Ashcombe|Cleared"
+      ],
+      "fresh_prescient": [
+        "Ellenmont|Settlement|240326|Pinebury|Held",
+        "Dornorwell|Custody|670067|Fairhollow|Cleared|",
+        "239071 | Custody | Harborline | Held",
+        "Ellachardt|Payments|799802|Ashcombe|Cleared"
+      ],
+      "stored_causal": [
+        "Ellenmont|Settlement|240326|Pinebury|Held",
+        "Caldidmont|Registry|522004|Granthill|Pending",
+        "239071 | Harborline | Held",
+        "Ellachardt|Payments|799802|Ashcombe|Cleared"
+      ],
+      "stored_prescient": [
+        "Ellenmont|Settlement|240326|Pinebury|Held",
+        "Dornorwell|Custody|670067|Fairhollow|Cleared|",
+        "239071 | Custody | Harborline | Held",
+        "Ellachardt|Payments|799802|Ashcombe|Cleared"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00023",
+      "fresh_causal": [
+        "Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|336938|Reconciliation|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ],
+      "fresh_prescient": [
+        "Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|336938|Reconciliation|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ],
+      "stored_causal": [
+        "Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|Reconciliation|336938|Harborline|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ],
+      "stored_prescient": [
+        "Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|336938|Reconciliation|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00026",
+      "fresh_causal": [
+        "Bariddahl|Actuarial|305804|Ashcombe|Closed",
+        "Ellolwell|Treasury|788189|Larkmede|Open",
+        "Caldacridge | Underwriting | 913364 | Draymouth | Held",
+        "Barirstad|655078|Kingsfell|Cleared|"
+      ],
+      "fresh_prescient": [
+        "Bariddahl|Actuarial|305804|Ashcombe|Closed",
+        "Ellolwell|Treasury|788189|Larkmede|Open",
+        "Caldacridge | Underwriting | 913364 | Draymouth | Held",
+        "Barirstad|655078|Kingsfell|Cleared|"
+      ],
+      "stored_causal": [
+        "Bariddahl|Actuarial|305804|Ashcombe|Closed",
+        "Ellolwell|Treasury|788189|Larkmede|Open",
+        "Caldacridge | Underwriting | 913364 | Draymouth | Held",
+        "Barirstad|655078|Kingsfell|Cleared"
+      ],
+      "stored_prescient": [
+        "Bariddahl|Actuarial|305804|Ashcombe|Closed",
+        "Ellolwell|Treasury|788189|Larkmede|Open",
+        "Caldacridge | Underwriting | 913364 | Draymouth | Held",
+        "Barirstad|655078|Kingsfell|Cleared|"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00028",
+      "fresh_causal": [
+        "Dornirwell | Valuation | 667827 | Northgate | Draft",
+        "Barunmont | Reconciliation | 803998 | Ashcombe | Held",
+        "R015 | Barethridge | Procurement | 268410 | Harborline | Cleared",
+        "Caldoldahl | Payments | 946142 | Larkmede | Draft"
+      ],
+      "fresh_prescient": [
+        "Dornirwell | Valuation | 667827 | Northgate | Draft",
+        "Barunmont | Reconciliation | 803998 | Ashcombe | Held",
+        "R015 | Barethridge | Procurement | 268410 | Harborline | Cleared",
+        "Caldoldahl | Payments | 946142 | Larkmede | Draft"
+      ],
+      "stored_causal": [
+        "Dornirwell | Valuation | 667827 | Northgate | Draft",
+        "Barunmont|Reconciliation|803998|Ashcombe|Held",
+        "R015 | Barethridge | Procurement | 268410 | Harborline | Cleared",
+        "Caldoldahl | Payments | 946142 | Larkmede | Draft"
+      ],
+      "stored_prescient": [
+        "Dornirwell | Valuation | 667827 | Northgate | Draft",
+        "Barunmont | Reconciliation | 803998 | Ashcombe | Held",
+        "R015 | Barethridge | Procurement | 268410 | Harborline | Cleared",
+        "Caldoldahl | Payments | 946142 | Larkmede | Draft"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00041",
+      "fresh_causal": [
+        "Dornamfield | 363217 | Larkmede | Pending",
+        "Caldendahl | Custody | 465946 | Northgate | Closed",
+        "Caldolmont | Reconciliation | 555180 | Pinebury | Cleared",
+        "R010 | Caldusker | Clearing | 142197 | Larkmede | Draft"
+      ],
+      "fresh_prescient": [
+        "Dornamfield | 363217 | Larkmede | Pending",
+        "Caldendahl | Custody | 465946 | Northgate | Closed",
+        "Caldolmont | Reconciliation | 555180 | Pinebury | Cleared",
+        "R010 | Caldusker | Clearing | 142197 | Larkmede | Draft"
+      ],
+      "stored_causal": [
+        "Dornamfield | Reconciliation | 363217 | Larkmede | Pending",
+        "Caldendahl | Custody | 465946 | Northgate | Closed",
+        "Caldolmont | Reconciliation | 555180 | Pinebury | Cleared",
+        "R010 | Caldusker | Clearing | 142197 | Larkmede | Draft"
+      ],
+      "stored_prescient": [
+        "Dornamfield | 363217 | Larkmede | Pending",
+        "Caldendahl | Custody | 465946 | Northgate | Closed",
+        "Caldolmont | Reconciliation | 555180 | Pinebury | Cleared",
+        "R010 | Caldusker | Clearing | 142197 | Larkmede | Draft"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00043",
+      "fresh_causal": [
+        "Ellamhardt|Valuation|357750|Harborline|Held",
+        "R006 | Ellidfield | Payments | 665102 | Kingsfell | Cleared",
+        "Barunridge | Valuation | 328468 | Pinebury | Draft",
+        "Dornacmont | Clearing | 417961 | Larkmede | Cleared"
+      ],
+      "fresh_prescient": [
+        "Ellamhardt|Valuation|357750|Harborline|Held",
+        "R006 | Ellidfield | Payments | 665102 | Kingsfell | Cleared",
+        "Barunridge | Valuation | 328468 | Pinebury | Draft",
+        "Dornacmont | Clearing | 417961 | Larkmede | Cleared"
+      ],
+      "stored_causal": [
+        "Ellamhardt | Valuation | 357750 | Harborline | Held",
+        "R006 | Ellidfield | Payments | 665102 | Kingsfell | Cleared",
+        "Barunridge | Valuation | 328468 | Pinebury | Draft",
+        "Dornacmont | Clearing | 417961 | Larkmede | Cleared"
+      ],
+      "stored_prescient": [
+        "Ellamhardt|Valuation|357750|Harborline|Held",
+        "R006 | Ellidfield | Payments | 665102 | Kingsfell | Cleared",
+        "Barunridge | Valuation | 328468 | Pinebury | Draft",
+        "Dornacmont | Clearing | 417961 | Larkmede | Cleared"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00048",
+      "fresh_causal": [
+        "Barirridge | Reconciliation | 410651 | Elmsworth | Closed",
+        "Caldacstad | 883231 | Northgate | Held",
+        "Baramwick|Compliance|720012|Westmoor|Pending",
+        "Baramfield | 788084 | Ashcombe | Held"
+      ],
+      "fresh_prescient": [
+        "Barirridge | Reconciliation | 410651 | Elmsworth | Closed",
+        "Caldacstad | 883231 | Northgate | Held",
+        "Baramwick|Compliance|720012|Westmoor|Pending",
+        "Baramfield | 788084 | Ashcombe | Held"
+      ],
+      "stored_causal": [
+        "Barirridge | Reconciliation | 410651 | Elmsworth | Closed",
+        "Caldacstad | Actuarial | 883231 | Northgate | Held",
+        "Baramwick|Compliance|720012|Westmoor|Pending",
+        "Baramfield | 788084 | Ashcombe | Held"
+      ],
+      "stored_prescient": [
+        "Barirridge | Reconciliation | 410651 | Elmsworth | Closed",
+        "Caldacstad | 883231 | Northgate | Held",
+        "Baramwick|Compliance|720012|Westmoor|Pending",
+        "Baramfield | 788084 | Ashcombe | Held"
+      ]
+    },
+    {
+      "C": 512,
+      "instance_id": "s4_00050",
+      "fresh_causal": [
+        "Caldidker | Payments | 501494 | Kingsfell | Closed",
+        "Caldamhardt | Underwriting | 174749 | Fairhollow | Final",
+        "Dornusridge | Valuation | 218986 | Granthill | Cleared",
+        "Caldorhardt | Valuation | 568925 | Granthill | Final"
+      ],
+      "fresh_prescient": [
+        "Caldidker | Payments | 501494 | Kingsfell | Closed",
+        "Caldamhardt | Underwriting | 174749 | Fairhollow | Final",
+        "Dornusridge | Valuation | 218986 | Granthill | Cleared",
+        "Caldorhardt | Valuation | 568925 | Granthill | Final"
+      ],
+      "stored_causal": [
+        "Caldidker|Payments|501494|Kingsfell|Closed",
+        "Caldamhardt | Underwriting | 174749 | Fairhollow | Final",
+        "Dornusridge | Valuation | 218986 | Granthill | Cleared",
+        "Caldorhardt | Valuation | 568925 | Granthill | Final"
+      ],
+      "stored_prescient": [
+        "Caldidker | Payments | 501494 | Kingsfell | Closed",
+        "Caldamhardt | Underwriting | 174749 | Fairhollow | Final",
+        "Dornusridge | Valuation | 218986 | Granthill | Cleared",
+        "Caldorhardt | Valuation | 568925 | Granthill | Final"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00002",
+      "fresh_causal": [
+        "Dornirhardt",
+        "R019 | Caldenridge | Settlement | 198732 | Westmoor | Review",
+        "Caldacwell|Compliance|663802|Draymouth|Review",
+        "Caldunson | Valuation | 453907 | Ashcombe | Cleared"
+      ],
+      "fresh_prescient": [
+        "Dornirhardt",
+        "R019 | Caldenridge | Settlement | 198732 | Westmoor | Review",
+        "Caldacwell|Compliance|663802|Draymouth|Review",
+        "Caldunson | Valuation | 453907 | Ashcombe | Cleared"
+      ],
+      "stored_causal": [
+        "Dornirhardt | 935459 | Granthill | Pending",
+        "R019 | Caldenridge | Settlement | 198732 | Westmoor | Review",
+        "Caldacwell|Compliance|663802|Draymouth|Review",
+        "Caldunson | Valuation | 453907 | Ashcombe | Cleared"
+      ],
+      "stored_prescient": [
+        "Dornirhardt",
+        "R019 | Caldenridge | Settlement | 198732 | Westmoor | Review",
+        "Caldacwell|Compliance|663802|Draymouth|Review",
+        "Caldunson | Valuation | 453907 | Ashcombe | Cleared"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00005",
+      "fresh_causal": [
+        "Caldethker | Settlement | 380034 | Larkmede | Pending",
+        "Barendahl | Underwriting | 618052 | Kingsfell | Final",
+        "Dornusker | Valuation | 505046 | Larkmede | Held",
+        "Dornunhardt\n700933\nNorthgate\nReview"
+      ],
+      "fresh_prescient": [
+        "Caldethker | Settlement | 380034 | Larkmede | Pending",
+        "Barendahl | Underwriting | 618052 | Kingsfell | Final",
+        "Dornusker | Valuation | 505046 | Larkmede | Held",
+        "Dornunhardt\n700933\nNorthgate\nReview"
+      ],
+      "stored_causal": [
+        "Caldethker | Settlement | 380034 | Larkmede | Pending",
+        "Barendahl|Underwriting|618052|Kingsfell|Final",
+        "R018 | Dornusker | Valuation | 505046 | Larkmede | Held",
+        "Dornunhardt\n700933\nNorthgate\nReview"
+      ],
+      "stored_prescient": [
+        "Caldethker | Settlement | 380034 | Larkmede | Pending",
+        "Barendahl | Underwriting | 618052 | Kingsfell | Final",
+        "Dornusker | Valuation | 505046 | Larkmede | Held",
+        "Dornunhardt\n700933\nNorthgate\nReview"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00007",
+      "fresh_causal": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ],
+      "fresh_prescient": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ],
+      "stored_causal": [
+        "Dornethmont | 900577 | Oakstead | Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ],
+      "stored_prescient": [
+        "Dornethmont|900577|Oakstead|Draft",
+        "R013 | Barorfield | Procurement | 845333 | Draymouth | Final",
+        "Caldirdahl | Treasury | 506815 | Harborline | Held",
+        "Baramstad | Valuation | 581108 | Westmoor | Open"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00008",
+      "fresh_causal": [
+        "Barunwell|Reconciliation|790380|Oakstead|Final",
+        "Caldammont | Reconciliation | 591214 | Elmsworth | Final",
+        "Barolridge | 510719 | Larkmede | Held",
+        "R009 | Elloldahl | Procurement | 357036 | Kingsfell | Open"
+      ],
+      "fresh_prescient": [
+        "Barunwell|Reconciliation|790380|Oakstead|Final",
+        "Caldammont | Reconciliation | 591214 | Elmsworth | Final",
+        "Barolridge | 510719 | Larkmede | Held",
+        "R009 | Elloldahl | Procurement | 357036 | Kingsfell | Open"
+      ],
+      "stored_causal": [
+        "Barunwell | Reconciliation | 790380 | Oakstead | Final",
+        "Caldammont | Reconciliation | 591214 | Elmsworth | Final",
+        "Barolridge | 510719 | Larkmede | Held",
+        "R009 | Elloldahl | Procurement | 357036 | Kingsfell | Open"
+      ],
+      "stored_prescient": [
+        "Barunwell|Reconciliation|790380|Oakstead|Final",
+        "Caldammont | Reconciliation | 591214 | Elmsworth | Final",
+        "Barolridge | 510719 | Larkmede | Held",
+        "R009 | Elloldahl | Procurement | 357036 | Kingsfell | Open"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00009",
+      "fresh_causal": [
+        "Barorridge|874647|Ashcombe|Pending",
+        "Baroldahl|Procurement|212900|Granthill|Review",
+        "Barenson | Clearing | 742932 | Oakstead | Cleared",
+        "Dornusker | Custody | 466430 | Elmsworth | Held"
+      ],
+      "fresh_prescient": [
+        "Barorridge|874647|Ashcombe|Pending",
+        "Baroldahl|Procurement|212900|Granthill|Review",
+        "Barenson | Clearing | 742932 | Oakstead | Cleared",
+        "Dornusker | Custody | 466430 | Elmsworth | Held"
+      ],
+      "stored_causal": [
+        "Barorridge|Payments|874647|Ashcombe|Pending",
+        "Baroldahl|Procurement|212900|Granthill|Review",
+        "Barenson | Clearing | 742932 | Oakstead | Cleared",
+        "Dornusker | Custody | 466430 | Elmsworth | Held"
+      ],
+      "stored_prescient": [
+        "Barorridge|874647|Ashcombe|Pending",
+        "Baroldahl|Procurement|212900|Granthill|Review",
+        "Barenson | Clearing | 742932 | Oakstead | Cleared",
+        "Dornusker | Custody | 466430 | Elmsworth | Held"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00010",
+      "fresh_causal": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Granthill | Review"
+      ],
+      "fresh_prescient": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Granthill | Review"
+      ],
+      "stored_causal": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth",
+        "Caldethwick | Valuation | 141906 | Granthill | Review"
+      ],
+      "stored_prescient": [
+        "Dornamstad | Treasury | 270801 | Kingsfell | Held",
+        "Barirmont | Custody | 106093 | Larkmede | Held",
+        "Dornamwick | Clearing | 785096 | Elmsworth | Held",
+        "Caldethwick | Valuation | 141906 | Granthill | Review"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00013",
+      "fresh_causal": [
+        "R019 | Ellamson | Custody | 828114 | Pinebury | Draft",
+        "R027 | Caldirmont | Actuarial | 148844 | Pinebury | Open",
+        "R023 | Barusridge | Underwriting | 990583 | Oakstead | Open",
+        "R013 | Ellacker | Actuarial | 350531 | Ashcombe | Pending"
+      ],
+      "fresh_prescient": [
+        "R019 | Ellamson | Custody | 828114 | Pinebury | Draft",
+        "R027 | Caldirmont | Actuarial | 148844 | Pinebury | Open",
+        "R023 | Barusridge | Underwriting | 990583 | Oakstead | Open",
+        "R013 | Ellacker | Actuarial | 350531 | Ashcombe | Pending"
+      ],
+      "stored_causal": [
+        "R019 | Ellamson | Custody | 828114 | Pinebury | Draft",
+        "148844 | Pinebury | Actuarial | Open",
+        "R023 | Barusridge | Underwriting | 990583 | Oakstead | Open",
+        "R013 | Ellacker | Actuarial | 350531 | Ashcombe | Pending"
+      ],
+      "stored_prescient": [
+        "R019 | Ellamson | Custody | 828114 | Pinebury | Draft",
+        "R027 | Caldirmont | Actuarial | 148844 | Pinebury | Open",
+        "R023 | Barusridge | Underwriting | 990583 | Oakstead | Open",
+        "R013 | Ellacker | Actuarial | 350531 | Ashcombe | Pending"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00016",
+      "fresh_causal": [
+        "R017 | Ellenmont | Settlement | 240326 | Pinebury | Held",
+        "R012 | Caldidmont | Registry | 522004 | Granthill | Pending",
+        "Caldunker | Custody | 239071 | Harborline | Held",
+        "Caldusmont | Valuation | 223109 | Pinebury | Open"
+      ],
+      "fresh_prescient": [
+        "R017 | Ellenmont | Settlement | 240326 | Pinebury | Held",
+        "R012 | Caldidmont | Registry | 522004 | Granthill | Pending",
+        "Caldunker | Custody | 239071 | Harborline | Held",
+        "Caldusmont | Valuation | 223109 | Pinebury | Open"
+      ],
+      "stored_causal": [
+        "R017 | Ellenmont | Settlement | 240326 | Pinebury | Held",
+        "R012 | Caldidmont | Registry | 522004 | Granthill | Pending",
+        "239071 | Custody | Harborline | Held",
+        "Caldusmont | Valuation | 223109 | Pinebury | Open"
+      ],
+      "stored_prescient": [
+        "R017 | Ellenmont | Settlement | 240326 | Pinebury | Held",
+        "R012 | Caldidmont | Registry | 522004 | Granthill | Pending",
+        "Caldunker | Custody | 239071 | Harborline | Held",
+        "Caldusmont | Valuation | 223109 | Pinebury | Open"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00017",
+      "fresh_causal": [
+        "Ellirhardt | Actuarial | 806691 | Larkmede | Closed",
+        "Baridmont | Compliance | 585845 | Draymouth | Closed",
+        "Ellamdahl | Clearing | 732182 | Ashcombe | Held",
+        "Ellunson | 558319 | Westmoor | Draft"
+      ],
+      "fresh_prescient": [
+        "Ellirhardt | Actuarial | 806691 | Larkmede | Closed",
+        "Baridmont | Compliance | 585845 | Draymouth | Closed",
+        "Ellamdahl | Clearing | 732182 | Ashcombe | Held",
+        "Ellunson | 558319 | Westmoor | Draft"
+      ],
+      "stored_causal": [
+        "Ellirhardt | Actuarial | 806691 | Larkmede | Closed",
+        "Baridmont|585845|Draymouth|Closed",
+        "Ellamdahl | Clearing | 732182 | Ashcombe | Held",
+        "Ellunson | 558319 | Westmoor | Draft"
+      ],
+      "stored_prescient": [
+        "Ellirhardt | Actuarial | 806691 | Larkmede | Closed",
+        "Baridmont | Compliance | 585845 | Draymouth | Closed",
+        "Ellamdahl | Clearing | 732182 | Ashcombe | Held",
+        "Ellunson | 558319 | Westmoor | Draft"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00023",
+      "fresh_causal": [
+        "R003 | Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|336938|Reconciliation|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ],
+      "fresh_prescient": [
+        "R003 | Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|336938|Reconciliation|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ],
+      "stored_causal": [
+        "Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|Reconciliation|336938|Harborline|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ],
+      "stored_prescient": [
+        "R003 | Ellolker | Compliance | 527979 | Fairhollow | Closed",
+        "R006 | Ellacmont | Procurement | 709521 | Fairhollow | Review",
+        "Dornusmont|336938|Reconciliation|Draft",
+        "Caldusker | Compliance | 282544 | Larkmede | Draft"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00024",
+      "fresh_causal": [
+        "Caldenmont | Clearing | 652743 | Oakstead | Cleared",
+        "Caldusson | Procurement | 251085 | Granthill | Closed",
+        "Barirson|Treasury|826368|Larkmede|Held",
+        "Barusker | Valuation | 888223 | Elmsworth | Open"
+      ],
+      "fresh_prescient": [
+        "Caldenmont | Clearing | 652743 | Oakstead | Cleared",
+        "Caldusson | Procurement | 251085 | Granthill | Closed",
+        "Barirson|Treasury|826368|Larkmede|Held",
+        "Barusker | Valuation | 888223 | Elmsworth | Open"
+      ],
+      "stored_causal": [
+        "Caldenmont | Clearing | 652743 | Oakstead | Cleared",
+        "Caldusson | Procurement | 251085 | Granthill | Closed",
+        "Barirson | Treasury | 826368 | Larkmede | Held",
+        "Barusker | Valuation | 888223 | Elmsworth | Open"
+      ],
+      "stored_prescient": [
+        "Caldenmont | Clearing | 652743 | Oakstead | Cleared",
+        "Caldusson | Procurement | 251085 | Granthill | Closed",
+        "Barirson|Treasury|826368|Larkmede|Held",
+        "Barusker | Valuation | 888223 | Elmsworth | Open"
+      ]
+    },
+    {
+      "C": 256,
+      "instance_id": "s4_00030",
+      "fresh_causal": [
+        "Dornordahl|792973|Compliance|Fairhollow|Closed",
+        "Ellirmont | Compliance | 994467 | Elmsworth | Open",
+        "Caldethstad | Payments | 211778 | Harborline | Cleared",
+        "R002 | Ellorker | Payments | 810874 | Fairhollow | Closed"
+      ],
+      "fresh_prescient": [
+        "Dornordahl|792973|Compliance|Fairhollow|Closed",
+        "Ellirmont | Compliance | 994467 | Elmsworth | Open",
+        "Caldethstad | Payments | 211778 | Harborline | Cleared",
+        "R002 | Ellorker | Payments | 810874 | Fairhollow | Closed"
+      ],
+      "stored_causal": [
+        "Dornordahl|792973|Compliance|Fairhollow|Closed",
+        "R024 | Ellirmont | Compliance | 994467 | Elmsworth | Open",
+        "Caldethstad | Payments | 211778 | Harborline | Cleared",
+        "R002 | Ellorker | Payments | 810874 | Fairhollow | Closed"
+      ],
+      "stored_prescient": [
+        "Dornordahl|792973|Compliance|Fairhollow|Closed",
+        "Ellirmont | Compliance | 994467 | Elmsworth | Open",
+        "Caldethstad | Payments | 211778 | Harborline | Cleared",
+        "R002 | Ellorker | Payments | 810874 | Fairhollow | Closed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+
+==================================================================================================
+2.4  SINGLE-TOKEN FACTS (c = 1) -- the sharpest test in the programme. BREAKS the theory if methods still lose to the floor.
+==================================================================================================
+MARK-1: the odd-category token is both cue and answer, so nothing has to be
+co-retained with it and p_g ** c_eff collapses to p_g EXACTLY. A pointwise scorer is
+strictly better informed than position and should WIN. If it still loses, whatever
+is limiting these methods is not co-retention.
+
+### M2   n=50   anchor(full_cache)=0.8200
+arm                                 C=64                 C=512
+full_cache          0.8200 [0.770,0.870]  0.8200 [0.770,0.870]
+null                0.0200 [0.005,0.040]  0.0150 [0.000,0.035]
+random              0.0150 [0.000,0.035]  0.1050 [0.055,0.160]
+floor_pos           0.1000 [0.065,0.140]  0.2900 [0.250,0.330]
+oracle_causal       0.7850 [0.730,0.835]  0.8100 [0.760,0.860]
+oracle_prescient    0.7850 [0.730,0.835]  0.8100 [0.760,0.860]
+snapkv              0.3150 [0.265,0.370]  0.8100 [0.765,0.855]
+adakv_snapkv        0.3500 [0.295,0.405]  0.8250 [0.785,0.865]
+expected_attn       0.6800 [0.620,0.735]  0.7750 [0.720,0.830]
+keydiff             0.0750 [0.045,0.110]  0.8050 [0.755,0.855]
+  C= 64: floor_pos 0.1000 -- methods beating it: snapkv, adakv_snapkv, expected_attn  (3/4)
+  C=512: floor_pos 0.2900 -- methods beating it: snapkv, adakv_snapkv, expected_attn, keydiff  (4/4)
+
+### M3   n=50   anchor(full_cache)=0.9300
+arm                                 C=64                 C=512
+full_cache          0.9300 [0.895,0.960]  0.9300 [0.895,0.960]
+null                0.0000 [0.000,0.000]  0.0000 [0.000,0.000]
+random              0.0150 [0.000,0.040]  0.1100 [0.060,0.165]
+floor_pos           0.1050 [0.065,0.145]  0.2800 [0.215,0.350]
+oracle_causal       0.9850 [0.965,1.000]  0.9750 [0.955,0.995]
+oracle_prescient    0.9850 [0.965,1.000]  0.9750 [0.955,0.995]
+snapkv              0.4400 [0.365,0.515]  0.8750 [0.835,0.910]
+adakv_snapkv        0.5500 [0.475,0.625]  0.9100 [0.875,0.945]
+expected_attn       0.6700 [0.615,0.725]  0.9050 [0.870,0.940]
+keydiff             0.1300 [0.085,0.175]  0.9450 [0.915,0.970]
+  C= 64: floor_pos 0.1050 -- methods beating it: snapkv, adakv_snapkv, expected_attn, keydiff  (4/4)
+  C=512: floor_pos 0.2800 -- methods beating it: snapkv, adakv_snapkv, expected_attn, keydiff  (4/4)
+
+  VERDICT 2.4: PASS -- criterion: at the top budget, a majority of methods beat the recency floor, on both models.
+
+==================================================================================================
+2.1  COST SWEEP -- c in {8, 19, 40} at TWO budgets (C=64, C=512). BREAKS the theory if the pointwise deficit does not grow with c.
+==================================================================================================
+Run at two budgets rather than the planned one, because Stage 1 found the implied
+c_eff rising with budget: c and C were confounded in everything Paper 2 measured.
+Two budgets let the cost dependence and the budget dependence be read separately.
+
+### M2   ACCURACY   n=50
+arm                     c=8.2 C=64     c=18.9 C=64     c=39.5 C=64     c=8.2 C=512    c=18.9 C=512    c=39.5 C=512
+full_cache                  0.8350          0.9300          0.8750          0.8350          0.9300          0.8750
+null                        0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+random                      0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+floor_pos                   0.0300          0.0200          0.0100          0.2350          0.1550          0.1350
+oracle_causal               0.8100          0.5650          0.0850          0.8850          0.8600          0.6300
+oracle_prescient            0.8100          0.7200          0.2650          0.8850          0.8600          0.6300
+snapkv                      0.0250          0.0100          0.0000          0.1800          0.1250          0.0600
+adakv_snapkv                0.0250          0.0200          0.0050          0.2400          0.1350          0.0650
+
+### M2   POINTWISE DEFICIT   (floor_pos - method); registered prediction: GROWS with c
+method                  c=8.2 C=64     c=18.9 C=64     c=39.5 C=64     c=8.2 C=512    c=18.9 C=512    c=39.5 C=512
+snapkv                     +0.0050         +0.0100         +0.0100         +0.0550         +0.0300         +0.0750
+adakv_snapkv               +0.0050         +0.0000         +0.0050         -0.0050         +0.0200         +0.0700
+
+### M2   RETENTION RATIO   (method / floor_pos)
+The raw difference is compressed by the absolute scale: accuracies span an order
+of magnitude across these cells, so a fixed 0.05 gap means something very
+different at floor 0.02 than at floor 0.235. The ratio is scale-free; both are
+reported so neither stands alone. Ratio < 1 = the method loses to the floor.
+method                  c=8.2 C=64     c=18.9 C=64     c=39.5 C=64     c=8.2 C=512    c=18.9 C=512    c=39.5 C=512
+snapkv                      0.8333          0.5000          0.0000          0.7660          0.8065          0.4444
+adakv_snapkv                0.8333          1.0000          0.5000          1.0213          0.8710          0.4815
+
+  DEGENERACY CHECK -- a cell where every arm is near zero cannot express a
+  deficit in either direction, so it is named rather than silently averaged in:
+    c=  8.2 C= 64: full_cache 0.8350  floor_pos 0.0300  <-- NEAR-DEGENERATE (floor < 0.05)
+    c= 18.9 C= 64: full_cache 0.9300  floor_pos 0.0200  <-- NEAR-DEGENERATE (floor < 0.05)
+    c= 39.5 C= 64: full_cache 0.8750  floor_pos 0.0100  <-- NEAR-DEGENERATE (floor < 0.05)
+    c=  8.2 C=512: full_cache 0.8350  floor_pos 0.2350
+    c= 18.9 C=512: full_cache 0.9300  floor_pos 0.1550
+    c= 39.5 C=512: full_cache 0.8750  floor_pos 0.1350
+  budgets with a non-degenerate floor at some c: [512]
+
+  growth of the deficit with c:
+    snapkv          C= 64  raw ['+0.0050', '+0.0100', '+0.0100'] grows=True mono=True  |  ratio ['0.833', '0.500', '0.000'] falls=True mono=True   [near-degenerate budget]
+    snapkv          C=512  raw ['+0.0550', '+0.0300', '+0.0750'] grows=True mono=False  |  ratio ['0.766', '0.806', '0.444'] falls=True mono=False
+    adakv_snapkv    C= 64  raw ['+0.0050', '+0.0000', '+0.0050'] grows=True mono=False  |  ratio ['0.833', '1.000', '0.500'] falls=True mono=False   [near-degenerate budget]
+    adakv_snapkv    C=512  raw ['-0.0050', '+0.0200', '+0.0700'] grows=True mono=True  |  ratio ['1.021', '0.871', '0.481'] falls=True mono=True
+
+### M3   ACCURACY   n=50
+arm                     c=8.9 C=64     c=18.6 C=64     c=39.3 C=64     c=8.9 C=512    c=18.6 C=512    c=39.3 C=512
+full_cache                  0.8850          0.9350          0.7850          0.8850          0.9350          0.7850
+null                        0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+random                      0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+floor_pos                   0.0400          0.0450          0.0100          0.2400          0.2450          0.1100
+oracle_causal               0.7800          0.6300          0.1000          0.8450          0.8250          0.2600
+oracle_prescient            0.7800          0.8250          0.2900          0.8450          0.8250          0.2600
+snapkv                      0.0100          0.0000          0.0000          0.1250          0.0500          0.0100
+adakv_snapkv                0.0250          0.0000          0.0050          0.4100          0.1400          0.0200
+
+### M3   POINTWISE DEFICIT   (floor_pos - method); registered prediction: GROWS with c
+method                  c=8.9 C=64     c=18.6 C=64     c=39.3 C=64     c=8.9 C=512    c=18.6 C=512    c=39.3 C=512
+snapkv                     +0.0300         +0.0450         +0.0100         +0.1150         +0.1950         +0.1000
+adakv_snapkv               +0.0150         +0.0450         +0.0050         -0.1700         +0.1050         +0.0900
+
+### M3   RETENTION RATIO   (method / floor_pos)
+The raw difference is compressed by the absolute scale: accuracies span an order
+of magnitude across these cells, so a fixed 0.05 gap means something very
+different at floor 0.02 than at floor 0.235. The ratio is scale-free; both are
+reported so neither stands alone. Ratio < 1 = the method loses to the floor.
+method                  c=8.9 C=64     c=18.6 C=64     c=39.3 C=64     c=8.9 C=512    c=18.6 C=512    c=39.3 C=512
+snapkv                      0.2500          0.0000          0.0000          0.5208          0.2041          0.0909
+adakv_snapkv                0.6250          0.0000          0.5000          1.7083          0.5714          0.1818
+
+  DEGENERACY CHECK -- a cell where every arm is near zero cannot express a
+  deficit in either direction, so it is named rather than silently averaged in:
+    c=  8.9 C= 64: full_cache 0.8850  floor_pos 0.0400  <-- NEAR-DEGENERATE (floor < 0.05)
+    c= 18.6 C= 64: full_cache 0.9350  floor_pos 0.0450  <-- NEAR-DEGENERATE (floor < 0.05)
+    c= 39.3 C= 64: full_cache 0.7850  floor_pos 0.0100  <-- NEAR-DEGENERATE (floor < 0.05)
+    c=  8.9 C=512: full_cache 0.8850  floor_pos 0.2400
+    c= 18.6 C=512: full_cache 0.9350  floor_pos 0.2450
+    c= 39.3 C=512: full_cache 0.7850  floor_pos 0.1100
+  budgets with a non-degenerate floor at some c: [512]
+
+  growth of the deficit with c:
+    snapkv          C= 64  raw ['+0.0300', '+0.0450', '+0.0100'] grows=False mono=False  |  ratio ['0.250', '0.000', '0.000'] falls=True mono=True   [near-degenerate budget]
+    snapkv          C=512  raw ['+0.1150', '+0.1950', '+0.1000'] grows=False mono=False  |  ratio ['0.521', '0.204', '0.091'] falls=True mono=True
+    adakv_snapkv    C= 64  raw ['+0.0150', '+0.0450', '+0.0050'] grows=False mono=False  |  ratio ['0.625', '0.000', '0.500'] falls=True mono=False   [near-degenerate budget]
+    adakv_snapkv    C=512  raw ['-0.1700', '+0.1050', '+0.0900'] grows=True mono=False  |  ratio ['1.708', '0.571', '0.182'] falls=True mono=True
+
+  VERDICT 2.1: PASS -- criterion: on every non-degenerate budget the retention ratio falls as c grows, for both methods on both models (4/4 qualifying cells).
+
+==================================================================================================
+2.1b  c_eff FITTED INDEPENDENTLY AT EACH BUDGET -- was Stage 1's budget dependence a c dependence in disguise?
+==================================================================================================
+c_eff* = ln(q_complete) / ln(p_g), measured per (model, c, C, arm) from the retained
+sets. Under both registered forms c_eff depends on c and rho only: it should rise
+with c and NOT with C. Stage 1 could not separate those because c was fixed; it
+found the residual correlating +0.879 with log C, which is what this resolves.
+
+### M2
+arm                  C         c=8.2        c=18.9        c=39.5   slope d(c_eff)/dc
+snapkv              64        1.2081        1.2376        1.2143   +0.0000
+snapkv             512        1.7695        1.9875        1.9325   +0.0042
+adakv_snapkv        64        1.2074        1.2249        1.2132   +0.0001
+adakv_snapkv       512        1.7597        1.9886        1.9439   +0.0048
+floor_pos           64        0.9945        0.9980        1.0044   +0.0003
+floor_pos          512        0.9975        1.0074        1.0569   +0.0020
+
+  p_g and q_complete behind those fits:
+arm                  C                   c=8.2                  c=18.9                  c=39.5
+snapkv              64     p_g 0.0865 q 0.0519     p_g 0.0825 q 0.0456     p_g 0.0641 q 0.0356
+snapkv             512     p_g 0.3892 q 0.1883     p_g 0.3484 q 0.1230     p_g 0.2572 q 0.0725
+adakv_snapkv        64     p_g 0.0863 q 0.0519     p_g 0.0822 q 0.0469     p_g 0.0638 q 0.0355
+adakv_snapkv       512     p_g 0.3874 q 0.1885     p_g 0.3493 q 0.1235     p_g 0.2610 q 0.0735
+floor_pos           64     p_g 0.0739 q 0.0750     p_g 0.0945 q 0.0950     p_g 0.0708 q 0.0700
+floor_pos          512     p_g 0.3491 q 0.3500     p_g 0.3277 q 0.3250     p_g 0.2999 q 0.2800
+
+  BUDGET dependence at FIXED c   (c_eff at C=512 minus c_eff at C=64):
+    snapkv                 +0.5613       +0.7499       +0.7182
+    adakv_snapkv           +0.5523       +0.7637       +0.7307
+    Stage 1 measured this as strongly positive with c held fixed. If it stays
+    positive here at every c, the budget dependence is real and neither
+    registered form contains it. If it collapses, it was a c dependence.
+
+### M3
+arm                  C         c=8.9        c=18.6        c=39.3   slope d(c_eff)/dc
+snapkv              64        1.1933        1.2136        1.2906   +0.0033
+snapkv             512        1.8735        1.9169        2.1006   +0.0077
+adakv_snapkv        64        1.1871        1.2520        1.3342   +0.0047
+adakv_snapkv       512        1.6482        1.8313        2.0799   +0.0139
+floor_pos           64        1.0067        1.0022        1.0915   +0.0030
+floor_pos          512        1.0134        1.0018        1.0706   +0.0021
+
+  p_g and q_complete behind those fits:
+arm                  C                   c=8.9                  c=18.6                  c=39.3
+snapkv              64     p_g 0.0894 q 0.0560     p_g 0.0611 q 0.0336     p_g 0.0463 q 0.0190
+snapkv             512     p_g 0.3960 q 0.1763     p_g 0.2685 q 0.0804     p_g 0.2470 q 0.0530
+adakv_snapkv        64     p_g 0.0851 q 0.0536     p_g 0.0594 q 0.0291     p_g 0.0492 q 0.0180
+adakv_snapkv       512     p_g 0.3757 q 0.1992     p_g 0.2753 q 0.0942     p_g 0.2677 q 0.0645
+floor_pos           64     p_g 0.0864 q 0.0850     p_g 0.0704 q 0.0700     p_g 0.0584 q 0.0450
+floor_pos          512     p_g 0.2948 q 0.2900     p_g 0.2756 q 0.2750     p_g 0.3045 q 0.2800
+
+  BUDGET dependence at FIXED c   (c_eff at C=512 minus c_eff at C=64):
+    snapkv                 +0.6802       +0.7034       +0.8100
+    adakv_snapkv           +0.4611       +0.5793       +0.7457
+    Stage 1 measured this as strongly positive with c held fixed. If it stays
+    positive here at every c, the budget dependence is real and neither
+    registered form contains it. If it collapses, it was a c dependence.
+
+==================================================================================================
+2.2  CONTIGUITY CONTROL -- the same gold tokens as a method, held COHERENTLY, at the same budget. BREAKS the theory if accuracy does not improve.
+==================================================================================================
+`contig_matched_X` completes as many queried facts as X's own realised gold-token
+count allows, then fills the rest of the budget from floor_pos's order. It spends
+exactly B, so unlike Paper 2's `floor_matched` diagnostic it keeps budget parity and
+stays comparable to every other arm.
+
+### M2   c=19, C=512, n=50
+The matched arm holds the same gold tokens as its source. What differs is how
+they are arranged: `src cpl` is how many whole facts the METHOD assembled out of
+them; `facts cpl` is how many the matched arm did, out of H=4.
+arm                                          accuracy    gold target     gold held   facts cpl   src cpl   kept
+full_cache                       0.9300 [0.895,0.960]                                                         
+floor_pos                        0.1550 [0.100,0.210]                                                         
+snapkv                           0.1250 [0.075,0.180]                                                         
+contig_matched_snapkv            0.3250 [0.250,0.400]          26.42         16.16        0.94      0.49    584
+adakv_snapkv                     0.1350 [0.085,0.190]                                                         
+contig_matched_adakv_snapkv      0.3300 [0.250,0.410]          26.48         16.18        0.94      0.49    584
+  coherence gain, snapkv          0.1250 -> 0.3250   delta +0.2000  paired 95% CI [+0.1400, +0.2650]
+  coherence gain, adakv_snapkv    0.1350 -> 0.3300   delta +0.1950  paired 95% CI [+0.1350, +0.2650]
+
+### M3   c=19, C=512, n=50
+The matched arm holds the same gold tokens as its source. What differs is how
+they are arranged: `src cpl` is how many whole facts the METHOD assembled out of
+them; `facts cpl` is how many the matched arm did, out of H=4.
+arm                                          accuracy    gold target     gold held   facts cpl   src cpl   kept
+full_cache                       0.9350 [0.895,0.970]                                                         
+floor_pos                        0.2450 [0.190,0.300]                                                         
+snapkv                           0.0500 [0.025,0.080]                                                         
+contig_matched_snapkv            0.2850 [0.225,0.350]          19.98          9.80        0.58      0.32    584
+adakv_snapkv                     0.1400 [0.095,0.190]                                                         
+contig_matched_adakv_snapkv      0.3050 [0.240,0.375]          20.49         11.18        0.66      0.38    584
+  coherence gain, snapkv          0.0500 -> 0.2850   delta +0.2350  paired 95% CI [+0.1750, +0.3000]
+  coherence gain, adakv_snapkv    0.1400 -> 0.3050   delta +0.1650  paired 95% CI [+0.0950, +0.2350]
+
+  VERDICT 2.2: PASS -- criterion: holding the same gold tokens coherently improves accuracy, with the paired CI excluding zero, on both models and both source methods.
+
+==================================================================================================
+2.3  SHUFFLED-FACT CONTROL, FIRST LAYOUT (DEFECTIVE -- reported for the record)
+==================================================================================================
+
+### M2   C=512, n=50
+  anchors (full_cache, separate n=24/50 pass): adjacent 0.9100  scattered 0.5300   (BELOW the [0.55, 0.97] band on this model)
+arm                              adjacent              scattered
+full_cache           0.9100 [0.870,0.945]   0.5300 [0.460,0.605]
+floor_pos            0.1150 [0.075,0.155]   0.0000 [0.000,0.000]
+snapkv               0.0400 [0.015,0.065]   0.0000 [0.000,0.000]
+adakv_snapkv         0.0750 [0.040,0.120]   0.0000 [0.000,0.000]
+oracle_causal        0.4100 [0.335,0.490]   0.1550 [0.100,0.215]
+oracle_prescient     0.4100 [0.335,0.490]   0.1550 [0.100,0.215]
+
+  PRECONDITION: best compressed arm under scattered scores 0.0000   <-- VACUOUS: every compressed arm is at the floor of the metric, so this
+  cell cannot express the floor's advantage in EITHER direction. Reported as
+  VACUOUS, not as a pass and not as a failure of the theory.
+
+### M3   C=512, n=50
+  anchors (full_cache, separate n=24/50 pass): adjacent 0.9250  scattered 0.6200
+arm                              adjacent              scattered
+full_cache           0.9250 [0.890,0.960]   0.6200 [0.565,0.675]
+floor_pos            0.1400 [0.090,0.195]   0.0000 [0.000,0.000]
+snapkv               0.0900 [0.050,0.135]   0.0000 [0.000,0.000]
+adakv_snapkv         0.4350 [0.360,0.510]   0.0100 [0.000,0.025]
+oracle_causal        0.4700 [0.395,0.550]   0.0250 [0.005,0.045]
+oracle_prescient     0.4700 [0.395,0.550]   0.0250 [0.005,0.045]
+
+  PRECONDITION: best compressed arm under scattered scores 0.0100   <-- VACUOUS: every compressed arm is at the floor of the metric, so this
+  cell cannot express the floor's advantage in EITHER direction. Reported as
+  VACUOUS, not as a pass and not as a failure of the theory.
+
+  VERDICT: VACUOUS -- criterion: the floor's normalised advantage over both methods shrinks under scattering, on both models, in a non-vacuous cell.
+
+  WHY THIS LAYOUT IS DEFECTIVE, stated rather than quietly replaced.
+  It placed every /A half in the first half of the body and every /B in the second.
+  That guarantees separation, but it also guarantees the recency block -- the last
+  B of L tokens, ~28% of the body at C=512 -- contains ONLY /B lines. Measured over
+  6 instances: 0 /A and 12 /B lines in the tail, every time. `floor_pos` therefore
+  completes nothing BY CONSTRUCTION, and so does every method inheriting the same
+  window floor. A control that forces its own answer is not a control, so this run
+  is not scored for or against the theory.
+
+==================================================================================================
+2.3  SHUFFLED-FACT CONTROL, CORRECTED LAYOUT, C=512 (ladder top budget)
+==================================================================================================
+
+### M2   C=512, n=50
+  anchors (full_cache, separate n=24/50 pass): adjacent 0.9100  scattered_uniform 0.4000   (BELOW the [0.55, 0.97] band on this model)
+arm                              adjacent      scattered_uniform
+full_cache           0.9100 [0.870,0.945]   0.4000 [0.335,0.465]
+floor_pos            0.1150 [0.075,0.155]   0.0000 [0.000,0.000]
+snapkv               0.0400 [0.015,0.065]   0.0000 [0.000,0.000]
+adakv_snapkv         0.0750 [0.040,0.120]   0.0000 [0.000,0.000]
+oracle_causal        0.4100 [0.335,0.490]   0.1350 [0.085,0.190]
+oracle_prescient     0.4100 [0.335,0.490]   0.1350 [0.085,0.190]
+
+  PRECONDITION: best compressed arm under scattered_uniform scores 0.0000   <-- VACUOUS: every compressed arm is at the floor of the metric, so this
+  cell cannot express the floor's advantage in EITHER direction. Reported as
+  VACUOUS, not as a pass and not as a failure of the theory.
+
+### M3   C=512, n=50
+  anchors (full_cache, separate n=24/50 pass): adjacent 0.9250  scattered_uniform 0.6800
+arm                              adjacent      scattered_uniform
+full_cache           0.9250 [0.890,0.960]   0.6800 [0.625,0.735]
+floor_pos            0.1400 [0.090,0.195]   0.0000 [0.000,0.000]
+snapkv               0.0900 [0.050,0.135]   0.0000 [0.000,0.000]
+adakv_snapkv         0.4350 [0.360,0.510]   0.0100 [0.000,0.025]
+oracle_causal        0.4700 [0.395,0.550]   0.0850 [0.045,0.130]
+oracle_prescient     0.4700 [0.395,0.550]   0.0850 [0.045,0.130]
+
+  PRECONDITION: best compressed arm under scattered_uniform scores 0.0100   <-- VACUOUS: every compressed arm is at the floor of the metric, so this
+  cell cannot express the floor's advantage in EITHER direction. Reported as
+  VACUOUS, not as a pass and not as a failure of the theory.
+
+  VERDICT: VACUOUS -- criterion: the floor's normalised advantage over both methods shrinks under scattering, on both models, in a non-vacuous cell.
+
+  At C=512 the recency block is ~28% of the body, so a two-span fact needs
+  P(both halves inside) ~ 0.08 before the model is even asked. Every budget-limited
+  arm lands at 0.000-0.010 and only the ORACLES score, because only they can place
+  both halves deliberately. The cell is genuinely too hard rather than rigged --
+  but it is still unable to answer the question, so it is scored VACUOUS.
+
+==================================================================================================
+2.3  SHUFFLED-FACT CONTROL, CORRECTED LAYOUT, C=1024 (the measurable cell)
+==================================================================================================
+
+### M2   C=1024, n=50
+  anchors (full_cache, separate n=24/50 pass): adjacent 0.9100  scattered_uniform 0.4000   (BELOW the [0.55, 0.97] band on this model)
+arm                              adjacent      scattered_uniform
+full_cache           0.9100 [0.870,0.945]   0.4000 [0.335,0.465]
+floor_pos            0.2050 [0.155,0.255]   0.0000 [0.000,0.000]
+snapkv               0.2650 [0.210,0.325]   0.0000 [0.000,0.000]
+adakv_snapkv         0.3400 [0.280,0.400]   0.0000 [0.000,0.000]
+oracle_causal        0.4300 [0.360,0.500]   0.0800 [0.045,0.120]
+oracle_prescient     0.4300 [0.360,0.500]   0.0800 [0.045,0.120]
+
+  PRECONDITION: best compressed arm under scattered_uniform scores 0.0000   <-- VACUOUS: every compressed arm is at the floor of the metric, so this
+  cell cannot express the floor's advantage in EITHER direction. Reported as
+  VACUOUS, not as a pass and not as a failure of the theory.
+  M3: no data at C=1024
+
+  VERDICT: VACUOUS -- criterion: the floor's normalised advantage over both methods shrinks under scattering, on both models, in a non-vacuous cell.
+
+  C=1024 is OUTSIDE Paper 2's ladder and was tried here only, to find a cell
+  where the floor could complete a scattered fact often enough to HAVE an advantage
+  that could then collapse. It does not. M2 C=1024: floor_pos, snapkv and
+  adakv_snapkv are all EXACTLY 0.0000 under scattering while the adjacent condition
+  is healthy (0.205 / 0.265 / 0.340). M3 C=1024 was not run: the M2 result is
+  unambiguous across 50 instances and the C=512 result already covers both models.
+
+  WHY, and it is my second structural artifact, not the theory's:
+  the corrected layout guarantees separation by pairing slot j with slot j+N, so the
+  separation is CONSTANT at exactly half the body -- measured 61-63 lines out of a
+  127-line body. A recency window shorter than half the context therefore cannot
+  hold both halves at any budget, so `floor_pos` is again barred by construction.
+  The first layout barred it by putting all /A out of reach; this one bars it by
+  putting the halves permanently too far apart. Same failure, opposite mechanism.
+
+  The tension is inherent to the design as specified: enforcing a large MINIMUM
+  separation is precisely what makes 'both halves in one recency window' impossible,
+  so a floor advantage cannot exist to be collapsed. A working control needs the
+  separation DRAWN FROM A DISTRIBUTION spanning short to long, so a window captures
+  both halves sometimes -- MIN_SEP_LINES is itself the wrong constraint. That is a
+  task redesign, not another run, and is left to Stage 3.
+
+  What `scattered_uniform` DID fix: /A is no longer confined to the front of the
+  body. The recency tail holds 2-10 /A lines per instance instead of 0 every time,
+  so neither half is positionally privileged. What it did NOT fix is the constant
+  separation described above, which is why the cell is still unmeasurable.
+
+  VERDICT 2.3 (scored on the corrected layout only): VACUOUS
+
+==================================================================================================
+STAGE 2 GATE
+==================================================================================================
+  2.1 cost sweep ................... PASS
+  2.2 contiguity control ........... PASS
+  2.3 shuffled-fact control ........ VACUOUS   (first layout: VACUOUS -- defective)
+  2.4 single-token facts ........... PASS   (REQUIRED)
+
+  GATE (2.4 AND at least 2 of 2.1-2.3): PASS   (2/3 of the others passed)

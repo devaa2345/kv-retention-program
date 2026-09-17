@@ -1,0 +1,44 @@
+{
+  "n_instances": 200,
+  "n_records": 40,
+  "chance": 0.025,
+  "tolerance": 0.02,
+  "threshold": 0.045,
+  "probes": {
+    "bm25_query_hidden": {
+      "score": 0.0,
+      "threshold": 0.045,
+      "pass": true,
+      "gating": true
+    },
+    "regex_value": {
+      "score": 0.0,
+      "threshold": 0.045,
+      "pass": true,
+      "gating": true
+    },
+    "position_prior": {
+      "score": 0.015,
+      "threshold": 0.045,
+      "pass": true,
+      "gating": true
+    },
+    "bm25_with_query": {
+      "score": 1.0,
+      "gating": false
+    },
+    "bm25_hidden_narrows_to_bound": {
+      "score": 0.0,
+      "gating": false,
+      "note": "fraction of hidden-query BM25 top-1 hits landing on any of the H queried records; H/N would be chance for that weaker target"
+    }
+  },
+  "deferred": [
+    "full_cache with bindings deleted (needs forward pass, pinned WSL toolchain)",
+    "full_cache with target record deleted (needs forward pass, pinned WSL toolchain)"
+  ],
+  "gate": {
+    "pass": true,
+    "note": "3 of 5 probes; 2 deferred to the pinned toolchain"
+  }
+}

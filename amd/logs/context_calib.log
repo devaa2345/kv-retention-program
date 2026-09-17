@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 24834.45it/s]
+{"target": 2048, "n_filler": 25, "realised_ctx": 2044.5, "full_cache_len": 2251, "budget": 293, "retention_ratio": 0.1301643713904931, "competitive_room": 228}
+  gates@2048: G1=True, G2=False, G3=True, G5=True
+{"target": 4096, "n_filler": 61, "realised_ctx": 4084.1666666666665, "full_cache_len": 4287, "budget": 557, "retention_ratio": 0.1299276883601586, "competitive_room": 492}
+  gates@4096: G1=True, G2=False, G3=True, G5=True
+
+wrote results/context_calibration.json
+ALL CONTEXT GATES PASS: False

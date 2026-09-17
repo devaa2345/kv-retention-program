@@ -1,0 +1,15 @@
+[12:56:31] half B waiting for a slot (seeds 75-150)
+[12:56:51] slot free (live=1); starting Llama Phase 1 half B
+  File "/home/kxrx26/vllm-rocm/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1369, in convert
+    return t.to(
+           ~~~~^
+        device,
+        ^^^^^^^
+        dtype if t.is_floating_point() or t.is_complex() else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        non_blocking,
+        ^^^^^^^^^^^^^
+    )
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 23.98 GiB of which 0 bytes is free. Of the allocated memory 1.02 GiB is allocated by PyTorch, and 17.99 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[12:56:54] === LLAMA PHASE1 HALF B COMPLETE ===

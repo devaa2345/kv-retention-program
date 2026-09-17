@@ -1,0 +1,95 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "config": "matched-task: N=6, 20 distractors, filler 7, pad 26",
+  "G1": {
+    "gate": "G1",
+    "pass": true,
+    "median_len": 1030.5,
+    "range": [
+      1017,
+      1041
+    ],
+    "problems": []
+  },
+  "G2": {
+    "gate": "G2",
+    "pass": true,
+    "full_cache_mean_acc": 0.9833333333333334,
+    "n": 20,
+    "min_required": 0.7
+  },
+  "G3": {
+    "gate": "G3",
+    "pass": true,
+    "void_refused": [
+      51
+    ],
+    "full_cache_by_budget": {
+      "154": 0.9791666666666666,
+      "257": 0.9791666666666666,
+      "514": 0.9791666666666666
+    },
+    "problems": []
+  },
+  "G4": {
+    "gate": "G4",
+    "pass": true,
+    "error_table": {
+      "8": {
+        "keys": 1.1570802708673809,
+        "values": 0.8899185483136939
+      },
+      "4": {
+        "keys": 19.553856054941814,
+        "values": 14.86769544167651
+      },
+      "2": {
+        "keys": 96.67725447151396,
+        "values": 74.31478334797754
+      }
+    },
+    "generation_audit": {
+      "8": {
+        "calls": 7200,
+        "max_levels": 160,
+        "limit": 256,
+        "violations": []
+      },
+      "4": {
+        "calls": 5976,
+        "max_levels": 16,
+        "limit": 16,
+        "violations": []
+      },
+      "2": {
+        "calls": 2952,
+        "max_levels": 4,
+        "limit": 4,
+        "violations": []
+      }
+    },
+    "problems": [],
+    "error_table_3b": {
+      "8": {
+        "keys": 1.1570802708673809,
+        "values": 0.8899185483136939
+      },
+      "4": {
+        "keys": 19.553856054941814,
+        "values": 14.86769544167651
+      },
+      "2": {
+        "keys": 96.67725447151396,
+        "values": 74.31478334797754
+      }
+    }
+  },
+  "G5": {
+    "gate": "G5",
+    "pass": true,
+    "frac_weak": 1.0,
+    "frac_strict_8step": 0.0,
+    "n": 20,
+    "min_required": 0.8
+  }
+}

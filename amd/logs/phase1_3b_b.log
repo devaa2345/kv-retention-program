@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 25693.79it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+  [phase1_8bit] 150/1350 new=150 skip=0 fail=0 0.53/s eta=37.9min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 4379.45it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+  [phase1_8bit] 300/1350 new=97 skip=203 fail=0 0.28/s eta=62.4min
+  [phase1_8bit] 450/1350 new=247 skip=203 fail=0 0.36/s eta=41.8min
+  [phase1_8bit] 600/1350 new=397 skip=203 fail=0 0.40/s eta=31.0min
+  [phase1_8bit] 750/1350 new=547 skip=203 fail=0 0.39/s eta=25.7min
+  [phase1_8bit] 900/1350 new=697 skip=203 fail=0 0.40/s eta=18.9min
+  [phase1_8bit] 1050/1350 new=847 skip=203 fail=0 0.39/s eta=12.9min
+  [phase1_8bit] 1200/1350 new=997 skip=203 fail=0 0.27/s eta=9.4min
+  [phase1_8bit] 1350/1350 new=1147 skip=203 fail=0 0.26/s eta=0.0min
+{
+  "tag": "phase1_8bit",
+  "new": 1147,
+  "skipped": 203,
+  "failed": 0,
+  "elapsed_s": 4373.053437948227,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 72.9 min

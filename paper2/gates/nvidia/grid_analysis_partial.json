@@ -1,0 +1,342 @@
+{
+  "files": {
+    "grid_M2_ledger_agnostic": {
+      "budgets": [
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "arms": [
+        "adakv_snapkv",
+        "expected_attn",
+        "floor_pos",
+        "full_cache",
+        "keydiff",
+        "null",
+        "oracle_causal",
+        "oracle_prescient",
+        "random",
+        "snapkv"
+      ],
+      "methods": [
+        "adakv_snapkv",
+        "expected_attn",
+        "keydiff",
+        "snapkv"
+      ],
+      "cells": {
+        "C32": {
+          "C": 32,
+          "n_aligned": 34,
+          "means": {
+            "floor_pos": 0.0956,
+            "full_cache": 0.9559,
+            "null": 0.0,
+            "oracle_causal": 0.3456,
+            "oracle_prescient": 1.0,
+            "random": 0.0,
+            "snapkv": 0.0956
+          },
+          "headroom_causal_minus_floor": 0.25,
+          "I": {
+            "value": 0.7235772357723578,
+            "ci": [
+              0.7094017094017094,
+              0.734375
+            ],
+            "refused": false,
+            "reason": null
+          },
+          "G_m": {
+            "snapkv": {
+              "value": 0.0,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            }
+          }
+        },
+        "C64": {
+          "C": 64,
+          "n_aligned": 33,
+          "means": {
+            "adakv_snapkv": 0.0909,
+            "expected_attn": 0.0758,
+            "floor_pos": 0.1061,
+            "full_cache": 0.9621,
+            "keydiff": 0.053,
+            "null": 0.0,
+            "oracle_causal": 0.8182,
+            "oracle_prescient": 0.9848,
+            "random": 0.0,
+            "snapkv": 0.0909
+          },
+          "headroom_causal_minus_floor": 0.7121,
+          "I": {
+            "value": 0.1896551724137931,
+            "ci": [
+              0.14953271028037385,
+              0.22500000000000003
+            ],
+            "refused": false,
+            "reason": null
+          },
+          "G_m": {
+            "adakv_snapkv": {
+              "value": -0.02127659574468085,
+              "ci": [
+                -0.05617977528089888,
+                0.0
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "expected_attn": {
+              "value": -0.0425531914893617,
+              "ci": [
+                -0.10112359550561797,
+                0.0
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "keydiff": {
+              "value": -0.07446808510638298,
+              "ci": [
+                -0.13186813186813187,
+                -0.030612244897959183
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "snapkv": {
+              "value": -0.02127659574468085,
+              "ci": [
+                -0.05617977528089888,
+                0.0
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            }
+          }
+        },
+        "C128": {
+          "C": 128,
+          "n_aligned": 33,
+          "means": {
+            "adakv_snapkv": 0.0909,
+            "expected_attn": 0.0833,
+            "floor_pos": 0.1136,
+            "full_cache": 0.9621,
+            "keydiff": 0.0606,
+            "null": 0.0,
+            "oracle_causal": 0.9924,
+            "oracle_prescient": 0.9924,
+            "random": 0.0,
+            "snapkv": 0.0909
+          },
+          "headroom_causal_minus_floor": 0.8788,
+          "I": {
+            "value": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "refused": false,
+            "reason": null
+          },
+          "G_m": {
+            "adakv_snapkv": {
+              "value": -0.02586206896551724,
+              "ci": [
+                -0.059322033898305086,
+                0.0
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "expected_attn": {
+              "value": -0.034482758620689655,
+              "ci": [
+                -0.07142857142857142,
+                -0.00819672131147541
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "keydiff": {
+              "value": -0.0603448275862069,
+              "ci": [
+                -0.10619469026548672,
+                -0.024390243902439025
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "snapkv": {
+              "value": -0.02586206896551724,
+              "ci": [
+                -0.059322033898305086,
+                0.0
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            }
+          }
+        },
+        "C256": {
+          "C": 256,
+          "n_aligned": 33,
+          "means": {
+            "adakv_snapkv": 0.1136,
+            "expected_attn": 0.0909,
+            "floor_pos": 0.1515,
+            "full_cache": 0.9621,
+            "keydiff": 0.0682,
+            "null": 0.0,
+            "oracle_causal": 0.9924,
+            "oracle_prescient": 0.9924,
+            "random": 0.0,
+            "snapkv": 0.1061
+          },
+          "headroom_causal_minus_floor": 0.8409,
+          "I": {
+            "value": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "refused": false,
+            "reason": null
+          },
+          "G_m": {
+            "adakv_snapkv": {
+              "value": -0.04504504504504504,
+              "ci": [
+                -0.08653846153846154,
+                -0.009009009009009009
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "expected_attn": {
+              "value": -0.07207207207207207,
+              "ci": [
+                -0.12264150943396226,
+                -0.03333333333333333
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "keydiff": {
+              "value": -0.09909909909909909,
+              "ci": [
+                -0.17924528301886794,
+                -0.03361344537815126
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "snapkv": {
+              "value": -0.05405405405405406,
+              "ci": [
+                -0.09999999999999999,
+                -0.017241379310344827
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            }
+          }
+        },
+        "C512": {
+          "C": 512,
+          "n_aligned": 33,
+          "means": {
+            "adakv_snapkv": 0.197,
+            "expected_attn": 0.1742,
+            "floor_pos": 0.2652,
+            "full_cache": 0.9621,
+            "keydiff": 0.1061,
+            "null": 0.0,
+            "oracle_causal": 0.9924,
+            "oracle_prescient": 0.9924,
+            "random": 0.0,
+            "snapkv": 0.1591
+          },
+          "headroom_causal_minus_floor": 0.7273,
+          "I": {
+            "value": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "refused": false,
+            "reason": null
+          },
+          "G_m": {
+            "adakv_snapkv": {
+              "value": -0.09374999999999999,
+              "ci": [
+                -0.18390804597701152,
+                -0.01
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "expected_attn": {
+              "value": -0.125,
+              "ci": [
+                -0.2272727272727273,
+                -0.030303030303030304
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "keydiff": {
+              "value": -0.21875,
+              "ci": [
+                -0.34831460674157305,
+                -0.10476190476190476
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            },
+            "snapkv": {
+              "value": -0.14583333333333334,
+              "ci": [
+                -0.23655913978494622,
+                -0.06796116504854369
+              ],
+              "refused": false,
+              "reason": null,
+              "exceeds_one": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "gm_gt_1": [],
+  "refused_cells": []
+}

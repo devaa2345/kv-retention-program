@@ -1,0 +1,79 @@
+{
+  "G1": {
+    "gate": "G1",
+    "pass": true,
+    "median_len": 1030.5,
+    "range": [
+      1017,
+      1041
+    ],
+    "problems": []
+  },
+  "G2": {
+    "gate": "G2",
+    "pass": true,
+    "full_cache_mean_acc": 0.7166666666666667,
+    "n": 20,
+    "min_required": 0.7
+  },
+  "G3": {
+    "gate": "G3",
+    "pass": true,
+    "void_refused": [
+      51
+    ],
+    "full_cache_by_budget": {
+      "154": 0.8125,
+      "257": 0.8125,
+      "514": 0.8125
+    },
+    "problems": []
+  },
+  "G4": {
+    "gate": "G4",
+    "pass": true,
+    "error_table": {
+      "8": {
+        "keys": 1.1706720039780651,
+        "values": 0.9082297528428691
+      },
+      "4": {
+        "keys": 19.854629917868547,
+        "values": 15.18820303359202
+      },
+      "2": {
+        "keys": 102.87228396960667,
+        "values": 75.21277219057083
+      }
+    },
+    "generation_audit": {
+      "8": {
+        "calls": 5544,
+        "max_levels": 149,
+        "limit": 256,
+        "violations": []
+      },
+      "4": {
+        "calls": 5040,
+        "max_levels": 16,
+        "limit": 16,
+        "violations": []
+      },
+      "2": {
+        "calls": 7392,
+        "max_levels": 4,
+        "limit": 4,
+        "violations": []
+      }
+    },
+    "problems": []
+  },
+  "G5": {
+    "gate": "G5",
+    "pass": true,
+    "frac_weak": 1.0,
+    "frac_strict_8step": 0.0,
+    "n": 20,
+    "min_required": 0.8
+  }
+}

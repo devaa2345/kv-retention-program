@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 29887.31it/s]
+sensitivity cost=0.28 -> T=402, 300 cells
+  [sens_c0.28] 100/300 new=100 skip=0 fail=0 0.56/s eta=5.9min
+  [sens_c0.28] 200/300 new=200 skip=0 fail=0 0.49/s eta=3.4min
+  [sens_c0.28] 300/300 new=300 skip=0 fail=0 0.45/s eta=0.0min
+{
+  "tag": "sens_c0.28",
+  "new": 300,
+  "skipped": 0,
+  "failed": 0,
+  "elapsed_s": 670.2862861156464,
+  "results": "results/bits4/sens_c0.28.jsonl",
+  "failures": "results/bits4/sens_c0.28.failures.jsonl"
+}
+total 11.2 min

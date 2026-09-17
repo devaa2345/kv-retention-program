@@ -1,0 +1,61 @@
+{
+  "model": "/home/kxrx26/llama32_3b_instruct",
+  "level_occupancy": {
+    "8": {
+      "limit": 256,
+      "max_levels": 199,
+      "mean_levels_used": 151.2842401500938,
+      "occupancy_frac": 0.5909540630863039,
+      "violations": 0
+    },
+    "7": {
+      "limit": 128,
+      "max_levels": 115,
+      "mean_levels_used": 90.0234521575985,
+      "occupancy_frac": 0.7033082199812383,
+      "violations": 0
+    },
+    "6": {
+      "limit": 64,
+      "max_levels": 62,
+      "mean_levels_used": 52.407129455909946,
+      "occupancy_frac": 0.8188613977485929,
+      "violations": 0
+    },
+    "5": {
+      "limit": 32,
+      "max_levels": 32,
+      "mean_levels_used": 29.651969981238274,
+      "occupancy_frac": 0.9266240619136961,
+      "violations": 0
+    },
+    "4": {
+      "limit": 16,
+      "max_levels": 16,
+      "mean_levels_used": 15.829268292682928,
+      "occupancy_frac": 0.989329268292683,
+      "violations": 0
+    },
+    "3": {
+      "limit": 8,
+      "max_levels": 8,
+      "mean_levels_used": 7.996376811594203,
+      "occupancy_frac": 0.9995471014492754,
+      "violations": 0
+    }
+  },
+  "intercepted_monotonicity": {
+    "captured": 24,
+    "error_pct_by_bits": {
+      "8": 1.3427168518925707,
+      "7": 2.680453712431093,
+      "6": 5.398075686146815,
+      "5": 10.966375066588322,
+      "4": 22.645840980112553,
+      "3": 48.73355825742086,
+      "2": 119.50780873497327
+    },
+    "monotone": true,
+    "problems": []
+  }
+}

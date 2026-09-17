@@ -1,0 +1,22 @@
+[22:22:16] === PHASE1 START ===
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 30411.11it/s]
+phase1: 2700 cells -> results/bits4
+  [phase1_iso_token] 100/2700 new=98 skip=2 fail=0 1.20/s eta=36.0min
+  [phase1_iso_token] 200/2700 new=196 skip=4 fail=0 1.01/s eta=41.2min
+  [phase1_iso_token] 300/2700 new=296 skip=4 fail=0 0.92/s eta=43.4min
+  [phase1_iso_token] 400/2700 new=394 skip=6 fail=0 0.58/s eta=65.6min
+  [phase1_iso_token] 500/2700 new=492 skip=8 fail=0 0.46/s eta=79.7min
+  [phase1_iso_token] 600/2700 new=592 skip=8 fail=0 0.38/s eta=92.5min
+  [phase1_iso_token] 700/2700 new=690 skip=10 fail=0 0.40/s eta=82.6min
+  [phase1_iso_token] 800/2700 new=788 skip=12 fail=0 0.43/s eta=74.5min
+  [phase1_iso_token] 900/2700 new=888 skip=12 fail=0 0.44/s eta=67.5min
+  [phase1_iso_token] 1000/2700 new=986 skip=14 fail=0 0.47/s eta=60.2min
+  [phase1_iso_token] 1100/2700 new=1084 skip=16 fail=0 0.49/s eta=54.4min
+  [phase1_iso_token] 1200/2700 new=1184 skip=16 fail=0 0.50/s eta=49.8min
+  [phase1_iso_token] 1300/2700 new=1282 skip=18 fail=0 0.47/s eta=49.3min
+  [phase1_iso_token] 1400/2700 new=1380 skip=20 fail=0 0.44/s eta=49.7min
+[23:23:03] === PHASE2 START ===
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 27555.49it/s]
+phase2: 750 cells -> results/bits4
+  [phase2_promotion] 100/750 new=100 skip=0 fail=0 0.16/s eta=67.3min
+  [phase2_promotion] 200/750 new=200 skip=0 fail=0 0.15/s eta=61.1min

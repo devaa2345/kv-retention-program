@@ -1,0 +1,43 @@
+  PREREG_P3.md verified at c920c404fd43777e522916ef0188362805a958aa7253512ec2be40641a846eee
+  capture M3: 24 cells, 120 arm-cells, n=200 -> 24000 rows (0 already present)
+  [capture/M3] inst 5/200  written 600 skipped 0 failed 0  2.7 min  0.27 s/row  eta 106.7 min
+  [capture/M3] inst 10/200  written 1200 skipped 0 failed 0  5.5 min  0.27 s/row  eta 103.8 min
+  [capture/M3] inst 15/200  written 1800 skipped 0 failed 0  8.2 min  0.27 s/row  eta 100.8 min
+  [capture/M3] inst 20/200  written 2400 skipped 0 failed 0  10.9 min  0.27 s/row  eta 98.1 min
+  [capture/M3] inst 25/200  written 3000 skipped 0 failed 0  13.6 min  0.27 s/row  eta 95.2 min
+  [capture/M3] inst 30/200  written 3600 skipped 0 failed 0  16.3 min  0.27 s/row  eta 92.6 min
+  [capture/M3] inst 35/200  written 4200 skipped 0 failed 0  19.0 min  0.27 s/row  eta 89.7 min
+  [capture/M3] inst 40/200  written 4800 skipped 0 failed 0  21.8 min  0.27 s/row  eta 87.0 min
+  [capture/M3] inst 45/200  written 5400 skipped 0 failed 0  24.4 min  0.27 s/row  eta 84.2 min
+  [capture/M3] inst 50/200  written 6000 skipped 0 failed 0  27.2 min  0.27 s/row  eta 81.5 min
+  [capture/M3] inst 55/200  written 6600 skipped 0 failed 0  29.9 min  0.27 s/row  eta 78.8 min
+  [capture/M3] inst 60/200  written 7200 skipped 0 failed 0  32.6 min  0.27 s/row  eta 76.1 min
+  [capture/M3] inst 65/200  written 7800 skipped 0 failed 0  35.3 min  0.27 s/row  eta 73.3 min
+  [capture/M3] inst 70/200  written 8400 skipped 0 failed 0  38.0 min  0.27 s/row  eta 70.6 min
+  [capture/M3] inst 75/200  written 9000 skipped 0 failed 0  40.7 min  0.27 s/row  eta 67.9 min
+  [capture/M3] inst 80/200  written 9600 skipped 0 failed 0  43.4 min  0.27 s/row  eta 65.2 min
+  [capture/M3] inst 85/200  written 10200 skipped 0 failed 0  46.2 min  0.27 s/row  eta 62.5 min
+  [capture/M3] inst 90/200  written 10800 skipped 0 failed 0  48.9 min  0.27 s/row  eta 59.7 min
+  [capture/M3] inst 95/200  written 11400 skipped 0 failed 0  51.6 min  0.27 s/row  eta 57.1 min
+  [capture/M3] inst 100/200  written 12000 skipped 0 failed 0  54.3 min  0.27 s/row  eta 54.3 min
+  [capture/M3] inst 105/200  written 12600 skipped 0 failed 0  57.0 min  0.27 s/row  eta 51.6 min
+  [capture/M3] inst 110/200  written 13200 skipped 0 failed 0  59.7 min  0.27 s/row  eta 48.9 min
+  [capture/M3] inst 115/200  written 13800 skipped 0 failed 0  62.4 min  0.27 s/row  eta 46.2 min
+  [capture/M3] inst 120/200  written 14400 skipped 0 failed 0  65.2 min  0.27 s/row  eta 43.4 min
+  [capture/M3] inst 125/200  written 15000 skipped 0 failed 0  67.9 min  0.27 s/row  eta 40.7 min
+  [capture/M3] inst 130/200  written 15600 skipped 0 failed 0  70.6 min  0.27 s/row  eta 38.0 min
+  [capture/M3] inst 135/200  written 16200 skipped 0 failed 0  73.3 min  0.27 s/row  eta 35.3 min
+  [capture/M3] inst 140/200  written 16800 skipped 0 failed 0  76.0 min  0.27 s/row  eta 32.6 min
+  [capture/M3] inst 145/200  written 17400 skipped 0 failed 0  78.7 min  0.27 s/row  eta 29.9 min
+  [capture/M3] inst 150/200  written 18000 skipped 0 failed 0  81.5 min  0.27 s/row  eta 27.2 min
+  [capture/M3] inst 155/200  written 18600 skipped 0 failed 0  84.2 min  0.27 s/row  eta 24.4 min
+  [capture/M3] inst 160/200  written 19200 skipped 0 failed 0  86.9 min  0.27 s/row  eta 21.7 min
+  [capture/M3] inst 165/200  written 19800 skipped 0 failed 0  89.6 min  0.27 s/row  eta 19.0 min
+  [capture/M3] inst 170/200  written 20400 skipped 0 failed 0  92.3 min  0.27 s/row  eta 16.3 min
+  [capture/M3] inst 175/200  written 21000 skipped 0 failed 0  95.0 min  0.27 s/row  eta 13.6 min
+  [capture/M3] inst 180/200  written 21600 skipped 0 failed 0  97.7 min  0.27 s/row  eta 10.9 min
+  [capture/M3] inst 185/200  written 22200 skipped 0 failed 0  100.5 min  0.27 s/row  eta 8.1 min
+  [capture/M3] inst 190/200  written 22800 skipped 0 failed 0  103.1 min  0.27 s/row  eta 5.4 min
+  [capture/M3] inst 195/200  written 23400 skipped 0 failed 0  105.9 min  0.27 s/row  eta 2.7 min
+  [capture/M3] inst 200/200  written 24000 skipped 0 failed 0  108.6 min  0.27 s/row  eta 0.0 min
+  DONE capture/M3: written 24000 skipped 0 failed 0 in 108.6 min

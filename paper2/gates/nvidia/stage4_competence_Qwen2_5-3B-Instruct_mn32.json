@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n_bindings": 4,
+  "band": [
+    0.55,
+    0.97
+  ],
+  "sweep": [
+    {
+      "n_records": 40,
+      "n_bindings": 4,
+      "n": 200,
+      "max_new": 32,
+      "anchor": 0.9387,
+      "well_formed": 1.0,
+      "chance": 0.025,
+      "in_band": true,
+      "sample": [
+        "241223",
+        "469366",
+        "618924"
+      ]
+    }
+  ]
+}

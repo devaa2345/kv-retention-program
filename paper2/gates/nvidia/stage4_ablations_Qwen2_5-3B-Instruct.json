@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n": 100,
+  "chance": 0.0104,
+  "variants": {
+    "full_cache_anchor": {
+      "accuracy": 0.0,
+      "well_formed_rate": 0.0,
+      "sample": [
+        "According to the governance notes, the custodian for cycle Q",
+        "According to the governance notes, the referee for cycle Q4",
+        "According to the governance notes provided, the notary for cycle"
+      ]
+    },
+    "bindings_deleted": {
+      "accuracy": 0.0,
+      "well_formed_rate": 0.0,
+      "sample": [
+        "Based on the provided ledger extract, there isn't a specific",
+        "Based on the information provided in the table, there is no",
+        "I need more information to accurately answer your question. The text"
+      ]
+    },
+    "target_record_deleted": {
+      "accuracy": 0.0,
+      "well_formed_rate": 0.0,
+      "sample": [
+        "According to the governance notes, the custodian for cycle Q",
+        "According to the governance notes, the referee for cycle Q4",
+        "According to the governance notes provided, the notary for cycle"
+      ]
+    }
+  },
+  "gates": {
+    "competence_anchor_in_band": false,
+    "competence_anchor": 0.0,
+    "band": [
+      0.55,
+      0.97
+    ],
+    "bindings_deleted_near_chance": true,
+    "target_deleted_near_zero": true,
+    "pass": true
+  }
+}

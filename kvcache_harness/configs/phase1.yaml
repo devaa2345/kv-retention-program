@@ -1,0 +1,21 @@
+model_name: "Qwen/Qwen2.5-1.5B-Instruct"
+device: "cuda"
+
+n_prompts: 150
+seed_start: 3000
+
+n_credentials: 6
+value_len: 14
+n_distractors: 20
+words_per_paragraph: 50
+
+budgets: [51, 103, 154, 257, 514]
+full_fraction: 0.5
+protect_after_chars: 2
+
+max_answer_tokens: 22
+rebalance_every: 1
+recency_window: 64
+keep_sink: true
+
+output_dir: "results/phase1"

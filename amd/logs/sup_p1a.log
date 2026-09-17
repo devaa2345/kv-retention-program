@@ -1,0 +1,19 @@
+./supervise.sh: line 10: results3b/bits8/phase1_8bit.jsonl: No such file or directory
+[10:10:17] attempt 1: run_phase1_3b.py at 0/1350
+[11:05:35] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:06:20] attempt 2: run_phase1_3b.py at 1343/1350
+[11:06:26] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:07:11] attempt 3: run_phase1_3b.py at 1343/1350
+[11:07:16] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:08:01] attempt 4: run_phase1_3b.py at 1343/1350
+[11:08:06] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:08:51] attempt 5: run_phase1_3b.py at 1343/1350
+[11:08:57] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:09:42] attempt 6: run_phase1_3b.py at 1343/1350
+[11:09:48] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:10:33] attempt 7: run_phase1_3b.py at 1343/1350
+[11:10:38] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:11:23] attempt 8: run_phase1_3b.py at 1343/1350
+[11:11:29] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming
+[11:12:14] attempt 9: run_phase1_3b.py at 1343/1350
+[11:12:20] run_phase1_3b.py exited rc=0 at 1343 rows; cooling 45s then resuming

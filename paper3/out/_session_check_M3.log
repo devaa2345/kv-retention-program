@@ -1,0 +1,34 @@
+targets (C, instance): 24
+  C=512 s4_00001  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00006  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00007  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00010  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00016  fresh causal == stored causal 2/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00023  fresh causal == stored causal 2/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00026  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00028  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00041  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00043  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00048  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=512 s4_00050  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00002  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00005  fresh causal == stored causal 2/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00007  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00008  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00009  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00010  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00013  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00016  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00017  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00023  fresh causal == stored causal 2/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00024  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+  C=256 s4_00030  fresh causal == stored causal 3/4   fresh prescient == stored prescient 4/4   fresh causal == fresh prescient 4/4
+
+Fresh session vs the two stored sessions, on generations where they disagree:
+  fresh==causal only       0
+  fresh==prescient only    28
+  neither                  0
+  both                     0
+Fresh arm reproduces its own stored arm, over all generations checked:
+  causal     68 / 96
+  prescient  96 / 96

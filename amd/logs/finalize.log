@@ -1,0 +1,101 @@
+[04:08:39] waiting for supervised jobs
+[04:36:39] measurement done: iso=1500/1500 p2fix=750/750 failures=0
+[04:36:39] === analyze_isomemory ===
+=== iso-token vs iso-memory (tiered arms funded to equal bytes) ===
+T = budget / (f + (1-f)*cost); f=0.5, cost=0.25 -> T = 1.6*budget
+ budget     T  arm3 tok  arm3 mem  arm4 tok  arm4 mem  a4 mem-tok                 95% CI       p
+    154   246    0.0000    0.0000    0.0200    0.1000     +0.0800 [+0.0633,+0.0967]  0.0001
+    257   411    0.0000    0.0044    0.1189    0.1822     +0.0633 [+0.0411,+0.0867]  0.0001
+    514   822    0.0400    0.0367    0.2400    0.2989     +0.0589 [+0.0233,+0.0944]  0.0017
+
+=== interaction under each iso-condition (BH within condition, per §8) ===
+  iso_token   b154  interaction  -0.0067 [-0.0122,-0.0022]  n_differ=6
+  iso_token   b257  interaction  -0.0456 [-0.0611,-0.0311]  n_differ=47
+  iso_token   b514  interaction  -0.1156 [-0.1444,-0.0856]  n_differ=112
+  iso_memory  b154  interaction  +0.0733 [+0.0556,+0.0900]  n_differ=77
+  iso_memory  b257  interaction  +0.0133 [-0.0111,+0.0378]  n_differ=75
+  iso_memory  b514  interaction  -0.0533 [-0.0978,-0.0078]  n_differ=122
+
+=== [SPEC-GAP 3] quant_byte_cost sensitivity, budget 257 ===
+  cost     T     arm3     arm4   (0.25 is the registered value; §3 notes a real
+                                  int8 scheme with bf16 scales is nearer 0.28-0.31)
+  0.25   411   0.0044   0.1822
+  0.28   402   0.0000   0.1189
+  0.31   392   0.0000   0.1189
+
+wrote results/isomemory_analysis.json
+[04:36:42] === analyze_phase2fix ===
+ id signal        original     fixed    delta     ref  n_orig  n_fix
+ P1 attention       0.1189    0.1189  +0.0000   0.203     150    150
+ P2 epiphany        0.1411    0.1411  +0.0000   0.216     150    150
+ P3 random          0.1133    0.1133  +0.0000   0.154     150    150
+ P4 roundrobin      0.1167    0.1122  -0.0044   0.184     150    150
+ P5 oracle          0.1378    0.1344  -0.0033   0.188     150    150
+
+=== fixed-signal contrasts vs P3 (random control), BH-corrected ===
+  P1 vs P3: +0.0056 [-0.0067,+0.0178] n_differ=29 p_BH=0.6169 equiv=yes
+  P2 vs P3: +0.0278 [+0.0156,+0.0411] n_differ=34 p_BH=0.0008 equiv=yes
+  P4 vs P3: -0.0011 [-0.0089,+0.0067] n_differ=10 p_BH=1.0000 equiv=yes
+  P5 vs P3: +0.0211 [+0.0089,+0.0333] n_differ=33 p_BH=0.0030 equiv=yes
+
+wrote results/phase2_fixed_analysis.json
+[04:36:43] === analyze_3factor ===
+=== cell means: protection x tiering x bit-width ===
+ budget  bits  a1 none/perm  a2 str/perm  a3 none/tier  a4 str/tier
+    154     8        0.0000       0.0267        0.0000       0.0278
+    154     4        0.0000       0.0267        0.0000       0.0200
+    257     8        0.0011       0.1656        0.0011       0.1644
+    257     4        0.0011       0.1656        0.0000       0.1189
+    514     8        0.0967       0.4122        0.0978       0.4078
+    514     4        0.0967       0.4122        0.0400       0.2400
+
+=== main effects and interaction, by bit-width ===
+ budget  bits  protection    tiering  interaction                 95% CI  n differ
+    154     8     +0.0272    +0.0006      +0.0011 [+0.0000,+0.0033]         1
+    154     4     +0.0233    -0.0033      -0.0067 [-0.0122,-0.0022]         6
+    257     8     +0.1639    -0.0006      -0.0011 [-0.0056,+0.0033]         5
+    257     4     +0.1417    -0.0239      -0.0456 [-0.0611,-0.0311]        47
+    514     8     +0.3128    -0.0017      -0.0056 [-0.0189,+0.0067]        32
+    514     4     +0.2578    -0.1144      -0.1156 [-0.1444,-0.0856]       112
+
+=== the bit-width factor itself: does tiering damage depend on width? ===
+ budget  tiering@8bit  tiering@4bit  difference                 95% CI
+    154       +0.0006       -0.0033     -0.0039 [-0.0067,-0.0017]
+    257       -0.0006       -0.0239     -0.0233 [-0.0311,-0.0161]
+    514       -0.0017       -0.1144     -0.1128 [-0.1278,-0.0983]
+
+wrote results/three_factor.json
+[04:36:45] === analyze_sweep ===
+bits    n  mean acc  empty/EOS  repetitive  degen  clean  mixed  recon err       levels  viol
+   8   50    0.1433      0.000       0.017      7     28     15      1.15%      152/256     0
+   7   50    0.1600      0.000       0.043      7     23     20      2.28%      102/128     0
+   6   50    0.1300      0.007       0.030      9     13     28      4.56%        61/64     0
+   5   50    0.0000      0.223       0.127     48      0      2      9.36%        32/32     0
+   4   50    0.1167      0.010       0.057      9      9     32     19.31%        16/16     0
+   3   50    0.0000      0.513       0.050     46      0      4     39.92%          8/8     0
+
+full-n values where available (8-bit and 4-bit have n=150):
+  8-bit n=150: mean acc 0.1644
+  4-bit n=150: mean acc 0.1189
+
+wrote results/sweep_table.json
+[04:36:45] === analyze_scoring ===
+arm 6 (full_cache_ref), n=150 prompts, 900 turn-level judgements
+  measured accuracy under the actual scorer: 0.7989
+  failures: 181  (near-miss 104, wrong-value 11, no-value 66)
+
+rule                      rescued   accuracy  vs 0.947
+exact (current)                 0     0.7989   -0.1481
+case-insensitive                0     0.7989   -0.1481
+whitespace-stripped             0     0.7989   -0.1481
+edit distance <= 1             77     0.8844   -0.0626
+edit distance <= 2             91     0.9000   -0.0470
+
+wrote results/scoring_analysis.json
+[04:36:45] === REGEN SECTIONS ===
+regenerated: ['10_three_factor.md', '20_sweep.md', '30_gapu_scoring.md', '40_ablation.md', '50_rho_manipulation.md', '60_threats.md', '70_isomemory.md', '80_phase2_corrected.md']
+[04:36:45] === REPORTS ===
+wrote results/csv/all_runs.csv  (7300 rows)
+wrote FINDINGS.md (+8 narrative sections)
+wrote AGREEMENT.md
+[04:36:52] === ALL COMPLETE ===

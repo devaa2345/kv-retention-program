@@ -1,0 +1,25 @@
+[01:51:13] phase2 done - running rho manipulation check
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 26837.70it/s]
+=== Spearman rho(eviction, promotion) — section 7 manipulation check ===
+   P1 attention    rho = +1.0000   (target +1.000)
+   P2 epiphany     rho = +0.0880   (target ~0)
+   P3 random       rho = +0.0912   (target ~0)
+   P4 roundrobin   rho = +0.4074   (target ~0)  <-- EXPECTED near zero
+   P5 oracle       rho = +0.8588   (target ~0)  <-- EXPECTED near zero
+
+P5 oversubscribed on 0/12 prompts — PASS (genuine ceiling)
+wrote results/rho_check.json
+[01:54:23] rho done
+t(s), cfg, seed=s, audit=QuantAudit())
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kxrx26/research test/kvre/engine.py", line 279, in run_prompt
+    cache, meta, scores, epi, d = self._apply_policy(
+                                  ~~~~~~~~~~~~~~~~~~^
+        cache, meta, scores, epi, cfg, audit, rng, len(diags), oracle_future,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        diags, counts)
+        ^^^^^^^^^^^^^^
+  File "/home/kxrx26/research test/run_posthoc.py", line 37, in _apply_policy
+    ev = [scores[i] / max(counts[i], 1.0) for i in range(n)]
+          ~~~~~~^^^
+KeyError: 0

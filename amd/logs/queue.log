@@ -1,0 +1,80 @@
+[01:00:58] RHO
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 33957.09it/s]
+=== Spearman rho(eviction, promotion) — section 7 manipulation check ===
+   P1 attention    rho = +1.0000   (target +1.000)
+   P2 epiphany     rho = +0.0880   (target ~0)
+   P3 random       rho = +0.0905   (target ~0)
+   P4 roundrobin   rho = +0.4000   (target ~0)  <-- EXPECTED near zero
+   P5 oracle       rho = +0.8496   (target ~0)  <-- EXPECTED near zero
+
+P5 oversubscribed on 0/12 prompts — PASS (genuine ceiling)
+wrote results/rho_check.json
+[01:04:33] ABLATION
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 28993.08it/s]
+  arm2 shared_shape    mean=0.1500 n=50
+  arm2 distinct_shape  mean=0.9067 n=50
+  arm4 shared_shape    mean=0.1167 n=50
+  arm4 distinct_shape  mean=0.3400 n=50
+  arm6 shared_shape    mean=0.7433 n=50
+  arm6 distinct_shape  mean=0.8800 n=50
+
+=== paired effect of making distractors visually distinct ===
+  arm2: shared=0.1500 distinct=0.9067 diff=+0.7567 CI[+0.7133,+0.8000] ndiffer=50 p=0.0001
+  arm4: shared=0.1167 distinct=0.3400 diff=+0.2233 CI[+0.1567,+0.2900] ndiffer=40 p=0.0001
+  arm6: shared=0.7433 distinct=0.8800 diff=+0.1367 CI[+0.0533,+0.2300] ndiffer=31 p=0.0053
+
+wrote results/ablation_distractor.json
+Interpretation: a large arm-2 gain indicates structural protection degenerates to an
+oracle when distractors stop matching the protected line pattern; an arm-6 gain
+indicates confusable distractor values were depressing the ceiling.
+[01:17:40] POSTHOC
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 27457.82it/s]
+=== Spearman rho(eviction, promotion) -- section 7 manipulation check ===
+   P1 attention    rho = +1.0000   (target +1.000)
+   P2 epiphany     rho = +0.0880   (target ~0)
+   P3 random       rho = +0.0905   (target ~0)
+   P4 roundrobin   rho = +0.4000   (target ~0)
+   P5 oracle       rho = +0.8496   (target ~0)
+
+=== P5 oracle: genuine-ceiling verification ===
+  oversubscribed on 0/12 prompts (PASS)
+
+=== level-occupancy histogram of quantized tensors ===
+  8-bit: max= 152 / limit 256  mean_used= 113.05  occupancy=0.442  viol=0
+  7-bit: max= 102 / limit 128  mean_used=  73.98  occupancy=0.578  viol=0
+  6-bit: max=  61 / limit 64   mean_used=  45.44  occupancy=0.710  viol=0
+  5-bit: max=  32 / limit 32   mean_used=  26.76  occupancy=0.836  viol=0
+  4-bit: max=  16 / limit 16   mean_used=  14.87  occupancy=0.929  viol=0
+  3-bit: max=   8 / limit 8    mean_used=   7.85  occupancy=0.981  viol=0
+
+=== credential-token survival: eviction vs quantizer corruption ===
+  arm2: 120.6 credential tokens at first eviction
+      0% through run: FULL  28.5  QUANT   0.0  EVICTED  92.1
+     25% through run: FULL  28.5  QUANT   0.0  EVICTED  92.1
+     50% through run: FULL  28.5  QUANT   0.0  EVICTED  92.1
+     75% through run: FULL  28.5  QUANT   0.0  EVICTED  92.1
+    100% through run: FULL  28.5  QUANT   0.0  EVICTED  92.1
+  arm4: 120.6 credential tokens at first eviction
+      0% through run: FULL   7.7  QUANT  20.8  EVICTED  92.1
+     25% through run: FULL  12.1  QUANT  16.4  EVICTED  92.1
+     50% through run: FULL  13.9  QUANT  14.6  EVICTED  92.1
+     75% through run: FULL  15.0  QUANT  13.5  EVICTED  92.1
+    100% through run: FULL  14.8  QUANT  13.8  EVICTED  92.1
+
+=== monotone reconstruction error on INTERCEPTED generation tensors ===
+  8-bit: 1.1456%
+  7-bit: 2.2827%
+  6-bit: 4.5649%
+  5-bit: 9.3641%
+  4-bit: 19.3146%
+  3-bit: 39.9174%
+  2-bit: 96.9085%
+  monotone: True  (captured 24 real tensors)
+
+wrote results/posthoc.json
+[01:22:08] REPORTS
+wrote results/csv/all_runs.csv  (5800 rows)
+wrote FINDINGS.md
+wrote AGREEMENT.md
+| # | quantity | reference | measured | delta | agree | traced to |
+[01:22:15] PIPELINE COMPLETE

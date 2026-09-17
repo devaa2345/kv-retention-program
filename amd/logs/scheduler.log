@@ -1,0 +1,12 @@
+[13:19:29] scheduler up: max 2 jobs, need 9.0GB free to start one
+[13:29:12] starting llama-phase1-A  (live=0, free=17.14GB)
+  "new": 1004,
+  "skipped": 346,
+  "failed": 0,
+  "elapsed_s": 3498.9236357212067,
+  "results": "results_llama/bits8/phase1_8bit.jsonl",
+  "failures": "results_llama/bits8/phase1_8bit.failures.jsonl"
+}
+total 58.3 min
+[14:27:35] finished llama-phase1-A
+[14:27:35] starting llama-phase1-B  (live=0, free=17.56GB)

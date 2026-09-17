@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 37066.30it/s]
+phase2 8-bit: 750 cells -> results/bits8
+  [phase2_8bit] 100/750 new=26 skip=74 fail=0 0.16/s eta=65.9min
+  [phase2_8bit] 200/750 new=126 skip=74 fail=0 0.23/s eta=40.0min
+  [phase2_8bit] 300/750 new=226 skip=74 fail=0 0.24/s eta=30.8min
+  [phase2_8bit] 400/750 new=326 skip=74 fail=0 0.26/s eta=22.2min
+  [phase2_8bit] 500/750 new=426 skip=74 fail=0 0.28/s eta=14.9min
+  [phase2_8bit] 600/750 new=526 skip=74 fail=0 0.29/s eta=8.5min
+  [phase2_8bit] 700/750 new=626 skip=74 fail=0 0.30/s eta=2.7min
+{
+  "tag": "phase2_8bit",
+  "new": 676,
+  "skipped": 74,
+  "failed": 0,
+  "elapsed_s": 2194.7078568935394,
+  "results": "results/bits8/phase2_8bit.jsonl",
+  "failures": "results/bits8/phase2_8bit.failures.jsonl"
+}
+total 36.6 min

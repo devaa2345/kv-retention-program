@@ -1,0 +1,47 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "model_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+  "n_instances": 25,
+  "H": 4,
+  "batch_size": 4,
+  "max_new": 32,
+  "prompts_compared": 100,
+  "prompts_identical": 83,
+  "instances_identical": 12,
+  "token_identical": false,
+  "first_divergence": {
+    "instance": "bid00001",
+    "variant": 1,
+    "batch1_ids": [
+      791,
+      539,
+      661,
+      369,
+      11008,
+      1229,
+      16,
+      12,
+      1691,
+      374,
+      8647,
+      369
+    ],
+    "batched_ids": [
+      791,
+      539,
+      661,
+      369,
+      11008,
+      1229,
+      16,
+      12,
+      1691,
+      374,
+      8647,
+      369
+    ],
+    "batch1_text": "The notary for cycle Q1-21 is responsible for record R032. \n\nThe value on the record of the notary for cycle Q1-21",
+    "batched_text": "The notary for cycle Q1-21 is responsible for record R032. \n\nAccording to the table, the value on the record of the notary for"
+  },
+  "verdict": "DO NOT batch silently -- outputs differ; batch_size must join the dedup key"
+}

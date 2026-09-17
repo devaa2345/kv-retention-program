@@ -1,0 +1,221 @@
+{
+ "pass_": true,
+ "cells": {
+  "M2|c=1|adversarial_filler": {
+   "X_touched": 17.535,
+   "X_complete": 1.52,
+   "X_qc": 0.09125,
+   "U_touched": 13.375,
+   "U_complete": 1.54,
+   "U_qc": 0.091875,
+   "fallback": 0.0
+  },
+  "M2|c=1|f5_rho0.3": {
+   "X_touched": 29.2525,
+   "X_complete": 2.2975,
+   "X_qc": 0.321875,
+   "U_touched": 19.4925,
+   "U_complete": 4.035,
+   "U_qc": 0.324375,
+   "fallback": 0.0
+  },
+  "M2|c=1|f5_rho0.7": {
+   "X_touched": 28.75,
+   "X_complete": 3.4875,
+   "X_qc": 0.38125,
+   "U_touched": 22.94,
+   "U_complete": 4.9875,
+   "U_qc": 0.381875,
+   "fallback": 0.0
+  },
+  "M2|c=1|heavy_t2": {
+   "X_touched": 29.695,
+   "X_complete": 1.8275,
+   "X_qc": 0.269375,
+   "U_touched": 18.5475,
+   "U_complete": 3.51,
+   "U_qc": 0.273125,
+   "fallback": 0.0
+  },
+  "M2|c=1|iid_normal": {
+   "X_touched": 29.9525,
+   "X_complete": 1.86,
+   "X_qc": 0.2875,
+   "U_touched": 16.88,
+   "U_complete": 2.8575,
+   "U_qc": 0.295,
+   "fallback": 0.0
+  },
+  "M2|c=1|recency": {
+   "X_touched": 26.3325,
+   "X_complete": 2.54,
+   "X_qc": 0.29375,
+   "U_touched": 16.865,
+   "U_complete": 4.8475,
+   "U_qc": 0.2975,
+   "fallback": 0.0
+  },
+  "M2|c=40|adversarial_filler": {
+   "X_touched": 41.9825,
+   "X_complete": 1.0,
+   "X_qc": 0.03,
+   "U_touched": 6.3875,
+   "U_complete": 5.67,
+   "U_qc": 0.1475,
+   "fallback": 0.0
+  },
+  "M2|c=40|f5_rho0.3": {
+   "X_touched": 40.5325,
+   "X_complete": 1.0075,
+   "X_qc": 0.03,
+   "U_touched": 11.2275,
+   "U_complete": 10.4975,
+   "U_qc": 0.245,
+   "fallback": 0.0
+  },
+  "M2|c=40|f5_rho0.7": {
+   "X_touched": 32.395,
+   "X_complete": 1.895,
+   "X_qc": 0.048125,
+   "U_touched": 12.575,
+   "U_complete": 11.825,
+   "U_qc": 0.290625,
+   "fallback": 0.0
+  },
+  "M2|c=40|heavy_t2": {
+   "X_touched": 42.0,
+   "X_complete": 1.0,
+   "X_qc": 0.03,
+   "U_touched": 10.2775,
+   "U_complete": 9.6125,
+   "U_qc": 0.239375,
+   "fallback": 0.0
+  },
+  "M2|c=40|iid_normal": {
+   "X_touched": 42.0,
+   "X_complete": 1.0,
+   "X_qc": 0.03,
+   "U_touched": 9.885,
+   "U_complete": 9.22,
+   "U_qc": 0.22875,
+   "fallback": 0.0
+  },
+  "M2|c=40|recency": {
+   "X_touched": 41.525,
+   "X_complete": 1.0,
+   "X_qc": 0.03,
+   "U_touched": 11.695,
+   "U_complete": 11.6625,
+   "U_qc": 0.271875,
+   "fallback": 0.0
+  },
+  "M3|c=1|adversarial_filler": {
+   "X_touched": 17.2375,
+   "X_complete": 1.455,
+   "X_qc": 0.116875,
+   "U_touched": 13.0525,
+   "U_complete": 1.4925,
+   "U_qc": 0.1175,
+   "fallback": 0.0
+  },
+  "M3|c=1|f5_rho0.3": {
+   "X_touched": 29.255,
+   "X_complete": 2.2475,
+   "X_qc": 0.3325,
+   "U_touched": 19.5425,
+   "U_complete": 3.7675,
+   "U_qc": 0.33375,
+   "fallback": 0.0
+  },
+  "M3|c=1|f5_rho0.7": {
+   "X_touched": 28.325,
+   "X_complete": 3.4125,
+   "X_qc": 0.39625,
+   "U_touched": 22.4825,
+   "U_complete": 4.905,
+   "U_qc": 0.3975,
+   "fallback": 0.0
+  },
+  "M3|c=1|heavy_t2": {
+   "X_touched": 30.065,
+   "X_complete": 1.8525,
+   "X_qc": 0.324375,
+   "U_touched": 18.5825,
+   "U_complete": 3.635,
+   "U_qc": 0.32875,
+   "fallback": 0.0
+  },
+  "M3|c=1|iid_normal": {
+   "X_touched": 29.8125,
+   "X_complete": 1.8425,
+   "X_qc": 0.303125,
+   "U_touched": 16.765,
+   "U_complete": 2.94,
+   "U_qc": 0.311875,
+   "fallback": 0.0
+  },
+  "M3|c=1|recency": {
+   "X_touched": 26.3675,
+   "X_complete": 2.335,
+   "X_qc": 0.289375,
+   "U_touched": 16.75,
+   "U_complete": 4.635,
+   "U_qc": 0.291875,
+   "fallback": 0.0
+  },
+  "M3|c=40|adversarial_filler": {
+   "X_touched": 41.985,
+   "X_complete": 1.0,
+   "X_qc": 0.015,
+   "U_touched": 6.015,
+   "U_complete": 5.275,
+   "U_qc": 0.11375,
+   "fallback": 0.0
+  },
+  "M3|c=40|f5_rho0.3": {
+   "X_touched": 40.5225,
+   "X_complete": 1.0025,
+   "X_qc": 0.015,
+   "U_touched": 11.1625,
+   "U_complete": 10.4375,
+   "U_qc": 0.254375,
+   "fallback": 0.0
+  },
+  "M3|c=40|f5_rho0.7": {
+   "X_touched": 32.315,
+   "X_complete": 1.885,
+   "X_qc": 0.04,
+   "U_touched": 12.5425,
+   "U_complete": 11.84,
+   "U_qc": 0.275625,
+   "fallback": 0.0
+  },
+  "M3|c=40|heavy_t2": {
+   "X_touched": 42.0,
+   "X_complete": 1.0,
+   "X_qc": 0.015,
+   "U_touched": 10.2275,
+   "U_complete": 9.5225,
+   "U_qc": 0.2175,
+   "fallback": 0.0
+  },
+  "M3|c=40|iid_normal": {
+   "X_touched": 41.9975,
+   "X_complete": 1.0,
+   "X_qc": 0.015,
+   "U_touched": 9.68,
+   "U_complete": 9.0325,
+   "U_qc": 0.215,
+   "fallback": 0.0
+  },
+  "M3|c=40|recency": {
+   "X_touched": 41.5275,
+   "X_complete": 1.0025,
+   "X_qc": 0.015,
+   "U_touched": 11.535,
+   "U_complete": 11.495,
+   "U_qc": 0.2925,
+   "fallback": 0.0
+  }
+ }
+}

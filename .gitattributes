@@ -1,0 +1,22 @@
+# Linux pod: everything is LF. CRLF has broken this project repeatedly.
+* text eol=lf
+
+# Binary data
+*.npz binary
+*.npy binary
+*.png binary
+*.pdf binary
+
+# Frozen documents whose recorded sha256 was computed over their on-disk CRLF bytes.
+# Stored byte-exact (no EOL conversion) so the recorded hashes still verify on the pod.
+# Do NOT remove: normalising these to LF breaks every prereg hash check.
+/PREREG.md -text
+/ADDENDUM_2026-09-03.md -text
+/ANALYSIS.md -text
+/paper3/PREREG_P3.md -text
+/paper3/P3_PREDICTIONS.md -text
+/paper3/STAGE1_REPORT.md -text
+/paper3/STAGE2_REPORT.md -text
+/paper3/STAGE4_REPORT.md -text
+/paper2/transfer_to_machine_A/ledger.py -text
+# (paper2 PREREG_P2*.md use an LF-normalised hash procedure, so eol=lf is correct for them.)

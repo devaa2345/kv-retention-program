@@ -1,0 +1,32 @@
+  [25/200]
+  [50/200]
+  [75/200]
+  [100/200]
+  [125/200]
+  [150/200]
+  [175/200]
+  [200/200]
+
+KeyDiff  M2 aware  C=512   n=800 prefixes, 72 slots per capture
+  majority-vote population (gold slot-fraction <= 0.5): n=772, acc=0.4210
+
+  slot fraction, VALUE complete
+    mean over population      0.0606   (min 0.0000  max 0.5139)
+    mean | answered CORRECTLY 0.1073   (n=325)
+    mean | answered WRONG     0.0266   (n=447)
+    r(fraction, correctness)  +0.4979
+    % of population with fraction exactly 0: 23.1%
+
+  slot fraction, GOLD RECORD complete
+    mean over population      0.0065   (min 0.0000  max 0.1944)
+    mean | answered CORRECTLY 0.0147   (n=325)
+    mean | answered WRONG     0.0005   (n=447)
+    r(fraction, correctness)  +0.2708
+    % of population with fraction exactly 0: 88.2%
+
+  slot fraction, ANY value token present
+    mean over population      0.6694   (min 0.3750  max 0.9583)
+    mean | answered CORRECTLY 0.7470   (n=325)
+    mean | answered WRONG     0.6129   (n=447)
+    r(fraction, correctness)  +0.5568
+    % of population with fraction exactly 0: 0.0%

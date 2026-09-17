@@ -1,0 +1,77 @@
+{
+  "ratio": 0.13,
+  "lengths": [
+    {
+      "target": 2048,
+      "n_filler": 25,
+      "realised_ctx": 2044.5,
+      "full_cache_len": 2251,
+      "budget": 293,
+      "retention_ratio": 0.1301643713904931,
+      "competitive_room": 228,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "pass": true,
+          "median_len": 2042.5,
+          "range": [
+            2034,
+            2054
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "pass": false,
+          "full_cache_mean_acc": 0.638888888888889
+        },
+        "G3": {
+          "gate": "G3",
+          "pass": true,
+          "competitive_room": 228
+        },
+        "G5": {
+          "gate": "G5",
+          "pass": true,
+          "frac_weak": 1.0
+        }
+      },
+      "gates_pass": false
+    },
+    {
+      "target": 4096,
+      "n_filler": 61,
+      "realised_ctx": 4084.1666666666665,
+      "full_cache_len": 4287,
+      "budget": 557,
+      "retention_ratio": 0.1299276883601586,
+      "competitive_room": 492,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "pass": true,
+          "median_len": 4078.0,
+          "range": [
+            4069,
+            4098
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "pass": false,
+          "full_cache_mean_acc": 0.6527777777777778
+        },
+        "G3": {
+          "gate": "G3",
+          "pass": true,
+          "competitive_room": 492
+        },
+        "G5": {
+          "gate": "G5",
+          "pass": true,
+          "frac_weak": 1.0
+        }
+      },
+      "gates_pass": false
+    }
+  ]
+}

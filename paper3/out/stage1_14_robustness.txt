@@ -1,0 +1,201 @@
+================================================================================================
+1.4 ROBUSTNESS -- exploratory, not registered. The registered predicate already
+returned PASS; this asks whether that verdict survives contact with the rest of
+the data.
+================================================================================================
+
+### A. BOTH directions of the inversion, every cell, unit = LINE (registered)
+A cell is an inversion for a measure when that measure's verdict relative to
+floor_pos contradicts the accuracy verdict relative to floor_pos.
+model      C arm              acc vs floor  q_mean vs floor  q_any vs floor  mean wrong  any wrong
+M2        32 snapkv                  below            below           below                       
+M2        32 expected_attn           below            below           below                       
+M2        32 keydiff                 below            below           below                       
+M2        32 adakv_snapkv            below            below           above                  WRONG
+M2        64 snapkv                  below            below           below                       
+M2        64 expected_attn           below            below           below                       
+M2        64 keydiff                 below            below           below                       
+M2        64 adakv_snapkv            below            below           above                  WRONG
+M2       128 snapkv                  below            below           below                       
+M2       128 expected_attn           below            below           below                       
+M2       128 keydiff                 below            below           below                       
+M2       128 adakv_snapkv            below            below           below                       
+M2       256 snapkv                  below            below           below                       
+M2       256 expected_attn           below            below           below                       
+M2       256 keydiff                 below            below           below                       
+M2       256 adakv_snapkv            below            below           above                  WRONG
+M2       512 snapkv                  below            below           above                  WRONG
+M2       512 expected_attn           below            below           below                       
+M2       512 keydiff                 below            below           below                       
+M2       512 adakv_snapkv            below            below           above                  WRONG
+M3        16 snapkv                  below            below           above                  WRONG
+M3        16 expected_attn           below            below           below                       
+M3        16 keydiff                 below            below           below                       
+M3        16 adakv_snapkv            below            below           above                  WRONG
+M3        32 snapkv                  below            below           above                  WRONG
+M3        32 expected_attn           below            below           below                       
+M3        32 keydiff                 below            below           below                       
+M3        32 adakv_snapkv            below            below           above                  WRONG
+M3        64 snapkv                  below            below           above                  WRONG
+M3        64 expected_attn           below            below           below                       
+M3        64 keydiff                 below            below           below                       
+M3        64 adakv_snapkv            below            below           above                  WRONG
+M3       128 snapkv                  below            below           above                  WRONG
+M3       128 expected_attn           below            below           below                       
+M3       128 keydiff                 below            below           below                       
+M3       128 adakv_snapkv            below            below           above                  WRONG
+M3       256 snapkv                  below            below           above                  WRONG
+M3       256 expected_attn           below            below           below                       
+M3       256 keydiff                 below            below           below                       
+M3       256 adakv_snapkv            below            below           above                  WRONG
+M3       512 snapkv                  below            below           above                  WRONG
+M3       512 expected_attn           above            below           below       WRONG      WRONG
+M3       512 keydiff                 below            below           below                       
+M3       512 adakv_snapkv            above            below           above       WRONG           
+
+  over 44 method cells with an accuracy grid:
+    per-head (q_mean) contradicts accuracy in 2 (4.5%)
+    union    (q_any)  contradicts accuracy in 17 (38.6%)
+
+### B. WITHIN-CELL rank agreement, LINE unit
+Ranking the 5 arms inside each (model, C) strips out the budget trend, which is what
+a pooled correlation is mostly measuring.
+model      C   rho_s(acc,q_mean)   rho_s(acc,q_any)     winner
+M2        16      (no accuracy grid at this budget)
+M2        32              0.7826             0.8030      q_any
+M2        64              1.0000             0.9000     q_mean
+M2       128              0.8000             0.9000      q_any
+M2       256              1.0000             0.8000     q_mean
+M2       512              1.0000             0.6000     q_mean
+M3        16              0.7632             0.5526     q_mean
+M3        32              0.8721             0.6669     q_mean
+M3        64              0.9000             0.7000     q_mean
+M3       128              0.9000             0.6000     q_mean
+M3       256              1.0000             0.6000     q_mean
+M3       512              0.1000             0.3000      q_any
+
+  cells won: q_mean 8, q_any 3, tie 0
+
+------------------------------------------------------------------------------------------------
+### C. the (id, value) unit -- the functionally sufficient span
+------------------------------------------------------------------------------------------------
+Answering needs the record id and the 6-digit value; the surname and department are
+dispensable. If the LINE unit is simply too strict, the IDVAL unit should rescue the
+arms that both LINE measures mis-call.
+
+### A. BOTH directions of the inversion, every cell, unit = IDVAL
+A cell is an inversion for a measure when that measure's verdict relative to
+floor_pos contradicts the accuracy verdict relative to floor_pos.
+model      C arm              acc vs floor  q_mean vs floor  q_any vs floor  mean wrong  any wrong
+M2        32 snapkv                  below            below           below                       
+M2        32 expected_attn           below            below           below                       
+M2        32 keydiff                 below            below           below                       
+M2        32 adakv_snapkv            below            below           above                  WRONG
+M2        64 snapkv                  below            below           below                       
+M2        64 expected_attn           below            below           below                       
+M2        64 keydiff                 below            below           below                       
+M2        64 adakv_snapkv            below            below           above                  WRONG
+M2       128 snapkv                  below            below           below                       
+M2       128 expected_attn           below            below           below                       
+M2       128 keydiff                 below            below           below                       
+M2       128 adakv_snapkv            below            below           above                  WRONG
+M2       256 snapkv                  below            below           below                       
+M2       256 expected_attn           below            below           below                       
+M2       256 keydiff                 below            below           below                       
+M2       256 adakv_snapkv            below            below           above                  WRONG
+M2       512 snapkv                  below            below           above                  WRONG
+M2       512 expected_attn           below            below           below                       
+M2       512 keydiff                 below            below           below                       
+M2       512 adakv_snapkv            below            below           above                  WRONG
+M3        16 snapkv                  below            below           above                  WRONG
+M3        16 expected_attn           below            below           below                       
+M3        16 keydiff                 below            below           below                       
+M3        16 adakv_snapkv            below            below           above                  WRONG
+M3        32 snapkv                  below            below           above                  WRONG
+M3        32 expected_attn           below            below           below                       
+M3        32 keydiff                 below            below           below                       
+M3        32 adakv_snapkv            below            below           above                  WRONG
+M3        64 snapkv                  below            below           above                  WRONG
+M3        64 expected_attn           below            below           below                       
+M3        64 keydiff                 below            below           below                       
+M3        64 adakv_snapkv            below            below           above                  WRONG
+M3       128 snapkv                  below            below           above                  WRONG
+M3       128 expected_attn           below            below           below                       
+M3       128 keydiff                 below            below           below                       
+M3       128 adakv_snapkv            below            below           above                  WRONG
+M3       256 snapkv                  below            below           above                  WRONG
+M3       256 expected_attn           below            below           above                  WRONG
+M3       256 keydiff                 below            below           below                       
+M3       256 adakv_snapkv            below            below           above                  WRONG
+M3       512 snapkv                  below            below           above                  WRONG
+M3       512 expected_attn           above            below           above       WRONG           
+M3       512 keydiff                 below            below           above                  WRONG
+M3       512 adakv_snapkv            above            below           above       WRONG           
+
+  over 44 method cells with an accuracy grid:
+    per-head (q_mean) contradicts accuracy in 2 (4.5%)
+    union    (q_any)  contradicts accuracy in 19 (43.2%)
+
+### B. WITHIN-CELL rank agreement, IDVAL unit
+Ranking the 5 arms inside each (model, C) strips out the budget trend, which is what
+a pooled correlation is mostly measuring.
+model      C   rho_s(acc,q_mean)   rho_s(acc,q_any)     winner
+M2        16      (no accuracy grid at this budget)
+M2        32              0.7826             0.8030      q_any
+M2        64              1.0000             0.9000     q_mean
+M2       128              0.8000             0.8000        tie
+M2       256              1.0000             0.8000     q_mean
+M2       512              1.0000             0.6000     q_mean
+M3        16              0.8208             0.6156     q_mean
+M3        32              0.9000             0.7000     q_mean
+M3        64              0.9000             0.7000     q_mean
+M3       128              0.9000             0.6000     q_mean
+M3       256              0.9000             0.1000     q_mean
+M3       512              0.3000             0.3000        tie
+
+  cells won: q_mean 8, q_any 1, tie 2
+
+================================================================================================
+### The cell the gate is about: M3 C=512, both units, all four measures
+================================================================================================
+arm                  acc |  LINE q_mean  LINE q_any |  IDVAL q_mean  IDVAL q_any
+floor_pos         0.2700 |       0.2700      0.2700 |        0.2700       0.2700
+snapkv            0.1388 |       0.1169      0.8962 |        0.1838       0.9850
+expected_attn     0.3463 |       0.0286      0.1750 |        0.0780       0.9200
+keydiff           0.2075 |       0.0361      0.1175 |        0.0462       0.3362
+adakv_snapkv      0.3962 |       0.1331      0.9563 |        0.2007       1.0000
+  rank agreement with accuracy at this cell: LINE q_mean    rho_s +0.1000   r +0.0087
+  rank agreement with accuracy at this cell: LINE q_any     rho_s +0.3000   r +0.0288
+  rank agreement with accuracy at this cell: IDVAL q_mean   rho_s +0.3000   r +0.0765
+  rank agreement with accuracy at this cell: IDVAL q_any    rho_s +0.3000   r +0.2634
+
+================================================================================================
+### What M3 C=512 actually shows once both units are on the table
+================================================================================================
+Under the IDVAL unit -- the functionally sufficient span, id plus the 6-digit value --
+the queried record is available SOMEWHERE across the 224 slots for essentially every
+instance on three of the four methods:
+
+  arm                  acc  IDVAL q_any  IDVAL q_mean  acc - q_any
+  floor_pos         0.2700       0.2700        0.2700      +0.0000
+  snapkv            0.1388       0.9850        0.1838      -0.8462
+  expected_attn     0.3463       0.9200        0.0780      -0.5737
+  keydiff           0.2075       0.3362        0.0462      -0.1288
+  adakv_snapkv      0.3962       1.0000        0.2007      -0.6038
+
+So the earlier reading -- that expected_attn answers more often than the record is
+available -- was an artefact of the LINE unit being too strict, and does not survive.
+There is no accuracy-above-availability anomaly here and no leak is implied.
+
+What is left is the real finding and it cuts both ways:
+  * Union availability at this cell is ~1.0 for snapkv, expected_attn and
+    adakv_snapkv, while their accuracies span 0.139 to 0.396 and the floor sits at
+    0.270. Availability somewhere across heads is close to uninformative here --
+    which is exactly T3's claim, and it is why the union measure inverts.
+  * Per-head availability is far closer to accuracy in level, and across all 44
+    cells it contradicts accuracy 4.5% of the time against the union's 38.6%.
+  * But at THIS cell neither measure ranks the four methods: rho_s is 0.10 for
+    LINE q_mean and 0.30 for the other three. Per-head fixes the LEVEL of the
+    snapkv inversion without explaining the ORDER of the four arms. Stage 1 should
+    not be reported as having resolved M3 C=512; it has resolved one specific
+    contradiction inside it.

@@ -1,0 +1,41 @@
+[12:47:41] waiting for shard 1 to finish downloading
+[12:47:56] shard 1 complete: 4.96 GB
+[12:47:56] assembled at /home/kxrx26/llama32_3b_instruct
+drwxr-xr-x 77 kxrx26 kxrx26       4096 Sep  5 12:47 ..
+-rw-rw-r--  2 kxrx26 kxrx26        878 Sep  5 12:36 config.json
+-rw-rw-r--  2 kxrx26 kxrx26        189 Sep  5 12:36 generation_config.json
+-rw-rw-r--  2 kxrx26 kxrx26 4965799096 Sep  5 12:47 model-00001-of-00002.safetensors
+-rw-rw-r--  2 kxrx26 kxrx26 1459729952 Sep  5 12:41 model-00002-of-00002.safetensors
+-rw-rw-r--  2 kxrx26 kxrx26      20919 Sep  5 12:36 model.safetensors.index.json
+-rw-rw-r--  2 kxrx26 kxrx26        296 Sep  5 12:36 special_tokens_map.json
+-rw-rw-r--  2 kxrx26 kxrx26    9085657 Sep  5 12:36 tokenizer.json
+-rw-rw-r--  2 kxrx26 kxrx26      54528 Sep  5 12:36 tokenizer_config.json
+[12:47:56] === LLAMA VALIDITY + SWEEP ===
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 27596.96it/s]
+/home/kxrx26/llama32_3b_instruct: 28 layers, 8 kv heads, head_dim 128, hidden 3072
+  quantizer group size = 1024 elements (Qwen models: 256)
+  context median 916 range [900,931]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  full_cache_ref = 1.0000  (1.5B 0.7167, Qwen-3B 0.9833)
+  quantizer error: {8: {'keys': 1.44, 'values': 1.12}, 4: {'keys': 24.28, 'values': 18.9}, 2: {'keys': 133.36, 'values': 98.58}}
+  monotone: True
+llama sweep 8-bit: 50 cells
+  [sweep_bits8] 25/50 new=25 skip=0 fail=0 0.22/s eta=1.9min
+  [sweep_bits8] 50/50 new=50 skip=0 fail=0 0.21/s eta=0.0min
+llama sweep 7-bit: 50 cells
+  [sweep_bits7] 25/50 new=25 skip=0 fail=0 0.22/s eta=1.9min
+  [sweep_bits7] 50/50 new=50 skip=0 fail=0 0.21/s eta=0.0min
+llama sweep 6-bit: 50 cells
+  [sweep_bits6] 25/50 new=25 skip=0 fail=0 0.10/s eta=4.0min
+  [sweep_bits6] 50/50 new=50 skip=0 fail=0 0.09/s eta=0.0min
+llama sweep 5-bit: 50 cells
+  [sweep_bits5] 25/50 new=25 skip=0 fail=0 0.10/s eta=4.4min
+  [sweep_bits5] 50/50 new=50 skip=0 fail=0 0.09/s eta=0.0min
+llama sweep 4-bit: 50 cells
+  [sweep_bits4] 25/50 new=25 skip=0 fail=0 0.11/s eta=3.8min
+  [sweep_bits4] 50/50 new=50 skip=0 fail=0 0.11/s eta=0.0min
+llama sweep 3-bit: 50 cells
+  [sweep_bits3] 25/50 new=25 skip=0 fail=0 0.11/s eta=3.6min
+  [sweep_bits3] 50/50 new=50 skip=0 fail=0 0.11/s eta=0.0min
+sweep total 40.6 min
+[13:29:10] === LLAMA COMPLETE ===

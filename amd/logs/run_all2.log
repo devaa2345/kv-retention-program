@@ -1,0 +1,26 @@
+[23:29:46] === PHASE1 START ===
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 27424.89it/s]
+phase1: 2700 cells -> results/bits4
+  [phase1_iso_token] 1500/2700 new=15 skip=1485 fail=0 0.42/s eta=47.3min
+  [phase1_iso_token] 1600/2700 new=113 skip=1487 fail=0 0.61/s eta=29.9min
+  [phase1_iso_token] 1700/2700 new=211 skip=1489 fail=0 0.63/s eta=26.5min
+  [phase1_iso_token] 1800/2700 new=311 skip=1489 fail=0 0.63/s eta=23.7min
+  [phase1_iso_token] 1900/2700 new=409 skip=1491 fail=0 0.64/s eta=20.8min
+  [phase1_iso_token] 2000/2700 new=507 skip=1493 fail=0 0.64/s eta=18.2min
+  [phase1_iso_token] 2100/2700 new=607 skip=1493 fail=0 0.63/s eta=15.8min
+  [phase1_iso_token] 2200/2700 new=705 skip=1495 fail=0 0.61/s eta=13.6min
+  [phase1_iso_token] 2300/2700 new=803 skip=1497 fail=0 0.59/s eta=11.3min
+  [phase1_iso_token] 2400/2700 new=903 skip=1497 fail=0 0.57/s eta=8.8min
+  [phase1_iso_token] 2500/2700 new=1001 skip=1499 fail=0 0.57/s eta=5.8min
+  [phase1_iso_token] 2600/2700 new=1099 skip=1501 fail=0 0.58/s eta=2.9min
+  [phase1_iso_token] 2700/2700 new=1199 skip=1501 fail=0 0.58/s eta=0.0min
+{
+  "tag": "phase1_iso_token",
+  "new": 1199,
+  "skipped": 1501,
+  "failed": 0,
+  "elapsed_s": 2081.1799445152283,
+  "results": "results/bits4/phase1_iso_token.jsonl",
+  "failures": "results/bits4/phase1_iso_token.failures.jsonl"
+}
+total 34.7 min

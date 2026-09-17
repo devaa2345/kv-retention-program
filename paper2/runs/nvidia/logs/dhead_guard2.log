@@ -1,0 +1,21 @@
+  guard kept 153 instances at C=32; recomputing all 200 with the guard relaxed
+  [25/200]
+  [50/200]
+  [75/200]
+  [100/200]
+  [125/200]
+  [150/200]
+  [175/200]
+  [200/200]
+
+Delta_head = A(perhead) - A(causal),  M2  C=32,  2 KV heads
+  subset                n    perhead     causal      delta                   95% CI
+  matched 153         153     0.0964     0.2500    -0.1536  [-0.1732, -0.1340]
+  excluded 47          47     0.5106     0.5106    +0.0000  [+0.0000, +0.0000]
+  all 200             200     0.1938     0.3113    -0.1175  [-0.1363, -0.1000]
+
+  NOTE: the 'excluded 47' and 'all 200' rows are NOT admissible Delta_head
+  measurements -- those heads hold unequal candidate counts, so the contrast mixes
+  head allocation with a budget difference. They bound the bias; they do not replace
+  the matched estimate.
+  wrote runs/nvidia/diag_dhead_guard_M2_C32.jsonl

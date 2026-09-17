@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 26061.63it/s]
+phase2 FIXED signals: 750 cells -> results/p2fix
+  [phase2_fixed] 150/750 new=150 skip=0 fail=0 0.35/s eta=28.2min
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-85mk2x4t'}
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 26046.79it/s]
+phase2 FIXED signals: 750 cells -> results/p2fix
+  [phase2_fixed] 300/750 new=61 skip=239 fail=0 0.38/s eta=19.8min
+  [phase2_fixed] 450/750 new=211 skip=239 fail=0 0.40/s eta=12.4min
+  [phase2_fixed] 600/750 new=361 skip=239 fail=0 0.41/s eta=6.0min
+  [phase2_fixed] 750/750 new=511 skip=239 fail=0 0.41/s eta=0.0min
+{
+  "tag": "phase2_fixed",
+  "new": 511,
+  "skipped": 239,
+  "failed": 0,
+  "elapsed_s": 1233.497620344162,
+  "results": "results/p2fix/phase2_fixed.jsonl",
+  "failures": "results/p2fix/phase2_fixed.failures.jsonl"
+}
+total 20.6 min

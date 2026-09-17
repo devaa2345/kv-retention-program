@@ -1,0 +1,21 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 29511.49it/s]
+=== level occupancy (3B) ===
+  8-bit: max= 161/256  mean_used= 117.47 occupancy=0.459 viol=0
+  7-bit: max= 108/128  mean_used=  76.66 occupancy=0.599 viol=0
+  6-bit: max=  61/64   mean_used=  46.77 occupancy=0.731 viol=0
+  5-bit: max=  32/32   mean_used=  27.22 occupancy=0.851 viol=0
+  4-bit: max=  16/16   mean_used=  15.00 occupancy=0.937 viol=0
+  3-bit: max=   8/8    mean_used=   7.91 occupancy=0.989 viol=0
+
+=== monotone error on INTERCEPTED generation tensors (3B) ===
+  8-bit: 1.0746%
+  7-bit: 2.1391%
+  6-bit: 4.3125%
+  5-bit: 8.6497%
+  4-bit: 18.1031%
+  3-bit: 37.4982%
+  2-bit: 89.1324%
+  monotone: True (captured 24 real tensors)
+
+wrote results3b/posthoc.json

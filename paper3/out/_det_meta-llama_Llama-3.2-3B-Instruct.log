@@ -1,0 +1,19 @@
+  M3 s4_00000  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00001  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00002  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00003  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00004  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00005  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00006  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00007  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00008  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00009  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00010  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+  M3 s4_00011  causal-rerun 4/4  presc-rerun 4/4  cross 4/4  max|dlogit| 0.000e+00
+
+M3  C=512  12 instances x 4 variants = 48 generations
+  same path, causal rerun     byte-identical 48/48
+  same path, prescient rerun  byte-identical 48/48
+  cross path, same keep-set   byte-identical 48/48
+  prefill logits, two runs    max |diff| 0.000e+00
+  -> DETERMINISTIC and path-independent at this sample

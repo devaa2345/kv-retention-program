@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 4677.91it/s]
+=== Spearman rho(eviction, promotion), n=100 prompts ===
+ id signal         rho_old               95% CI   rho_new               95% CI
+ P1 attention      +1.0000 [+1.0000,+1.0000]   +1.0000 [+1.0000,+1.0000]
+ P2 epiphany       +0.0964 [+0.0887,+0.1041]   +0.0964 [+0.0887,+0.1041]
+ P3 random         +0.0958 [+0.0929,+0.0989]   -0.0560 [-0.0592,-0.0526]
+ P4 roundrobin     +0.4974 [+0.4944,+0.5006]   -0.0218 [-0.0250,-0.0186]
+ P5 oracle         +0.8489 [+0.8251,+0.8707]   -0.0781 [-0.0971,-0.0604]
+
+wrote results/rho_power.json

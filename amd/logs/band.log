@@ -1,0 +1,13 @@
+[01:51:03] running section-7 band check
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 28454.79it/s]
+  full_fraction=1.0 (all_FULL): mean=0.1656 n=150
+  full_fraction=0.0 (all_QUANT): mean=0.0056 n=150
+
+BAND (all-FULL - all-QUANT) at budget 257, 4-bit:
+  +0.1600   95% CI [+0.1433, +0.1767]   n_differ=118   p=0.0001
+  spec reference: 0.278
+wrote results/band_4bit.json
+[02:01:12] band done
+n_differ=118   p=0.0001
+  spec reference: 0.278
+wrote results/band_4bit.json

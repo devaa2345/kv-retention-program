@@ -1,0 +1,142 @@
+{
+  "1_permanent_no_protection": [
+    {
+      "seed": 1000,
+      "correct": false,
+      "global_lir": 0.0,
+      "fmm": 0.02994384765625,
+      "generated_text": "skd_1234567890_123456",
+      "mean_step_time_s": 0.1338804244995117,
+      "n_steps": 20,
+      "n_evictions": 360,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    },
+    {
+      "seed": 1001,
+      "correct": false,
+      "global_lir": 0.0,
+      "fmm": 0.10062231375358166,
+      "generated_text": "skd_1",
+      "mean_step_time_s": 0.3647737503051758,
+      "n_steps": 5,
+      "n_evictions": 346,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    }
+  ],
+  "2_permanent_protected": [
+    {
+      "seed": 1000,
+      "correct": true,
+      "global_lir": 0.0,
+      "fmm": 0.018068041120256697,
+      "generated_text": "sk-df3cb2e5bd47f7bff6ffb7e5",
+      "mean_step_time_s": 0.11660480499267578,
+      "n_steps": 20,
+      "n_evictions": 224,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    },
+    {
+      "seed": 1001,
+      "correct": false,
+      "global_lir": 0.0,
+      "fmm": 0.018927051175025203,
+      "generated_text": "sk-162bc5dbcecc6d10fed6ad4",
+      "mean_step_time_s": 0.1310955097800807,
+      "n_steps": 19,
+      "n_evictions": 219,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    }
+  ],
+  "3_recoverable_no_protection": [
+    {
+      "seed": 1000,
+      "correct": false,
+      "global_lir": 0.08333333333333333,
+      "fmm": 0.02994384765625,
+      "generated_text": "skd_1234567890_123456",
+      "mean_step_time_s": 0.12010619640350342,
+      "n_steps": 20,
+      "n_evictions": 360,
+      "n_promotions": 1,
+      "n_demotions": 12,
+      "materializes_attention_matrix": true
+    },
+    {
+      "seed": 1001,
+      "correct": false,
+      "global_lir": 0.0,
+      "fmm": 0.020389875083711585,
+      "generated_text": "skaffold.yaml: /tmp/skaffold.yaml\nkubeconfig: /var/lib/k",
+      "mean_step_time_s": 0.12414029836654664,
+      "n_steps": 20,
+      "n_evictions": 361,
+      "n_promotions": 0,
+      "n_demotions": 11,
+      "materializes_attention_matrix": true
+    }
+  ],
+  "4_recoverable_protected": [
+    {
+      "seed": 1000,
+      "correct": true,
+      "global_lir": 0.0,
+      "fmm": 0.017956433977399554,
+      "generated_text": "sk-df3cb2e5bd47f7bff6ffb7e5",
+      "mean_step_time_s": 0.11412113904953003,
+      "n_steps": 20,
+      "n_evictions": 223,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    },
+    {
+      "seed": 1001,
+      "correct": false,
+      "global_lir": 0.0,
+      "fmm": 0.018801043110509074,
+      "generated_text": "sk-162bc5dbcecc6d10fed6ad4",
+      "mean_step_time_s": 0.11811809790761847,
+      "n_steps": 19,
+      "n_evictions": 218,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    }
+  ],
+  "5_oracle_static": [
+    {
+      "seed": 1000,
+      "correct": true,
+      "global_lir": 0.0,
+      "fmm": 0.02424858623063043,
+      "generated_text": "sk-df3cb2e5bd47f7bff6ffb7e5bd",
+      "mean_step_time_s": 0.11234394311904908,
+      "n_steps": 20,
+      "n_evictions": 360,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    },
+    {
+      "seed": 1001,
+      "correct": true,
+      "global_lir": 0.0,
+      "fmm": 0.02455328078497024,
+      "generated_text": "sk-162bc5dbcecc6d10fed6ad40\n",
+      "mean_step_time_s": 0.11333872079849243,
+      "n_steps": 20,
+      "n_evictions": 361,
+      "n_promotions": 0,
+      "n_demotions": 0,
+      "materializes_attention_matrix": true
+    }
+  ]
+}

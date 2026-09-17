@@ -1,0 +1,58 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "model_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+  "n": 200,
+  "budgets": [
+    128
+  ],
+  "cells": {
+    "C128": {
+      "C": 128,
+      "means": {
+        "full_cache": 0.9513,
+        "null": 0.0,
+        "random": 0.0,
+        "floor_pos": 0.0862,
+        "oracle_causal": 0.9988,
+        "oracle_prescient": 0.995
+      },
+      "check_A_tripwire": true,
+      "check_B_ceiling": false,
+      "ordering_ok": false,
+      "violations": [
+        "oracle_causal(0.9988) > oracle_prescient(0.9950)",
+        "oracle_causal(0.9988) > full_cache(0.9513) \u2014 ceiling arm is denoising, not retaining; ceiling-validity audit required"
+      ],
+      "denoising_audit_required": true
+    }
+  },
+  "checks": {
+    "D_mechanical": {
+      "n_ctx": 2094,
+      "rows": [
+        {
+          "C": 128,
+          "B": 200,
+          "cache_len": 200,
+          "cache_len_equals_B": true,
+          "get_seq_length": 200,
+          "get_seq_length_not_shrunk": true,
+          "prefill_logits_identical_to_full": true
+        }
+      ],
+      "pass": true
+    },
+    "C_void_refusal": {
+      "pass": true,
+      "raised": "oracle_prescient: gold needs 13 tokens but C=8. This cell is VOID and must have been excluded at Stage 1, not run."
+    }
+  },
+  "gate": {
+    "pass": false,
+    "A_all_cells": true,
+    "B_all_cells": false,
+    "denoising_cells": [
+      "C128"
+    ]
+  }
+}

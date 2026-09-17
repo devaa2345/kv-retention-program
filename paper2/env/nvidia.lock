@@ -1,0 +1,28 @@
+{
+  "backend": "cuda-12.8",
+  "cudnn": 91900,
+  "device": "nvidia",
+  "env": {
+    "HF_HOME": "/mnt/d/hf_cache"
+  },
+  "gpu": {
+    "capability": "12.0",
+    "count": 1,
+    "name": "NVIDIA GeForce RTX 5070",
+    "total_mem_mib": 12227
+  },
+  "kvpress_pinned": "0.5.4",
+  "packages": {
+    "accelerate": "1.14.0",
+    "datasets": "5.0.1",
+    "kvpress": "0.5.4",
+    "numpy": "2.5.2",
+    "safetensors": "0.8.0",
+    "scipy": "1.18.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.2.0"
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3"
+}

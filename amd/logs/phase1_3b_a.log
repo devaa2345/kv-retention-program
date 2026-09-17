@@ -1,0 +1,126 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 26963.83it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+  [phase1_8bit] 150/1350 new=150 skip=0 fail=0 0.47/s eta=42.8min
+  [phase1_8bit] 300/1350 new=300 skip=0 fail=0 0.38/s eta=46.5min
+  [phase1_8bit] 450/1350 new=450 skip=0 fail=0 0.39/s eta=38.9min
+  [phase1_8bit] 600/1350 new=600 skip=0 fail=0 0.41/s eta=30.8min
+  [phase1_8bit] 750/1350 new=743 skip=7 fail=0 0.40/s eta=25.2min
+  [phase1_8bit] 900/1350 new=893 skip=7 fail=0 0.41/s eta=18.4min
+  [phase1_8bit] 1050/1350 new=1043 skip=7 fail=0 0.41/s eta=12.1min
+  [phase1_8bit] 1200/1350 new=1193 skip=7 fail=0 0.40/s eta=6.3min
+  [phase1_8bit] 1350/1350 new=1343 skip=7 fail=0 0.41/s eta=0.0min
+{
+  "tag": "phase1_8bit",
+  "new": 1343,
+  "skipped": 7,
+  "failed": 0,
+  "elapsed_s": 3312.6713316440582,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 55.2 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 31618.83it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009467601776123047,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 30595.80it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009260177612304688,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 37381.47it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009098052978515625,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 27545.25it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009298324584960938,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 30236.50it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009241104125976562,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 30130.90it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009210109710693359,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 26418.32it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009303092956542969,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 29319.46it/s]
+3B phase1 8-bit: 1350 cells -> results3b/bits8
+{
+  "tag": "phase1_8bit",
+  "new": 0,
+  "skipped": 1350,
+  "failed": 0,
+  "elapsed_s": 0.0009243488311767578,
+  "results": "results3b/bits8/phase1_8bit.jsonl",
+  "failures": "results3b/bits8/phase1_8bit.failures.jsonl"
+}
+total 0.0 min

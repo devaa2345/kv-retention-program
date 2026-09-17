@@ -1,0 +1,21 @@
+  Qwen/Qwen2.5-3B-Instruct: 2 KV heads
+  resuming: 0 records present
+  [20/200] written 434 failed 46 (8.3 min)
+  [40/200] written 866 failed 94 (16.1 min)
+  [60/200] written 1300 failed 140 (24.0 min)
+  [80/200] written 1735 failed 185 (31.6 min)
+  [100/200] written 2174 failed 226 (39.6 min)
+  [120/200] written 2608 failed 272 (47.3 min)
+  [140/200] written 3045 failed 315 (55.4 min)
+  [160/200] written 3481 failed 359 (63.4 min)
+  [180/200] written 3918 failed 402 (71.3 min)
+  [200/200] written 4353 failed 447 (79.0 min)
+
+    C    floor   causal  perhead    presc |  D_select    D_head  D_temporal
+   32   0.0000   0.2500   0.0964   0.9951 |   +0.2500   -0.1536     +0.8987
+   64   0.0825   0.7837   0.6600   0.9800 |   +0.7013   -0.1237     +0.3200
+  128   0.1075   0.9850   0.9850   0.9850 |   +0.8775   +0.0000     +0.0000
+  256   0.1737   0.9875   0.9875   0.9875 |   +0.8137   +0.0000     +0.0000
+  512   0.2775   0.9925   0.9925   0.9925 |   +0.7150   +0.0000     +0.0000
+
+  COVERAGE: expected 4800 have 4353 holes 447 failed 447

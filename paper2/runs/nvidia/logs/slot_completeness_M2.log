@@ -1,0 +1,45 @@
+  [20/100]
+  [40/100]
+  [60/100]
+  [80/100]
+  [100/100]
+
+Qwen/Qwen2.5-3B-Instruct   n=100 instances
+Of queried records scored INCOMPLETE by majority vote, what fraction are complete in >= 1 slot?
+    C arm              n_incomplete n_any_complete   fraction
+   16 floor_pos                 374              0     0.0000
+   16 snapkv                    386             12     0.0311
+   16 expected_attn             386              0     0.0000
+   16 keydiff                   386              0     0.0000
+   16 adakv_snapkv              386             12     0.0311
+
+   32 floor_pos                 374              0     0.0000
+   32 snapkv                    375              1     0.0027
+   32 expected_attn             386              0     0.0000
+   32 keydiff                   386              0     0.0000
+   32 adakv_snapkv              376              3     0.0080
+
+   64 floor_pos                 369              0     0.0000
+   64 snapkv                    374              4     0.0107
+   64 expected_attn             386              0     0.0000
+   64 keydiff                   386              4     0.0104
+   64 adakv_snapkv              374              6     0.0160
+
+  128 floor_pos                 358              0     0.0000
+  128 snapkv                    374             11     0.0294
+  128 expected_attn             386              1     0.0026
+  128 keydiff                   386              5     0.0130
+  128 adakv_snapkv              374             16     0.0428
+
+  256 floor_pos                 335              0     0.0000
+  256 snapkv                    371             38     0.1024
+  256 expected_attn             386             12     0.0311
+  256 keydiff                   386             15     0.0389
+  256 adakv_snapkv              372             48     0.1290
+
+  512 floor_pos                 280              0     0.0000
+  512 snapkv                    365            116     0.3178
+  512 expected_attn             386             28     0.0725
+  512 keydiff                   386             45     0.1166
+  512 adakv_snapkv              366            127     0.3470
+

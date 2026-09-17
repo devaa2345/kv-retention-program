@@ -1,0 +1,167 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n": 48,
+  "budgets": [
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "cells": {
+    "C32": {
+      "C": 32,
+      "means": {
+        "full_cache": 0.9479,
+        "null": 0.0,
+        "random": 0.0,
+        "floor_pos": 0.0312,
+        "oracle_causal": 0.2812,
+        "oracle_prescient": 0.9948
+      },
+      "check_A_tripwire": true,
+      "check_B_ceiling": true,
+      "ordering_ok": true,
+      "violations": [],
+      "denoising_audit_required": false
+    },
+    "C64": {
+      "C": 64,
+      "means": {
+        "full_cache": 0.9479,
+        "null": 0.0,
+        "random": 0.0,
+        "floor_pos": 0.0469,
+        "oracle_causal": 0.7604,
+        "oracle_prescient": 0.9844
+      },
+      "check_A_tripwire": true,
+      "check_B_ceiling": true,
+      "ordering_ok": true,
+      "violations": [],
+      "denoising_audit_required": false
+    },
+    "C128": {
+      "C": 128,
+      "means": {
+        "full_cache": 0.9479,
+        "null": 0.0,
+        "random": 0.0,
+        "floor_pos": 0.0625,
+        "oracle_causal": 0.9896,
+        "oracle_prescient": 0.9896
+      },
+      "check_A_tripwire": true,
+      "check_B_ceiling": true,
+      "ordering_ok": false,
+      "violations": [
+        "oracle_causal(0.9896) > full_cache(0.9479) \u2014 ceiling arm is denoising, not retaining; ceiling-validity audit required"
+      ],
+      "denoising_audit_required": true
+    },
+    "C256": {
+      "C": 256,
+      "means": {
+        "full_cache": 0.9479,
+        "null": 0.0,
+        "random": 0.0,
+        "floor_pos": 0.1615,
+        "oracle_causal": 0.9896,
+        "oracle_prescient": 0.9896
+      },
+      "check_A_tripwire": true,
+      "check_B_ceiling": true,
+      "ordering_ok": false,
+      "violations": [
+        "oracle_causal(0.9896) > full_cache(0.9479) \u2014 ceiling arm is denoising, not retaining; ceiling-validity audit required"
+      ],
+      "denoising_audit_required": true
+    },
+    "C512": {
+      "C": 512,
+      "means": {
+        "full_cache": 0.9479,
+        "null": 0.0,
+        "random": 0.0,
+        "floor_pos": 0.2708,
+        "oracle_causal": 0.9896,
+        "oracle_prescient": 0.9896
+      },
+      "check_A_tripwire": true,
+      "check_B_ceiling": true,
+      "ordering_ok": false,
+      "violations": [
+        "oracle_causal(0.9896) > full_cache(0.9479) \u2014 ceiling arm is denoising, not retaining; ceiling-validity audit required"
+      ],
+      "denoising_audit_required": true
+    }
+  },
+  "checks": {
+    "D_mechanical": {
+      "n_ctx": 2082,
+      "rows": [
+        {
+          "C": 32,
+          "B": 104,
+          "cache_len": 104,
+          "cache_len_equals_B": true,
+          "get_seq_length": 104,
+          "get_seq_length_not_shrunk": true,
+          "prefill_logits_identical_to_full": true
+        },
+        {
+          "C": 64,
+          "B": 136,
+          "cache_len": 136,
+          "cache_len_equals_B": true,
+          "get_seq_length": 136,
+          "get_seq_length_not_shrunk": true,
+          "prefill_logits_identical_to_full": true
+        },
+        {
+          "C": 128,
+          "B": 200,
+          "cache_len": 200,
+          "cache_len_equals_B": true,
+          "get_seq_length": 200,
+          "get_seq_length_not_shrunk": true,
+          "prefill_logits_identical_to_full": true
+        },
+        {
+          "C": 256,
+          "B": 328,
+          "cache_len": 328,
+          "cache_len_equals_B": true,
+          "get_seq_length": 328,
+          "get_seq_length_not_shrunk": true,
+          "prefill_logits_identical_to_full": true
+        },
+        {
+          "C": 512,
+          "B": 584,
+          "cache_len": 584,
+          "cache_len_equals_B": true,
+          "get_seq_length": 584,
+          "get_seq_length_not_shrunk": true,
+          "prefill_logits_identical_to_full": true
+        }
+      ],
+      "pass": true
+    },
+    "C_void_refusal": {
+      "pass": true,
+      "raised": "oracle_prescient: gold needs 19 tokens but C=8. This cell is VOID and must have been excluded at Stage 1, not run."
+    }
+  },
+  "gate": {
+    "pass": true,
+    "A_all_cells": true,
+    "B_all_cells": true,
+    "denoising_cells": [
+      "C128",
+      "C256",
+      "C512"
+    ]
+  }
+}

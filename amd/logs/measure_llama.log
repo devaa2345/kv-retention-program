@@ -1,0 +1,8 @@
+[13:21:28] waiting for Llama Phase 1 to start
+[13:22:28] measuring for 4 minutes
+  measured 0 cells in 240s -> 0.000 cells/s (1000000000.0 s/cell)
+  cells measured were: {}
+  remaining: 2404 cells
+  ETA at this rate: 667777777.8 h  (n=150)
+  ETA if n reduced to 75: 292777777.8 h
+[13:26:28] === MEASUREMENT DONE ===

@@ -1,0 +1,80 @@
+{
+  "8": {
+    "n": 50,
+    "mean_acc": 0.25,
+    "empty": 0.0,
+    "repetitive": 0.0,
+    "degenerate": 0,
+    "clean": 5,
+    "mixed": 45,
+    "recon_err_pct": 1.0746143486661215,
+    "max_levels": 161,
+    "limit": 256,
+    "violations": 0
+  },
+  "7": {
+    "n": 50,
+    "mean_acc": 0.25,
+    "empty": 0.0,
+    "repetitive": 0.0,
+    "degenerate": 0,
+    "clean": 4,
+    "mixed": 46,
+    "recon_err_pct": 2.1391241966436305,
+    "max_levels": 108,
+    "limit": 128,
+    "violations": 0
+  },
+  "6": {
+    "n": 50,
+    "mean_acc": 0.25,
+    "empty": 0.0,
+    "repetitive": 0.02,
+    "degenerate": 0,
+    "clean": 5,
+    "mixed": 45,
+    "recon_err_pct": 4.312548382828633,
+    "max_levels": 61,
+    "limit": 64,
+    "violations": 0
+  },
+  "5": {
+    "n": 50,
+    "mean_acc": 0.24666666666666665,
+    "empty": 0.0,
+    "repetitive": 0.01,
+    "degenerate": 0,
+    "clean": 5,
+    "mixed": 45,
+    "recon_err_pct": 8.649679723506173,
+    "max_levels": 32,
+    "limit": 32,
+    "violations": 0
+  },
+  "4": {
+    "n": 50,
+    "mean_acc": 0.03666666666666667,
+    "empty": 0.02,
+    "repetitive": 0.05333333333333334,
+    "degenerate": 19,
+    "clean": 1,
+    "mixed": 30,
+    "recon_err_pct": 18.103141523897648,
+    "max_levels": 16,
+    "limit": 16,
+    "violations": 0
+  },
+  "3": {
+    "n": 50,
+    "mean_acc": 0.09666666666666666,
+    "empty": 0.0033333333333333335,
+    "repetitive": 0.006666666666666667,
+    "degenerate": 1,
+    "clean": 3,
+    "mixed": 46,
+    "recon_err_pct": 37.49820273369551,
+    "max_levels": 8,
+    "limit": 8,
+    "violations": 0
+  }
+}

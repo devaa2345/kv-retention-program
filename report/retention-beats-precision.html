@@ -1,0 +1,917 @@
+<title>Retention Beats Precision</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --ground:      #f6f7f5;
+    --panel:       #ffffff;
+    --panel-2:     #f0f2ef;
+    --ink:         #14171a;
+    --ink-2:       #4a5257;
+    --ink-3:       #7c858a;
+    --hairline:    #e0e4e1;
+    --rule:        #c9cfcb;
+    --accent:      #0f6e79;
+    --accent-soft: #e2eeef;
+    --void:        #a8352f;
+    --void-soft:   #f6e6e4;
+    --good:        #0ca30c;
+    --warning:     #fab219;
+    --critical:    #d03b3b;
+    --series-1:    #2a78d6;
+    --series-2:    #eb6834;
+    --grid:        #e6e9e6;
+    --shadow:      0 1px 2px rgba(20,23,26,.05);
+
+    --f-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --f-body:    "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --f-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground:      #14171a;
+      --panel:       #1c2126;
+      --panel-2:     #232930;
+      --ink:         #e8edef;
+      --ink-2:       #a8b2b7;
+      --ink-3:       #79838a;
+      --hairline:    #2a3036;
+      --rule:        #3a424a;
+      --accent:      #45aeb9;
+      --accent-soft: #16333a;
+      --void:        #e07a72;
+      --void-soft:   #3a2320;
+      --good:        #0ca30c;
+      --warning:     #fab219;
+      --critical:    #d03b3b;
+      --series-1:    #3987e5;
+      --series-2:    #d95926;
+      --grid:        #262c32;
+      --shadow:      0 1px 2px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground:      #14171a;
+    --panel:       #1c2126;
+    --panel-2:     #232930;
+    --ink:         #e8edef;
+    --ink-2:       #a8b2b7;
+    --ink-3:       #79838a;
+    --hairline:    #2a3036;
+    --rule:        #3a424a;
+    --accent:      #45aeb9;
+    --accent-soft: #16333a;
+    --void:        #e07a72;
+    --void-soft:   #3a2320;
+    --good:        #0ca30c;
+    --warning:     #fab219;
+    --critical:    #d03b3b;
+    --series-1:    #3987e5;
+    --series-2:    #d95926;
+    --grid:        #262c32;
+    --shadow:      0 1px 2px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 16px;
+    line-height: 1.62;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .frame { max-width: 1080px; margin: 0 auto; padding: 0 32px 96px; }
+  .measure { max-width: 66ch; }
+
+  h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; }
+  h1 { font-size: 38px; line-height: 1.14; font-weight: 600; letter-spacing: -0.015em; }
+  h2 { font-size: 27px; line-height: 1.22; font-weight: 600; letter-spacing: -0.01em; }
+  h3 { font-size: 19px; line-height: 1.3; font-weight: 600; }
+  p { margin: 0 0 1em; }
+  a { color: var(--accent); }
+  code, .mono { font-family: var(--f-mono); font-size: 0.9em; }
+  .num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+  .eyebrow {
+    font-family: var(--f-mono); font-size: 11px; font-weight: 500;
+    letter-spacing: .13em; text-transform: uppercase; color: var(--accent);
+  }
+
+  /* ---- masthead ---- */
+  header.masthead { border-bottom: 2px solid var(--ink); padding: 56px 0 24px; margin-bottom: 40px; }
+  .masthead .kicker {
+    display: flex; gap: 18px; flex-wrap: wrap; align-items: baseline;
+    font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-3); margin-bottom: 20px;
+  }
+  .masthead h1 { margin-bottom: 16px; }
+  .standfirst { font-size: 19px; line-height: 1.55; color: var(--ink-2); max-width: 62ch; }
+
+  /* ---- verdict ---- */
+  .verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); gap: 1px;
+              background: var(--rule); border: 1px solid var(--rule); margin: 40px 0 56px; }
+  .verdict { background: var(--panel); padding: 22px 22px 24px; }
+  .verdict .tag { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .12em;
+                  text-transform: uppercase; color: var(--ink-3); display: block; margin-bottom: 10px; }
+  .verdict .claim { font-family: var(--f-display); font-size: 17px; line-height: 1.35; font-weight: 600; margin-bottom: 8px; }
+  .verdict .detail { font-size: 13.5px; line-height: 1.5; color: var(--ink-2); }
+
+  section { margin-bottom: 64px; }
+  section > .measure > p:last-child { margin-bottom: 0; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 8px; }
+  .sec-num { font-family: var(--f-mono); font-size: 13px; color: var(--accent); font-weight: 600; }
+  .lede { font-size: 17px; color: var(--ink-2); margin: 10px 0 26px; max-width: 62ch; }
+
+  /* ---- tables ---- */
+  .tablewrap { overflow-x: auto; margin: 26px 0 10px; border: 1px solid var(--hairline); background: var(--panel); }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: right; padding: 9px 14px; white-space: nowrap; border-bottom: 1px solid var(--hairline); }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase;
+             color: var(--ink-3); font-weight: 500; background: var(--panel-2); border-bottom: 1px solid var(--rule); }
+  tbody td { font-variant-numeric: tabular-nums; }
+  tbody td.lbl { font-family: var(--f-mono); font-size: 12.5px; color: var(--ink); }
+  tbody tr:last-child td { border-bottom: 0; }
+  tr.em td { background: var(--accent-soft); }
+  tr.dim td { color: var(--ink-3); }
+  caption { caption-side: bottom; text-align: left; font-size: 12.5px; color: var(--ink-3);
+            padding: 10px 14px 12px; line-height: 1.5; }
+  .figcap { font-size: 12.5px; color: var(--ink-3); line-height: 1.5; margin: 10px 0 0; max-width: 74ch; }
+
+  /* ---- chips ---- */
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--f-mono);
+          font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px;
+          border: 1px solid currentColor; border-radius: 2px; }
+  .chip::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+  .chip.valid { color: var(--good); }
+  .chip.partial { color: var(--warning); }
+  .chip.void { color: var(--void); }
+
+  /* ---- figure ---- */
+  figure { margin: 30px 0 0; }
+  .chartbox { border: 1px solid var(--hairline); background: var(--panel); padding: 18px 8px 10px; overflow-x: auto; }
+  svg { display: block; }
+  .legend { display: flex; gap: 20px; flex-wrap: wrap; padding: 0 14px 4px; margin-bottom: 4px; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--ink-2); }
+  .swatch { width: 11px; height: 11px; border-radius: 2px; flex: none; }
+
+  /* ---- defect ledger: a deliberately different object from the result tables ---- */
+  .ledger { border-top: 2px solid var(--ink); margin-top: 26px; }
+  .defect { display: grid; grid-template-columns: 74px 1fr 132px; gap: 20px;
+            padding: 16px 0; border-bottom: 1px solid var(--hairline); align-items: start; }
+  .defect .id { font-family: var(--f-mono); font-size: 12px; color: var(--void); font-weight: 500; padding-top: 1px; }
+  .defect .what { font-size: 14.5px; line-height: 1.5; }
+  .defect .what b { font-weight: 600; }
+  .defect .caught { font-family: var(--f-mono); font-size: 11px; line-height: 1.5;
+                    color: var(--ink-3); text-transform: uppercase; letter-spacing: .05em; }
+  @media (max-width: 720px) {
+    .defect { grid-template-columns: 60px 1fr; }
+    .defect .caught { grid-column: 2; }
+  }
+
+  blockquote {
+    margin: 26px 0; padding: 18px 24px; background: var(--panel);
+    border-left: 3px solid var(--accent); font-family: var(--f-display);
+    font-size: 17.5px; line-height: 1.5;
+  }
+  blockquote p { margin: 0; }
+
+  .callout { border: 1px solid var(--rule); background: var(--panel); padding: 20px 22px; margin: 26px 0; }
+  .callout h3 { margin-bottom: 8px; font-size: 16px; }
+  .callout p { font-size: 14.5px; color: var(--ink-2); margin-bottom: .7em; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  ul.tight { margin: 0 0 1em; padding-left: 20px; }
+  ul.tight li { margin-bottom: .5em; }
+
+  footer.colophon { border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 20px;
+                    font-size: 12.5px; color: var(--ink-3); line-height: 1.6; }
+  footer.colophon .mono { color: var(--ink-2); }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  @media (max-width: 640px) {
+    .frame { padding: 0 20px 64px; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 23px; }
+  }
+</style>
+
+<div class="frame">
+
+<header class="masthead">
+  <div class="kicker">
+    <span>Paper 6 · Phases 0-R → 2</span>
+    <span>Qwen2.5-1.5B · RTX 5070</span>
+    <span>n = 150 prompts</span>
+    <span>2026-09-04</span>
+  </div>
+  <h1>Retention Beats Precision</h1>
+  <p class="standfirst">
+    A recoverable quantized KV cache tier was tested against the mechanism it claims to
+    provide. Across two independent routes, the promotion machinery does nothing: at
+    matched token count it adds zero, and at deployable int8 the tier it promotes into
+    carries no quality signal at all. What the cache actually needs is decided one stage
+    earlier.
+  </p>
+</header>
+
+<div class="verdicts">
+  <div class="verdict">
+    <span class="tag">Finding 1 · Phase 1</span>
+    <div class="claim">Recoverability is inert at matched tokens</div>
+    <p class="detail">
+      The protection × recoverability interaction is null at every budget under iso-token
+      accounting (CI within ±0.05), and large under iso-memory — where the tiered arm is
+      quietly handed ~1.6× the tokens. The dissociation is the result.
+    </p>
+  </div>
+  <div class="verdict">
+    <span class="tag">Finding 2 · Phase 2</span>
+    <div class="claim">No promotion signal helps, including a perfect one</div>
+    <p class="detail">
+      Five promotion signals from perfectly circular (ρ = +1.000) to orthogonal to oracular
+      land within 0.03 of each other. Only a deliberately random ordering is measurably
+      worse. H-ORTH falsified.
+    </p>
+  </div>
+  <div class="verdict">
+    <span class="tag">Finding 3 · Diagnostic</span>
+    <div class="claim">The binding constraint is retention</div>
+    <p class="detail">
+      52.3% of credential tokens are evicted before promotion ever runs. A perfect
+      <em>promotion</em> oracle scores 0.188; a perfect <em>retention</em> oracle scores
+      0.943 at the same budget.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="sec-head"><span class="sec-num">01</span><h2>What was under test</h2></div>
+  <div class="measure">
+    <p>
+      A line of work fixes the irreversibility of autoregressive KV eviction by adding a
+      recoverable middle tier: high-confidence windows stay at full precision, intermediate
+      windows are quantized but retained and can be <em>promoted back</em>, and only the
+      lowest tier is deleted. A parallel line fixes the same failure structurally, by
+      reserving cache for boundary or pattern-matched spans regardless of attention score.
+      Neither line tests the other.
+    </p>
+    <p>
+      Two hypotheses were pre-registered. <strong>H-SUB</strong>: protection and
+      recoverability address the same failure — information becoming unreachable — so once
+      you have either, the other adds nothing. <strong>H-COMP</strong>: they address
+      different failures, protection handling structurally critical low-attention tokens and
+      recoverability handling drift, predicting a positive interaction. A sharper
+      sub-hypothesis followed from the pilot: <strong>H-ORTH</strong> — recoverability has
+      value if and only if the promotion signal is statistically independent of the eviction
+      signal, since promoting on the same cumulative-attention score that caused a demotion
+      is circular by construction.
+    </p>
+    <p>
+      The task is multi-credential retrieval with induced dormancy: six credentials buried
+      in a ~1030-token config dump, queried one per conversational turn in shuffled order,
+      scored as the fraction retrieved (<span class="mono">k/6</span>). Query rank is the
+      dormancy manipulation — a credential asked last has had five intervening turns in
+      which its cache entry could be demoted and must be recovered.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>The instrument, before the experiment</h2></div>
+  <p class="lede">
+    Five calibration gates had to pass before any inferential run. Two of them exist
+    specifically to catch an instrument that cannot express the quantity under test.
+  </p>
+  <div class="measure">
+    <p>
+      A first pilot failed silently on exactly that. Structural protection pinned every
+      credential to full precision unconditionally, so the recoverable tier had nothing to
+      recover, and all four cells of the 2×2 were inert — the factor under test could not
+      move the outcome. The gate that catches this is <strong>G3 (headroom)</strong>:
+      protection alone must land in 0.45–0.75, neither saturating nor collapsing.
+    </p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Phase 0-R calibration, n = 10 prompts. All five gates pass at N = 6 credentials.</caption>
+      <thead>
+        <tr><th>Gate</th><th>Criterion</th><th>Measured</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="lbl">G1 ceiling — oracle_static</td><td>≥ 0.95</td><td class="num">0.983</td><td><span class="chip valid">Pass</span></td></tr>
+        <tr><td class="lbl">G2 floor — no protection</td><td>≤ 0.10</td><td class="num">0.033</td><td><span class="chip valid">Pass</span></td></tr>
+        <tr><td class="lbl">G3 headroom — protection alone</td><td>0.45 – 0.75</td><td class="num">0.567</td><td><span class="chip valid">Pass</span></td></tr>
+        <tr><td class="lbl">G4 no-eviction reference</td><td>≥ 0.95</td><td class="num">0.983</td><td><span class="chip valid">Pass</span></td></tr>
+        <tr><td class="lbl">G5 dormancy actually occurs</td><td>≥ 0.80</td><td class="num">1.000</td><td><span class="chip valid">Pass</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h3>The gate was validated once, then applied nowhere</h3>
+    <p>
+      Calibration cleared G1–G5 at a single budget (280 tokens). Phase 1 then swept five
+      budgets derived from context-length fractions without re-deriving each cell's
+      competitive room — <span class="mono">B − recency_window − sink</span> — against those
+      same gates. At <span class="mono">B = 51</span> that quantity is <span class="num">−14</span>:
+      the fixed 65-token recency floor exceeds the entire budget, so every arm retains 65
+      tokens regardless of policy and all five collapse to an identical 0.013. The
+      arithmetic was available before launch; nobody ran it.
+    </p>
+    <p>
+      Two of five budgets are therefore excluded from the primary analysis, by a criterion
+      that is arithmetic rather than outcome-dependent. They remain in the results file.
+    </p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>
+        Budget classification. Competitive room is <span class="mono">B − 64 − 1</span>.
+        The oracle column is <span class="mono">oracle_static</span> at that budget, n = 150.
+      </caption>
+      <thead>
+        <tr><th>Budget (tokens)</th><th>Competitive room</th><th>Budget honoured</th><th>Oracle</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr class="dim"><td class="lbl">51</td><td class="num">−14</td><td>No — retains 65</td><td class="num">0.013</td><td><span class="chip void">Void</span></td></tr>
+        <tr class="dim"><td class="lbl">103</td><td class="num">38</td><td>Yes</td><td class="num">0.271</td><td><span class="chip void">Void</span></td></tr>
+        <tr><td class="lbl">154</td><td class="num">89</td><td>Yes</td><td class="num">0.648</td><td><span class="chip partial">Partial</span></td></tr>
+        <tr class="em"><td class="lbl">257</td><td class="num">192</td><td>Yes</td><td class="num">0.943</td><td><span class="chip valid">Valid</span></td></tr>
+        <tr class="em"><td class="lbl">514</td><td class="num">449</td><td>Yes</td><td class="num">0.958</td><td><span class="chip valid">Valid</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="figcap">
+    Only 257 and 514 clear every gate. 154 has real dynamic range but its own reference arm
+    sits at 65% of achievable, so it is reported separately rather than pooled. Any statement
+    about how an effect moves with budget rests on two clean points plus one qualified one —
+    not a five-point gradient.
+  </p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>Phase 1 — the dissociation</h2></div>
+  <p class="lede">
+    The same experiment, scored two ways, gives opposite answers. That is the finding, and
+    it is a claim about how this literature evaluates rather than about any one system.
+  </p>
+  <div class="measure">
+    <p>
+      A recoverable tier retains evicted content in quantized form, so at "matched budget =
+      N retained tokens" it consumes strictly more memory than permanent eviction. Both
+      accountings were run. Under <strong>iso-token</strong> the arms hold the same number of
+      retained tokens. Under <strong>iso-memory</strong> they hold the same accounted bytes,
+      which — with a quantized slot costed at 0.25 of a full slot — hands the tiered arm
+      about 1.6× the tokens.
+    </p>
+  </div>
+
+  <figure>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--series-1)"></span>iso-token — matched retained tokens</span>
+      <span><span class="swatch" style="background:var(--series-2)"></span>iso-memory — matched accounted bytes</span>
+      <span><span class="swatch" style="background:var(--accent-soft);border:1px solid var(--rule)"></span>±0.05 equivalence band</span>
+    </div>
+    <div class="chartbox">
+      <svg viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Interaction estimates by budget under two accountings; iso-token estimates sit inside the equivalence band at all three budgets while iso-memory estimates sit far outside it at 154 and 257.">
+        <rect x="182.1" y="46" width="104.3" height="216" fill="var(--accent-soft)"></rect>
+        <line x1="234.3" y1="46" x2="234.3" y2="262" stroke="var(--rule)" stroke-width="1"></line>
+        <line x1="130" y1="262" x2="860" y2="262" stroke="var(--rule)" stroke-width="1"></line>
+
+        <!-- x ticks -->
+        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-3)" text-anchor="middle">
+          <text x="182.1" y="281">−0.05</text>
+          <text x="234.3" y="281">0</text>
+          <text x="286.4" y="281">+0.05</text>
+          <text x="442.9" y="281">+0.20</text>
+          <text x="651.4" y="281">+0.40</text>
+          <text x="860" y="281">+0.60</text>
+        </g>
+        <text x="495" y="305" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--ink-2)" text-anchor="middle">Interaction: (protection + recovery) − (protection alone), fraction retrieved</text>
+
+        <!-- budget group labels -->
+        <g font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--ink)">
+          <text x="16" y="92">B = 154</text>
+          <text x="16" y="168">B = 257</text>
+          <text x="16" y="244">B = 514</text>
+        </g>
+        <g font-family="IBM Plex Sans, sans-serif" font-size="10.5" fill="var(--ink-3)">
+          <text x="16" y="107">qualified</text>
+          <text x="16" y="183">valid</text>
+          <text x="16" y="259">valid</text>
+        </g>
+
+        <!-- 154 -->
+        <line x1="232.0" y1="70" x2="238.9" y2="70" stroke="var(--series-1)" stroke-width="2"></line>
+        <circle cx="235.4" cy="70" r="5" fill="var(--series-1)" stroke="var(--panel)" stroke-width="2"></circle>
+        <text x="248" y="74" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">+0.001</text>
+
+        <line x1="420.8" y1="104" x2="462.6" y2="104" stroke="var(--series-2)" stroke-width="2"></line>
+        <circle cx="441.7" cy="104" r="5" fill="var(--series-2)" stroke="var(--panel)" stroke-width="2"></circle>
+        <text x="472" y="108" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">+0.199</text>
+
+        <!-- 257 -->
+        <line x1="230.8" y1="146" x2="243.6" y2="146" stroke="var(--series-1)" stroke-width="2"></line>
+        <circle cx="236.6" cy="146" r="5" fill="var(--series-1)" stroke="var(--panel)" stroke-width="2"></circle>
+        <text x="252" y="150" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">+0.002</text>
+
+        <line x1="761.6" y1="180" x2="817.4" y2="180" stroke="var(--series-2)" stroke-width="2"></line>
+        <circle cx="789.3" cy="180" r="5" fill="var(--series-2)" stroke="var(--panel)" stroke-width="2"></circle>
+        <text x="700" y="169" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">+0.532</text>
+
+        <!-- 514 -->
+        <line x1="223.9" y1="222" x2="238.9" y2="222" stroke="var(--series-1)" stroke-width="2"></line>
+        <circle cx="232.0" cy="222" r="5" fill="var(--series-1)" stroke="var(--panel)" stroke-width="2"></circle>
+        <text x="248" y="226" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">−0.002</text>
+
+        <line x1="163.4" y1="256" x2="198.4" y2="256" stroke="var(--series-2)" stroke-width="2"></line>
+        <circle cx="180.8" cy="256" r="5" fill="var(--series-2)" stroke="var(--panel)" stroke-width="2"></circle>
+        <text x="208" y="260" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">−0.051</text>
+      </svg>
+    </div>
+    <p class="figcap">
+      Points are mean paired per-prompt differences, n = 150; whiskers are 95% bootstrap
+      intervals (10,000 resamples, prompt-clustered). Under iso-token every interval lies
+      inside ±0.05 — equivalence, as pre-registered. Under iso-memory the estimates at 154
+      and 257 are an order of magnitude larger and nowhere near the band.
+    </p>
+  </figure>
+
+  <div class="measure" style="margin-top:26px">
+    <p>
+      The equivalence is stronger than the intervals suggest, because the arms are not merely
+      close on average — they are frequently <em>identical</em>. Protection and
+      protection-plus-recovery return the same score on 147, 145 and 141 of 150 prompts at
+      154, 257 and 514 respectively. At 257 only five prompts differ at all: two favour
+      protection, three favour protection-plus-recovery.
+    </p>
+  </div>
+
+  <div class="callout">
+    <h3>A note on the estimator</h3>
+    <p>
+      The pre-registration fixed a bootstrapped <em>median</em> of paired differences. On
+      this data that is the wrong summary and produces degenerate zero-width intervals: the
+      differences are overwhelmingly exactly zero, so the median is zero in essentially every
+      resample. The mean difference with its interval, reported alongside the count of
+      prompts that differ at all, is what the data supports. This is a deviation from the
+      pre-registration and is recorded as one.
+    </p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>
+        Sensitivity of the iso-memory side to <span class="mono">quant_byte_cost</span>, the
+        constant setting the token multiplier. Chosen after the pre-registration was hashed,
+        therefore swept rather than asserted. Budget 257, n = 150.
+      </caption>
+      <thead>
+        <tr><th>quant_byte_cost</th><th>Multiplier</th><th>True token budget</th><th>Interaction</th><th>95% CI</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="lbl">0.125</td><td class="num">1.78×</td><td class="num">457</td><td class="num">+0.543</td><td class="num">[+0.518, +0.570]</td></tr>
+        <tr class="em"><td class="lbl">0.25 (hashed)</td><td class="num">1.60×</td><td class="num">411</td><td class="num">+0.532</td><td class="num">[+0.506, +0.559]</td></tr>
+        <tr><td class="lbl">0.30</td><td class="num">1.48×</td><td class="num">395</td><td class="num">+0.536</td><td class="num">[+0.510, +0.561]</td></tr>
+        <tr><td class="lbl">0.50</td><td class="num">1.33×</td><td class="num">343</td><td class="num">+0.354</td><td class="num">[+0.331, +0.379]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="figcap">
+    The qualitative claim survives the whole plausible range, including a deliberately
+    punitive 0.50 implying only 2× compression. The magnitude moves (+0.35 to +0.54) and
+    should be reported as a range with the constant stated, never as a point estimate.
+  </p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">04</span><h2>Phase 2 — H-ORTH falsified</h2></div>
+  <p class="lede">
+    If circularity between the eviction and promotion signals were what made recoverability
+    inert, an orthogonal signal would rescue it. It does not — and neither does knowing the
+    future.
+  </p>
+  <div class="measure">
+    <p>
+      Protection is held on, tiering is held on, eviction stays attention-ranked, and the
+      promotion signal is the only varied factor. Composing the existing protection wrapper
+      with a tiering policy had to be rebuilt first: it pinned protected groups straight to
+      full precision and consumed the entire competitive budget, so nothing ever entered the
+      quantized tier and all five signals returned byte-identical results. Separating
+      <em>retention</em> (protection decides what cannot be evicted) from <em>precision</em>
+      (the promotion signal decides what deserves full fidelity) is both the fix and the more
+      faithful mechanism.
+    </p>
+  </div>
+
+  <figure>
+    <div class="chartbox">
+      <svg viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Five promotion signals at budget 257 all cluster between 0.15 and 0.22 within a usable band of 0.133 to 0.411.">
+        <rect x="388" y="46" width="414" height="200" fill="var(--accent-soft)"></rect>
+        <line x1="388" y1="46" x2="388" y2="246" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3"></line>
+        <line x1="802" y1="46" x2="802" y2="246" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3"></line>
+        <text x="388" y="38" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--ink-3)" text-anchor="middle">all-QUANT 0.133</text>
+        <text x="802" y="38" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--ink-3)" text-anchor="middle">all-FULL 0.411</text>
+
+        <line x1="190" y1="246" x2="860" y2="246" stroke="var(--rule)" stroke-width="1"></line>
+
+        <g font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--ink)">
+          <text x="14" y="76">P1 attention</text>
+          <text x="14" y="116">P2 epiphany</text>
+          <text x="14" y="156">P3 random</text>
+          <text x="14" y="196">P4 rotation</text>
+          <text x="14" y="236">P5 oracle</text>
+        </g>
+        <g font-family="IBM Plex Sans, sans-serif" font-size="10.5" fill="var(--ink-3)">
+          <text x="118" y="76">ρ +1.000</text>
+          <text x="118" y="116">ρ −0.077</text>
+          <text x="118" y="156">ρ −0.050</text>
+          <text x="118" y="196">ρ +0.002</text>
+          <text x="118" y="236">ρ −0.068</text>
+        </g>
+
+        <rect x="190" y="63" width="303" height="17" rx="2" fill="var(--series-1)"></rect>
+        <rect x="190" y="103" width="321" height="17" rx="2" fill="var(--series-1)"></rect>
+        <rect x="190" y="143" width="230" height="17" rx="2" fill="var(--series-2)"></rect>
+        <rect x="190" y="183" width="275" height="17" rx="2" fill="var(--series-1)"></rect>
+        <rect x="190" y="223" width="280" height="17" rx="2" fill="var(--series-1)"></rect>
+
+        <g font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--ink-2)">
+          <text x="501" y="76">0.203</text>
+          <text x="519" y="116">0.216</text>
+          <text x="428" y="156">0.154</text>
+          <text x="473" y="196">0.184</text>
+          <text x="478" y="236">0.188</text>
+        </g>
+
+        <text x="525" y="278" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="var(--ink-2)" text-anchor="middle">Fraction retrieved at budget 257, 4-bit tier, n = 150</text>
+      </svg>
+    </div>
+    <p class="figcap">
+      ρ is the mean Spearman correlation between the eviction signal and that arm's promotion
+      signal — the manipulation is exact at the extremes (+1.000 for the circular arm, ≈0 for
+      the rest). Orange marks the only arm reliably below the reference. The shaded region is
+      the usable band measured at this bit-width, so the comparison is against range that
+      demonstrably exists rather than an assumed one.
+    </p>
+  </figure>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Paired differences against P1, 95% bootstrap intervals, n = 150.</caption>
+      <thead>
+        <tr><th>Promotion signal</th><th>ρ vs eviction</th><th>Mean</th><th>vs P1</th><th>95% CI</th><th>Prompts differing</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="lbl">P1 attention (reference)</td><td class="num">+1.000</td><td class="num">0.203</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td class="lbl">P2 epiphany</td><td class="num">−0.077</td><td class="num">0.216</td><td class="num">+0.012</td><td class="num">[−0.016, +0.039]</td><td class="num">85 / 150</td></tr>
+        <tr class="em"><td class="lbl">P3 random</td><td class="num">−0.050</td><td class="num">0.154</td><td class="num">−0.049</td><td class="num">[−0.077, −0.021]</td><td class="num">91 / 150</td></tr>
+        <tr><td class="lbl">P4 rotation</td><td class="num">+0.002</td><td class="num">0.184</td><td class="num">−0.019</td><td class="num">[−0.047, +0.009]</td><td class="num">87 / 150</td></tr>
+        <tr><td class="lbl">P5 oracle (future need)</td><td class="num">−0.068</td><td class="num">0.188</td><td class="num">−0.016</td><td class="num">[−0.046, +0.013]</td><td class="num">95 / 149</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="measure" style="margin-top:22px">
+    <p>
+      The orthogonal candidate does not beat the perfectly circular one. What separates from
+      the pack is a deliberately uninformative ordering, and it separates <em>downward</em> —
+      so the promotion signal is not ignored, it is <strong>saturated</strong>. Any
+      non-degenerate ordering performs about equally; only actively bad ordering costs
+      anything. Rotation ties measured ranking, so the blind-rotation-beats-ranking result
+      from the adjacent block-diffusion work does not reproduce in this architecture.
+    </p>
+    <p>
+      P5 landing marginally below P1 prompted a check that it was not silently
+      "oracle on whatever subset fits". It is not: the future-need set is 111 tokens against
+      96 full-precision slots, but only ~53 of those tokens survive retention, and
+      <strong>0.000</strong> of selection calls were oversubscribed — every retained
+      credential token is promoted, none end quantized. The inversion is noise.
+    </p>
+  </div>
+
+  <blockquote>
+    <p>
+      The promotion decision is information-saturated — a perfect signal adds nothing — while
+      retention carries roughly 0.52 of unexploited headroom at the same budget. The
+      recoverable tier's machinery is aimed at the dimension that does not matter.
+    </p>
+  </blockquote>
+
+  <p class="figcap" style="max-width:66ch">
+    P5 bounds the <em>promotion</em> decision only. It cannot rescue the 52.3% of credential
+    tokens evicted at the retention stage, because retention is held attention-ranked in every
+    arm by design — that is what isolates the promotion signal as the sole varied factor. The
+    retention ceiling is <span class="mono">oracle_static</span> at the same budget: 0.943
+    against protection-alone's 0.423.
+  </p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">05</span><h2>The tier is free, and therefore idle</h2></div>
+  <p class="lede">
+    Phase 2 had to be run twice. At the bit-width everyone actually deploys, the quantity the
+    promotion signal controls has no effect on the outcome at all.
+  </p>
+  <div class="measure">
+    <p>
+      Holding retention fixed and varying only precision at int8: all-full 0.450, half-and-half
+      0.467, all-quantized 0.467. A quantized credential reads exactly as well as a
+      full-precision one. Quantization is genuinely applied — ~1.2% relative error on real cached
+      tensors, values provably differ — it is simply too mild to matter. That makes
+      P1 ≈ P2 ≈ P3 ≈ P4 ≈ P5 true by construction rather than by evidence, and H-ORTH
+      <em>untestable</em> at int8 rather than false. The first Phase 2 run was stopped at 39
+      prompts once this was established, and re-run at 4-bit where a usable band was measured
+      to exist.
+    </p>
+  </div>
+  <div class="callout">
+    <h3>Which converges with Phase 1</h3>
+    <p>
+      Phase 1 found recoverability inert at matched tokens and useful only when the accounting
+      hands it more. This finds the tier's precision dimension carries no quality signal at
+      deployable precision. Two independent routes, one conclusion: <strong>at int8 a
+      recoverable tier's entire value is byte-efficiency of retention</strong>, and the
+      promotion logic is decoration — it only has a job in precision regimes where the tier is
+      itself damaging the cache.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">06</span><h2>An unresolved anomaly</h2></div>
+  <p class="lede">
+    Reconstruction error is monotone in bit-width. Task accuracy is not. The instrument has
+    been cleared five ways and the mechanism remains unexplained.
+  </p>
+
+  <figure>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--accent)"></span>relative reconstruction error</span>
+      <span><span class="swatch" style="background:var(--series-1)"></span>fraction retrieved</span>
+      <span><span class="swatch" style="background:var(--series-2)"></span>degenerate-output rate</span>
+    </div>
+    <div class="chartbox">
+      <svg viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Left panel: reconstruction error rises monotonically as bit-width falls. Right panel: accuracy collapses at 6 and 5 bits, partially recovers at 4 bits, and collapses again at 3 bits.">
+        <text x="60" y="30" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">Error is monotone</text>
+        <text x="520" y="30" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">Accuracy is not</text>
+
+        <!-- panel A -->
+        <line x1="60" y1="250" x2="400" y2="250" stroke="var(--rule)" stroke-width="1"></line>
+        <line x1="60" y1="60" x2="60" y2="250" stroke="var(--rule)" stroke-width="1"></line>
+        <g stroke="var(--grid)" stroke-width="1">
+          <line x1="60" y1="155" x2="400" y2="155"></line>
+          <line x1="60" y1="60" x2="400" y2="60"></line>
+        </g>
+        <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--ink-3)" text-anchor="end">
+          <text x="53" y="254">0%</text>
+          <text x="53" y="159">20%</text>
+          <text x="53" y="64">40%</text>
+        </g>
+        <polyline points="60,243.1 128,237.3 196,228.6 264,209.1 332,166.3 400,72.8"
+                  fill="none" stroke="var(--accent)" stroke-width="2"></polyline>
+        <g fill="var(--accent)" stroke="var(--panel)" stroke-width="2">
+          <circle cx="60" cy="243.1" r="4.5"></circle><circle cx="128" cy="237.3" r="4.5"></circle>
+          <circle cx="196" cy="228.6" r="4.5"></circle><circle cx="264" cy="209.1" r="4.5"></circle>
+          <circle cx="332" cy="166.3" r="4.5"></circle><circle cx="400" cy="72.8" r="4.5"></circle>
+        </g>
+        <text x="408" y="76" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-2)">37.3%</text>
+        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-3)" text-anchor="middle">
+          <text x="60" y="270">8</text><text x="128" y="270">7</text><text x="196" y="270">6</text>
+          <text x="264" y="270">5</text><text x="332" y="270">4</text><text x="400" y="270">3</text>
+        </g>
+
+        <!-- panel B -->
+        <line x1="520" y1="250" x2="860" y2="250" stroke="var(--rule)" stroke-width="1"></line>
+        <line x1="520" y1="60" x2="520" y2="250" stroke="var(--rule)" stroke-width="1"></line>
+        <g stroke="var(--grid)" stroke-width="1">
+          <line x1="520" y1="155" x2="860" y2="155"></line>
+          <line x1="520" y1="60" x2="860" y2="60"></line>
+        </g>
+        <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--ink-3)" text-anchor="end">
+          <text x="513" y="254">0.0</text>
+          <text x="513" y="159">0.5</text>
+          <text x="513" y="64">1.0</text>
+        </g>
+        <polyline points="520,231.6 588,229.7 656,70.1 724,62.5 792,175.3 860,62.5"
+                  fill="none" stroke="var(--series-2)" stroke-width="2" stroke-dasharray="5 3"></polyline>
+        <g fill="var(--series-2)" stroke="var(--panel)" stroke-width="2">
+          <circle cx="520" cy="231.6" r="4"></circle><circle cx="588" cy="229.7" r="4"></circle>
+          <circle cx="656" cy="70.1" r="4"></circle><circle cx="724" cy="62.5" r="4"></circle>
+          <circle cx="792" cy="175.3" r="5"></circle><circle cx="860" cy="62.5" r="4"></circle>
+        </g>
+        <text x="792" y="163" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--series-2)" text-anchor="middle">0.393</text>
+        <polyline points="520,172.1 588,194.3 656,250 724,250 792,226.6 860,250"
+                  fill="none" stroke="var(--series-1)" stroke-width="2"></polyline>
+        <g fill="var(--series-1)" stroke="var(--panel)" stroke-width="2">
+          <circle cx="520" cy="172.1" r="4.5"></circle><circle cx="588" cy="194.3" r="4.5"></circle>
+          <circle cx="656" cy="250" r="4.5"></circle><circle cx="724" cy="250" r="4.5"></circle>
+          <circle cx="792" cy="226.6" r="5.5"></circle><circle cx="860" cy="250" r="4.5"></circle>
+        </g>
+        <text x="792" y="215" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--series-1)" text-anchor="middle">0.123</text>
+        <text x="656" y="266" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--ink-3)" text-anchor="middle">0.000</text>
+        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-3)" text-anchor="middle">
+          <text x="520" y="284">8</text><text x="588" y="284">7</text><text x="656" y="284">6</text>
+          <text x="724" y="284">5</text><text x="792" y="284">4</text><text x="860" y="284">3</text>
+        </g>
+        <text x="690" y="298" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-2)" text-anchor="middle">quantized-tier bit-width</text>
+        <text x="230" y="298" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-2)" text-anchor="middle">quantized-tier bit-width</text>
+      </svg>
+    </div>
+    <p class="figcap">
+      n = 50 prompts × 6 turns per width. Accuracy collapses to zero at 6 and 5 bits, partially
+      recovers at 4 bits despite carrying four times the reconstruction error of 6-bit, then
+      collapses again at 3. Reproduced across two independently written scripts.
+    </p>
+  </figure>
+
+  <div class="tablewrap">
+    <table>
+      <caption>
+        Error measured through the live generation path on intercepted calls, not a standalone
+        reimplementation. Degeneracy is output that is malformed or repetitive; empty output is
+        confirmed to be immediate end-of-sequence at the first decode step.
+      </caption>
+      <thead>
+        <tr><th>Bits</th><th>Rel. error</th><th>Accuracy</th><th>Degeneracy</th><th>Prompts fully degenerate</th><th>Prompts clean</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="lbl">8</td><td class="num">1.45%</td><td class="num">0.410</td><td class="num">0.097</td><td class="num">0 / 50</td><td class="num">34 / 50</td></tr>
+        <tr><td class="lbl">7</td><td class="num">2.67%</td><td class="num">0.293</td><td class="num">0.107</td><td class="num">0 / 50</td><td class="num">33 / 50</td></tr>
+        <tr class="dim"><td class="lbl">6</td><td class="num">4.50%</td><td class="num">0.000</td><td class="num">0.947</td><td class="num">35 / 50</td><td class="num">0 / 50</td></tr>
+        <tr class="dim"><td class="lbl">5</td><td class="num">8.62%</td><td class="num">0.000</td><td class="num">0.987</td><td class="num">46 / 50</td><td class="num">0 / 50</td></tr>
+        <tr class="em"><td class="lbl">4</td><td class="num">17.62%</td><td class="num">0.123</td><td class="num">0.393</td><td class="num">6 / 50</td><td class="num">10 / 50</td></tr>
+        <tr class="dim"><td class="lbl">3</td><td class="num">37.31%</td><td class="num">0.000</td><td class="num">0.987</td><td class="num">46 / 50</td><td class="num">0 / 50</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="measure" style="margin-top:22px">
+    <p>
+      Five hypotheses were tested and all are ruled out. <strong>Level counts</strong> are
+      correct at every width, asserted on 10,640 quantization calls intercepted during real
+      generation — 4-bit emits at most 16 distinct values, 5-bit 32, 6-bit 62. <strong>Scale
+      is correct</strong>: relative error measured on those same live calls is perfectly
+      monotone from 1.45% to 37.31%, with no subnormal scales and zero non-finite values, so
+      "correct levels, wrong scale" does not hold. <strong>Policy behaviour is identical</strong>
+      across widths — same tokens quantized, tier composition matching to three decimals, call
+      counts within 0.4%. The failure is <strong>not a per-prompt threshold</strong>: at 6
+      bits, 35 of 50 prompts are fully degenerate and <em>zero</em> are clean, which is
+      near-universal collapse rather than a boundary crossed on some inputs. And
+      <strong>level occupancy does not concentrate</strong>: the effective level count —
+      2<sup>H</sup> of the occupancy distribution — halves exactly in step with the nominal
+      count (97.6, 48.9, 24.4, 12.2, 6.1, 3.1 for keys), holding the occupancy ratio constant
+      to three decimals across every width, so 5- and 6-bit do not crowd their mass into fewer
+      usable levels than 4-bit does.
+    </p>
+    <p>
+      What is established: empty output is immediate end-of-sequence — a first-step logits
+      failure, tracking the empty rate almost exactly (5-bit 12.5% vs 16.7%; 3-bit 58.3% vs
+      62.5%). What is not established is why a width carrying four times the error produces
+      four times fewer degenerate outputs. It is reported as a characterised, reproducible
+      anomaly without a mechanism, because the available mechanisms have been tested and
+      falsified.
+    </p>
+  </div>
+
+  <div class="callout">
+    <h3>What this does and does not touch</h3>
+    <p>
+      <strong>Phase 2 stands.</strong> It is a within-bit-width comparison at a width verified
+      five ways, against a band measured empirically at that width rather than inferred from a
+      position on this curve. All five arms faced identical conditions.
+    </p>
+    <p>
+      <strong>One framing claim dies.</strong> "4-bit is the informative regime because it sits
+      between free and destructive" was the premise for re-running Phase 2 there, and it is
+      wrong — the curve is not ordered, so 4-bit sits between nothing. The empirical
+      justification is what actually licensed the run: at 4-bit the band is non-degenerate,
+      measured not inferred, and 4-bit is the one width with a genuinely mixed population.
+    </p>
+    <p>
+      <strong>A methodological caution follows.</strong> Retrieval accuracy under KV
+      quantization is not monotone in bit-width even where reconstruction error is. Bit-width
+      sweeps on exact-match tasks cannot be read as severity orderings.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">07</span><h2>Defect ledger</h2></div>
+  <p class="lede">
+    Six defects changed a reported number or invalidated a comparison. Every one was found by
+    a check, not by reading the code — which is the transferable part.
+  </p>
+
+  <div class="ledger">
+    <div class="defect">
+      <span class="id">D-01</span>
+      <div class="what"><b>fp16 degeneracy.</b> Every arm emitted repeated punctuation, including a plain
+        <span class="mono">generate()</span> call with no custom code. Qwen2.5 is trained in bf16 and
+        degenerates in fp16 on this stack.</div>
+      <span class="caught">Caught by<br>reference run</span>
+    </div>
+    <div class="defect">
+      <span class="id">D-02</span>
+      <div class="what"><b>Protection truncated the value.</b> Sponsorship covered a fixed 12 characters after
+        each label, shorter than the 27-character credential, so the "protected" arm could not see the
+        whole value it was protecting.</div>
+      <span class="caught">Caught by<br>output inspection</span>
+    </div>
+    <div class="defect">
+      <span class="id">D-03</span>
+      <div class="what"><b>No recency floor.</b> Pure attention ranking evicted the tokens immediately
+        preceding the answer, breaking local coherence for every arm including the oracle.</div>
+      <span class="caught">Caught by<br>oracle below ceiling</span>
+    </div>
+    <div class="defect">
+      <span class="id">D-04</span>
+      <div class="what"><b>Oracle sliced an unordered set.</b> When the must-keep set exceeded budget, an
+        arbitrary, non-reproducible subset of credentials was dropped by hash order. The oracle also lacked
+        credential labels, leaving surviving values unattributable.</div>
+      <span class="caught">Caught by<br>ceiling shortfall</span>
+    </div>
+    <div class="defect">
+      <span class="id">D-05</span>
+      <div class="what"><b>Analysis pooled two experiments.</b> The nominal budget was logged identically for
+        both accountings, but the tiered arms run iso-memory at ~1.6× the tokens. Every interim
+        recoverable-arm figure averaged a real effect with a token-count confound.</div>
+      <span class="caught">Caught by<br>irreproducible query</span>
+    </div>
+    <div class="defect">
+      <span class="id">D-06</span>
+      <div class="what"><b>The factor under test was inert.</b> Twice — first when protection pinned credentials
+        so tiering had nothing to recover, then again when the 8-bit tier carried no quality signal at all. In
+        both cases every arm returned identical results for a reason that was structural, not empirical.</div>
+      <span class="caught">Caught by<br>G3 + smoke test</span>
+    </div>
+  </div>
+
+  <div class="measure" style="margin-top:28px">
+    <p>
+      The strongest single check in the project was the cheapest: asserting that the number of
+      distinct values in a quantized tensor is at most 2<sup>bits</sup>, on the tensors actually
+      used during generation rather than in a standalone test. That form — assert an invariant on
+      live data, not on a reimplementation — would have caught D-04 and D-05 as well. Three of the
+      six defects were surfaced by a reference arm behaving impossibly rather than by any test suite:
+      an oracle below its own ceiling, a policy beating a no-eviction baseline, five arms returning
+      byte-identical results.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">08</span><h2>Scope, and what follows</h2></div>
+  <div class="measure">
+    <p>
+      Everything here holds for one quantizer — per-position affine min–max over the
+      <span class="mono">(kv_heads, head_dim)</span> slice — at these bit-widths, one model at
+      1.5B parameters, and one synthetic task. A scheme with different group sizes or
+      per-channel scales will move the free-versus-damaging boundary. The structural claim
+      survives that: there exists a precision above which promotion logic is inert, and int8 is
+      above it here. The boundary's location is implementation-dependent and should be stated
+      as such.
+    </p>
+    <p>
+      The budget gradient rests on two clean points and one qualified one, not five. The
+      iso-memory magnitude is a range, not a number. And the pre-registered median estimator was
+      replaced with a mean, which is a recorded deviation rather than a silent one.
+    </p>
+    <p>
+      Per the pre-registration's own kill gate, this is the branch where no promotion signal
+      helps: later phases are not worth compute beyond what supports the negative claim. The two
+      results that do carry — the iso-token/iso-memory dissociation, and promotion saturation
+      against unexploited retention headroom — are claims about how this literature evaluates
+      recoverable eviction, not about any single system. Both point the same way: if a
+      recoverable tier earns its keep, it earns it by retaining more per byte, and the machinery
+      built to decide what to promote is solving the wrong half of the problem.
+    </p>
+  </div>
+</section>
+
+<footer class="colophon">
+  <p>
+    Qwen2.5-1.5B-Instruct, bfloat16, eager attention · RTX 5070, 12 GB · six credentials of 14
+    hex characters in a ~1030-token context · greedy decoding · n = 150 prompts, seeds
+    3000–3149, disjoint from the calibration set · 10,000-resample prompt-clustered bootstrap
+    throughout.
+  </p>
+  <p class="mono" style="margin-bottom:0">
+    PREREG.md sha256 5d3c7e3b… · ADDENDUM_2026-09-03.md sha256 0c599372… (§9 analysis-pooling
+    correction, §10 quant_byte_cost sensitivity, §11 tier-is-a-no-op, §12 Phase 2, §13
+    level-occupancy) · ANALYSIS.md sha256 7a81eb0d… — the repo-resident analysis doc governs
+    where it differs from this page
+  </p>
+</footer>
+
+</div>

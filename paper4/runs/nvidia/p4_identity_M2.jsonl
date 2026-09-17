@@ -1,0 +1,16 @@
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-snapkv", "instance": 0, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-adakv_snapkv", "instance": 0, "identity_ok": true, "slots_exact": 19, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-expected_attn", "instance": 0, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-keydiff", "instance": 0, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-snapkv", "instance": 1, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-adakv_snapkv", "instance": 1, "identity_ok": true, "slots_exact": 14, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-expected_attn", "instance": 1, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=40", "arm": "U-keydiff", "instance": 1, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-snapkv", "instance": 0, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-adakv_snapkv", "instance": 0, "identity_ok": true, "slots_exact": 16, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-expected_attn", "instance": 0, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-keydiff", "instance": 0, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-snapkv", "instance": 1, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-adakv_snapkv", "instance": 1, "identity_ok": true, "slots_exact": 17, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-expected_attn", "instance": 1, "identity_ok": true, "slots_exact": 72, "slots": 72}
+{"produced_on": "RTX 5070 (Machine N)", "model_tag": "M2", "package": "identity", "label": "c=1", "arm": "U-keydiff", "instance": 1, "identity_ok": true, "slots_exact": 72, "slots": 72}

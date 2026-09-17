@@ -1,0 +1,9 @@
+[13:31:47] slot free; running Llama post-hoc
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 26059.22it/s]
+=== level occupancy (3B) ===
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  8-bit: max= 199/256  mean_used= 151.28 occupancy=0.591 viol=0
+  7-bit: max= 115/128  mean_used=  90.02 occupancy=0.703 viol=0
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-cko31eud'}
+  warnings.warn(
+[13:32:52] === LLAMA POSTHOC DONE ===

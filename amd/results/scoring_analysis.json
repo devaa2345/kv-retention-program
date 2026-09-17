@@ -1,0 +1,18 @@
+{
+  "n_prompts": 150,
+  "judgements": 900,
+  "hits": 719,
+  "accuracy": 0.7988888888888889,
+  "rescued": {
+    "exact (current)": 0,
+    "case-insensitive": 0,
+    "whitespace-stripped": 0,
+    "edit distance <= 1": 77,
+    "edit distance <= 2": 91
+  },
+  "failure_kinds": {
+    "near_miss": 104,
+    "wrong_value": 11,
+    "no_value": 66
+  }
+}

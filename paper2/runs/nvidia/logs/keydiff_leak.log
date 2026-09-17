@@ -1,0 +1,37 @@
+  [25/200]
+  [50/200]
+  [75/200]
+  [100/200]
+  [125/200]
+  [150/200]
+  [175/200]
+  [200/200]
+
+Qwen/Qwen2.5-3B-Instruct  aware  C=512  N=200 instances x 4 variants
+
+(b) DOES THE TEXT CARRY THE ANSWER?  (n=800 prefixes)
+    answer_in_prefix_outside_gold_line     0  (0.0%)
+    answer_in_query                        0  (0.0%)
+    answer_in_template_tail                0  (0.0%)
+    duplicate value elsewhere in context   0  (0.0%)
+
+(a) CONDITIONAL ON GOLD NOT RETAINED: does the VALUE alone explain it?
+    arm        n_no_gold        acc    n val_ret  acc|val_ret      n val_NOT    acc|val_NOT
+    keydiff         772     0.4210            1       1.0000            771         0.4202
+    snapkv          741     0.0918            4       1.0000            737         0.0868
+    floor_pos       580     0.0069            4       1.0000            576         0.0000
+
+    distinct 6-digit numbers emitted per answer (gold-not-retained population):
+      keydiff    mean 1.00   max 1   % with >1: 0.0%
+      snapkv     mean 0.99   max 1   % with >1: 0.0%
+      floor_pos  mean 0.99   max 1   % with >1: 0.0%
+
+    sample KeyDiff correct-without-gold outputs:
+      answer=415945 value_retained=False  out='415945'
+      answer=121828 value_retained=False  out='121828'
+      answer=744153 value_retained=False  out='744153'
+      answer=390573 value_retained=False  out='390573'
+      answer=823207 value_retained=False  out='823207'
+      answer=649549 value_retained=False  out='649549'
+      answer=708523 value_retained=False  out='708523'
+      answer=609763 value_retained=False  out='609763'

@@ -1,0 +1,270 @@
+
+====================================================================================================
+ACCURACY PLANE  c x C  (generation n=100 -- stated deviation from registered 200)
+====================================================================================================
+
+### M2   cell n 100
+arm                 C       c=1       c=8      c=19      c=40
+floor_pos          32     0.075     0.030     0.010     0.000
+snapkv             32     0.220     0.035     0.010     0.000
+adakv_snapkv       32     0.260     0.035     0.013     0.000
+expected_attn      32     0.615     0.028     0.007     0.000
+keydiff            32     0.045     0.040     0.013     0.000
+oracle_causal      32     0.833     0.670     0.190     0.000
+
+floor_pos          64     0.100     0.035     0.020     0.003
+snapkv             64     0.400     0.035     0.020     0.000
+adakv_snapkv       64     0.405     0.030     0.015     0.000
+expected_attn      64     0.720     0.028     0.013     0.000
+keydiff            64     0.055     0.048     0.015     0.000
+oracle_causal      64     0.828     0.795     0.580     0.068
+
+floor_pos         128     0.122     0.037     0.033     0.000
+snapkv            128     0.557     0.058     0.015     0.010
+adakv_snapkv      128     0.585     0.050     0.020     0.015
+expected_attn     128     0.730     0.040     0.013     0.000
+keydiff           128     0.233     0.050     0.018     0.000
+oracle_causal     128     0.828     0.802     0.792     0.370
+
+floor_pos         256     0.180     0.072     0.070     0.035
+snapkv            256     0.710     0.102     0.030     0.022
+adakv_snapkv      256     0.762     0.117     0.043     0.015
+expected_attn     256     0.735     0.043     0.018     0.005
+keydiff           256     0.787     0.070     0.035     0.005
+oracle_causal     256     0.835     0.802     0.797     0.588
+
+floor_pos         512     0.285     0.188     0.133     0.180
+snapkv            512     0.818     0.200     0.102     0.052
+adakv_snapkv      512     0.818     0.268     0.102     0.055
+expected_attn     512     0.775     0.098     0.043     0.003
+keydiff           512     0.790     0.105     0.062     0.018
+oracle_causal     512     0.860     0.880     0.810     0.705
+
+  RETENTION RATIO method/floor, with the section 9.1 rule applied:
+  X = excluded (floor < 0.05)   V = VACUOUS (all compressed <= 0.02)
+arm                 C       c=1       c=8      c=19      c=40
+snapkv             32      2.93         X         V         V
+snapkv             64      4.00         X         V         V
+snapkv            128      4.55         X         X         V
+snapkv            256      3.94      1.41      0.43         X
+snapkv            512      2.87      1.07      0.77      0.29
+adakv_snapkv       32      3.47         X         V         V
+adakv_snapkv       64      4.05         X         V         V
+adakv_snapkv      128      4.78         X         X         V
+adakv_snapkv      256      4.24      1.62      0.61         X
+adakv_snapkv      512      2.87      1.43      0.77      0.31
+expected_attn      32      8.20         X         V         V
+expected_attn      64      7.20         X         V         V
+expected_attn     128      5.96         X         X         V
+expected_attn     256      4.08      0.59      0.25         X
+expected_attn     512      2.72      0.52      0.32      0.01
+keydiff            32      0.60         X         V         V
+keydiff            64      0.55         X         V         V
+keydiff           128      1.90         X         X         V
+keydiff           256      4.38      0.97      0.50         X
+keydiff           512      2.77      0.56      0.47      0.10
+
+  coverage: 10 of 20 (c, C) cells admissible; 5 excluded, 5 vacuous
+
+  COST AXIS on admissible cells: does the ratio fall with c at fixed C?
+    snapkv         C=256  c=1:3.94 c=8:1.41 c=19:0.43  falls=True
+    snapkv         C=512  c=1:2.87 c=8:1.07 c=19:0.77 c=40:0.29  falls=True
+    adakv_snapkv   C=256  c=1:4.24 c=8:1.62 c=19:0.61  falls=True
+    adakv_snapkv   C=512  c=1:2.87 c=8:1.43 c=19:0.77 c=40:0.31  falls=True
+    expected_attn  C=256  c=1:4.08 c=8:0.59 c=19:0.25  falls=True
+    expected_attn  C=512  c=1:2.72 c=8:0.52 c=19:0.32 c=40:0.01  falls=True
+    keydiff        C=256  c=1:4.38 c=8:0.97 c=19:0.50  falls=True
+    keydiff        C=512  c=1:2.77 c=8:0.56 c=19:0.47 c=40:0.10  falls=True
+  ratio falls with c in 8 of 8 admissible (arm, C) sequences
+
+### M3   cell n [55, 56]
+arm                 C       c=1       c=9      c=19      c=39
+floor_pos          32     0.080     0.018     0.049     0.013
+snapkv             32     0.335     0.000     0.013     0.009
+adakv_snapkv       32     0.393     0.013     0.018     0.004
+expected_attn      32     0.607     0.018     0.004     0.004
+keydiff            32     0.067     0.004     0.004     0.004
+oracle_causal      32     0.973     0.656     0.241     0.013
+
+floor_pos          64     0.085     0.027     0.062     0.014
+snapkv             64     0.424     0.000     0.013     0.005
+adakv_snapkv       64     0.554     0.013     0.013     0.000
+expected_attn      64     0.688     0.018     0.004     0.005
+keydiff            64     0.174     0.018     0.013     0.009
+oracle_causal      64     0.978     0.857     0.643     0.036
+
+floor_pos         128     0.098     0.045     0.094     0.018
+snapkv            128     0.571     0.018     0.013     0.005
+adakv_snapkv      128     0.643     0.013     0.022     0.005
+expected_attn     128     0.714     0.018     0.009     0.009
+keydiff           128     0.728     0.018     0.018     0.005
+oracle_causal     128     0.973     0.848     0.781     0.150
+
+floor_pos         256     0.147     0.085     0.147     0.041
+snapkv            256     0.737     0.018     0.027     0.009
+adakv_snapkv      256     0.839     0.089     0.058     0.009
+expected_attn     256     0.817     0.027     0.018     0.009
+keydiff           256     0.938     0.040     0.040     0.009
+oracle_causal     256     0.991     0.857     0.763     0.214
+
+floor_pos         512     0.272     0.237     0.281     0.100
+snapkv            512     0.884     0.116     0.058     0.023
+adakv_snapkv      512     0.902     0.379     0.156     0.027
+expected_attn     512     0.884     0.125     0.062     0.018
+keydiff           512     0.938     0.156     0.098     0.014
+oracle_causal     512     0.987     0.888     0.799     0.223
+
+  RETENTION RATIO method/floor, with the section 9.1 rule applied:
+  X = excluded (floor < 0.05)   V = VACUOUS (all compressed <= 0.02)
+arm                 C       c=1       c=9      c=19      c=39
+snapkv             32      4.17         V         X         V
+snapkv             64      5.00         X      0.21         V
+snapkv            128      5.82         X      0.14         V
+snapkv            256      5.00      0.21      0.18         X
+snapkv            512      3.25      0.49      0.21      0.23
+adakv_snapkv       32      4.89         V         X         V
+adakv_snapkv       64      6.53         X      0.21         V
+adakv_snapkv      128      6.55         X      0.24         V
+adakv_snapkv      256      5.70      1.05      0.39         X
+adakv_snapkv      512      3.31      1.60      0.56      0.27
+expected_attn      32      7.56         V         X         V
+expected_attn      64      8.11         X      0.07         V
+expected_attn     128      7.27         X      0.10         V
+expected_attn     256      5.55      0.32      0.12         X
+expected_attn     512      3.25      0.53      0.22      0.18
+keydiff            32      0.83         V         X         V
+keydiff            64      2.05         X      0.21         V
+keydiff           128      7.41         X      0.19         V
+keydiff           256      6.36      0.47      0.27         X
+keydiff           512      3.44      0.66      0.35      0.14
+
+  coverage: 12 of 20 (c, C) cells admissible; 4 excluded, 4 vacuous
+
+  COST AXIS on admissible cells: does the ratio fall with c at fixed C?
+    snapkv         C= 64  c=1:5.00 c=19:0.21  falls=True
+    snapkv         C=128  c=1:5.82 c=19:0.14  falls=True
+    snapkv         C=256  c=1:5.00 c=9:0.21 c=19:0.18  falls=True
+    snapkv         C=512  c=1:3.25 c=9:0.49 c=19:0.21 c=39:0.23  falls=True
+    adakv_snapkv   C= 64  c=1:6.53 c=19:0.21  falls=True
+    adakv_snapkv   C=128  c=1:6.55 c=19:0.24  falls=True
+    adakv_snapkv   C=256  c=1:5.70 c=9:1.05 c=19:0.39  falls=True
+    adakv_snapkv   C=512  c=1:3.31 c=9:1.60 c=19:0.56 c=39:0.27  falls=True
+    expected_attn  C= 64  c=1:8.11 c=19:0.07  falls=True
+    expected_attn  C=128  c=1:7.27 c=19:0.10  falls=True
+    expected_attn  C=256  c=1:5.55 c=9:0.32 c=19:0.12  falls=True
+    expected_attn  C=512  c=1:3.25 c=9:0.53 c=19:0.22 c=39:0.18  falls=True
+    keydiff        C= 64  c=1:2.05 c=19:0.21  falls=True
+    keydiff        C=128  c=1:7.41 c=19:0.19  falls=True
+    keydiff        C=256  c=1:6.36 c=9:0.47 c=19:0.27  falls=True
+    keydiff        C=512  c=1:3.44 c=9:0.66 c=19:0.35 c=39:0.14  falls=True
+  ratio falls with c in 16 of 16 admissible (arm, C) sequences
+
+====================================================================================================
+CROSSOVER -- predicted winners (F5, Mode A) vs observed winners, per (model, c, C)
+====================================================================================================
+Predicted set = {arm : F5 completion from measured p_g > A_floor}; observed set =
+{arm : accuracy > floor_pos accuracy}. Scored only on admissible cells (section 9.1).
+
+### M2
+    c=1    C=32   observed adakv_snapkv,expected_attn,snapkv        predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=64   observed adakv_snapkv,expected_attn,snapkv        predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=128  observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=256  observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=512  observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=8    C=256  observed adakv_snapkv,snapkv                      predicted(reg. arms) (none)                       mismatch
+    c=8    C=512  observed adakv_snapkv,snapkv                      predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=19   C=256  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+    c=19   C=512  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+    c=40   C=512  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+
+### M3
+    c=1    C=32   observed adakv_snapkv,expected_attn,snapkv        predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=64   observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=128  observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=256  observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=1    C=512  observed adakv_snapkv,expected_attn,keydiff,snapkv predicted(reg. arms) snapkv,adakv_snapkv          MATCH
+    c=9    C=256  observed adakv_snapkv                             predicted(reg. arms) (none)                       mismatch
+    c=9    C=512  observed adakv_snapkv                             predicted(reg. arms) (none)                       mismatch
+    c=19   C=64   observed (none)                                   predicted(reg. arms) (none)                       MATCH
+    c=19   C=128  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+    c=19   C=256  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+    c=19   C=512  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+    c=39   C=512  observed (none)                                   predicted(reg. arms) (none)                       MATCH
+
+  crossover agreement on registered arms: 19 of 22 admissible cells
+
+====================================================================================================
+k AXIS -- P-k containment from captures (n=200), accuracy from kaxis package (n=100)
+====================================================================================================
+
+### M2
+  arm                C   k       c      p_g     q obs   c_eff* UPPER inert LOWER indep  inside  accuracy
+  snapkv            64   1   20.98   0.0717   0.04868   1.1467     0.03353     0.03353   False         -
+  snapkv            64   2   18.98   0.0550   0.03634   1.1431     0.02421     0.00075   False         -
+      P-k part 1, raw q non-increasing in k: True   (p_g k=1 0.0717 -> k=2 0.0550)
+      form-free: c_eff* k=1 1.1467 -> k=2 1.1431   rises=False
+  snapkv           512   1   20.98   0.2950   0.10023   1.8842     0.20137     0.20137   False         -
+  snapkv           512   2   18.98   0.2468   0.06995   1.9013     0.15172     0.03072    True         -
+      P-k part 1, raw q non-increasing in k: True   (p_g k=1 0.2950 -> k=2 0.2468)
+      form-free: c_eff* k=1 1.8842 -> k=2 1.9013   rises=True
+  adakv_snapkv      64   1   20.98   0.0724   0.04877   1.1507     0.03581     0.03581   False         -
+  adakv_snapkv      64   2   18.98   0.0552   0.03689   1.1388     0.02443     0.00078   False         -
+      P-k part 1, raw q non-increasing in k: True   (p_g k=1 0.0724 -> k=2 0.0552)
+      form-free: c_eff* k=1 1.1507 -> k=2 1.1388   rises=False
+  adakv_snapkv     512   1   20.98   0.2982   0.10089   1.8956     0.20556     0.20556   False         -
+  adakv_snapkv     512   2   18.98   0.2514   0.07215   1.9041     0.16225     0.03372    True         -
+      P-k part 1, raw q non-increasing in k: True   (p_g k=1 0.2982 -> k=2 0.2514)
+      form-free: c_eff* k=1 1.8956 -> k=2 1.9041   rises=True
+
+  REGISTERED P-k, reported as registered:
+    part 1  q non-increasing in k ........ 4 of 4
+    part 2  q inside bounds at k=2 ........ 2 of 4
+  FLAW IN THE REGISTERED TEST, stated not re-decided: at k = 1 the two bounds
+  COINCIDE (k-inert and independent-spans are the same fact), so 'inside' at k=1
+  only asks whether F5 is exactly right -- and F5's budget error is already
+  registered (section 5.3). Containment is therefore informative at k = 2 only, and
+  both bounds inherit F5's error there too. k=1 rows are printed but not counted.
+  part 1 is also confounded by p_g, which is not held fixed across k: where p_g
+  RISES at k=2, raw q can rise with it. Restated T2 says completion follows p_g,
+  so the form-free c_eff* comparison is the cleaner reading of whether k costs
+  anything beyond the retained fraction.
+  form-free: c_eff* rises from k=1 to k=2 in 2 of 4 (arm, C) pairs
+
+### M3
+  arm                C   k       c      p_g     q obs   c_eff* UPPER inert LOWER indep  inside  accuracy
+  snapkv            64   1   18.46   0.0559   0.02959   1.2207     0.02446     0.02446   False         -
+  snapkv            64   2   18.98   0.0613   0.03778   1.1735     0.02624     0.00106   False         -
+      P-k part 1, raw q non-increasing in k: False   (p_g k=1 0.0559 -> k=2 0.0613)
+      form-free: c_eff* k=1 1.2207 -> k=2 1.1735   rises=False
+  snapkv           512   1   18.46   0.2781   0.08175   1.9566     0.19080     0.19080   False         -
+  snapkv           512   2   18.98   0.2557   0.08099   1.8430     0.16382     0.03415    True         -
+      P-k part 1, raw q non-increasing in k: True   (p_g k=1 0.2781 -> k=2 0.2557)
+      form-free: c_eff* k=1 1.9566 -> k=2 1.8430   rises=False
+  adakv_snapkv      64   1   18.46   0.0548   0.02752   1.2373     0.02442     0.02442   False         -
+  adakv_snapkv      64   2   18.98   0.0600   0.03546   1.1866     0.02602     0.00103   False         -
+      P-k part 1, raw q non-increasing in k: False   (p_g k=1 0.0548 -> k=2 0.0600)
+      form-free: c_eff* k=1 1.2373 -> k=2 1.1866   rises=False
+  adakv_snapkv     512   1   18.46   0.2826   0.09727   1.8441     0.19794     0.19794   False         -
+  adakv_snapkv     512   2   18.98   0.2636   0.09230   1.7870     0.17857     0.03796    True         -
+      P-k part 1, raw q non-increasing in k: True   (p_g k=1 0.2826 -> k=2 0.2636)
+      form-free: c_eff* k=1 1.8441 -> k=2 1.7870   rises=False
+
+  REGISTERED P-k, reported as registered:
+    part 1  q non-increasing in k ........ 2 of 4
+    part 2  q inside bounds at k=2 ........ 2 of 4
+  FLAW IN THE REGISTERED TEST, stated not re-decided: at k = 1 the two bounds
+  COINCIDE (k-inert and independent-spans are the same fact), so 'inside' at k=1
+  only asks whether F5 is exactly right -- and F5's budget error is already
+  registered (section 5.3). Containment is therefore informative at k = 2 only, and
+  both bounds inherit F5's error there too. k=1 rows are printed but not counted.
+  part 1 is also confounded by p_g, which is not held fixed across k: where p_g
+  RISES at k=2, raw q can rise with it. Restated T2 says completion follows p_g,
+  so the form-free c_eff* comparison is the cleaner reading of whether k costs
+  anything beyond the retained fraction.
+  form-free: c_eff* rises from k=1 to k=2 in 0 of 4 (arm, C) pairs
+
+====================================================================================================
+LADDER ANCHORS -- full_cache, tripwires, oracle_prescient and I(C) at c=19
+====================================================================================================
+  M2: no data
+  M3: no data

@@ -1,0 +1,61 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "level_occupancy": {
+    "8": {
+      "limit": 256,
+      "max_levels": 161,
+      "mean_levels_used": 117.46880269814503,
+      "occupancy_frac": 0.458862510539629,
+      "violations": 0
+    },
+    "7": {
+      "limit": 128,
+      "max_levels": 108,
+      "mean_levels_used": 76.66394779771615,
+      "occupancy_frac": 0.5989370921696574,
+      "violations": 0
+    },
+    "6": {
+      "limit": 64,
+      "max_levels": 61,
+      "mean_levels_used": 46.76860179885527,
+      "occupancy_frac": 0.7307594031071136,
+      "violations": 0
+    },
+    "5": {
+      "limit": 32,
+      "max_levels": 32,
+      "mean_levels_used": 27.220613287904598,
+      "occupancy_frac": 0.8506441652470187,
+      "violations": 0
+    },
+    "4": {
+      "limit": 16,
+      "max_levels": 16,
+      "mean_levels_used": 14.997340425531915,
+      "occupancy_frac": 0.9373337765957447,
+      "violations": 0
+    },
+    "3": {
+      "limit": 8,
+      "max_levels": 8,
+      "mean_levels_used": 7.912403100775194,
+      "occupancy_frac": 0.9890503875968992,
+      "violations": 0
+    }
+  },
+  "intercepted_monotonicity": {
+    "captured": 24,
+    "error_pct_by_bits": {
+      "8": 1.0746143486661215,
+      "7": 2.1391241966436305,
+      "6": 4.312548382828633,
+      "5": 8.649679723506173,
+      "4": 18.103141523897648,
+      "3": 37.49820273369551,
+      "2": 89.13236136237781
+    },
+    "monotone": true,
+    "problems": []
+  }
+}

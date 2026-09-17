@@ -1,0 +1,19 @@
+{
+  "p21": true,
+  "p22": true,
+  "p23": false,
+  "p24": true,
+  "gate": true,
+  "v22": {
+    "M2": {
+      "snapkv": 0.2,
+      "adakv_snapkv": 0.195
+    },
+    "M3": {
+      "snapkv": 0.235,
+      "adakv_snapkv": 0.16499999999999998
+    }
+  },
+  "v23_verdict_defective": "VACUOUS",
+  "v23_verdict_corrected": "VACUOUS"
+}

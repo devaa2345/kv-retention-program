@@ -1,0 +1,25 @@
+Diagnostic D (DISPERSION_RULE.md). Produced on RTX 5070 (Machine N). c~40, C=512, n=50.
+
+== M2
+  descriptive (confounded across arms, not a test):
+    arm                D_runs    D_iso   q_fact      acc     conv
+    floor_pos             1.0    0.008    0.285    0.170     0.60
+    snapkv               71.4    0.145    0.067    0.045     0.67
+    adakv_snapkv         69.8    0.093    0.066    0.045     0.68
+    U-snapkv             28.3    0.523    0.225    0.090     0.40
+    U-adakv_snapkv       25.1    0.443    0.239    0.090     0.38
+  D_runs  queries 800 correct 54  beta/SD -0.0990 [-0.2530, +0.0304]  r(D,q_fact) -0.30  -> NOT SUPPORTED
+  D_iso   queries 447 correct 54  beta/SD +0.0522 [+0.0164, +0.0896]  r(D,q_fact) -0.53  -> CONTRADICTED
+
+== M3
+  descriptive (confounded across arms, not a test):
+    arm                D_runs    D_iso   q_fact      acc     conv
+    floor_pos             1.0    0.014    0.305    0.100     0.33
+    snapkv               78.1    0.251    0.067    0.030     0.45
+    adakv_snapkv         65.0    0.164    0.081    0.020     0.25
+    U-snapkv             28.9    0.544    0.245    0.030     0.12
+    U-adakv_snapkv       20.5    0.324    0.281    0.055     0.20
+  D_runs  queries 800 correct 27  beta/SD +0.0133 [-0.2715, +0.2996]  r(D,q_fact) -0.38  -> NOT SUPPORTED
+  D_iso   queries 633 correct 26  beta/SD +0.0098 [-0.0135, +0.0331]  r(D,q_fact) -0.28  -> NOT SUPPORTED
+
+MECHANISM CLAIM (D_runs SUPPORTED on both models): NOT SUPPORTED -- recorded as a failed hypothesis

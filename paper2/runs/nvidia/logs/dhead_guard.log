@@ -1,0 +1,67 @@
+  guard kept 153 instances at C=32; recomputing all 200 with the guard relaxed
+    grid_00001 failed: AssertionError
+    grid_00011 failed: AssertionError
+    grid_00012 failed: AssertionError
+    grid_00014 failed: AssertionError
+    grid_00016 failed: AssertionError
+    grid_00017 failed: AssertionError
+    grid_00021 failed: AssertionError
+    grid_00022 failed: AssertionError
+  [25/200]
+    grid_00027 failed: AssertionError
+    grid_00028 failed: AssertionError
+    grid_00029 failed: AssertionError
+    grid_00032 failed: AssertionError
+    grid_00033 failed: AssertionError
+    grid_00034 failed: AssertionError
+    grid_00043 failed: AssertionError
+    grid_00045 failed: AssertionError
+    grid_00047 failed: AssertionError
+  [50/200]
+    grid_00051 failed: AssertionError
+    grid_00058 failed: AssertionError
+    grid_00059 failed: AssertionError
+    grid_00062 failed: AssertionError
+    grid_00064 failed: AssertionError
+    grid_00065 failed: AssertionError
+    grid_00068 failed: AssertionError
+    grid_00069 failed: AssertionError
+  [75/200]
+    grid_00089 failed: AssertionError
+  [100/200]
+    grid_00100 failed: AssertionError
+    grid_00101 failed: AssertionError
+    grid_00102 failed: AssertionError
+    grid_00104 failed: AssertionError
+    grid_00114 failed: AssertionError
+    grid_00115 failed: AssertionError
+    grid_00121 failed: AssertionError
+  [125/200]
+    grid_00130 failed: AssertionError
+    grid_00131 failed: AssertionError
+    grid_00144 failed: AssertionError
+  [150/200]
+    grid_00150 failed: AssertionError
+    grid_00154 failed: AssertionError
+    grid_00158 failed: AssertionError
+    grid_00167 failed: AssertionError
+    grid_00169 failed: AssertionError
+    grid_00171 failed: AssertionError
+  [175/200]
+    grid_00181 failed: AssertionError
+    grid_00183 failed: AssertionError
+    grid_00184 failed: AssertionError
+    grid_00186 failed: AssertionError
+    grid_00198 failed: AssertionError
+  [200/200]
+
+Delta_head = A(perhead) - A(causal),  M2  C=32,  2 KV heads
+  subset                n    perhead     causal      delta                   95% CI
+  matched 153         153     0.0964     0.2500    -0.1536  [-0.1732, -0.1340]
+  all 200             153     0.0964     0.2500    -0.1536  [-0.1732, -0.1340]
+
+  NOTE: the 'excluded 47' and 'all 200' rows are NOT admissible Delta_head
+  measurements -- those heads hold unequal candidate counts, so the contrast mixes
+  head allocation with a budget difference. They bound the bias; they do not replace
+  the matched estimate.
+  wrote runs/nvidia/diag_dhead_guard_M2_C32.jsonl

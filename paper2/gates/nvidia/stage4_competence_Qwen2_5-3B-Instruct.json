@@ -1,0 +1,39 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n_bindings": 4,
+  "band": [
+    0.55,
+    0.97
+  ],
+  "sweep": [
+    {
+      "n_records": 96,
+      "n_bindings": 4,
+      "n": 40,
+      "anchor": 0.2,
+      "well_formed": 1.0,
+      "chance": 0.0104,
+      "in_band": false,
+      "sample": [
+        "331285",
+        "903146",
+        "920874"
+      ]
+    },
+    {
+      "n_records": 48,
+      "n_bindings": 4,
+      "n": 40,
+      "anchor": 0.3,
+      "well_formed": 1.0,
+      "chance": 0.0208,
+      "in_band": false,
+      "sample": [
+        "524259",
+        "444767",
+        "305990"
+      ]
+    }
+  ]
+}

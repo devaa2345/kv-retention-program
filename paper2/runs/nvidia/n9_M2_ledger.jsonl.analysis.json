@@ -1,0 +1,185 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "n_kv_heads": 2,
+  "n": 200,
+  "prereg_sha256": "b3f5fb3c1e949c94e0785ba7a9843cbcc2548103215100fe0ec1d42b47ba886e",
+  "delta_head_measured": false,
+  "cells": {
+    "C32": {
+      "C": 32,
+      "n": 153,
+      "means": {
+        "floor_pos": 0.0,
+        "oracle_causal": 0.25,
+        "oracle_causal_perhead": 0.0964,
+        "oracle_prescient": 0.9951
+      },
+      "delta_selection": {
+        "mean": 0.25,
+        "ci": [
+          0.25,
+          0.25
+        ]
+      },
+      "delta_head": {
+        "mean": -0.1536,
+        "ci": [
+          -0.1732,
+          -0.134
+        ],
+        "structurally_degenerate": true
+      },
+      "delta_temporal": {
+        "mean": 0.8987,
+        "ci": [
+          0.8758,
+          0.9199
+        ]
+      },
+      "sums_to_headroom": 0.9951,
+      "headroom": 0.9951
+    },
+    "C64": {
+      "C": 64,
+      "n": 200,
+      "means": {
+        "floor_pos": 0.0825,
+        "oracle_causal": 0.7837,
+        "oracle_causal_perhead": 0.66,
+        "oracle_prescient": 0.98
+      },
+      "delta_selection": {
+        "mean": 0.7013,
+        "ci": [
+          0.685,
+          0.715
+        ]
+      },
+      "delta_head": {
+        "mean": -0.1237,
+        "ci": [
+          -0.1412,
+          -0.1062
+        ],
+        "structurally_degenerate": true
+      },
+      "delta_temporal": {
+        "mean": 0.32,
+        "ci": [
+          0.2925,
+          0.3463
+        ]
+      },
+      "sums_to_headroom": 0.8975,
+      "headroom": 0.8975
+    },
+    "C128": {
+      "C": 128,
+      "n": 200,
+      "means": {
+        "floor_pos": 0.1075,
+        "oracle_causal": 0.985,
+        "oracle_causal_perhead": 0.985,
+        "oracle_prescient": 0.985
+      },
+      "delta_selection": {
+        "mean": 0.8775,
+        "ci": [
+          0.855,
+          0.9
+        ]
+      },
+      "delta_head": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "structurally_degenerate": true
+      },
+      "delta_temporal": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sums_to_headroom": 0.8775,
+      "headroom": 0.8775
+    },
+    "C256": {
+      "C": 256,
+      "n": 200,
+      "means": {
+        "floor_pos": 0.1737,
+        "oracle_causal": 0.9875,
+        "oracle_causal_perhead": 0.9875,
+        "oracle_prescient": 0.9875
+      },
+      "delta_selection": {
+        "mean": 0.8137,
+        "ci": [
+          0.7875,
+          0.84
+        ]
+      },
+      "delta_head": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "structurally_degenerate": true
+      },
+      "delta_temporal": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sums_to_headroom": 0.8137,
+      "headroom": 0.8138
+    },
+    "C512": {
+      "C": 512,
+      "n": 200,
+      "means": {
+        "floor_pos": 0.2775,
+        "oracle_causal": 0.9925,
+        "oracle_causal_perhead": 0.9925,
+        "oracle_prescient": 0.9925
+      },
+      "delta_selection": {
+        "mean": 0.715,
+        "ci": [
+          0.6837,
+          0.745
+        ]
+      },
+      "delta_head": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "structurally_degenerate": true
+      },
+      "delta_temporal": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sums_to_headroom": 0.715,
+      "headroom": 0.715
+    }
+  },
+  "coverage": {
+    "expected": 4800,
+    "have": 4353,
+    "holes": 447,
+    "failed": 447
+  }
+}

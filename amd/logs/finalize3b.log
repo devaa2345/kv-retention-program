@@ -1,0 +1,42 @@
+[12:29:08] waiting for 3B jobs
+[13:33:11] === 3B ANALYSIS ===
+=== 3B Phase 1, iso-token, 8-bit ===
+ budget      arm1      arm2      arm3      arm4      arm5      arm6     n
+    154    0.0000    0.0811    0.0000    0.0800    0.2767    0.9989   150
+    257    0.0000    0.2478    0.0000    0.2478    0.9922    0.9989   150
+    514    0.1611    0.5622    0.1611    0.5644    0.9978    0.9989   150
+
+=== 3B Phase 1 contrasts and interaction ===
+ budget  protection   tiering  interaction                 95% CI  ndiff
+    154     +0.0806   -0.0006      -0.0011 [-0.0033,+0.0000]      1
+    257     +0.2478   +0.0000      +0.0000 [+0.0000,+0.0000]      0
+    514     +0.4022   +0.0011      +0.0022 [-0.0033,+0.0078]      6
+
+=== 3B fresh-seed replication of the collapse widths (seeds 50-99) ===
+ bits  orig 0-49  fresh 50-99     diff  n_fresh
+    5     0.2467       0.2300  -0.0167       50
+    4     0.0367       0.0333  -0.0033       50
+    3     0.0967       0.0733  -0.0233       50
+
+wrote results3b/analysis.json
+[13:33:12] === 3B SWEEP TABLE ===
+bits    n  mean acc  empty/EOS  repetitive  degen  clean  mixed  recon err       levels  viol
+   8   50    0.2500      0.000       0.000      0      5     45      1.07%      161/256     0
+   7   50    0.2500      0.000       0.000      0      4     46      2.14%      108/128     0
+   6   50    0.2500      0.000       0.020      0      5     45      4.31%        61/64     0
+   5   50    0.2467      0.000       0.010      0      5     45      8.65%        32/32     0
+   4   50    0.0367      0.020       0.053     19      1     30     18.10%        16/16     0
+   3   50    0.0967      0.003       0.007      1      3     46     37.50%          8/8     0
+
+full-n values where available (8-bit and 4-bit have n=150):
+  8-bit n=150: mean acc 0.2478
+  4-bit n=100: mean acc 0.0350
+
+wrote results3b/sweep_table.json
+[13:33:12] === SECTIONS + REPORTS ===
+wrote sections/90_second_model.md
+wrote results/csv/all_runs.csv  (7300 rows)
+wrote FINDINGS.md (+9 narrative sections)
+wrote AGREEMENT.md
+wrote SUMMARY.md (7300 runs, 0 failures)
+[13:33:19] === 3B COMPLETE ===

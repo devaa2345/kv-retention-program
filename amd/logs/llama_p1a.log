@@ -1,0 +1,8 @@
+[12:56:28] half A waiting for a slot (seeds 0-75)
+[12:56:48] slot free (live=1); starting Llama Phase 1 half A
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 23888.99it/s]
+llama phase1 8-bit: 1350 cells -> results_llama/bits8
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  [phase1_8bit] 150/1350 new=150 skip=0 fail=0 0.33/s eta=60.6min
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-2hkjrcwr'}
+  warnings.warn(

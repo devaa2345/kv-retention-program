@@ -1,0 +1,257 @@
+{
+  "n_instances": 40,
+  "H": 4,
+  "models": {
+    "M1": {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "budgets": {
+        "b-2": {
+          "C": 16,
+          "A_presc_max": null,
+          "zone": "VOID",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": null,
+              "facts_complete_mean": null,
+              "I_implied": null,
+              "degraded": null,
+              "note": "VOID: C < k_gold, excluded before any run"
+            }
+          }
+        },
+        "b-1": {
+          "C": 32,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 0.3,
+              "facts_complete_mean": 1.2,
+              "I_implied": 0.7,
+              "degraded": true
+            }
+          }
+        },
+        "b0": {
+          "C": 64,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 0.7937,
+              "facts_complete_mean": 3.175,
+              "I_implied": 0.2063,
+              "degraded": true
+            }
+          }
+        },
+        "b1": {
+          "C": 128,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b2": {
+          "C": 256,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b3": {
+          "C": 512,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        }
+      }
+    },
+    "M2": {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "budgets": {
+        "b-2": {
+          "C": 16,
+          "A_presc_max": null,
+          "zone": "VOID",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": null,
+              "facts_complete_mean": null,
+              "I_implied": null,
+              "degraded": null,
+              "note": "VOID: C < k_gold, excluded before any run"
+            }
+          }
+        },
+        "b-1": {
+          "C": 32,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 0.2875,
+              "facts_complete_mean": 1.15,
+              "I_implied": 0.7125,
+              "degraded": true
+            }
+          }
+        },
+        "b0": {
+          "C": 64,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 0.7812,
+              "facts_complete_mean": 3.125,
+              "I_implied": 0.2188,
+              "degraded": true
+            }
+          }
+        },
+        "b1": {
+          "C": 128,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b2": {
+          "C": 256,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b3": {
+          "C": 512,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        }
+      }
+    },
+    "M3": {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "budgets": {
+        "b-2": {
+          "C": 16,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 0.2875,
+              "facts_complete_mean": 1.15,
+              "I_implied": 0.7125,
+              "degraded": true
+            }
+          }
+        },
+        "b-1": {
+          "C": 32,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 0.55,
+              "facts_complete_mean": 2.2,
+              "I_implied": 0.45,
+              "degraded": true
+            }
+          }
+        },
+        "b0": {
+          "C": 64,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b1": {
+          "C": 128,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b2": {
+          "C": 256,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        },
+        "b3": {
+          "C": 512,
+          "A_presc_max": 1.0,
+          "zone": "ok",
+          "rules": {
+            "pair_knapsack_optimal": {
+              "A_causal_max": 1.0,
+              "facts_complete_mean": 4.0,
+              "I_implied": 0.0,
+              "degraded": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

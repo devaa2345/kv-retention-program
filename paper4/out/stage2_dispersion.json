@@ -1,0 +1,54 @@
+{
+ "M2": {
+  "D_runs": {
+   "measure": "D_runs",
+   "n_queries": 800,
+   "n_correct": 54.0,
+   "r_D_qfact": -0.30151994469078147,
+   "beta_per_sd": -0.09895485235048751,
+   "ci": [
+    -0.2529703861407514,
+    0.030403655941759047
+   ],
+   "verdict": "NOT SUPPORTED"
+  },
+  "D_iso": {
+   "measure": "D_iso",
+   "n_queries": 447,
+   "n_correct": 54.0,
+   "r_D_qfact": -0.5338881330102182,
+   "beta_per_sd": 0.05223078666418148,
+   "ci": [
+    0.01636476036773706,
+    0.0895942998860809
+   ],
+   "verdict": "CONTRADICTED"
+  }
+ },
+ "M3": {
+  "D_runs": {
+   "measure": "D_runs",
+   "n_queries": 800,
+   "n_correct": 27.0,
+   "r_D_qfact": -0.3773210488752252,
+   "beta_per_sd": 0.01334970619049645,
+   "ci": [
+    -0.2715018869349342,
+    0.29959619786602637
+   ],
+   "verdict": "NOT SUPPORTED"
+  },
+  "D_iso": {
+   "measure": "D_iso",
+   "n_queries": 633,
+   "n_correct": 26.0,
+   "r_D_qfact": -0.280698698840128,
+   "beta_per_sd": 0.009803762907718583,
+   "ci": [
+    -0.01351874627375865,
+    0.033122471809202164
+   ],
+   "verdict": "NOT SUPPORTED"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "M3",
+  "C": 512,
+  "counts": {
+    "same_path_causal": 48,
+    "same_path_presc": 48,
+    "cross_path": 48,
+    "total": 48
+  },
+  "max_logit_diff": 0.0,
+  "verdict": "DETERMINISTIC and path-independent at this sample"
+}

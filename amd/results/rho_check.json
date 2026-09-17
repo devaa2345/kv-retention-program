@@ -1,0 +1,39 @@
+{
+  "spearman_rho": {
+    "P1": {
+      "signal": "attention",
+      "rho": 0.9999999999999999,
+      "n_prompts": 12,
+      "target": "+1.000"
+    },
+    "P2": {
+      "signal": "epiphany",
+      "rho": 0.08804426284293786,
+      "n_prompts": 12,
+      "target": "~0"
+    },
+    "P3": {
+      "signal": "random",
+      "rho": 0.09117438825622645,
+      "n_prompts": 12,
+      "target": "~0"
+    },
+    "P4": {
+      "signal": "roundrobin",
+      "rho": 0.40735023460168696,
+      "n_prompts": 12,
+      "target": "~0"
+    },
+    "P5": {
+      "signal": "oracle",
+      "rho": 0.8587970733435742,
+      "n_prompts": 12,
+      "target": "~0"
+    }
+  },
+  "p5": {
+    "n": 12,
+    "n_oversubscribed": 0,
+    "oversubscribed_rate": 0.0
+  }
+}

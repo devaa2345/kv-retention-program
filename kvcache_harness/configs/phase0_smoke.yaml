@@ -1,0 +1,19 @@
+model_name: "Qwen/Qwen2.5-1.5B-Instruct"
+device: "cuda"
+
+n_prompts: 2
+seed_start: 1000
+
+n_distractors: 12
+words_per_paragraph: 25
+
+total_budget: 32
+full_fraction: 0.5
+protect_after_chars: 2
+
+max_new_tokens: 20
+rebalance_every: 1
+recency_window: 8
+keep_sink: true
+
+output_dir: "results/phase0_smoke"

@@ -1,0 +1,27 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "protocol": "aware",
+  "expected": 4400,
+  "have": 4400,
+  "holes": 0,
+  "failed": 0,
+  "budgets": [
+    128,
+    512
+  ],
+  "arms": [
+    "full_cache",
+    "null",
+    "random",
+    "floor_pos",
+    "oracle_causal",
+    "oracle_prescient",
+    "snapkv",
+    "tova",
+    "expected_attn",
+    "keydiff",
+    "adakv_snapkv"
+  ],
+  "n": 200,
+  "prereg_sha256": "b3f5fb3c1e949c94e0785ba7a9843cbcc2548103215100fe0ec1d42b47ba886e"
+}

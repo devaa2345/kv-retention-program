@@ -1,0 +1,34 @@
+{
+  "config": {
+    "device": "cuda",
+    "full_fraction": 0.5,
+    "keep_sink": true,
+    "max_answer_tokens": 22,
+    "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "n_credentials": 6,
+    "n_distractors": 20,
+    "n_prompts": 10,
+    "output_dir": "results/phase0r_calibration",
+    "protect_after_chars": 2,
+    "rebalance_every": 1,
+    "recency_window": 64,
+    "seed_start": 2000,
+    "total_budget": 280,
+    "value_len": 14,
+    "words_per_paragraph": 50
+  },
+  "summary": {
+    "1_no_protect_permanent": 0.03333333333333333,
+    "2_protect_permanent": 0.5666666666666667,
+    "5_oracle_static": 0.9833333333333334,
+    "6_full_cache_ref": 0.9833333333333334,
+    "G5_dormancy_eviction_rate": 1.0
+  },
+  "gates": {
+    "G1_ceiling": true,
+    "G2_floor": true,
+    "G3_headroom": true,
+    "G4_no_eviction_ref": true,
+    "G5_dormancy": true
+  }
+}

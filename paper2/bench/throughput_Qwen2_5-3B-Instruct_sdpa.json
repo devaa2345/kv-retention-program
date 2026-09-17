@@ -1,0 +1,22 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "prefill_tokens": 2048,
+  "decode_tokens": 32,
+  "dtype": "bfloat16",
+  "attn_implementation": "sdpa",
+  "batch_size": 1,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "torch": "2.11.0+cu128",
+  "configs": {
+    "plain": {
+      "seconds_mean": 0.807,
+      "seconds_median": 0.7705,
+      "seconds_p90": 1.0099,
+      "seconds_min": 0.7003,
+      "seconds_max": 1.1498,
+      "peak_alloc_mib": 6696,
+      "iters": 200
+    }
+  }
+}

@@ -1,0 +1,23 @@
+a355d47e91dd75022fae08569480d799080a4228bca49ad84a760450031ddbf0  PREREG_P2_v2.md
+
+CANONICAL reference digest for the frozen preregistration, superseding the value recorded in
+PREREG_P2_v2.sha256 and in the document's own section 12.
+
+Procedure (as shipped in PREREG_P2_v2.md section 12):
+    LF-normalised UTF-8 bytes, with the `sha256:` line substituted by the 64-hex placeholder
+    f25b842a1fed9c52d92a04018af35fc1f79bc30f562adb3711ec3a5f165a9ffe
+
+Why this file exists: the previously recorded digest b3f5fb3c... is not reproducible from the
+frozen text under any normalisation, and corresponds to no committed state of the document. It
+was computed on an uncommitted intermediate draft and not recomputed after subsequent edits.
+The document CONTENT is unchanged and provably so -- the working file is byte-identical to
+freeze commit 7980d489 and git reports it unmodified.
+
+Note: PREREG_P2_v2.md section 12's PROSE specifies a different placeholder (`<pending>`), under
+which the digest is 1c97fb1bdd1e5b9c76c60e4d6df756fddd37b5fa0a834d81909807b8dde44eb6. That
+convention is the one under which PREREG_P2.md (v1) reproduces its recorded digest
+8ac3895709be0721656cef0c705cf843302245ab6d841373ee1676032db203e9 exactly. The value at the top
+of this file follows section 12's CODE, so that a reader running the shipped snippet gets it.
+
+Neither PREREG_P2_v2.md nor PREREG_P2_v2.sha256 was altered. Full provenance is in STATUS.md
+under "PREREG DIGEST DISCREPANCY: RESOLVED", dated 2026-09-07.

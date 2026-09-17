@@ -1,0 +1,29 @@
+  [25/200]
+  [50/200]
+  [75/200]
+  [100/200]
+  [125/200]
+  [150/200]
+  [175/200]
+  [200/200]
+
+KeyDiff M2 aware C=512   population (gold slot-fraction <= 0.5): n=772  acc=0.4210
+
+  *** THE DECIDING NUMBER ***
+    value complete in EXACTLY ZERO slots: n=178 (23.1% of population)  acc=0.0674
+    value complete in >= 1 slot:          n=594 (76.9%)                acc=0.5269
+
+  by value-complete slot fraction bucket:
+    exactly 0      n=178   acc=0.0674
+    (0.00, 0.02]   n=115   acc=0.2174
+    (0.02, 0.05]   n=151   acc=0.3642
+    (0.05, 0.10]   n=202   acc=0.5941
+    (0.10, 0.20]   n=84    acc=0.8452
+    (0.20, 1.01]   n=42    acc=1.0000
+
+  among the exactly-zero subgroup, is the value PARTIALLY present?
+    mean fraction of slots holding >=1 value token: 0.5698
+    mean share of value tokens present per slot:    0.2360
+    subgroup with NO value token in ANY slot: n=0  acc=n/a
+
+  wrote runs/nvidia/diag_keydiff_zero_subgroup.jsonl

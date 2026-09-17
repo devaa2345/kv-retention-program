@@ -1,0 +1,9 @@
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 22035.10it/s]
+llama phase1 8-bit: 1350 cells -> results_llama/bits8
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  [phase1_8bit] 150/1350 new=150 skip=0 fail=0 0.31/s eta=64.7min
+  [phase1_8bit] 300/1350 new=300 skip=0 fail=0 0.26/s eta=66.5min
+  [phase1_8bit] 450/1350 new=450 skip=0 fail=0 0.27/s eta=55.7min
+  [phase1_8bit] 600/1350 new=600 skip=0 fail=0 0.28/s eta=45.4min
+  [phase1_8bit] 750/1350 new=750 skip=0 fail=0 0.26/s eta=38.0min
+  [phase1_8bit] 900/1350 new=900 skip=0 fail=0 0.27/s eta=27.8min

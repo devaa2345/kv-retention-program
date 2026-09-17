@@ -1,0 +1,60 @@
+================================================================================================
+1.2 RESIDUAL STRUCTURE -- log10(pred) - log10(obs), per cell
+================================================================================================
+
+### F2_linear
+  model      C          snapkv   expected_attn         keydiff    adakv_snapkv
+  M2        16          -0.190          -0.365          -0.190          -0.197
+  M2        32          -0.179          -0.305          -0.175          -0.183
+  M2        64          -0.112          -0.193          -0.132          -0.121
+  M2       128          +0.000          -0.000          -0.000          +0.000
+  M2       256          +0.163          +0.261          +0.295          +0.164
+  M2       512          +0.333          +0.551          +0.644          +0.331
+  M3        16          -0.124          -0.293          -0.181          -0.137
+  M3        32          -0.075          -0.205          -0.139          -0.088
+  M3        64          +0.004          -0.039          -0.027          -0.006
+  M3       128          +0.114          +0.221          +0.234          +0.105
+  M3       256          +0.246          +0.562          +0.622          +0.229
+  M3       512          +0.339          +0.908          +0.907          +0.271
+
+  r(residual, log10 C) = +0.8786 on n=44 held-out cells
+  mean residual +0.0874   sd 0.3139
+  sign of the residual is negative below the calibration budget and positive
+  above it, in every arm, on both models.
+
+### F3_power
+  model      C          snapkv   expected_attn         keydiff    adakv_snapkv
+  M2        16          -0.190          -0.365          -0.190          -0.197
+  M2        32          -0.179          -0.305          -0.175          -0.183
+  M2        64          -0.112          -0.193          -0.132          -0.121
+  M2       128          +0.000          +0.000          +0.000          +0.000
+  M2       256          +0.163          +0.261          +0.295          +0.164
+  M2       512          +0.333          +0.551          +0.644          +0.331
+  M3        16          -0.193          -0.417          -0.264          -0.208
+  M3        32          -0.140          -0.322          -0.220          -0.155
+  M3        64          -0.055          -0.146          -0.103          -0.068
+  M3       128          +0.064          +0.131          +0.170          +0.052
+  M3       256          +0.207          +0.495          +0.577          +0.189
+  M3       512          +0.314          +0.867          +0.883          +0.245
+
+  r(residual, log10 C) = +0.8919 on n=44 held-out cells
+  mean residual +0.0523   sd 0.3198
+  sign of the residual is negative below the calibration budget and positive
+  above it, in every arm, on both models.
+
+================================================================================================
+READING
+================================================================================================
+The residual is not noise. It is a monotone function of budget with r ~ +0.88, it
+changes sign exactly at the calibration budget, and it does so in all four arms on
+both models. `c_eff` in F2 and F3 depends only on c and rho, both held fixed across
+budgets; the DATA's implied c_eff (ln q / ln p_g, tabulated in test 1.1) rises
+monotonically from ~1.10 at C=16 to ~2.5-3.2 at C=512. The single fitted parameter
+is absorbing a budget dependence the functional form does not contain.
+
+Consequence for 1.3, and it is not a coincidence: the crossover test is evaluated at
+the top budget, which is where the over-prediction is largest. keydiff's completion
+is over-predicted by a factor of ~8 at M3 C=512 (residual +0.907), which is what puts
+it into the predicted crossover set and keeps the two arms that actually win out of
+it. 1.3 does not fail for an independent reason; it fails because the form is wrong
+in a direction that is worst exactly where 1.3 looks.

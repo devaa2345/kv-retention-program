@@ -1,0 +1,26 @@
+model_name: "Qwen/Qwen2.5-1.5B-Instruct"
+device: "cuda"
+
+n_prompts: 10
+seed_start: 1000
+
+n_distractors: 20
+words_per_paragraph: 60
+
+# total_budget must comfortably exceed the natural structural-protection
+# token count (~160 for 20 distractor lines) while staying well under the
+# full context length (~2000+ tokens with 60-word filler paragraphs) --
+# otherwise arms 2/4 blow past the nominal budget just satisfying every
+# structural match, which breaks the matched-budget comparison (this is
+# exactly what happened in the first smoke-test config; see
+# results/phase0_smoke/summary.md).
+total_budget: 220
+full_fraction: 0.5
+protect_after_chars: 2
+
+max_new_tokens: 24
+rebalance_every: 1
+recency_window: 16
+keep_sink: true
+
+output_dir: "results/phase0_pilot"

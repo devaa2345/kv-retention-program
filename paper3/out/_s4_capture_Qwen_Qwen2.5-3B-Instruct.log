@@ -1,0 +1,43 @@
+  PREREG_P3.md verified at c920c404fd43777e522916ef0188362805a958aa7253512ec2be40641a846eee
+  capture M2: 24 cells, 120 arm-cells, n=200 -> 24000 rows (360 already present)
+  [capture/M2] inst 5/200  written 240 skipped 360 failed 0  1.1 min  0.26 s/row  eta 41.2 min
+  [capture/M2] inst 10/200  written 840 skipped 360 failed 0  3.6 min  0.26 s/row  eta 68.0 min
+  [capture/M2] inst 15/200  written 1440 skipped 360 failed 0  6.1 min  0.25 s/row  eta 75.2 min
+  [capture/M2] inst 20/200  written 2040 skipped 360 failed 0  8.7 min  0.25 s/row  eta 77.9 min
+  [capture/M2] inst 25/200  written 2640 skipped 360 failed 0  11.1 min  0.25 s/row  eta 77.9 min
+  [capture/M2] inst 30/200  written 3240 skipped 360 failed 0  13.7 min  0.25 s/row  eta 77.8 min
+  [capture/M2] inst 35/200  written 3840 skipped 360 failed 0  16.2 min  0.25 s/row  eta 76.5 min
+  [capture/M2] inst 40/200  written 4440 skipped 360 failed 0  18.8 min  0.25 s/row  eta 75.3 min
+  [capture/M2] inst 45/200  written 5040 skipped 360 failed 0  21.3 min  0.25 s/row  eta 73.4 min
+  [capture/M2] inst 50/200  written 5640 skipped 360 failed 0  23.9 min  0.25 s/row  eta 71.6 min
+  [capture/M2] inst 55/200  written 6240 skipped 360 failed 0  26.4 min  0.25 s/row  eta 69.6 min
+  [capture/M2] inst 60/200  written 6840 skipped 360 failed 0  28.9 min  0.25 s/row  eta 67.4 min
+  [capture/M2] inst 65/200  written 7440 skipped 360 failed 0  31.4 min  0.25 s/row  eta 65.3 min
+  [capture/M2] inst 70/200  written 8040 skipped 360 failed 0  33.9 min  0.25 s/row  eta 63.0 min
+  [capture/M2] inst 75/200  written 8640 skipped 360 failed 0  36.5 min  0.25 s/row  eta 60.8 min
+  [capture/M2] inst 80/200  written 9240 skipped 360 failed 0  39.0 min  0.25 s/row  eta 58.5 min
+  [capture/M2] inst 85/200  written 9840 skipped 360 failed 0  41.5 min  0.25 s/row  eta 56.2 min
+  [capture/M2] inst 90/200  written 10440 skipped 360 failed 0  44.1 min  0.25 s/row  eta 53.9 min
+  [capture/M2] inst 95/200  written 11040 skipped 360 failed 0  46.6 min  0.25 s/row  eta 51.5 min
+  [capture/M2] inst 100/200  written 11640 skipped 360 failed 0  49.1 min  0.25 s/row  eta 49.1 min
+  [capture/M2] inst 105/200  written 12240 skipped 360 failed 0  51.6 min  0.25 s/row  eta 46.7 min
+  [capture/M2] inst 110/200  written 12840 skipped 360 failed 0  54.1 min  0.25 s/row  eta 44.3 min
+  [capture/M2] inst 115/200  written 13440 skipped 360 failed 0  56.7 min  0.25 s/row  eta 41.9 min
+  [capture/M2] inst 120/200  written 14040 skipped 360 failed 0  59.2 min  0.25 s/row  eta 39.4 min
+  [capture/M2] inst 125/200  written 14640 skipped 360 failed 0  61.8 min  0.25 s/row  eta 37.1 min
+  [capture/M2] inst 130/200  written 15240 skipped 360 failed 0  64.3 min  0.25 s/row  eta 34.6 min
+  [capture/M2] inst 135/200  written 15840 skipped 360 failed 0  66.8 min  0.25 s/row  eta 32.2 min
+  [capture/M2] inst 140/200  written 16440 skipped 360 failed 0  69.3 min  0.25 s/row  eta 29.7 min
+  [capture/M2] inst 145/200  written 17040 skipped 360 failed 0  71.9 min  0.25 s/row  eta 27.3 min
+  [capture/M2] inst 150/200  written 17640 skipped 360 failed 0  74.4 min  0.25 s/row  eta 24.8 min
+  [capture/M2] inst 155/200  written 18240 skipped 360 failed 0  76.9 min  0.25 s/row  eta 22.3 min
+  [capture/M2] inst 160/200  written 18840 skipped 360 failed 0  79.4 min  0.25 s/row  eta 19.9 min
+  [capture/M2] inst 165/200  written 19440 skipped 360 failed 0  82.0 min  0.25 s/row  eta 17.4 min
+  [capture/M2] inst 170/200  written 20040 skipped 360 failed 0  84.6 min  0.25 s/row  eta 14.9 min
+  [capture/M2] inst 175/200  written 20640 skipped 360 failed 0  87.1 min  0.25 s/row  eta 12.4 min
+  [capture/M2] inst 180/200  written 21240 skipped 360 failed 0  89.6 min  0.25 s/row  eta 10.0 min
+  [capture/M2] inst 185/200  written 21840 skipped 360 failed 0  92.2 min  0.25 s/row  eta 7.5 min
+  [capture/M2] inst 190/200  written 22440 skipped 360 failed 0  94.7 min  0.25 s/row  eta 5.0 min
+  [capture/M2] inst 195/200  written 23040 skipped 360 failed 0  97.2 min  0.25 s/row  eta 2.5 min
+  [capture/M2] inst 200/200  written 23640 skipped 360 failed 0  99.7 min  0.25 s/row  eta 0.0 min
+  DONE capture/M2: written 23640 skipped 360 failed 0 in 99.7 min

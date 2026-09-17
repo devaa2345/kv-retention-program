@@ -1,0 +1,18 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 28233.78it/s]
+phase2: 750 cells -> results/bits4
+  [phase2_promotion] 300/750 new=35 skip=265 fail=0 0.35/s eta=21.5min
+  [phase2_promotion] 400/750 new=135 skip=265 fail=0 0.26/s eta=22.4min
+  [phase2_promotion] 500/750 new=235 skip=265 fail=0 0.21/s eta=19.6min
+  [phase2_promotion] 600/750 new=335 skip=265 fail=0 0.20/s eta=12.5min
+  [phase2_promotion] 700/750 new=435 skip=265 fail=0 0.23/s eta=3.6min
+{
+  "tag": "phase2_promotion",
+  "new": 485,
+  "skipped": 265,
+  "failed": 0,
+  "elapsed_s": 2186.947365760803,
+  "results": "results/bits4/phase2_promotion.jsonl",
+  "failures": "results/bits4/phase2_promotion.failures.jsonl"
+}
+total 36.4 min

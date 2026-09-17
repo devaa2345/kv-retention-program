@@ -1,0 +1,127 @@
+Produced on RTX 5070 (Machine N). Paper 4 Stage 2.
+Package: pilot (generation). LEDGER-C c~40 and MARK-1 c=1, C=512, n=50 per cell.
+Paired per instance; 95% percentile bootstrap, 10,000 resamples, CRC32-seeded.
+
+==================== M2: 500 rows, 0 failures
+  ---- c=40  (n=50 complete instances; floor_pos acc 0.170)
+    accuracy: floor_pos 0.170  snapkv 0.045  U-snapkv 0.090  adakv_snapkv 0.045  U-adakv_snapkv 0.090
+    [1] U-X vs X at matched budget (paired accuracy difference)
+        U-snapkv - snapkv            +0.045 [+0.015, +0.075]  CI excludes 0
+        U-adakv_snapkv - adakv_snapkv +0.045 [+0.010, +0.080]  CI excludes 0
+    [2] method vs floor_pos (ratio of mean accuracy, method/floor; <1 = loses)
+        snapkv           ratio 0.265 [0.121, 0.464]  (floor/method 3.78x)  diff -0.125 [-0.180, -0.070]
+        U-snapkv         ratio 0.529 [0.333, 0.800]  (floor/method 1.89x)  diff -0.080 [-0.135, -0.025]
+        adakv_snapkv     ratio 0.265 [0.118, 0.462]  (floor/method 3.78x)  diff -0.125 [-0.180, -0.070]
+        U-adakv_snapkv   ratio 0.529 [0.323, 0.786]  (floor/method 1.89x)  diff -0.080 [-0.130, -0.030]
+    [3] completion from the SAME keep-sets that generated (mean over slots)
+        arm                touched  complete   q_compl    q_any      p_g     fb
+        floor_pos            13.02     12.32     0.285    0.285    0.297      -
+        snapkv               31.92      3.18     0.067    0.190    0.247      -
+        U-snapkv             10.73     10.72     0.225    0.900    0.225      0
+        adakv_snapkv         30.45      3.16     0.066    0.200    0.252      -
+        U-adakv_snapkv       11.15     11.15     0.239    0.945    0.240      0
+        d U-snapkv-s units_complete  +7.549 [+7.492, +7.605]
+        d U-snapkv-s units_touched   -21.194 [-21.375, -21.016]
+        d U-snapkv-s q_complete      +0.158 [+0.130, +0.188]
+        d U-adakv_sn units_complete  +7.983 [+7.926, +8.036]
+        d U-adakv_sn units_touched   -19.300 [-19.462, -19.134]
+        d U-adakv_sn q_complete      +0.173 [+0.147, +0.200]
+    conversion acc/q_complete: floor_pos 0.60  snapkv 0.67  U-snapkv 0.40  adakv_snapkv 0.68  U-adakv_snapkv 0.38
+
+  ---- c=1  (n=50 complete instances; floor_pos acc 0.300)
+    accuracy: floor_pos 0.300  snapkv 0.795  U-snapkv 0.800  adakv_snapkv 0.815  U-adakv_snapkv 0.815
+    [1] U-X vs X at matched budget (paired accuracy difference)
+        U-snapkv - snapkv            +0.005 [-0.010, +0.025]  CI includes 0
+        U-adakv_snapkv - adakv_snapkv +0.000 [-0.020, +0.020]  CI includes 0
+    [2] method vs floor_pos (ratio of mean accuracy, method/floor; <1 = loses)
+        snapkv           ratio 2.650 [2.236, 3.235]  (floor/method 0.38x)  diff +0.495 [+0.430, +0.560]
+        U-snapkv         ratio 2.667 [2.232, 3.250]  (floor/method 0.37x)  diff +0.500 [+0.430, +0.565]
+        adakv_snapkv     ratio 2.717 [2.294, 3.313]  (floor/method 0.37x)  diff +0.515 [+0.450, +0.575]
+        U-adakv_snapkv   ratio 2.717 [2.284, 3.306]  (floor/method 0.37x)  diff +0.515 [+0.450, +0.580]
+    [3] completion from the SAME keep-sets that generated (mean over slots)
+        arm                touched  complete   q_compl    q_any      p_g     fb
+        floor_pos            12.00     12.00     0.285    0.285    0.285      -
+        snapkv               27.83     18.49     0.770    1.000    0.770      -
+        U-snapkv             26.08     19.72     0.770    1.000    0.770      0
+        adakv_snapkv         26.95     18.38     0.750    1.000    0.750      -
+        U-adakv_snapkv       25.38     19.52     0.749    1.000    0.749      0
+        d U-snapkv-s units_complete  +1.226 [+1.161, +1.288]
+        d U-snapkv-s units_touched   -1.742 [-1.800, -1.684]
+        d U-snapkv-s q_complete      -0.000 [-0.001, +0.000]
+        d U-adakv_sn units_complete  +1.146 [+1.080, +1.212]
+        d U-adakv_sn units_touched   -1.569 [-1.627, -1.515]
+        d U-adakv_sn q_complete      -0.001 [-0.001, +0.000]
+    conversion acc/q_complete: floor_pos 1.05  snapkv 1.03  U-snapkv 1.04  adakv_snapkv 1.09  U-adakv_snapkv 1.09
+
+  session check: X-arm generations byte-identical to Paper 3 Stage 4's stored ones
+    c=1   adakv_snapkv   50/50
+    c=1   floor_pos      50/50
+    c=1   snapkv         50/50
+    c=40  adakv_snapkv   50/50
+    c=40  floor_pos      50/50
+    c=40  snapkv         50/50
+
+==================== M3: 500 rows, 0 failures
+  ---- c=40  (n=50 complete instances; floor_pos acc 0.100)
+    accuracy: floor_pos 0.100  snapkv 0.030  U-snapkv 0.030  adakv_snapkv 0.020  U-adakv_snapkv 0.055
+    [1] U-X vs X at matched budget (paired accuracy difference)
+        U-snapkv - snapkv            +0.000 [-0.025, +0.025]  CI includes 0
+        U-adakv_snapkv - adakv_snapkv +0.035 [+0.005, +0.070]  CI excludes 0
+    [2] method vs floor_pos (ratio of mean accuracy, method/floor; <1 = loses)
+        snapkv           ratio 0.300 [0.071, 0.667]  (floor/method 3.33x)  diff -0.070 [-0.115, -0.025]
+        U-snapkv         ratio 0.300 [0.105, 0.571]  (floor/method 3.33x)  diff -0.070 [-0.110, -0.030]
+        adakv_snapkv     ratio 0.200 [0.000, 0.529]  (floor/method 5.00x)  diff -0.080 [-0.125, -0.035]
+        U-adakv_snapkv   ratio 0.550 [0.241, 1.000]  (floor/method 1.82x)  diff -0.045 [-0.090, +0.000]
+    [3] completion from the SAME keep-sets that generated (mean over slots)
+        arm                touched  complete   q_compl    q_any      p_g     fb
+        floor_pos            13.00     12.20     0.305    0.305    0.319      -
+        snapkv               31.95      2.92     0.067    0.450    0.261      -
+        U-snapkv             10.93     10.93     0.245    1.000    0.244      0
+        adakv_snapkv         25.98      3.52     0.081    0.715    0.279      -
+        U-adakv_snapkv       12.18     12.18     0.281    1.000    0.281      0
+        d U-snapkv-s units_complete  +8.013 [+7.957, +8.069]
+        d U-snapkv-s units_touched   -21.012 [-21.155, -20.869]
+        d U-snapkv-s q_complete      +0.178 [+0.154, +0.201]
+        d U-adakv_sn units_complete  +8.663 [+8.608, +8.716]
+        d U-adakv_sn units_touched   -13.794 [-13.882, -13.707]
+        d U-adakv_sn q_complete      +0.200 [+0.189, +0.212]
+    conversion acc/q_complete: floor_pos 0.33  snapkv 0.45  U-snapkv 0.12  adakv_snapkv 0.25  U-adakv_snapkv 0.20
+
+  ---- c=1  (n=50 complete instances; floor_pos acc 0.275)
+    accuracy: floor_pos 0.275  snapkv 0.890  U-snapkv 0.890  adakv_snapkv 0.905  U-adakv_snapkv 0.910
+    [1] U-X vs X at matched budget (paired accuracy difference)
+        U-snapkv - snapkv            +0.000 [+0.000, +0.000]  CI includes 0
+        U-adakv_snapkv - adakv_snapkv +0.005 [+0.000, +0.015]  CI includes 0
+    [2] method vs floor_pos (ratio of mean accuracy, method/floor; <1 = loses)
+        snapkv           ratio 3.236 [2.618, 4.186]  (floor/method 0.31x)  diff +0.615 [+0.535, +0.695]
+        U-snapkv         ratio 3.236 [2.603, 4.209]  (floor/method 0.31x)  diff +0.615 [+0.535, +0.690]
+        adakv_snapkv     ratio 3.291 [2.646, 4.250]  (floor/method 0.30x)  diff +0.630 [+0.550, +0.705]
+        U-adakv_snapkv   ratio 3.309 [2.667, 4.273]  (floor/method 0.30x)  diff +0.635 [+0.555, +0.710]
+    [3] completion from the SAME keep-sets that generated (mean over slots)
+        arm                touched  complete   q_compl    q_any      p_g     fb
+        floor_pos            12.00     11.96     0.260    0.260    0.260      -
+        snapkv               29.40     19.21     0.767    1.000    0.767      -
+        U-snapkv             27.51     20.31     0.767    1.000    0.767      0
+        adakv_snapkv         25.16     17.16     0.665    1.000    0.665      -
+        U-adakv_snapkv       23.66     18.26     0.665    1.000    0.665      0
+        d U-snapkv-s units_complete  +1.101 [+1.039, +1.168]
+        d U-snapkv-s units_touched   -1.888 [-1.932, -1.846]
+        d U-snapkv-s q_complete      -0.000 [-0.001, +0.000]
+        d U-adakv_sn units_complete  +1.097 [+1.032, +1.169]
+        d U-adakv_sn units_touched   -1.498 [-1.537, -1.458]
+        d U-adakv_sn q_complete      -0.000 [-0.001, -0.000]
+    conversion acc/q_complete: floor_pos 1.06  snapkv 1.16  U-snapkv 1.16  adakv_snapkv 1.36  U-adakv_snapkv 1.37
+
+  session check: X-arm generations byte-identical to Paper 3 Stage 4's stored ones
+    c=1   adakv_snapkv   45/50
+    c=1   floor_pos      47/50
+    c=1   snapkv         44/50
+    c=40  adakv_snapkv   12/50
+    c=40  floor_pos      17/50
+    c=40  snapkv         26/50
+
+==================== GATE (STAGE12_RULES.md section 4)
+  c=40 pairs with U-X > X, CI excluding 0: M2/snapkv +0.045 [+0.015, +0.075], M2/adakv_snapkv +0.045 [+0.010, +0.080], M3/adakv_snapkv +0.035 [+0.005, +0.070]
+  c=1 pairs with CI excluding 0 (must be none): none
+  admissible comparisons: c=40 4, c=1 4 (4 each if no degenerate cell); no multiplicity correction -- 4 chances at c=40, stated.
+  VERDICT: PASS

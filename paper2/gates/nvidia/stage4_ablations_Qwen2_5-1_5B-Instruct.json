@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "n": 60,
+  "chance": 0.0104,
+  "variants": {
+    "full_cache_anchor": {
+      "accuracy": 0.0667,
+      "well_formed_rate": 0.9667,
+      "sample": [
+        "581217",
+        "936195",
+        "358402"
+      ]
+    },
+    "bindings_deleted": {
+      "accuracy": 0.0167,
+      "well_formed_rate": 0.6,
+      "sample": [
+        "The value on the record of the referee for cycle Q4",
+        "958038",
+        "The value on the record of the auditor for cycle Q4"
+      ]
+    },
+    "target_record_deleted": {
+      "accuracy": 0.0,
+      "well_formed_rate": 0.9167,
+      "sample": [
+        "577953",
+        "936195",
+        "690856"
+      ]
+    }
+  },
+  "gates": {
+    "competence_anchor_in_band": false,
+    "competence_anchor": 0.0667,
+    "band": [
+      0.55,
+      0.97
+    ],
+    "bindings_deleted_near_chance": true,
+    "target_deleted_near_zero": true,
+    "pass": false,
+    "note": "ablation probes are VACUOUS at this anchor -- they read <= threshold only because nothing is answerable. Fix the anchor before reading them as evidence."
+  }
+}

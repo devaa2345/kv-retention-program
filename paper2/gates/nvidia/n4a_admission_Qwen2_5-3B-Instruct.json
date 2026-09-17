@@ -1,0 +1,386 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n": 24,
+  "prereg_sha256": "b3f5fb3c1e949c94e0785ba7a9843cbcc2548103215100fe0ec1d42b47ba886e",
+  "budgets": [
+    32,
+    128,
+    512
+  ],
+  "methods": {
+    "snapkv": {
+      "budgets": {
+        "C32": {
+          "C": 32,
+          "acc_original": 0.0312,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0312,
+            "ci": [
+              0.0,
+              0.0625
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0002,
+          "oracle_overlap_per_head": 0.26
+        },
+        "C128": {
+          "C": 128,
+          "acc_original": 0.0521,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0521,
+            "ci": [
+              0.0104,
+              0.0938
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0001,
+          "oracle_overlap_per_head": 0.3382
+        },
+        "C512": {
+          "C": 512,
+          "acc_original": 0.1771,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.1771,
+            "ci": [
+              0.0938,
+              0.2708
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0003,
+          "oracle_overlap_per_head": 0.5156
+        }
+      },
+      "errors": [],
+      "G2": {
+        "pass": true,
+        "beats_own_permutation_somewhere": true,
+        "informative_at_budgets": [
+          128,
+          512
+        ],
+        "permuted_falls_to_random_arm": true,
+        "rho_near_zero": true
+      },
+      "G3": {
+        "pass": true,
+        "overlap_positive": true,
+        "monotone_in_C": true,
+        "overlaps": [
+          0.26,
+          0.3382,
+          0.5156
+        ]
+      },
+      "admitted": true
+    },
+    "tova": {
+      "budgets": {
+        "C32": {
+          "C": 32,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0005,
+          "oracle_overlap_per_head": 0.0558
+        },
+        "C128": {
+          "C": 128,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.0002,
+          "oracle_overlap_per_head": 0.0914
+        },
+        "C512": {
+          "C": 512,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.0003,
+          "oracle_overlap_per_head": 0.2835
+        }
+      },
+      "errors": [],
+      "G2": {
+        "pass": false,
+        "beats_own_permutation_somewhere": false,
+        "informative_at_budgets": [],
+        "permuted_falls_to_random_arm": true,
+        "rho_near_zero": true
+      },
+      "G3": {
+        "pass": true,
+        "overlap_positive": true,
+        "monotone_in_C": true,
+        "overlaps": [
+          0.0558,
+          0.0914,
+          0.2835
+        ]
+      },
+      "admitted": false
+    },
+    "expected_attn": {
+      "budgets": {
+        "C32": {
+          "C": 32,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.0004,
+          "oracle_overlap_per_head": 0.0922
+        },
+        "C128": {
+          "C": 128,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0006,
+          "oracle_overlap_per_head": 0.1584
+        },
+        "C512": {
+          "C": 512,
+          "acc_original": 0.1771,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.1771,
+            "ci": [
+              0.1042,
+              0.25
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0002,
+          "oracle_overlap_per_head": 0.3992
+        }
+      },
+      "errors": [],
+      "G2": {
+        "pass": true,
+        "beats_own_permutation_somewhere": true,
+        "informative_at_budgets": [
+          512
+        ],
+        "permuted_falls_to_random_arm": true,
+        "rho_near_zero": true
+      },
+      "G3": {
+        "pass": true,
+        "overlap_positive": true,
+        "monotone_in_C": true,
+        "overlaps": [
+          0.0922,
+          0.1584,
+          0.3992
+        ]
+      },
+      "admitted": true
+    },
+    "keydiff": {
+      "budgets": {
+        "C32": {
+          "C": 32,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.009,
+          "oracle_overlap_per_head": 0.0173
+        },
+        "C128": {
+          "C": 128,
+          "acc_original": 0.0,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.011,
+          "oracle_overlap_per_head": 0.043
+        },
+        "C512": {
+          "C": 512,
+          "acc_original": 0.0417,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0417,
+            "ci": [
+              0.0104,
+              0.0833
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.0094,
+          "oracle_overlap_per_head": 0.1989
+        }
+      },
+      "errors": [],
+      "G2": {
+        "pass": true,
+        "beats_own_permutation_somewhere": true,
+        "informative_at_budgets": [
+          512
+        ],
+        "permuted_falls_to_random_arm": true,
+        "rho_near_zero": true
+      },
+      "G3": {
+        "pass": true,
+        "overlap_positive": true,
+        "monotone_in_C": true,
+        "overlaps": [
+          0.0173,
+          0.043,
+          0.1989
+        ]
+      },
+      "admitted": true
+    },
+    "adakv_snapkv": {
+      "budgets": {
+        "C32": {
+          "C": 32,
+          "acc_original": 0.0312,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0312,
+            "ci": [
+              0.0,
+              0.0625
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.0004,
+          "oracle_overlap_per_head": 0.2516
+        },
+        "C128": {
+          "C": 128,
+          "acc_original": 0.0521,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0521,
+            "ci": [
+              0.0104,
+              0.0938
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.0002,
+          "oracle_overlap_per_head": 0.3283
+        },
+        "C512": {
+          "C": 512,
+          "acc_original": 0.2396,
+          "acc_permuted": 0.0,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.2396,
+            "ci": [
+              0.1667,
+              0.3229
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.0007,
+          "oracle_overlap_per_head": 0.5029
+        }
+      },
+      "errors": [],
+      "G2": {
+        "pass": true,
+        "beats_own_permutation_somewhere": true,
+        "informative_at_budgets": [
+          128,
+          512
+        ],
+        "permuted_falls_to_random_arm": true,
+        "rho_near_zero": true
+      },
+      "G3": {
+        "pass": true,
+        "overlap_positive": true,
+        "monotone_in_C": true,
+        "overlaps": [
+          0.2516,
+          0.3283,
+          0.5029
+        ]
+      },
+      "admitted": true
+    },
+    "lukv": {
+      "budgets": {},
+      "errors": [
+        "KeyError: \"No LU-KV budget curve found for model='Qwen/Qwen2.5-3B-Instruct' and press='ExpectedAttentionPress'. Available curves: [('meta-llama/Llama-3.1-8B-Instruct', 'ExpectedAttentionPress')].\""
+      ],
+      "admitted": false,
+      "G2": {
+        "pass": false
+      },
+      "G3": {
+        "pass": false
+      }
+    }
+  },
+  "admitted": [
+    "snapkv",
+    "expected_attn",
+    "keydiff",
+    "adakv_snapkv"
+  ],
+  "unadmitted": [
+    "tova",
+    "lukv"
+  ]
+}

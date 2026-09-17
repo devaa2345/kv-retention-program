@@ -1,0 +1,365 @@
+{
+ "produced_on": "RTX 5070 (Machine N)",
+ "rows": [
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "snapkv",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "adakv_snapkv",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "expected_attn",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "keydiff",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "snapkv",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "adakv_snapkv",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "expected_attn",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "keydiff",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "snapkv",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "adakv_snapkv",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "expected_attn",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "keydiff",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "snapkv",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "adakv_snapkv",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "expected_attn",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "keydiff",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "snapkv",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "adakv_snapkv",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "expected_attn",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=40",
+   "arm": "keydiff",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "snapkv",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "adakv_snapkv",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "expected_attn",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "keydiff",
+   "instance": 0,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "snapkv",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "adakv_snapkv",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "expected_attn",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "keydiff",
+   "instance": 1,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "snapkv",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "adakv_snapkv",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "expected_attn",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "keydiff",
+   "instance": 2,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "snapkv",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "adakv_snapkv",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "expected_attn",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "keydiff",
+   "instance": 3,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "snapkv",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "adakv_snapkv",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "expected_attn",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  },
+  {
+   "model_tag": "M2",
+   "label": "c=1",
+   "arm": "keydiff",
+   "instance": 4,
+   "rerun_keepsets_identical": true,
+   "fresh_vs_session": 0.0,
+   "fresh_vs_stored": 0.0
+  }
+ ]
+}

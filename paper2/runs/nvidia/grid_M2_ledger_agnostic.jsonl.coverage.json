@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "expected": 10000,
+  "have": 10000,
+  "holes": 0,
+  "failed": 0,
+  "prereg_sha256": "b3f5fb3c1e949c94e0785ba7a9843cbcc2548103215100fe0ec1d42b47ba886e",
+  "budgets": [
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "arms": [
+    "full_cache",
+    "null",
+    "random",
+    "floor_pos",
+    "oracle_causal",
+    "oracle_prescient",
+    "snapkv",
+    "expected_attn",
+    "keydiff",
+    "adakv_snapkv"
+  ],
+  "n": 200
+}
