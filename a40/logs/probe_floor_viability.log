@@ -1,0 +1,12 @@
+loading model... (floor_pos viability probe, c=19, {'task': 'ledger_c', 'n_fields': 3, 'n_records': 200}, n=50)
+loaded.
+  C=  16  B=  88  floor_pos acc=0.0200  DEGENERATE  (356.9s, 7.14 s/row)
+  C=  32  B= 104  floor_pos acc=0.0200  DEGENERATE  (351.7s, 7.03 s/row)
+  C=  64  B= 136  floor_pos acc=0.0300  DEGENERATE  (341.0s, 6.82 s/row)
+  C= 128  B= 200  floor_pos acc=0.0300  DEGENERATE  (322.8s, 6.46 s/row)
+
+=== FLOOR VIABILITY SUMMARY (c=19, N=200) ===
+  C=  16: floor_pos=0.0200  -- DEGENERATE, exclude from budget set
+  C=  32: floor_pos=0.0200  -- DEGENERATE, exclude from budget set
+  C=  64: floor_pos=0.0300  -- DEGENERATE, exclude from budget set
+  C= 128: floor_pos=0.0300  -- DEGENERATE, exclude from budget set

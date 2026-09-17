@@ -1,0 +1,26 @@
+{
+  "16": {
+    "accuracy": 0.05,
+    "degenerate": false,
+    "n": 50,
+    "wall_s": 291.3789732456207
+  },
+  "32": {
+    "accuracy": 0.05,
+    "degenerate": false,
+    "n": 50,
+    "wall_s": 268.61745142936707
+  },
+  "64": {
+    "accuracy": 0.055,
+    "degenerate": false,
+    "n": 50,
+    "wall_s": 268.3558807373047
+  },
+  "128": {
+    "accuracy": 0.085,
+    "degenerate": false,
+    "n": 50,
+    "wall_s": 235.16474843025208
+  }
+}

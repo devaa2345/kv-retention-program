@@ -1,0 +1,27 @@
+loading model... (P2 ladder, c=19, N=80, C=32, B=104, n=100, payable_cost=75.7, SQUEEZED)
+loaded.
+  [C=32] inst 10/100  written 70 skipped 0 failed 0  6.4 min  5.51 s/row  eta 57.9 min
+  [C=32] inst 20/100  written 140 skipped 0 failed 0  12.9 min  5.51 s/row  eta 51.4 min
+  [C=32] inst 30/100  written 209 skipped 0 failed 1  19.2 min  5.51 s/row  eta 45.0 min
+  [C=32] inst 40/100  written 279 skipped 0 failed 1  25.4 min  5.46 s/row  eta 38.2 min
+  [C=32] inst 50/100  written 348 skipped 0 failed 2  31.6 min  5.44 s/row  eta 31.7 min
+  [C=32] inst 60/100  written 417 skipped 0 failed 3  37.6 min  5.41 s/row  eta 25.3 min
+  [C=32] inst 70/100  written 487 skipped 0 failed 3  43.8 min  5.40 s/row  eta 18.9 min
+  [C=32] inst 80/100  written 557 skipped 0 failed 3  49.9 min  5.38 s/row  eta 12.5 min
+  [C=32] inst 90/100  written 627 skipped 0 failed 3  56.2 min  5.38 s/row  eta 6.3 min
+  [C=32] inst 100/100  written 697 skipped 0 failed 3  62.5 min  5.38 s/row  eta 0.0 min
+
+=== C=32 SUMMARY (n=100, N=80, L~2074, SQUEEZED) ===
+floor_pos = 0.0625 -- viable
+  full_cache             acc=0.9550 [0.9350,0.9725]  n=100
+  null                   acc=0.0200 [0.0075,0.0350]  n=100
+  random                 acc=0.0000 [0.0000,0.0000]  n=100
+  floor_pos              acc=0.0625 [0.0400,0.0850]  n=100
+  oracle_causal          acc=0.2875 [0.2650,0.3100]  n=100
+  oracle_prescient       acc=0.9625 [0.9450,0.9800]  n=100
+  oracle_causal_perhead  acc=0.0593 [0.0387,0.0825]  n=97
+
+I = 0.7500 [0.7365,0.7649]
+Delta_head = -0.2216 [-0.2371,-0.2062] (n_paired=97)
+
+DONE C=32: 697 written, 0 skipped, 3 failed, 62.5 min, 5.38 s/row

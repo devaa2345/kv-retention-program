@@ -1,0 +1,13 @@
+loading model... (floor_pos viability probe, c=19, {'task': 'ledger_c', 'n_fields': 3, 'n_records': 80}, n=50)
+loaded.
+  achieved n_ctx (mean) = 2074
+  C=  16  B=  88  floor_pos acc=0.0500  viable  (291.4s, 5.83 s/row)
+  C=  32  B= 104  floor_pos acc=0.0500  viable  (268.6s, 5.37 s/row)
+  C=  64  B= 136  floor_pos acc=0.0550  viable  (268.4s, 5.37 s/row)
+  C= 128  B= 200  floor_pos acc=0.0850  viable  (235.2s, 4.70 s/row)
+
+=== FLOOR VIABILITY SUMMARY (c=19, N=80) ===
+  C=  16: floor_pos=0.0500  -- OK
+  C=  32: floor_pos=0.0500  -- OK
+  C=  64: floor_pos=0.0550  -- OK
+  C= 128: floor_pos=0.0850  -- OK
