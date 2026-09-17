@@ -1,0 +1,87 @@
+{
+  "C": 128,
+  "B": 200,
+  "n": 100,
+  "task": "ledger_c",
+  "n_fields": 3,
+  "n_records": 80,
+  "mean_n_ctx": 2073.91,
+  "payable_candidate_cost": 75.732,
+  "squeezed": false,
+  "floor_mean": 0.1025,
+  "degenerate_floor": false,
+  "n_failed": 0,
+  "arms": {
+    "full_cache": {
+      "n": 100,
+      "accuracy": 0.955,
+      "accuracy_ci": [
+        0.935,
+        0.9725
+      ]
+    },
+    "null": {
+      "n": 100,
+      "accuracy": 0.0275,
+      "accuracy_ci": [
+        0.0125,
+        0.0425
+      ]
+    },
+    "random": {
+      "n": 100,
+      "accuracy": 0.0,
+      "accuracy_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "floor_pos": {
+      "n": 100,
+      "accuracy": 0.1025,
+      "accuracy_ci": [
+        0.075,
+        0.1325
+      ]
+    },
+    "oracle_causal": {
+      "n": 100,
+      "accuracy": 0.9775,
+      "accuracy_ci": [
+        0.9625,
+        0.99
+      ]
+    },
+    "oracle_prescient": {
+      "n": 100,
+      "accuracy": 0.9775,
+      "accuracy_ci": [
+        0.9625,
+        0.99
+      ]
+    },
+    "oracle_causal_perhead": {
+      "n": 100,
+      "accuracy": 0.9775,
+      "accuracy_ci": [
+        0.9625,
+        0.99
+      ]
+    }
+  },
+  "I": {
+    "value": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "delta_head": {
+    "value": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ],
+    "n_paired": 100
+  }
+}
