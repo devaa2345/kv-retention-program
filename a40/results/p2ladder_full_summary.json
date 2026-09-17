@@ -1,0 +1,263 @@
+{
+  "32": {
+    "C": 32,
+    "B": 104,
+    "n": 100,
+    "task": "ledger_c",
+    "n_fields": 3,
+    "n_records": 80,
+    "mean_n_ctx": 2073.91,
+    "payable_candidate_cost": 75.732,
+    "squeezed": true,
+    "floor_mean": 0.0625,
+    "degenerate_floor": false,
+    "n_failed": 3,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.955,
+        "accuracy_ci": [
+          0.935,
+          0.9725
+        ]
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.02,
+        "accuracy_ci": [
+          0.0075,
+          0.035
+        ]
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.0625,
+        "accuracy_ci": [
+          0.04,
+          0.085
+        ]
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.2875,
+        "accuracy_ci": [
+          0.265,
+          0.31
+        ]
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.9625,
+        "accuracy_ci": [
+          0.945,
+          0.98
+        ]
+      },
+      "oracle_causal_perhead": {
+        "n": 97,
+        "accuracy": 0.059278350515463915,
+        "accuracy_ci": [
+          0.03865979381443299,
+          0.08247422680412371
+        ]
+      }
+    },
+    "I": {
+      "value": 0.75,
+      "ci": [
+        0.7365439093484418,
+        0.7648725212464589
+      ]
+    },
+    "delta_head": {
+      "value": -0.22164948453608246,
+      "ci": [
+        -0.23711340206185566,
+        -0.20618556701030927
+      ],
+      "n_paired": 97
+    }
+  },
+  "64": {
+    "C": 64,
+    "B": 136,
+    "n": 100,
+    "task": "ledger_c",
+    "n_fields": 3,
+    "n_records": 80,
+    "mean_n_ctx": 2073.91,
+    "payable_candidate_cost": 75.732,
+    "squeezed": true,
+    "floor_mean": 0.0725,
+    "degenerate_floor": false,
+    "n_failed": 0,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.955,
+        "accuracy_ci": [
+          0.935,
+          0.9725
+        ]
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.0275,
+        "accuracy_ci": [
+          0.0125,
+          0.045
+        ]
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.0725,
+        "accuracy_ci": [
+          0.05,
+          0.0975
+        ]
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.7725,
+        "accuracy_ci": [
+          0.75,
+          0.795
+        ]
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.975,
+        "accuracy_ci": [
+          0.96,
+          0.9875
+        ]
+      },
+      "oracle_causal_perhead": {
+        "n": 100,
+        "accuracy": 0.715,
+        "accuracy_ci": [
+          0.6725,
+          0.7575
+        ]
+      }
+    },
+    "I": {
+      "value": 0.22437673130193908,
+      "ci": [
+        0.2063037249283668,
+        0.24099722991689754
+      ]
+    },
+    "delta_head": {
+      "value": -0.057499999999999996,
+      "ci": [
+        -0.09499999999999997,
+        -0.022499999999999964
+      ],
+      "n_paired": 100
+    }
+  },
+  "128": {
+    "C": 128,
+    "B": 200,
+    "n": 100,
+    "task": "ledger_c",
+    "n_fields": 3,
+    "n_records": 80,
+    "mean_n_ctx": 2073.91,
+    "payable_candidate_cost": 75.732,
+    "squeezed": false,
+    "floor_mean": 0.1025,
+    "degenerate_floor": false,
+    "n_failed": 0,
+    "arms": {
+      "full_cache": {
+        "n": 100,
+        "accuracy": 0.955,
+        "accuracy_ci": [
+          0.935,
+          0.9725
+        ]
+      },
+      "null": {
+        "n": 100,
+        "accuracy": 0.0275,
+        "accuracy_ci": [
+          0.0125,
+          0.0425
+        ]
+      },
+      "random": {
+        "n": 100,
+        "accuracy": 0.0,
+        "accuracy_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "floor_pos": {
+        "n": 100,
+        "accuracy": 0.1025,
+        "accuracy_ci": [
+          0.075,
+          0.1325
+        ]
+      },
+      "oracle_causal": {
+        "n": 100,
+        "accuracy": 0.9775,
+        "accuracy_ci": [
+          0.9625,
+          0.99
+        ]
+      },
+      "oracle_prescient": {
+        "n": 100,
+        "accuracy": 0.9775,
+        "accuracy_ci": [
+          0.9625,
+          0.99
+        ]
+      },
+      "oracle_causal_perhead": {
+        "n": 100,
+        "accuracy": 0.9775,
+        "accuracy_ci": [
+          0.9625,
+          0.99
+        ]
+      }
+    },
+    "I": {
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "delta_head": {
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_paired": 100
+    }
+  }
+}
