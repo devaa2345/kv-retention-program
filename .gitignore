@@ -50,6 +50,8 @@ quarantine/
 !a40/results/p3curve_c8_keepset_audit.npz
 !a40/runs/p3curve_c19.jsonl
 !a40/results/p3curve_c19_keepset_audit.npz
+!a40/runs/p3curve_c40.jsonl
+!a40/results/p3curve_c40_keepset_audit.npz
 
 # Run records < 10 MB read by analysis scripts (Stage 4 capture/plane files deliberately excluded)
 !paper2/runs/nvidia/grid_M3_ledger_agnostic.jsonl

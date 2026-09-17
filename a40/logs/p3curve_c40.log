@@ -1,0 +1,27 @@
+loading model... (c=40, task=ledger_c, n_fields=8, n_records=200, n=100, C=512, B=584)
+loaded.
+  [c=40] inst 10/100  written 100 skipped 0  19.6 min elapsed  11.74 s/row  eta 176.0 min
+  [c=40] inst 20/100  written 200 skipped 0  38.9 min elapsed  11.67 s/row  eta 155.6 min
+  [c=40] inst 30/100  written 300 skipped 0  58.5 min elapsed  11.69 s/row  eta 136.4 min
+  [c=40] inst 40/100  written 400 skipped 0  77.5 min elapsed  11.63 s/row  eta 116.3 min
+  [c=40] inst 50/100  written 500 skipped 0  97.0 min elapsed  11.64 s/row  eta 97.0 min
+  [c=40] inst 60/100  written 600 skipped 0  116.5 min elapsed  11.65 s/row  eta 77.7 min
+  [c=40] inst 70/100  written 700 skipped 0  136.1 min elapsed  11.66 s/row  eta 58.3 min
+  [c=40] inst 80/100  written 800 skipped 0  155.6 min elapsed  11.67 s/row  eta 38.9 min
+  [c=40] inst 90/100  written 900 skipped 0  175.2 min elapsed  11.68 s/row  eta 19.5 min
+  [c=40] inst 100/100  written 1000 skipped 0  194.3 min elapsed  11.66 s/row  eta 0.0 min
+
+=== c=40 SUMMARY (n=100, C=512, N_records=200, L~8358) ===
+floor_pos accuracy = 0.0050 -- DEGENERATE (<0.05), cell EXCLUDED
+  full_cache       acc=0.9125 [0.8850,0.9375]  p_g=1.000 q_complete=1.000
+  null             acc=0.0000 [0.0000,0.0000]  p_g=0.071 q_complete=0.070
+  random           acc=0.0000 [0.0000,0.0000]  p_g=0.070 q_complete=0.005
+  floor_pos        acc=0.0050 [0.0000,0.0125]  p_g=0.070 q_complete=0.070
+  oracle_causal    acc=0.1675 [0.1275,0.2100]  p_g=1.000 q_complete=1.000
+  oracle_prescient acc=0.1675 [0.1250,0.2100]  p_g=1.000 q_complete=1.000
+  snapkv           acc=0.0125 [0.0025,0.0250]  p_g=0.061 q_complete=0.014
+  adakv_snapkv     acc=0.0150 [0.0050,0.0275]  p_g=0.063 q_complete=0.014
+  expected_attn    acc=0.0000 [0.0000,0.0000]  p_g=0.061 q_complete=0.006
+  keydiff          acc=0.0050 [0.0000,0.0125]  p_g=0.049 q_complete=0.005
+
+DONE c=40: 1000 written, 0 skipped, 194.3 min, 11.66 s/row, 1000 total rows this cell

@@ -1,0 +1,134 @@
+{
+  "c_tag": 40,
+  "n": 100,
+  "C": 512,
+  "B": 584,
+  "task": "ledger_c",
+  "n_fields": 8,
+  "n_records": 200,
+  "mean_n_ctx": 8358.06,
+  "floor_mean": 0.005,
+  "degenerate_floor": true,
+  "arms": {
+    "full_cache": {
+      "n": 100,
+      "accuracy": 0.9125,
+      "accuracy_ci": [
+        0.885,
+        0.9375
+      ],
+      "p_g": 1.0,
+      "q_complete": 1.0,
+      "q_any": 1.0,
+      "eos_rate": 1.0
+    },
+    "null": {
+      "n": 100,
+      "accuracy": 0.0,
+      "accuracy_ci": [
+        0.0,
+        0.0
+      ],
+      "p_g": 0.07063793791982173,
+      "q_complete": 0.07,
+      "q_any": 0.07,
+      "eos_rate": 0.7575
+    },
+    "random": {
+      "n": 100,
+      "accuracy": 0.0,
+      "accuracy_ci": [
+        0.0,
+        0.0
+      ],
+      "p_g": 0.06983840884190139,
+      "q_complete": 0.005,
+      "q_any": 0.005,
+      "eos_rate": 0.3575
+    },
+    "floor_pos": {
+      "n": 100,
+      "accuracy": 0.005,
+      "accuracy_ci": [
+        0.0,
+        0.0125
+      ],
+      "p_g": 0.07039697406440004,
+      "q_complete": 0.07,
+      "q_any": 0.07,
+      "eos_rate": 0.955
+    },
+    "oracle_causal": {
+      "n": 100,
+      "accuracy": 0.1675,
+      "accuracy_ci": [
+        0.1275,
+        0.21
+      ],
+      "p_g": 1.0,
+      "q_complete": 1.0,
+      "q_any": 1.0,
+      "eos_rate": 0.9925
+    },
+    "oracle_prescient": {
+      "n": 100,
+      "accuracy": 0.1675,
+      "accuracy_ci": [
+        0.125,
+        0.21
+      ],
+      "p_g": 1.0,
+      "q_complete": 1.0,
+      "q_any": 1.0,
+      "eos_rate": 0.9925
+    },
+    "snapkv": {
+      "n": 100,
+      "accuracy": 0.0125,
+      "accuracy_ci": [
+        0.0025,
+        0.025
+      ],
+      "p_g": 0.061330694711586836,
+      "q_complete": 0.013776041666666667,
+      "q_any": 0.1975,
+      "eos_rate": 0.8725
+    },
+    "adakv_snapkv": {
+      "n": 100,
+      "accuracy": 0.015,
+      "accuracy_ci": [
+        0.005,
+        0.0275
+      ],
+      "p_g": 0.06253642610338399,
+      "q_complete": 0.013756510416666668,
+      "q_any": 0.1625,
+      "eos_rate": 0.945
+    },
+    "expected_attn": {
+      "n": 100,
+      "accuracy": 0.0,
+      "accuracy_ci": [
+        0.0,
+        0.0
+      ],
+      "p_g": 0.06068514202296042,
+      "q_complete": 0.005546875,
+      "q_any": 0.055,
+      "eos_rate": 0.9575
+    },
+    "keydiff": {
+      "n": 100,
+      "accuracy": 0.005,
+      "accuracy_ci": [
+        0.0,
+        0.0125
+      ],
+      "p_g": 0.04942880925704119,
+      "q_complete": 0.0051171875,
+      "q_any": 0.0225,
+      "eos_rate": 0.8075
+    }
+  }
+}
