@@ -57,6 +57,8 @@ quarantine/
 !a40/runs/p2ladder_C32.jsonl
 !a40/runs/p2ladder_C32.failures.jsonl
 !a40/results/p2ladder_C32_keepset_audit.npz
+!a40/runs/p2ladder_C64.jsonl
+!a40/results/p2ladder_C64_keepset_audit.npz
 
 # Run records < 10 MB read by analysis scripts (Stage 4 capture/plane files deliberately excluded)
 !paper2/runs/nvidia/grid_M3_ledger_agnostic.jsonl
