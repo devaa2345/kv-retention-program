@@ -42,6 +42,11 @@ quarantine/
 # A40 stratum (Qwen2.5-14B scale replication) -- floor_pos keep-sets from the rate benchmark
 !a40/results/keepsets_floor_pos_c19_C512_rate200.npz
 
+# A40 stratum -- Paper 3 curve replication at 14B, generation records and keep-set audits
+# (each checked < 10 MB before being added; whitelisted per c_tag as each cell completes)
+!a40/runs/p3curve_c1.jsonl
+!a40/results/p3curve_c1_keepset_audit.npz
+
 # Run records < 10 MB read by analysis scripts (Stage 4 capture/plane files deliberately excluded)
 !paper2/runs/nvidia/grid_M3_ledger_agnostic.jsonl
 !paper2/runs/nvidia/grid_M2_ledger_agnostic.jsonl
