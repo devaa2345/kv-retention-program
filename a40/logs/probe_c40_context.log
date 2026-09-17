@@ -1,0 +1,12 @@
+loading model... (probe: c=40 oracle at N=80, n=50, arm=oracle_causal)
+loaded.
+  10/50  running mean acc=0.4000  mean L=3492
+  20/50  running mean acc=0.3375  mean L=3495
+  30/50  running mean acc=0.3500  mean L=3494
+  40/50  running mean acc=0.3438  mean L=3494
+  50/50  running mean acc=0.3750  mean L=3494
+
+=== PROBE RESULT ===
+oracle_causal @ c=40, N=80, L~3494: acc=0.3750 [0.2750,0.4750]  (n=50)
+vs oracle_causal @ c=40, N=200, L~8358: acc=0.1675  (n=100)
+INTERMEDIATE -> partial recovery, likely a mix of both

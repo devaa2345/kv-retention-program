@@ -1,0 +1,15 @@
+{
+  "arm": "oracle_causal",
+  "c_tag": 40,
+  "n_fields": 8,
+  "n_records": 80,
+  "n": 50,
+  "accuracy": 0.375,
+  "accuracy_ci": [
+    0.275,
+    0.475
+  ],
+  "mean_n_ctx": 3493.94,
+  "comparison_N200_accuracy": 0.1675,
+  "comparison_N200_mean_n_ctx": 8358
+}
