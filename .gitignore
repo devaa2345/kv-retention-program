@@ -202,3 +202,4 @@ id_ed25519*
 !paper3/data/natural/nat_v1.jsonl
 !paper3/runs/nvidia/natC_*.jsonl
 !paper3/runs/nvidia/nat_gate_*.jsonl
+!paper3/runs/nvidia/chunkkv_plane_*.jsonl
