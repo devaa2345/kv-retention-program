@@ -1,0 +1,32 @@
+
+== M2  n=100
+cond 1  full_cache in (0.55, 0.97)
+  level 1: 0.943 [0.917,0.965] PASS
+  level 3: 0.887 [0.855,0.917] PASS
+  level 5: 0.848 [0.807,0.882] PASS
+cond 2  floor_pos > 0.05 at every (level, C)
+  level 1: C=256: 0.092 ok   C=512: 0.150 ok   C=1024: 0.270 ok
+  level 3: C=256: 0.083 ok   C=512: 0.138 ok   C=1024: 0.253 ok
+  level 5: C=256: 0.075 ok   C=512: 0.120 ok   C=1024: 0.237 ok
+probe 4  full_cache with queried fact deleted <= 0.0478
+  level 1: 0.0000 PASS
+  level 3: 0.0000 PASS
+  level 5: 0.0000 PASS
+  M2: cond1 True  cond2 True  probe4 True
+
+== M3  n=100
+cond 1  full_cache in (0.55, 0.97)
+  level 1: 0.968 [0.948,0.985] PASS
+  level 3: 0.623 [0.573,0.672] PASS
+  level 5: 0.667 [0.620,0.715] PASS
+cond 2  floor_pos > 0.05 at every (level, C)
+  level 1: C=256: 0.095 ok   C=512: 0.155 ok   C=1024: 0.275 ok
+  level 3: C=256: 0.095 ok   C=512: 0.155 ok   C=1024: 0.273 ok
+  level 5: C=256: 0.095 ok   C=512: 0.155 ok   C=1024: 0.273 ok
+probe 4  full_cache with queried fact deleted <= 0.0478
+  level 1: 0.0000 PASS
+  level 3: 0.0000 PASS
+  level 5: 0.0000 PASS
+  M3: cond1 True  cond2 True  probe4 True
+
+GATE: PASS

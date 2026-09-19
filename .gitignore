@@ -197,3 +197,8 @@ Thumbs.db
 *.pem
 id_rsa*
 id_ed25519*
+
+# natural-text ladder (Experiment A/C)
+!paper3/data/natural/nat_v1.jsonl
+!paper3/runs/nvidia/natC_*.jsonl
+!paper3/runs/nvidia/nat_gate_*.jsonl
