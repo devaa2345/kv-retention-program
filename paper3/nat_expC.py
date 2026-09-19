@@ -21,6 +21,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from p3 import runner
+from p3 import chunkkv
 from p3.natural import facts as F
 from p3.natural import gen
 from p3.natural import score as S
@@ -63,7 +64,9 @@ def main():
     ap.add_argument("--data", default="data/natural/nat_v1.jsonl")
     ap.add_argument("--n", type=int, default=100)
     ap.add_argument("--out", default=None)
+    ap.add_argument("--arms", default=None, help="comma list; restricts to these generic arms and skips oracles")
     a = ap.parse_args()
+    only = set(a.arms.split(",")) if a.arms else None
     tok = AutoTokenizer.from_pretrained(MODELS[a.tag])
     model = AutoModelForCausalLM.from_pretrained(
         MODELS[a.tag], dtype=torch.bfloat16, attn_implementation="sdpa").to("cuda").eval()
@@ -105,7 +108,7 @@ def main():
         mn_all = [max_new(tok, v) for v in vs_all]
         iid = rec["instance_id"]
 
-        for arm in GENERIC:
+        for arm in (only or GENERIC):
             arm_C = 0 if arm == "full_cache" else C
             if arm == "full_cache" and C != 256:
                 continue                                   # budget-free; produced once
@@ -116,6 +119,17 @@ def main():
             elif arm in ("null", "random", "floor_pos"):
                 p, _ = press.build_arm(arm, n_ctx=n_ctx, C=C, n_sink=N_SINK, n_window=N_WINDOW,
                                        facts=None, seed=rec["seed"])
+            elif arm == "chunkkv":
+                ratio = press._ratio_for(B, n_ctx)
+                p = chunkkv.build_chunkkv(ratio, n_ctx, N_SINK, N_WINDOW)
+                if i < 2:
+                    rk = 0
+                    ids_ = tok(pre, add_special_tokens=False, return_tensors="pt").to(model.device)
+                    with torch.inference_mode(), chunkkv.build_chunkkv(ratio, n_ctx)(model):
+                        o_ = model(**ids_, use_cache=True)
+                    rk = o_.past_key_values.get_seq_length()
+                    del o_
+                    assert rk == chunkkv.expected_kept(n_ctx, B), (rk, n_ctx, B)
             else:
                 ratio = press._ratio_for(B, n_ctx)
                 p = methods.make_floor_constrained(methods.build_method(arm, ratio),
@@ -129,7 +143,7 @@ def main():
             emit(rec, arm, None, "all", vs_all, outs, flags, n_ctx)
             ncell += 1
 
-        for lv in F.LEVELS:
+        for lv in (() if only else F.LEVELS):
             facts, _ = token_facts(rd, pre, tok, lv)
             vs = [v for v in vs_all if v["level"] == lv]
             posts = [posts_all[vs_all.index(v)] for v in vs]

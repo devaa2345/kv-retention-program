@@ -205,3 +205,4 @@ id_ed25519*
 !paper3/runs/nvidia/chunkkv_plane_*.jsonl
 !paper2/runs/nvidia/floor_readingC_M2.jsonl
 !paper2/runs/nvidia/floor_readingC_M3.jsonl
+!paper3/runs/nvidia/natCK_*.jsonl
