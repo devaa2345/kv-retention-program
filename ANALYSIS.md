@@ -3,6 +3,14 @@
 **Date:** 2026-09-04
 **Status:** Phases 0-R, 1, 2 complete. §2 and §6 revised 2026-09-05 following an
 independent blind reimplementation's agreement report; open items are recorded in §9.
+**Revised 2026-09-20 (verification pass, no new runs):** the quantity labelled "interaction"
+throughout this document was arm 4 minus arm 2, not the pre-registered difference in
+differences (DiD); both are now reported and the mislabelling is recorded as a PREREG
+deviation (§7, defect D-09 in §8). Stale statements about the independent implementation's
+4-bit sweep and the sum-versus-mean rerun were corrected (§2.2, §6.1 to §6.3, §9). Raw-row
+re-derivation is in `verification/rederive_interaction.py` and its output file. Bootstrap
+intervals below were recomputed with a fixed seed and can differ from earlier interim figures
+in the fourth decimal.
 **Governing documents:** `PREREG.md` (sha256 in `PREREG.sha256`), `ADDENDUM_2026-09-03.md`
 (sha256 in `ADDENDUM_2026-09-03.sha256`, §§9–13 carry corrections made after the hash).
 **Data:** `results/phase1/`, `results/phase2_4bit/`, `results/phase2_8bit_control/`,
@@ -29,14 +37,19 @@ FULL/QUANT distinction carries no quality signal at int8 at all, and at 4-bit �
 does — no promotion signal beats any other, including one with perfect knowledge of future
 need.
 
-**Revised 2026-09-05 (§3.4).** Phase 1 originally ran at 8-bit only, which the spec never
-stated — our defect. Re-run at 4-bit, where the cold tier is not free, the interaction is
-**negative at every budget with CIs excluding zero, and grows with budget** (−0.012 / −0.019
-/ −0.683 at 154 / 257 / 514). So the sharper statement is:
+**Revised 2026-09-05 (§3.4), corrected 2026-09-20.** Phase 1 originally ran at 8-bit only,
+which the spec never stated — our defect. Re-run at 4-bit, where the cold tier is not free,
+the recoverability effect given protection (arm 4 − arm 2) is negative at every budget with
+CIs excluding zero (−0.012 / −0.019 / −0.683 at 154 / 257 / 514), but it is small at 154 and
+257 with overlapping intervals, so only the step from 257 to 514 is a clean growth. The
+pre-registered interaction (DiD) at 4-bit is −0.007 [−0.018, +0.004] / −0.012 [−0.027,
++0.002] / −0.677 [−0.712, −0.639]: **two of three intervals include zero, and only 514 is
+distinguishable from zero.** So the supportable statement is:
 
 > Recoverable tiering does not merely fail to help. Once the cold tier is lossy enough to
-> matter, it actively harms — worst at exactly the budgets where retention is otherwise
-> working. The 8-bit null and the 4-bit harm are one mechanism seen at two precisions.
+> matter, it actively harms at the budget where retention is otherwise working (514). At 154
+> and 257 the harm is at most small. The 8-bit null and the 4-bit harm are one mechanism seen
+> at two precisions.
 
 ---
 
@@ -107,11 +120,11 @@ mostly tied, sign-test p = 0.39) because **our oracle never touches attention** 
 keep-set is ground truth plus earliest-position filler, structurally immune to the choice.
 The tripwire does not fire here while the defect is present, which is worth reporting back.
 
-**Not yet established:** whether switching to mean moves our headline numbers. Both Phase 1
-interaction arms share the identical ranking, so a common bias does not obviously create or
-destroy the null, and credentials rank poorly under both readings (0.693 vs 0.654). That is
-reasoning, not measurement. **Required before the sum reading can stand: rerun the
-attention-ranked arms under mean.**
+**Resolved (2026-09-05, see §9 item 2):** the mean rerun was done. At 8-bit the null is
+unchanged (recoverability effect given protection +0.000 / −0.001 / +0.001, DiD +0.002 /
+−0.001 / −0.002, all CIs inside ±0.05). At 4-bit and budget 514 the correction made the harm
+larger, −0.683 to −0.801 (arm 4 − arm 2; the mean rerun has arms 2 and 4 only, so the DiD is
+not available). The reasoning that a shared bias cancels held at 8-bit and failed at 4-bit.
 
 ### 2.3 The estimator problem
 
@@ -130,15 +143,27 @@ The mean paired difference with its bootstrap interval is what the data supports
 reported alongside **the count of prompts on which the arms differ at all** — which is the
 stronger statement and does not depend on any estimator choice.
 
+Recoverability effect given protection (arm 4 − arm 2), the quantity previously labelled
+"interaction" (see §7 and D-09):
+
 | Budget (iso-token) | prompts where arms differ | mean diff | 95% CI |
 |---|---|---|---|
-| 154 | **3 / 150** | +0.0011 | [−0.0022, +0.0044] |
+| 154 | **3 / 150** | +0.0011 | [−0.0022, +0.0056] |
 | 257 | **5 / 150** | +0.0022 | [−0.0033, +0.0089] |
-| 514 | **9 / 150** | −0.0022 | [−0.0100, +0.0044] |
+| 514 | **9 / 150** | −0.0022 | [−0.0100, +0.0056] |
 
-At budget 257 the arms produce identical scores on 145 of 150 prompts. Of the five that
-differ, two favour protection alone and three favour protection-plus-recovery. Equivalence
-is declared per PREREG.md §3 (CI within ±0.05) at all three budgets.
+Pre-registered interaction, DiD = (arm 4 − arm 3) − (arm 2 − arm 1):
+
+| Budget (iso-token) | prompts where DiD ≠ 0 | mean DiD | 95% CI |
+|---|---|---|---|
+| 154 | 4 / 150 | +0.0000 | [−0.0044, +0.0044] |
+| 257 | 6 / 150 | +0.0033 | [−0.0022, +0.0100] |
+| 514 | 9 / 150 | −0.0022 | [−0.0100, +0.0056] |
+
+At budget 257 protection and protection-plus-recovery produce identical scores on 145 of 150
+prompts. Of the five that differ, two favour protection alone and three favour
+protection-plus-recovery. Equivalence is declared per PREREG.md §3 (CI within ±0.05) at all
+three budgets for both quantities.
 
 Note the contrast with Phase 2, where the arms *do* disagree prompt-by-prompt (55–95 of 150)
 and still average to the same place. Phase 1's null is "the same behaviour"; Phase 2's null
@@ -162,13 +187,23 @@ n = 150, seeds 3000–3149. Budgets classified per `ADDENDUM_2026-09-03.md` §3:
 | **257** | 0.010 | 0.423 | 0.009 | 0.426 | 0.943 | 0.947 |
 | **514** | 0.010 | 0.964 | 0.010 | 0.962 | 0.958 | 0.947 |
 
-### 3.2 The interaction, both accountings
+### 3.2 The interaction and the recoverability effect, both accountings
+
+Recoverability effect given protection (arm 4 − arm 2):
 
 | budget | iso-token | 95% CI | iso-memory | 95% CI |
 |---|---|---|---|---|
-| 154 | +0.001 | [−0.002, +0.004] | +0.199 | [+0.179, +0.219] |
-| 257 | +0.002 | [−0.003, +0.009] | +0.532 | [+0.506, +0.559] |
-| 514 | −0.002 | [−0.010, +0.004] | −0.051 | [−0.068, −0.034] |
+| 154 | +0.001 | [−0.002, +0.006] | +0.199 | [+0.179, +0.219] |
+| 257 | +0.002 | [−0.003, +0.009] | +0.532 | [+0.504, +0.559] |
+| 514 | −0.002 | [−0.010, +0.006] | −0.051 | [−0.068, −0.034] |
+
+Pre-registered interaction (DiD):
+
+| budget | iso-token | 95% CI | iso-memory | 95% CI |
+|---|---|---|---|---|
+| 154 | +0.000 | [−0.004, +0.004] | +0.201 | [+0.181, +0.222] |
+| 257 | +0.003 | [−0.002, +0.010] | +0.533 | [+0.507, +0.560] |
+| 514 | −0.002 | [−0.010, +0.006] | −0.064 | [−0.083, −0.047] |
 
 **H-SUB confirmed under iso-token.** The apparent iso-memory benefit tracks having ~60% more
 raw retained tokens, not a reversibility mechanism. This dissociation — null under one
@@ -190,7 +225,8 @@ PREREG.md was hashed, so it was swept rather than asserted. Budget 257, n = 150:
 The qualitative claim survives the whole plausible range, including a deliberately punitive
 0.50 (implying only 2× compression where int8-vs-bf16 is genuinely 4×). **The magnitude
 moves with the constant and must be reported as a range (+0.35 to +0.54) with the constant
-stated — never as a point estimate.**
+stated — never as a point estimate.** The sweep ran arm 4 only, so its column is the arm 4
+− arm 2 quantity; the DiD was not computed for it.
 
 ---
 
@@ -290,7 +326,7 @@ n = 50 prompts × 6 turns per width; reproduced across two independently written
 | 7 | 0.293 | 0.160 | functional both |
 | **6** | **0.000** | **0.130** | **NO — ours collapses, theirs does not** |
 | 5 | 0.000 | 0.000 | collapse both |
-| 4 | 0.123 | *(sweep file empty)* | **untested on their side** |
+| 4 | 0.123 | 0.117 (their reported value, n=50; not re-derived here) | recovery after 5-bit collapse replicates |
 | 3 | 0.000 | 0.000 | collapse both |
 
 Absolute levels are not comparable — their whole task is harder (their `full_cache_ref` is
@@ -316,12 +352,16 @@ the 6-bit collapse here, it is not in the quantizer, the scale, the policy, the 
 population, or level occupancy — which narrows where an implementation difference could
 live, and is the useful thing to hand back to the other implementation.
 
-**Newly relevant:** the sum-vs-mean attention artifact (§2.2) is a live candidate for the
-divergence and was not known when this section was first written. Our retention ranking
-carries a −0.717 position correlation; if theirs uses mean, the two implementations retain
-almost disjoint caches (ρ(sum, mean) = +0.014, 13.5% overlap), which could plausibly produce
-different degradation profiles at the same nominal bit-width. This is a hypothesis, not a
-finding — it has not been tested.
+**Tested and eliminated (2026-09-05):** the sum-vs-mean attention artifact (§2.2) was a live
+candidate for the divergence. Our retention ranking carried a −0.717 position correlation and
+the two readings retain almost disjoint caches (ρ(sum, mean) = +0.014, 13.5% overlap). The
+mean-ranking bit-width sweep (`results/q3_bitsweep_mean/`) gives 8/7/6/5/4/3 →
+0.473 / 0.303 / 0.020 / 0.000 / 0.247 / 0.000. The anomaly survives, with 4-bit recovery
+stronger than under sum (0.247 vs 0.123). Both implementations use mean; the 6-bit
+disagreement persists (ours 0.020, theirs 0.130). The independent implementation's
+Qwen2.5-3B and Llama-3.2-3B sweeps show the collapse widths vary by model family (Llama does
+not collapse), which is their reading of why the 6-bit boundary differs. Those figures are
+theirs and are being re-derived separately.
 
 **Five hypotheses tested, all ruled out:**
 
@@ -383,19 +423,20 @@ Phase 2's internal validity is intact on its own terms: it is a within-bit-width
 at a width verified five ways, against a band measured at that width rather than a position
 inferred on this curve. All five arms faced identical conditions.
 
-But **Phase 2 ran at 4-bit, which is the one width where the two implementations have no
-comparable data** — their 4-bit sweep file is empty. So Phase 2 sits precisely in the gap
-between an agreed-functional region (8, 7) and an agreed-collapsed region (5, 3), at the
-width our own curve behaves anomalously and theirs is silent. That does not invalidate the
-H-ORTH result, but it means the result has no independent corroboration at the width it was
-measured, and the choice of that width was licensed by a curve whose central feature does
-not replicate.
+But **Phase 2 ran at 4-bit, the width where our own curve behaves anomalously.** The
+independent implementation's 4-bit sweep exists (0.117 at n=50, their reported value) and
+its 4-bit recovery after the 5-bit collapse matches ours, so the width is no longer
+uncorroborated as a *sweep* point. Their Phase 2, however, reaches the opposite reading on
+which signals beat random (§9 item 3 and the reconciliation in `PAPER1.md` §9.3): under
+their corrected signals epiphany and the oracle beat random and attention does not. So the
+H-ORTH result has independent data at 4-bit and that data disagrees in direction. Their
+Phase 2 numbers are theirs and are being re-derived separately.
 
-The honest statement is: H-ORTH is falsified *in this implementation at 4-bit*, and
-confirming it requires either the other implementation's 4-bit sweep or a rerun at a width
-both implementations agree is functional-but-lossy — 7-bit is the obvious candidate, since
-both show real degradation there (ours 0.293 vs 0.410; theirs 0.160 vs 0.143) without
-collapse.
+The honest statement is: H-ORTH is falsified *in this implementation at 4-bit*, and the other
+implementation reads the ordering within the cluster differently. Settling it needs one
+implementation running both tier-seating rules on both distractor formats. A rerun at 7-bit
+remains a candidate check, since both implementations show real degradation there (ours
+0.293 vs 0.410; theirs 0.160 vs 0.143) without collapse.
 
 ---
 
@@ -404,6 +445,16 @@ collapse.
 **Deviations from PREREG.md**, all recorded rather than absorbed:
 
 - Median → mean estimator (§2.3), because the median is degenerate on this data.
+- **Estimand mislabelled (D-09, found 2026-09-20).** PREREG §3 fixes the interaction as the
+  difference in differences (arm 4 − arm 3) − (arm 2 − arm 1). Every figure reported as
+  "interaction" before this revision was arm 4 − arm 2 (recoverability effect given
+  protection). Both are now reported. The 8-bit null holds for both. The 4-bit correction is
+  material: the DiD is −0.0067 [−0.0178, +0.0044] at 154 and −0.0122 [−0.0267, +0.0022] at
+  257, so **two of three intervals include zero**, and only 514 (−0.6767 [−0.7122, −0.6389])
+  is distinguishable from zero. The earlier statement that all three 4-bit intervals excluded
+  zero is true only of arm 4 − arm 2 (−0.0122 / −0.0189 / −0.6833). Under mean ranking the
+  4-bit rerun contains only arms 2 and 4, so the DiD is unavailable there (arm 4 − arm 2 at
+  514 is −0.8011 [−0.8300, −0.7722]).
 - Budgets 51 and 103 excluded by an arithmetic, design-time-computable criterion
   (`ADDENDUM_2026-09-03.md` §§1–3); 154 reported separately, not pooled.
 - The budget gradient rests on two clean points plus one qualified one, not the intended
@@ -436,11 +487,14 @@ task.
 | D-04 | `oracle_static` sliced an unordered `set` when trimming to budget, dropping an arbitrary non-reproducible subset; also lacked credential labels | Ceiling shortfall |
 | D-05 | Interim analysis pooled `iso_token` and `iso_memory` rows for tiered arms under one nominal-budget label | A query that would not reproduce |
 | D-06 | The factor under test was inert — twice (protection pinning credentials; the 8-bit tier carrying no signal) | G3 gate, then a smoke test |
+| D-07 | Credential values not uniform hex: `string.hexdigits.lower()` has 22 slots, a–f drawn 2× (§2.1) | Independent reimplementation |
+| D-08 | Retention ranking accumulated attention as a sum over queries, ρ(score, position) = −0.717 (§2.2) | Independent reimplementation |
+| D-09 | The quantity reported as the interaction was arm 4 − arm 2, not the pre-registered DiD (§7) | Pre-submission re-derivation from raw rows |
 
 **The transferable practice:** assert an invariant on live data, not on a reimplementation.
 The level-count check on 10,640 intercepted calls is the strongest single piece of instrument
 validation in the project, and the same form would have caught D-04 and D-05. Separately,
-three of six defects surfaced from a *reference arm behaving impossibly* — an oracle below
+three of nine defects surfaced from a *reference arm behaving impossibly* — an oracle below
 its ceiling, a policy beating a no-eviction baseline, five arms returning byte-identical
 results — rather than from any test suite. Reference arms earn their compute as tripwires,
 not just as denominators.
@@ -449,14 +503,17 @@ not just as denominators.
 
 ## 9. Open items from the cross-implementation audit (2026-09-05)
 
-Raised by an independent blind reimplementation (RX 7900 XTX). Two are closed, two are open.
+Raised by an independent blind reimplementation (RX 7900 XTX). All items are closed as of
+2026-09-20. Open questions that remain are scientific disagreements, not audit items (§6.3,
+§10.4).
 
 | # | Item | Status |
 |---|---|---|
 | 1 | Scorer permissiveness | **Closed** — scorer is strict exact substring, verified by differential testing; 0.947 replicates at 0.9444. Surfaced a separate real defect: biased value alphabet (§2.1), worth ~0.033, does not explain the divergence. |
-| 2 | Sum vs mean attention accumulation | **In progress** — we accumulate sum; artifact confirmed at ρ(score, position) = −0.717, two readings share 13.5% of the retained set (§2.2). `engine.SCORE_MODE` now switches sum/mean; regression check confirms sum reproduces shipped values (0.013 vs 0.010; 0.413 vs 0.423 at n=25). Mean rerun of arms 1–4, 8-bit, iso-token, n=150 running to `results/phase1_meanscore/`. Arms 5/6 are attention-independent and not re-run. |
-| 3 | Phase 1 at 4-bit | **Closed** — see §10. Interaction negative at all three budgets, CIs excluding zero, growing with budget (−0.012 / −0.019 / −0.683). Direction, significance and budget-growth replicate their finding; magnitude at 514 is ~6× theirs and unexplained. Materially revises the headline (§1). |
-| 4 | §6 rescoped | **Closed** — narrowed from a general claim about KV quantization to a property of this implementation; the methodological caution is withdrawn as a general claim (§6.2), and Phase 2's position in the untested 4-bit gap is stated (§6.3). |
+| 2 | Sum vs mean attention accumulation | **Closed** — we accumulated sum; artifact confirmed at ρ(score, position) = −0.717, two readings share 13.5% of the retained set (§2.2). `engine.SCORE_MODE` switches sum/mean; regression check confirms sum reproduces shipped values (0.013 vs 0.010; 0.413 vs 0.423 at n=25). Mean rerun of arms 1–4 at 8-bit, iso-token, n=150 is in `results/phase1_meanscore/`: null unchanged. Mean rerun of arms 2 and 4 at 4-bit, budget 514, in `results/q4_phase1_4bit_mean/`: arm 4 − arm 2 = −0.8011 vs −0.6833 under sum (the harm grew). Arms 5/6 are attention-independent and not re-run. |
+| 3 | Phase 1 at 4-bit | **Closed, corrected 2026-09-20** — see §10. Arm 4 − arm 2 is negative at all three budgets with CIs excluding zero (−0.012 / −0.019 / −0.683), but the pre-registered DiD is −0.007 / −0.012 / −0.677 with the first two intervals including zero. Only 514 is a clean effect, and only the step 257 → 514 is a clean growth. Direction at 257 and 514 and the larger value at 514 match their reported finding; magnitude at 514 is ~6× theirs and unexplained. Materially revises the headline (§1). |
+| 4 | §6 rescoped | **Closed** — narrowed from a general claim about KV quantization to a property of this implementation; the methodological caution is withdrawn as a general claim (§6.2), and Phase 2's disagreement with the independent implementation at 4-bit is stated (§6.3). |
+| 5 | Estimand mislabelled (D-09) | **Closed 2026-09-20** — see §7. Both estimands reported. |
 
 **The two defects this audit found in our code are both ours and both real**: the value
 alphabet (§2.1) and the sum accumulation (§2.2). Neither was caught by five rounds of
@@ -486,37 +543,52 @@ than re-run.
 | 257 | 0.010 | 0.423 | 0.003 | 0.404 | 0.943 | 0.947 |
 | 514 | 0.010 | **0.964** | 0.003 | **0.281** | 0.958 | 0.947 |
 
-### 10.2 Interaction, paired, 10k bootstrap
+### 10.2 Interaction and recoverability effect, paired, 10k bootstrap (corrected 2026-09-20)
 
-| budget | interaction @ 4-bit | 95% CI | prompts differing | @ 8-bit |
-|---|---|---|---|---|
-| 154 | **−0.0122** | [−0.0222, −0.0033] | 19 / 150 | +0.0011 |
-| 257 | **−0.0189** | [−0.0322, −0.0056] | 30 / 150 | +0.0022 |
-| 514 | **−0.6833** | [−0.7200, −0.6456] | 149 / 150 | −0.0022 |
+| budget | interaction (DiD) @ 4-bit | 95% CI | differing | arm 4 − arm 2 @ 4-bit | 95% CI | differing | arm 4 − arm 2 @ 8-bit |
+|---|---|---|---|---|---|---|---|
+| 154 | −0.0067 | [−0.0178, +0.0044] | 23 / 150 | −0.0122 | [−0.0222, −0.0033] | 19 / 150 | +0.0011 |
+| 257 | −0.0122 | [−0.0267, +0.0022] | 35 / 150 | −0.0189 | [−0.0322, −0.0056] | 30 / 150 | +0.0022 |
+| 514 | **−0.6767** | [−0.7122, −0.6389] | 149 / 150 | **−0.6833** | [−0.7189, −0.6456] | 149 / 150 | −0.0022 |
 
-All three negative, all three CIs excluding zero, magnitude growing with budget.
+The DiD interval includes zero at 154 and 257 and excludes it at 514 only. Arm 4 − arm 2
+excludes zero at all three budgets, but the 154 and 257 intervals overlap, so the growth from
+154 to 257 is not established. The clean contrast is 257 to 514. The earlier text here said
+"all three CIs excluding zero, magnitude growing with budget" of the quantity then labelled
+the interaction; that was arm 4 − arm 2 (D-09) and overstated the growth.
 
-The recoverability main effect with protection off is also negative at every budget
-(−0.006 to −0.007, CIs excluding zero), though small in absolute terms because that arm sits
-at the floor regardless.
+The recoverability effect with protection off (arm 3 − arm 1) is negative at every budget,
+−0.0056 [−0.0111, −0.0011], −0.0067 [−0.0122, −0.0022], −0.0067 [−0.0122, −0.0022], small in
+absolute terms because that arm sits at the floor regardless. Since DiD = (arm 4 − arm 2) −
+(arm 3 − arm 1), this is the term that separates the two columns above.
 
-### 10.3 Mechanism, and why the effect grows with budget
+### 10.3 Mechanism, and why the effect is large only at 514
 
 `quant_slots` scales with the budget, so a *larger* budget sends *more* of the context to the
 cold tier. At 514 roughly 225 tokens are quantized to 4 bits; since 4-bit all-QUANT collapses
 outright (§6), corrupting that much context destroys generation — protection alone 0.964
 falls to 0.281 once the tier is added. At 154 little is retained at all, so little is
-corrupted. This accounts for the budget gradient in both implementations.
+corrupted. This fits the ordering seen at 257 and 514 in both implementations. It is an
+account of three points, only one of which shows a large effect.
 
 ### 10.4 Agreement with the independent implementation
 
-| budget | ours | theirs (RX 7900 XTX) |
-|---|---|---|
-| 257 | −0.019 | −0.046 |
-| 514 | −0.683 | −0.116 |
+| budget | ours, arm 4 − arm 2 | ours, DiD | theirs, DiD (RX 7900 XTX, their reported value) |
+|---|---|---|---|
+| 257 | −0.019 | −0.012 [−0.027, +0.002] | −0.046 |
+| 514 | −0.683 | −0.677 | −0.116 |
 
-**Direction, significance and budget-growth all replicate.** Magnitude agrees in order at 257
-and diverges ~6× at 514. Given the two implementations already differ in task difficulty
-(§2.1) and possibly in attention accumulation (§2.2), the qualitative agreement is the
-meaningful part; the magnitude gap is not yet explained and should not be reconciled by
-argument.
+Their estimand is the DiD, so the like-for-like column is our DiD. **Flag, AMD-sourced and
+unresolved:** their own documents give two different values for the same cell. `FINDINGS.md`
+line 120 and `AGREEMENT.md` give the 4-bit iso-token interaction at 257 as +0.0133
+[−0.0089, +0.0356] (69 prompts differing). `FINDINGS.md` lines 245 and 567 and `SUMMARY.md`
+give −0.0456 [−0.0611, −0.0311] (47 prompts differing). At 514 and 154 the two tables agree
+(−0.1156, −0.0067). If the +0.0133 figure is the Phase 1 DiD, then at 257 both
+implementations have an interval including zero and the direction does not agree; if −0.0456
+is, the direction agrees and our interval still includes zero. This must be settled on the
+AMD side before any statement about 257. At 514 the direction and the larger value agree
+under either reading. Significance at 257 is not established for us. Magnitude agrees in order at 257 and diverges ~6× at 514. Given the two
+implementations already differ in task difficulty (§2.1), tier seating and distractor format,
+the qualitative agreement at 514 is the meaningful part; the magnitude gap is not yet
+explained and should not be reconciled by argument. Their figures are theirs and are being
+re-derived separately.

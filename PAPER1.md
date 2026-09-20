@@ -11,11 +11,14 @@ machinery for the second stage. We measure both against their own oracles.
 We report three results at three explicitly different confidence levels.
 
 **Established.** Under matched-token accounting, adding a recoverable tier to structural
-protection produces no measurable interaction. On Qwen2.5-1.5B at retention fractions 0.15,
-0.25 and 0.50 the interaction is +0.001, +0.002 and −0.002, with 95% intervals inside ±0.05
-and 3, 5 and 9 of 150 prompts differing at all. An independently written implementation on
-different hardware reports +0.001, −0.001 and −0.006 at the same points, and −0.001, +0.000
-and +0.002 on Qwen2.5-3B. Two implementations, two model scales, three budgets.
+protection produces no measurable effect. On Qwen2.5-1.5B at 8 bits and retention fractions
+0.15, 0.25 and 0.50 the recoverability effect given protection (arm 4 minus arm 2) is +0.001,
++0.002 and −0.002, and the pre-registered interaction (difference in differences) is +0.000,
++0.003 and −0.002. All 95% intervals are inside ±0.05, and the arms differ on only 3 to 9 of
+150 prompts. An independently written implementation on different hardware reports an
+interaction of +0.001, −0.001 and −0.006 at the same points, and −0.001, +0.000 and +0.002 on
+Qwen2.5-3B. Two implementations, two model scales, three budgets. Retention 0.15 is a
+qualified budget (§3.2), so the clean evidence is retention 0.25 and 0.50.
 
 **Scoped.** At one operating point where the tier is neither free nor destructive, no
 promotion signal helps. On Qwen2.5-1.5B at 4-bit and retention 0.25, five signals spanning a
@@ -35,8 +38,8 @@ tested and eliminated.
 
 A fourth result concerns evaluation rather than mechanism. The same experiment scored under
 matched bytes rather than matched tokens reverses sign, because the byte-cost accounting
-hands the tiered arm roughly 1.6× the tokens. The interaction moves from +0.002 to +0.532 at
-retention 0.25. The effect is robust across the byte-cost constant (+0.35 to +0.54 over
+hands the tiered arm roughly 1.6× the tokens. The recoverability effect moves from +0.002 to
++0.532 at retention 0.25 (interaction +0.003 to +0.533). The effect is robust across the byte-cost constant (+0.35 to +0.54 over
 0.125 to 0.50), which was fixed after the pre-registration hash.
 
 Two defects in the primary implementation were found only by comparison against an
@@ -146,10 +149,18 @@ Model, precision, retention fraction and context length are carried on every fig
 ### 2.4 Pre-registration
 
 The analysis was fixed before Phase 1 ran and hashed (`PREREG.md`, sha256 `5d3c7e3b…`).
-Primary metric fraction retrieved, estimator a bootstrapped median of paired per-prompt
-differences with 10,000 resamples clustered on prompt, Benjamini-Hochberg correction within
-each accounting condition, minimum effect of interest 0.05, no functional form assumed across
-budgets. Deviations are recorded in §9 rather than absorbed.
+Primary metric fraction retrieved. The primary estimand is the interaction, defined as the
+difference in differences (arm 4 − arm 3) − (arm 2 − arm 1). The estimator is a bootstrapped
+median of paired per-prompt differences with 10,000 resamples clustered on prompt, with
+Benjamini-Hochberg correction within each accounting condition, minimum effect of interest
+0.05, and no functional form assumed across budgets. Deviations are recorded in §3.3 and §3.4
+rather than absorbed.
+
+Two quantities are reported throughout and must not be confused. The **interaction** is the
+pre-registered difference in differences. The **recoverability effect given protection** is
+arm 4 minus arm 2, the effect of adding a recoverable tier when protection is already on. The
+draft as first written reported the second under the name of the first (D-09, §3.4). Both are
+now stated.
 
 ---
 
@@ -217,9 +228,20 @@ prompts on which the arms differ at all. The count does not depend on any estima
 and is the stronger statement. This is a deviation from the pre-registration and is recorded
 as one.
 
+A second deviation concerns the estimand. Every figure first labelled "interaction" in this
+work was arm 4 minus arm 2, not the pre-registered difference in differences. The two are
+close where arms 1 and 3 sit at the floor and the tier is free, and they separate where the
+tier is damaging. At 4 bits the difference in differences is −0.0067 [−0.0178, +0.0044] at
+retention 0.15 and −0.0122 [−0.0267, +0.0022] at 0.25, both intervals including zero, and
+−0.6767 [−0.7122, −0.6389] at 0.50. The arm 4 minus arm 2 values that excluded zero at all
+three budgets (§6) are a different quantity. Both are reported in every table below. Bootstrap
+intervals in this paper are recomputed from the raw rows with a fixed seed
+(`verification/rederive_interaction.py`) and can differ from earlier interim figures in the
+fourth decimal.
+
 ### 3.4 Defect ledger
 
-Eight defects changed a reported number or invalidated a comparison. Six were found
+Nine defects changed a reported number or invalidated a comparison. Seven were found
 internally. Two were found only by an independent implementation.
 
 | ID | Defect | Found by |
@@ -232,12 +254,13 @@ internally. Two were found only by an independent implementation.
 | D-06 | The factor under test was inert, twice. Protection pinned credentials so tiering had nothing to recover; later, the 8-bit tier carried no quality signal | G3 gate, then a smoke test |
 | **D-07** | Credential values were not uniform hex. `string.hexdigits.lower()` is a 22-slot string in which a–f appear twice, so a–f were drawn at 9.09% each against 4.55% for digits | **Independent reimplementation** |
 | **D-08** | Retention ranking accumulated attention summed over queries, carrying a −0.717 correlation with position | **Independent reimplementation** |
+| D-09 | The quantity reported as the interaction was arm 4 minus arm 2, not the pre-registered difference in differences | Pre-submission re-derivation from raw rows |
 
 The transferable practice is to assert an invariant on live data rather than on a
 reimplementation of it. Our strongest single check asserted that the number of distinct values
 in a quantized tensor is at most 2^bits, on 10,640 quantization calls intercepted during real
 generation. That form of check would also have caught D-04 and D-05. Separately, three of the
-eight defects surfaced because a reference arm behaved impossibly: an oracle below its own
+nine defects surfaced because a reference arm behaved impossibly: an oracle below its own
 ceiling, a policy beating a no-eviction baseline, five arms returning byte-identical results.
 Reference arms earn their compute as tripwires, not only as denominators.
 
@@ -249,7 +272,9 @@ D-07 and D-08 are treated in full in §8, because how they were found is a resul
 
 Structural protection and recoverable tiering address the same failure, which is information
 becoming unreachable. If that is right, once you have either, the other adds nothing. We test
-this as the interaction term in a 2×2 factorial at matched retained-token count.
+this in a 2×2 factorial at matched retained-token count, using the pre-registered interaction
+(difference in differences) as the primary estimand and the recoverability effect given
+protection (arm 4 minus arm 2) as a companion.
 
 ### 4.1 Arm levels
 
@@ -261,21 +286,23 @@ Qwen2.5-1.5B, 8-bit tier, matched tokens, context 1029, n = 150.
 | 0.25 | 0.010 | 0.423 | 0.009 | 0.426 | 0.943 | 0.947 |
 | 0.50 | 0.010 | 0.964 | 0.010 | 0.962 | 0.958 | 0.947 |
 
-### 4.2 The interaction
+### 4.2 The interaction and the recoverability effect
 
-| retention | interaction | 95% CI | prompts differing |
-|---|---|---|---|
-| 0.15 | +0.0011 | [−0.0022, +0.0056] | 3 / 150 |
-| 0.25 | +0.0022 | [−0.0033, +0.0089] | 5 / 150 |
-| 0.50 | −0.0022 | [−0.0100, +0.0056] | 9 / 150 |
+| retention | interaction (DiD) | 95% CI | prompts differing | recoverability effect given protection (arm 4 − arm 2) | 95% CI | prompts differing |
+|---|---|---|---|---|---|---|
+| 0.15 | +0.0000 | [−0.0044, +0.0044] | 4 / 150 | +0.0011 | [−0.0022, +0.0056] | 3 / 150 |
+| 0.25 | +0.0033 | [−0.0022, +0.0100] | 6 / 150 | +0.0022 | [−0.0033, +0.0089] | 5 / 150 |
+| 0.50 | −0.0022 | [−0.0100, +0.0056] | 9 / 150 | −0.0022 | [−0.0100, +0.0056] | 9 / 150 |
 
 Every interval is inside ±0.05, so equivalence is declared at all three budgets under the
-pre-registered criterion.
+pre-registered criterion, for both quantities. Arms 1 and 3 sit at the floor (0.009 to 0.012)
+in every one of these cells, which is why the two estimands nearly coincide here.
 
 The equivalence is stronger than the intervals convey. The arms are not merely close on
 average. They are frequently identical. At retention 0.25, protection and protection plus
 tiering return the same score on 145 of 150 prompts. Of the five that differ, two favour
-protection alone and three favour the combination.
+protection alone and three favour the combination. Retention 0.15 is a qualified budget
+(§3.2), so the clean evidence is the last two rows.
 
 Protection itself is large and unambiguous over the same range: +0.169, +0.457 and +0.924
 under corrected retention ranking, with intervals far from zero. The null is specific to
@@ -285,7 +312,9 @@ adding recoverability on top of protection. It is not a null on the protection f
 
 An independently written implementation of the same specification, on an RX 7900 XTX under
 ROCm, reports +0.0011, −0.0011 and −0.0056 at the same three retention fractions, with all
-three intervals containing zero. On Qwen2.5-3B it reports −0.0011, +0.0000 and +0.0022.
+three intervals containing zero. On Qwen2.5-3B it reports −0.0011, +0.0000 and +0.0022. Their
+estimand is the difference in differences, so the like-for-like comparison is with our
+interaction column above. These are their reported values and were not re-derived here.
 
 Two implementations, two model scales, three budgets, and in several cells zero or near-zero
 prompts differing out of 150. This is the most robust finding in the work and it carries the
@@ -303,11 +332,21 @@ Under matched tokens, arms hold the same number of retained positions. Under mat
 arms hold the same accounted bytes, which at `quant_byte_cost = 0.25` and a half-and-half
 split grants the tiered arm `T = B / 0.625 = 1.6 B` tokens.
 
+Recoverability effect given protection (arm 4 minus arm 2):
+
 | retention | matched tokens | 95% CI | matched bytes | 95% CI |
 |---|---|---|---|---|
-| 0.15 | +0.001 | [−0.002, +0.006] | **+0.199** | [+0.179, +0.220] |
+| 0.15 | +0.001 | [−0.002, +0.006] | **+0.199** | [+0.179, +0.219] |
 | 0.25 | +0.002 | [−0.003, +0.009] | **+0.532** | [+0.504, +0.559] |
-| 0.50 | −0.002 | [−0.010, +0.006] | −0.051 | [−0.068, −0.036] |
+| 0.50 | −0.002 | [−0.010, +0.006] | −0.051 | [−0.068, −0.034] |
+
+Interaction (difference in differences), same rows:
+
+| retention | matched tokens | 95% CI | matched bytes | 95% CI |
+|---|---|---|---|---|
+| 0.15 | +0.000 | [−0.004, +0.004] | **+0.201** | [+0.181, +0.222] |
+| 0.25 | +0.003 | [−0.002, +0.010] | **+0.533** | [+0.507, +0.560] |
+| 0.50 | −0.002 | [−0.010, +0.006] | −0.064 | [−0.083, −0.047] |
 
 The same experiment, scored two ways, gives opposite answers at two of three budgets. The
 matched-byte gains track having roughly 60% more retained tokens. They are not evidence about
@@ -316,14 +355,15 @@ the reversibility mechanism.
 `quant_byte_cost` was fixed after the pre-registration was hashed, so it was swept rather
 than asserted. At retention 0.25, n = 150:
 
-| quant_byte_cost | multiplier | tokens granted | interaction | 95% CI |
+| quant_byte_cost | multiplier | tokens granted | recoverability effect (arm 4 − arm 2) | 95% CI |
 |---|---|---|---|---|
 | 0.125 | 1.78× | 457 | +0.543 | [+0.518, +0.569] |
 | 0.25 | 1.60× | 411 | +0.532 | [+0.506, +0.559] |
 | 0.30 | 1.48× | 395 | +0.536 | [+0.510, +0.561] |
 | 0.50 | 1.33× | 343 | +0.354 | [+0.330, +0.379] |
 
-The qualitative claim survives the whole plausible range, including a deliberately punitive
+This sweep ran arm 4 only, so it reports the arm 4 minus arm 2 quantity and not the
+difference in differences. The qualitative claim survives the whole plausible range, including a deliberately punitive
 0.50 that implies only 2× compression where int8 against bfloat16 is genuinely 4×. The
 magnitude moves with the constant and must be reported as a range, +0.35 to +0.54, with the
 constant stated. It must not be quoted as a point estimate.
@@ -333,7 +373,7 @@ system.
 
 ---
 
-## 6. Result 3, established: at aggressive precision the tier harms, and better retention makes it worse
+## 6. Result 3, established at retention 0.50: at aggressive precision the tier harms, and better retention makes it worse
 
 Phase 1 ran at 8 bits, which the specification never stated. At 8 bits the tier is free. §7
 shows that holding retention fixed and varying only precision changes nothing at that width.
@@ -342,28 +382,45 @@ either direction.
 
 Re-run at 4 bits, matched tokens, n = 150:
 
-| retention | interaction at 4-bit | 95% CI | prompts differing | at 8-bit |
-|---|---|---|---|---|
-| 0.15 | −0.0122 | [−0.0211, −0.0033] | 19 / 150 | +0.0011 |
-| 0.25 | −0.0189 | [−0.0322, −0.0056] | 30 / 150 | +0.0022 |
-| 0.50 | **−0.6833** | [−0.7189, −0.6467] | 149 / 150 | −0.0022 |
+| retention | interaction (DiD) at 4-bit | 95% CI | prompts differing | recoverability effect given protection (arm 4 − arm 2) | 95% CI | prompts differing | arm 4 − arm 2 at 8-bit |
+|---|---|---|---|---|---|---|---|
+| 0.15 | −0.0067 | [−0.0178, +0.0044] | 23 / 150 | −0.0122 | [−0.0222, −0.0033] | 19 / 150 | +0.0011 |
+| 0.25 | −0.0122 | [−0.0267, +0.0022] | 35 / 150 | −0.0189 | [−0.0322, −0.0056] | 30 / 150 | +0.0022 |
+| 0.50 | **−0.6767** | [−0.7122, −0.6389] | 149 / 150 | **−0.6833** | [−0.7189, −0.6456] | 149 / 150 | −0.0022 |
 
-All three are negative, all three intervals exclude zero, and the magnitude grows with
-budget. The independent implementation reports the same direction and the same budget growth,
-at −0.046 and −0.116 for retention 0.25 and 0.50. §10 addresses why its magnitude at
-retention 0.50 is smaller.
+The two estimands differ by at most 0.007 in every row, but they lead to different statements
+at the smaller budgets. The pre-registered interaction has an interval that includes zero at
+retention 0.15 and 0.25, so it is distinguishable from zero at retention 0.50 alone. The arm 4 minus arm 2 effect excludes zero at all three budgets, but it
+is small at 0.15 and 0.25 (about one to two points), and its intervals at those two budgets
+overlap, so the data do not show growth between them. The one clean contrast is between 0.25
+and 0.50, a jump from about −0.02 to about −0.68. The claim is that the tier harms at
+retention 0.50, and that the harm at lower retention is at most small.
+
+The independent implementation reports a negative interaction at retention 0.50, at −0.116,
+which agrees in direction with ours and is smaller in magnitude. At retention 0.25 its own
+documents disagree: one table gives −0.046 and another gives +0.013 with an interval
+including zero for the same cell. We therefore make no cross-implementation claim at 0.25,
+where our own interaction interval also includes zero. These are their reported values and
+were not re-derived here. §10 addresses why the magnitude at retention 0.50 is smaller.
 
 ### 6.1 The mechanism, and a reversal that sharpens it
 
 `quant_slots` scales with the budget. A larger budget sends more of the context to the cold
 tier. At retention 0.50, roughly 225 positions are quantized to 4 bits. Since 4-bit
 all-quantized collapses outright, corrupting that much context destroys generation.
-Protection alone at 0.964 falls to 0.281 once the tier is added.
+Protection alone at 0.964 falls to 0.281 once the tier is added. At the smaller budgets far
+fewer positions are retained, so far fewer are corrupted, which fits the small effects at 0.15
+and 0.25. The scaling is an account of three points, only one of which shows a large effect.
 
 Correcting the retention-ranking defect D-08 made the harm larger, not smaller. Under
 corrected ranking at retention 0.50, protection alone is unchanged at ceiling (0.963) while
-protection plus tiering falls to 0.162. The interaction moves from −0.6833 to **−0.8011**
-[−0.8278, −0.7722], with 150 of 150 prompts differing and non-overlapping intervals.
+protection plus tiering falls to 0.162. The recoverability effect given protection moves
+from −0.6833 to **−0.8011** [−0.8300, −0.7722], with 150 of 150 prompts differing and
+non-overlapping intervals. The mean-ranking rerun covers arms 2 and 4 only, so the
+difference in differences is not available for this comparison. The DiD at 4 bits under
+summed ranking (−0.6767) sits within 0.007 of the arm 4 minus arm 2 value (−0.6833) because
+arms 1 and 3 are at the floor, and we expect the same under mean ranking, but that is an
+expectation and not a measurement.
 
 This is the sharpest mechanism in the paper. The cold tier sits directly downstream of the
 selection stage. Improving retention feeds the tier more of exactly the tokens retention
@@ -614,7 +671,7 @@ so all 26 lines match `LABEL: sk-<14 hex>` and differ only in the label. Ours us
 value formats and shorter values. Both implementations match 26 lines on the label pattern,
 but our protected content is cheaper to seat, so more credential lines fit within the same
 budget. This plausibly explains why our protection arm is roughly 2.5× theirs at retention
-0.25 (0.423 against 0.166), which in turn drives the difference in 4-bit interaction magnitude
+0.25 (0.423 against 0.166), which in turn drives the difference in 4-bit effect magnitude
 at retention 0.50.
 
 Their ablation makes the point sharply. Rewriting distractor values to a non-credential form,
@@ -711,8 +768,10 @@ sum and **+0.587** under mean normalisation. The two readings are near-uncorrela
 other at ρ = **+0.014** and share only **13.5%** of the retained set. This is not a refinement.
 It selects an almost entirely different cache.
 
-We measured what the correction changes. At 8 bits the interaction is unchanged: +0.000,
-−0.001 and +0.001 against the shipped +0.001, +0.002 and −0.002, all intervals inside ±0.05.
+We measured what the correction changes. At 8 bits the null is unchanged. The recoverability
+effect given protection is +0.000, −0.001 and +0.001 against the shipped +0.001, +0.002 and
+−0.002, and the interaction is +0.002, −0.001 and −0.002 against the shipped +0.000, +0.003
+and −0.002, all intervals inside ±0.05.
 The protection effect survives at +0.169, +0.457 and +0.924. Arm levels rise where there is
 headroom, with protection moving 0.423 to 0.481 at retention 0.25. At 4 bits and retention
 0.50 the correction made the harm larger, from −0.683 to −0.801 (§6.1).
@@ -738,8 +797,10 @@ report it as a result rather than as an appendix.
 
 **Shared bias cancels in a difference.** We predicted that because both arms of the interaction
 use the identical retention ranking, correcting D-08 would shift levels without moving the
-interaction. This held at 8 bits, where the interaction moved by at most 0.004. It broke at 4
-bits, where the interaction moved from −0.683 to −0.801 with non-overlapping intervals. The
+interaction. This held at 8 bits, where either estimand moved by at most 0.005. It broke at 4
+bits, where the recoverability effect given protection moved from −0.683 to −0.801 with
+non-overlapping intervals at retention 0.50 (the difference in differences is not available
+under mean ranking). The
 reason is regime-specific and is the mechanism in §6.1: better ranking feeds more credential
 tokens into a destructive cold tier. A bias shared by both arms does not cancel when one arm's
 response to it is mediated by a stage the other arm lacks.
@@ -783,6 +844,13 @@ isolate them.
 
 **The dose-response does not license a rate.** Realized quantized positions are about 31% of
 target because protection seats full-precision groups first.
+
+**The estimand was mislabelled in the first draft.** The quantity called the interaction was
+arm 4 minus arm 2 (D-09, §3.3). Both estimands are now reported. At 4 bits the
+pre-registered interaction is distinguishable from zero only at retention 0.50. Under mean
+ranking the difference in differences is not available at all, because that rerun omitted
+arms 1 and 3. The intervals in this paper were recomputed from raw rows with a fixed seed and
+can differ from earlier interim figures in the fourth decimal.
 
 **Budget coverage.** Two of five budgets are void by arithmetic and one is qualified. Any
 statement about the budget gradient rests on two clean points plus one qualified one.
