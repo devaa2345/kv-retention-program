@@ -210,3 +210,6 @@ id_ed25519*
 # Option B item 1: random-span control raw rows (450 + 25, < 1 MB)
 !results/random_span/raw_results.jsonl
 !results/random_span/determinism_check.jsonl
+
+# Option B item 3: H-ORTH factorial cell B raw rows
+!results/phase2_4bit_amdfmt/raw_results.jsonl

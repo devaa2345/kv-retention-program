@@ -26,6 +26,13 @@ from dataclasses import dataclass, field
 from .credential_retrieval import FILLER_WORDS, DISTRACTOR_KEYS, _rand_value, LABEL_PATTERN
 
 
+AMD_DISTRACTOR_LABELS = [
+    "SESSION", "BUILD", "TRACE", "SHARD", "ROUTE", "BATCH", "NODE", "QUEUE",
+    "REGION", "BUCKET", "STREAM", "WORKER", "DIGEST", "MIRROR", "TENANT",
+    "CHANNEL", "SEGMENT", "REPLICA", "MANIFEST", "CHECKPOINT",
+]   # copied from amd/kvre/task.py DISTRACTOR_LABELS
+
+
 @dataclass
 class Credential:
     key: str
@@ -49,15 +56,34 @@ def make_multi_credential_prompt(
     n_distractors: int = 20,
     words_per_paragraph: int = 40,
     value_len: int = 14,
+    distractor_format: str = "ours",
 ) -> MultiCredentialPrompt:
+    """distractor_format:
+      "ours" (default, used by every result before 2026-09-20): distractors are
+          `cache_ttl: 37.18` / `log_level: ugiwtb`, short values in a different format.
+      "amd": distractors share the credentials' full surface shape,
+          `SESSION_1_ID: sk-<value_len hex>`, as in the independent reimplementation
+          (amd/kvre/task.py, [GAP-V]). Label set and label pattern are theirs; the hex alphabet
+          is OURS (string.hexdigits.lower(), the same as our credentials) so that ONLY the
+          distractor format differs between the two cells of the H-ORTH factorial.
+    """
     rng = random.Random(seed)
 
     cred_keys = [f"CRED_{i}_KEY" for i in range(n_credentials)]
     cred_values = ["sk-" + "".join(rng.choice(string.hexdigits.lower()) for _ in range(value_len))
                     for _ in range(n_credentials)]
 
-    distractor_key_pool = rng.sample(DISTRACTOR_KEYS, min(n_distractors, len(DISTRACTOR_KEYS)))
-    distractor_lines = [(k, _rand_value(rng, rng.choice(["int", "float", "str"]))) for k in distractor_key_pool]
+    if distractor_format == "ours":
+        distractor_key_pool = rng.sample(DISTRACTOR_KEYS, min(n_distractors, len(DISTRACTOR_KEYS)))
+        distractor_lines = [(k, _rand_value(rng, rng.choice(["int", "float", "str"]))) for k in distractor_key_pool]
+    elif distractor_format == "amd":
+        distractor_lines = [
+            (f"{AMD_DISTRACTOR_LABELS[i % len(AMD_DISTRACTOR_LABELS)]}_{i + 1}_ID",
+             "sk-" + "".join(rng.choice(string.hexdigits.lower()) for _ in range(value_len)))
+            for i in range(n_distractors)
+        ]
+    else:
+        raise ValueError(distractor_format)
 
     all_lines = [(cred_keys[i], cred_values[i]) for i in range(n_credentials)] + distractor_lines
     rng.shuffle(all_lines)
