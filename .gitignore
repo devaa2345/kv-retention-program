@@ -206,3 +206,7 @@ id_ed25519*
 !paper2/runs/nvidia/floor_readingC_M2.jsonl
 !paper2/runs/nvidia/floor_readingC_M3.jsonl
 !paper3/runs/nvidia/natCK_*.jsonl
+
+# Option B item 1: random-span control raw rows (450 + 25, < 1 MB)
+!results/random_span/raw_results.jsonl
+!results/random_span/determinism_check.jsonl
