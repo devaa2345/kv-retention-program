@@ -213,3 +213,8 @@ id_ed25519*
 
 # Option B item 3: H-ORTH factorial cell B raw rows
 !results/phase2_4bit_amdfmt/raw_results.jsonl
+
+# Option B item 2: natural-text L=2048 dataset and run rows
+!data/natural_l2048/nat_l2048_v1.jsonl
+!results/natural/raw_results.jsonl
+!results/natural/pilot.jsonl

@@ -1,0 +1,118 @@
+{
+  "arm_means": {
+    "1_no_protect_permanent@256": [
+      0.0,
+      100
+    ],
+    "1_no_protect_permanent@512": [
+      0.01,
+      100
+    ],
+    "2_protect_permanent@256": [
+      0.1325,
+      100
+    ],
+    "2_protect_permanent@512": [
+      0.35,
+      100
+    ],
+    "4_recoverable_protected@256": [
+      0.1325,
+      100
+    ],
+    "4_recoverable_protected@512": [
+      0.35,
+      100
+    ],
+    "5_oracle_static@256": [
+      0.835,
+      100
+    ],
+    "5_oracle_static@512": [
+      0.8675,
+      100
+    ],
+    "6_full_cache_ref@0": [
+      0.9,
+      100
+    ]
+  },
+  "n_ctx_mean": 2091.87,
+  "protected_tokens_mean": 1007.64,
+  "oracle_tokens_mean": 66.13,
+  "pattern_sentences": [
+    21
+  ],
+  "contrasts": {
+    "structural_minus_none@256": [
+      0.1325,
+      0.1025,
+      0.1625,
+      47,
+      100
+    ],
+    "recoverable_minus_structural@256": [
+      0.0,
+      -0.0075,
+      0.0075,
+      2,
+      100
+    ],
+    "oracle_minus_structural@256": [
+      0.7025,
+      0.655,
+      0.7475,
+      97,
+      100
+    ],
+    "oracle_minus_fullcache@256": [
+      -0.065,
+      -0.1125,
+      -0.02,
+      43,
+      100
+    ],
+    "structural_minus_fullcache@256": [
+      -0.7675,
+      -0.805,
+      -0.73,
+      100,
+      100
+    ],
+    "structural_minus_none@512": [
+      0.34,
+      0.305,
+      0.375,
+      91,
+      100
+    ],
+    "recoverable_minus_structural@512": [
+      0.0,
+      -0.0075,
+      0.0075,
+      2,
+      100
+    ],
+    "oracle_minus_structural@512": [
+      0.5175,
+      0.4725,
+      0.5625,
+      95,
+      100
+    ],
+    "oracle_minus_fullcache@512": [
+      -0.0325,
+      -0.0725,
+      0.005,
+      39,
+      100
+    ],
+    "structural_minus_fullcache@512": [
+      -0.55,
+      -0.5875,
+      -0.51,
+      99,
+      100
+    ]
+  }
+}
