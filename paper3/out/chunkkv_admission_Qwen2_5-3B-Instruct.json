@@ -1,0 +1,88 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "n": 24,
+  "prereg_sha256": "b3f5fb3c1e949c94e0785ba7a9843cbcc2548103215100fe0ec1d42b47ba886e",
+  "procedure": "paper2/n4a_admission_gates.py (unchanged decision rules)",
+  "chunk_length": 20,
+  "budgets": [
+    32,
+    128,
+    512
+  ],
+  "methods": {
+    "chunkkv": {
+      "budgets": {
+        "C32": {
+          "C": 32,
+          "acc_original": 0.0417,
+          "acc_permuted": 0.0417,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.9735,
+          "oracle_overlap_per_head": 0.2871,
+          "tokens_under_budget_mean": 9.5
+        },
+        "C128": {
+          "C": 128,
+          "acc_original": 0.0625,
+          "acc_permuted": 0.0417,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.0208,
+            "ci": [
+              -0.0208,
+              0.0625
+            ]
+          },
+          "rho_retained_orig_vs_perm": 0.1719,
+          "oracle_overlap_per_head": 0.3814,
+          "tokens_under_budget_mean": 9.67
+        },
+        "C512": {
+          "C": 512,
+          "acc_original": 0.2083,
+          "acc_permuted": 0.0625,
+          "acc_random_arm": 0.0,
+          "orig_minus_perm": {
+            "mean": 0.1458,
+            "ci": [
+              0.0833,
+              0.2083
+            ]
+          },
+          "rho_retained_orig_vs_perm": -0.003,
+          "oracle_overlap_per_head": 0.5607,
+          "tokens_under_budget_mean": 9.5
+        }
+      },
+      "errors": [],
+      "G2": {
+        "pass": false,
+        "beats_own_permutation_somewhere": true,
+        "informative_at_budgets": [
+          512
+        ],
+        "permuted_falls_to_random_arm": false,
+        "rho_near_zero": false
+      },
+      "G3": {
+        "pass": true,
+        "overlap_positive": true,
+        "monotone_in_C": true,
+        "overlaps": [
+          0.2871,
+          0.3814,
+          0.5607
+        ]
+      },
+      "admitted_on_G2_G3": false
+    }
+  }
+}

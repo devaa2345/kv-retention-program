@@ -1,0 +1,18 @@
+########## ChunkKV G2/G3  M2 Qwen2.5-3B ##########
+  [ref] random arm @C=32: 0.0000
+  [ref] random arm @C=128: 0.0000
+  [ref] random arm @C=512: 0.0000
+  C=  32 orig 0.0417 perm 0.0417 rand 0.0000  o-p +0.0000 [0.0, 0.0]  rho 0.9735  ovl 0.2871  under-budget 9.5
+  C= 128 orig 0.0625 perm 0.0417 rand 0.0000  o-p +0.0208 [-0.0208, 0.0625]  rho 0.1719  ovl 0.3814  under-budget 9.67
+  C= 512 orig 0.2083 perm 0.0625 rand 0.0000  o-p +0.1458 [0.0833, 0.2083]  rho -0.003  ovl 0.5607  under-budget 9.5
+  -> G2 False  G3 True
+  wrote /mnt/d/INNOCREW/Blockage/paper3/out/chunkkv_admission_Qwen2_5-3B-Instruct.json
+########## ChunkKV G2/G3  M3 Llama-3.2-3B ##########
+  [ref] random arm @C=32: 0.0000
+  [ref] random arm @C=128: 0.0000
+  [ref] random arm @C=512: 0.0000
+  C=  32 orig 0.0104 perm 0.0104 rand 0.0000  o-p +0.0000 [0.0, 0.0]  rho 0.9735  ovl 0.1881  under-budget 10.33
+  C= 128 orig 0.0312 perm 0.0208 rand 0.0000  o-p +0.0104 [0.0, 0.0312]  rho 0.1664  ovl 0.4983  under-budget 11.33
+  C= 512 orig 0.1667 perm 0.0625 rand 0.0000  o-p +0.1042 [0.0417, 0.1667]  rho 0.017  ovl 0.5785  under-budget 10.33
+  -> G2 False  G3 True
+  wrote /mnt/d/INNOCREW/Blockage/paper3/out/chunkkv_admission_Llama-3_2-3B-Instruct.json
