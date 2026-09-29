@@ -1,0 +1,2 @@
+    inst 10/10  12.7 min  fails=0
+DONE M2: 12.74 min, 0 failures

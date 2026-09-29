@@ -1,0 +1,57 @@
+  inst928 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst928 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst928 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst928 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 928 done, elapsed=0.03 min
+  inst931 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst931 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst931 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst931 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 931 done, elapsed=0.05 min
+  inst932 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst932 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst932 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst932 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 932 done, elapsed=0.08 min
+  inst933 q0 floor_pos: keephash_match=False answer_match=False score_match=True
+  inst933 q1 floor_pos: keephash_match=False answer_match=True score_match=True
+  inst933 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst933 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 933 done, elapsed=0.11 min
+  inst935 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst935 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst935 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst935 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 935 done, elapsed=0.16 min
+  inst936 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst936 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst936 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst936 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 936 done, elapsed=0.19 min
+  inst938 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst938 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst938 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst938 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 938 done, elapsed=0.21 min
+  inst941 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst941 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst941 q0 snapkv: keephash_match=False answer_match=False score_match=True
+  inst941 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 941 done, elapsed=0.24 min
+  inst942 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst942 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst942 q0 snapkv: keephash_match=False answer_match=True score_match=True
+  inst942 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 942 done, elapsed=0.26 min
+  inst943 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst943 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst943 q0 snapkv: keephash_match=False answer_match=False score_match=True
+  inst943 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 943 done, elapsed=0.28 min
+
+DONE: n_compared=40 skipped_fallback=0
+keep-hash match rate: 18/40
+answer match rate: 37/40
+score match rate: 40/40
+answer diffs WITH matching keep-hash (bf16-near-tie candidates): 0
+answer diffs WITH mismatched keep-hash (NOT bf16 near-ties -- real discrepancy): 3

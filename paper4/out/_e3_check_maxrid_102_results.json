@@ -1,0 +1,920 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 50,
+  "qi": 1,
+  "rec_id": "R031",
+  "max_rid": "R901",
+  "max_mass": 0.008307969680762682,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 51,
+  "qi": 1,
+  "rec_id": "R030",
+  "max_rid": "R030",
+  "max_mass": 0.012759492146504509,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 2,
+  "qi": 0,
+  "rec_id": "R035",
+  "max_rid": "R037",
+  "max_mass": 0.013664765014765455,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 2,
+  "qi": 0,
+  "rec_id": "R035",
+  "max_rid": "R037",
+  "max_mass": 0.012586686299292039,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 2,
+  "qi": 2,
+  "rec_id": "R039",
+  "max_rid": "R039",
+  "max_mass": 0.013847899788098661,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.009868965331611995,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.014306041579023451,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 1,
+  "rec_id": "R031",
+  "max_rid": "R018",
+  "max_mass": 0.009516380234382128,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 3,
+  "rec_id": "R032",
+  "max_rid": "R030",
+  "max_mass": 0.016492468186412878,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 0,
+  "rec_id": "R030",
+  "max_rid": "R030",
+  "max_mass": 0.012061052552394104,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 1,
+  "rec_id": "R031",
+  "max_rid": "R034",
+  "max_mass": 0.008036177408350614,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 3,
+  "rec_id": "R032",
+  "max_rid": "R032",
+  "max_mass": 0.007527071458095518,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 7,
+  "qi": 2,
+  "rec_id": "R029",
+  "max_rid": "R026",
+  "max_mass": 0.007545135024005976,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 7,
+  "qi": 2,
+  "rec_id": "R029",
+  "max_rid": "R038",
+  "max_mass": 0.006286641042312689,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 8,
+  "qi": 0,
+  "rec_id": "R035",
+  "max_rid": "R037",
+  "max_mass": 0.012127469791402124,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 8,
+  "qi": 0,
+  "rec_id": "R035",
+  "max_rid": "R035",
+  "max_mass": 0.010942740993677019,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "max_rid": "R013",
+  "max_mass": 0.019044775886626588,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.014207427946343006,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "max_rid": "R038",
+  "max_mass": 0.005256750103110796,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "max_rid": "R031",
+  "max_mass": 0.005167759412342237,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "max_rid": "R038",
+  "max_mass": 0.007873042686005393,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "max_rid": "R001",
+  "max_mass": 0.00819313162786901,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "max_rid": "R038",
+  "max_mass": 0.00867780346017321,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 21,
+  "qi": 2,
+  "rec_id": "R036",
+  "max_rid": "R037",
+  "max_mass": 0.009947514178010014,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 21,
+  "qi": 2,
+  "rec_id": "R036",
+  "max_rid": "R034",
+  "max_mass": 0.017172257347065012,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 23,
+  "qi": 3,
+  "rec_id": "R036",
+  "max_rid": "R036",
+  "max_mass": 0.012542652824626096,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 3,
+  "rec_id": "R036",
+  "max_rid": "R038",
+  "max_mass": 0.01230126868867149,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 26,
+  "qi": 1,
+  "rec_id": "R033",
+  "max_rid": "R036",
+  "max_mass": 0.00752673077213798,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 26,
+  "qi": 1,
+  "rec_id": "R033",
+  "max_rid": "R033",
+  "max_mass": 0.01561086653167068,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 31,
+  "qi": 1,
+  "rec_id": "R034",
+  "max_rid": "R036",
+  "max_mass": 0.00664863451718248,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 31,
+  "qi": 1,
+  "rec_id": "R034",
+  "max_rid": "R034",
+  "max_mass": 0.013818270342137918,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 32,
+  "qi": 0,
+  "rec_id": "R031",
+  "max_rid": "R900",
+  "max_mass": 0.007327813794770726,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 32,
+  "qi": 0,
+  "rec_id": "R031",
+  "max_rid": "R027",
+  "max_mass": 0.01301037120577372,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 32,
+  "qi": 1,
+  "rec_id": "R034",
+  "max_rid": "R034",
+  "max_mass": 0.016576354822936745,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 37,
+  "qi": 3,
+  "rec_id": "R034",
+  "max_rid": "R038",
+  "max_mass": 0.009366494093897816,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 37,
+  "qi": 2,
+  "rec_id": "R033",
+  "max_rid": "R032",
+  "max_mass": 0.025012600737727115,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 37,
+  "qi": 3,
+  "rec_id": "R034",
+  "max_rid": "R034",
+  "max_mass": 0.01057260390517419,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "max_rid": "R028",
+  "max_mass": 0.009903316772424446,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 0,
+  "rec_id": "R038",
+  "max_rid": "R038",
+  "max_mass": 0.015715025178176772,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.017152611330113435,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 39,
+  "qi": 0,
+  "rec_id": "R030",
+  "max_rid": "R030",
+  "max_mass": 0.016149561207390865,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 43,
+  "qi": 2,
+  "rec_id": "R037",
+  "max_rid": "R037",
+  "max_mass": 0.01652856071529626,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 44,
+  "qi": 0,
+  "rec_id": "R033",
+  "max_rid": "R900",
+  "max_mass": 0.007649723011625741,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 44,
+  "qi": 0,
+  "rec_id": "R033",
+  "max_rid": "R033",
+  "max_mass": 0.011125483978590471,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 46,
+  "qi": 2,
+  "rec_id": "R031",
+  "max_rid": "R038",
+  "max_mass": 0.00433538239255582,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 46,
+  "qi": 2,
+  "rec_id": "R031",
+  "max_rid": "R030",
+  "max_mass": 0.010304776309116699,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 52,
+  "qi": 2,
+  "rec_id": "R037",
+  "max_rid": "R037",
+  "max_mass": 0.023464763786092153,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 53,
+  "qi": 1,
+  "rec_id": "R037",
+  "max_rid": "R037",
+  "max_mass": 0.01320302936654344,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 53,
+  "qi": 0,
+  "rec_id": "R030",
+  "max_rid": "R900",
+  "max_mass": 0.004790532132671294,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 57,
+  "qi": 0,
+  "rec_id": "R029",
+  "max_rid": "R030",
+  "max_mass": 0.020401423873931256,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 57,
+  "qi": 1,
+  "rec_id": "R033",
+  "max_rid": "R900",
+  "max_mass": 0.0071546046122782266,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 57,
+  "qi": 0,
+  "rec_id": "R029",
+  "max_rid": "R025",
+  "max_mass": 0.006998389619453613,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 57,
+  "qi": 1,
+  "rec_id": "R033",
+  "max_rid": "R028",
+  "max_mass": 0.006965562267684605,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 58,
+  "qi": 3,
+  "rec_id": "R036",
+  "max_rid": "R038",
+  "max_mass": 0.008139654029960962,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 58,
+  "qi": 3,
+  "rec_id": "R036",
+  "max_rid": "R036",
+  "max_mass": 0.012183432752129275,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 62,
+  "qi": 3,
+  "rec_id": "R030",
+  "max_rid": "R030",
+  "max_mass": 0.010512799835502521,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 63,
+  "qi": 1,
+  "rec_id": "R036",
+  "max_rid": "R036",
+  "max_mass": 0.01465401584385471,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 66,
+  "qi": 0,
+  "rec_id": "R031",
+  "max_rid": "R031",
+  "max_mass": 0.01003165839144475,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 66,
+  "qi": 2,
+  "rec_id": "R032",
+  "max_rid": "R019",
+  "max_mass": 0.0076825772960989035,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 67,
+  "qi": 2,
+  "rec_id": "R031",
+  "max_rid": "R031",
+  "max_mass": 0.009477164569089161,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 67,
+  "qi": 2,
+  "rec_id": "R031",
+  "max_rid": "R039",
+  "max_mass": 0.006179498956578408,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 68,
+  "qi": 3,
+  "rec_id": "R034",
+  "max_rid": "R900",
+  "max_mass": 0.013512890937150104,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 68,
+  "qi": 3,
+  "rec_id": "R034",
+  "max_rid": "R900",
+  "max_mass": 0.011919811385027495,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 71,
+  "qi": 1,
+  "rec_id": "R036",
+  "max_rid": "R036",
+  "max_mass": 0.014930299620732288,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 71,
+  "qi": 1,
+  "rec_id": "R036",
+  "max_rid": "R036",
+  "max_mass": 0.018972368306297106,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 72,
+  "qi": 1,
+  "rec_id": "R035",
+  "max_rid": "R035",
+  "max_mass": 0.01891521775444495,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 73,
+  "qi": 3,
+  "rec_id": "R032",
+  "max_rid": "R038",
+  "max_mass": 0.005751404709707639,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 73,
+  "qi": 1,
+  "rec_id": "R034",
+  "max_rid": "R034",
+  "max_mass": 0.009321341356492667,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 73,
+  "qi": 3,
+  "rec_id": "R032",
+  "max_rid": "R029",
+  "max_mass": 0.007227995121359219,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 75,
+  "qi": 3,
+  "rec_id": "R032",
+  "max_rid": "R025",
+  "max_mass": 0.025193530447846564,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 78,
+  "qi": 0,
+  "rec_id": "R035",
+  "max_rid": "R001",
+  "max_mass": 0.007880630838952123,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 80,
+  "qi": 1,
+  "rec_id": "R038",
+  "max_rid": "R038",
+  "max_mass": 0.019621847898398728,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 81,
+  "qi": 1,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.01980957613269182,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 82,
+  "qi": 2,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.01201757245731064,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 84,
+  "qi": 3,
+  "rec_id": "R039",
+  "max_rid": "R039",
+  "max_mass": 0.021622533110695633,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 87,
+  "qi": 0,
+  "rec_id": "R029",
+  "max_rid": "R029",
+  "max_mass": 0.028350046089486942,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 87,
+  "qi": 0,
+  "rec_id": "R029",
+  "max_rid": "R024",
+  "max_mass": 0.0058273179975302115,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 87,
+  "qi": 3,
+  "rec_id": "R034",
+  "max_rid": "R034",
+  "max_mass": 0.009128633748478297,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 89,
+  "qi": 3,
+  "rec_id": "R039",
+  "max_rid": "R039",
+  "max_mass": 0.01439255716355377,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 92,
+  "qi": 2,
+  "rec_id": "R039",
+  "max_rid": "R038",
+  "max_mass": 0.009192711616741856,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 94,
+  "qi": 2,
+  "rec_id": "R028",
+  "max_rid": "R039",
+  "max_mass": 0.005176071435591908,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 95,
+  "qi": 0,
+  "rec_id": "R028",
+  "max_rid": "R009",
+  "max_mass": 0.013746953083402489,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 95,
+  "qi": 2,
+  "rec_id": "R034",
+  "max_rid": "R035",
+  "max_mass": 0.014765042819910305,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 95,
+  "qi": 0,
+  "rec_id": "R028",
+  "max_rid": "R031",
+  "max_mass": 0.006635406320830778,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 95,
+  "qi": 2,
+  "rec_id": "R034",
+  "max_rid": "R033",
+  "max_mass": 0.016711595687686164,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 96,
+  "qi": 0,
+  "rec_id": "R030",
+  "max_rid": "R030",
+  "max_mass": 0.006441792442740572,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 99,
+  "qi": 2,
+  "rec_id": "R029",
+  "max_rid": "R026",
+  "max_mass": 0.007414229735151301,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 99,
+  "qi": 3,
+  "rec_id": "R032",
+  "max_rid": "R034",
+  "max_mass": 0.009493896452268401,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 100,
+  "qi": 3,
+  "rec_id": "R035",
+  "max_rid": "R038",
+  "max_mass": 0.009103416009176331,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 100,
+  "qi": 3,
+  "rec_id": "R035",
+  "max_rid": "R036",
+  "max_mass": 0.008444599361915432,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 102,
+  "qi": 2,
+  "rec_id": "R035",
+  "max_rid": "R032",
+  "max_mass": 0.011504162308095003,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 102,
+  "qi": 2,
+  "rec_id": "R035",
+  "max_rid": "R035",
+  "max_mass": 0.01116762733605406,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 104,
+  "qi": 0,
+  "rec_id": "R035",
+  "max_rid": "R033",
+  "max_mass": 0.011042495072815467,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 107,
+  "qi": 1,
+  "rec_id": "R036",
+  "max_rid": "R036",
+  "max_mass": 0.017156163841116106,
+  "is_match": true
+ },
+ {
+  "base": "snapkv",
+  "instance": 111,
+  "qi": 0,
+  "rec_id": "R031",
+  "max_rid": "R900",
+  "max_mass": 0.004534476357053296,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 111,
+  "qi": 0,
+  "rec_id": "R031",
+  "max_rid": "R900",
+  "max_mass": 0.006378171757879463,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 115,
+  "qi": 0,
+  "rec_id": "R032",
+  "max_rid": "R038",
+  "max_mass": 0.006125753325326375,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 115,
+  "qi": 3,
+  "rec_id": "R033",
+  "max_rid": "R031",
+  "max_mass": 0.007333342809305766,
+  "is_match": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 115,
+  "qi": 3,
+  "rec_id": "R033",
+  "max_rid": "R900",
+  "max_mass": 0.009816687390363038,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 117,
+  "qi": 0,
+  "rec_id": "R032",
+  "max_rid": "R036",
+  "max_mass": 0.007555389943073334,
+  "is_match": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 118,
+  "qi": 2,
+  "rec_id": "R035",
+  "max_rid": "R035",
+  "max_mass": 0.010359436627610663,
+  "is_match": true
+ },
+ {
+  "base": "expected_attn",
+  "instance": 118,
+  "qi": 2,
+  "rec_id": "R035",
+  "max_rid": "R036",
+  "max_mass": 0.006046232118549845,
+  "is_match": false
+ }
+]

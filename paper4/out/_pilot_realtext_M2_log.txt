@@ -1,0 +1,107 @@
+loading SQuAD...
+  case0: n_ctx=2066 B_pilot=579 C_pilot=507 gpu_alloc=5.854GB
+    before prefill: 5.854GB
+    after prefill: 29.856GB
+    after query fwd (output_attentions): 29.754GB q_len=10
+    after mass_by_rid: 29.754GB
+  case0: n_ctx=2066 span_hit=True held_whole=True score_base=1 score_masked=1
+  case1: n_ctx=1843 B_pilot=516 C_pilot=444 gpu_alloc=29.796GB
+    before prefill: 29.796GB
+    after prefill: 26.029GB
+    after query fwd (output_attentions): 25.977GB q_len=20
+    after mass_by_rid: 25.953GB
+  case1: n_ctx=1843 span_hit=False held_whole=False score_base=0 score_masked=0
+  case2: n_ctx=1766 B_pilot=495 C_pilot=423 gpu_alloc=25.950GB
+    before prefill: 25.950GB
+    after prefill: 24.708GB
+    after query fwd (output_attentions): 24.647GB q_len=14
+    after mass_by_rid: 24.623GB
+  case2: n_ctx=1766 span_hit=False held_whole=False score_base=0 score_masked=0
+  case3: n_ctx=2164 B_pilot=606 C_pilot=534 gpu_alloc=24.621GB
+    before prefill: 24.621GB
+    after prefill: 31.720GB
+    after query fwd (output_attentions): 31.642GB q_len=15
+    after mass_by_rid: 31.621GB
+  case3: n_ctx=2164 span_hit=False held_whole=False score_base=0 score_masked=0
+  case4: n_ctx=1949 B_pilot=546 C_pilot=474 gpu_alloc=31.629GB
+    before prefill: 31.629GB
+    after prefill: 27.825GB
+    after query fwd (output_attentions): 27.762GB q_len=16
+    after mass_by_rid: 27.737GB
+  case4: n_ctx=1949 span_hit=False held_whole=True score_base=1 score_masked=0
+  case5: n_ctx=1723 B_pilot=483 C_pilot=411 gpu_alloc=27.732GB
+    before prefill: 27.732GB
+    after prefill: 24.029GB
+    after query fwd (output_attentions): 23.973GB q_len=16
+    after mass_by_rid: 23.949GB
+  case5: n_ctx=1723 span_hit=True held_whole=True score_base=0 score_masked=1
+  case6: n_ctx=1741 B_pilot=488 C_pilot=416 gpu_alloc=23.945GB
+    before prefill: 23.945GB
+    after prefill: 24.294GB
+    after query fwd (output_attentions): 24.237GB q_len=13
+    after mass_by_rid: 24.215GB
+  case6: n_ctx=1741 span_hit=False held_whole=False score_base=0 score_masked=0
+  case7: n_ctx=1624 B_pilot=455 C_pilot=383 gpu_alloc=24.215GB
+    before prefill: 24.215GB
+    after prefill: 22.453GB
+    after query fwd (output_attentions): 22.403GB q_len=16
+    after mass_by_rid: 22.382GB
+  case7: n_ctx=1624 span_hit=False held_whole=False score_base=0 score_masked=0
+  case8: n_ctx=2042 B_pilot=572 C_pilot=500 gpu_alloc=22.380GB
+    before prefill: 22.380GB
+    after prefill: 29.450GB
+    after query fwd (output_attentions): 29.383GB q_len=12
+    after mass_by_rid: 29.362GB
+  case8: n_ctx=2042 span_hit=False held_whole=False score_base=0 score_masked=0
+  case9: n_ctx=2130 B_pilot=597 C_pilot=525 gpu_alloc=29.370GB
+    before prefill: 29.370GB
+    after prefill: 31.105GB
+    after query fwd (output_attentions): 31.022GB q_len=16
+    after mass_by_rid: 30.999GB
+  case9: n_ctx=2130 span_hit=True held_whole=True score_base=0 score_masked=0
+  case10: n_ctx=2050 B_pilot=574 C_pilot=502 gpu_alloc=31.001GB
+    before prefill: 31.001GB
+    after prefill: 29.637GB
+    after query fwd (output_attentions): 29.550GB q_len=12
+    after mass_by_rid: 29.523GB
+  case10: n_ctx=2050 span_hit=True held_whole=True score_base=1 score_masked=0
+  case11: n_ctx=1935 B_pilot=542 C_pilot=470 gpu_alloc=29.521GB
+    before prefill: 29.521GB
+    after prefill: 27.560GB
+    after query fwd (output_attentions): 27.502GB q_len=18
+    after mass_by_rid: 27.478GB
+  case11: n_ctx=1935 span_hit=False held_whole=False score_base=0 score_masked=0
+  case12: n_ctx=2107 B_pilot=590 C_pilot=518 gpu_alloc=27.477GB
+    before prefill: 27.477GB
+    after prefill: 30.659GB
+    after query fwd (output_attentions): 30.573GB q_len=13
+    after mass_by_rid: 30.549GB
+  case12: n_ctx=2107 span_hit=False held_whole=True score_base=1 score_masked=0
+  case13: n_ctx=2218 B_pilot=621 C_pilot=549 gpu_alloc=30.552GB
+    before prefill: 30.552GB
+  FAIL case13: OutOfMemoryError: CUDA out of memory. Tried to allocate 644.00 MiB. GPU 0 has a total capacity of 11.94 GiB of which 0 bytes is free. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 56.76 GiB is allocated by PyTorch, and 1.23 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  case14: n_ctx=2012 B_pilot=564 C_pilot=492 gpu_alloc=30.552GB
+    before prefill: 30.552GB
+    after prefill: 28.916GB
+    after query fwd (output_attentions): 28.865GB q_len=28
+    after mass_by_rid: 28.841GB
+  case14: n_ctx=2012 span_hit=False held_whole=False score_base=1 score_masked=0
+  case15: n_ctx=2000 B_pilot=560 C_pilot=488 gpu_alloc=28.840GB
+    before prefill: 28.840GB
+    after prefill: 28.716GB
+    after query fwd (output_attentions): 28.645GB q_len=16
+    after mass_by_rid: 28.617GB
+  case15: n_ctx=2000 span_hit=False held_whole=False score_base=0 score_masked=0
+  case16: n_ctx=2014 B_pilot=564 C_pilot=492 gpu_alloc=28.616GB
+    before prefill: 28.616GB
+    after prefill: 28.959GB
+    after query fwd (output_attentions): 28.894GB q_len=15
+    after mass_by_rid: 28.869GB
+  case16: n_ctx=2014 span_hit=True held_whole=True score_base=1 score_masked=1
+  case17: n_ctx=2136 B_pilot=599 C_pilot=527 gpu_alloc=28.870GB
+    before prefill: 28.870GB
+    after prefill: 31.225GB
+    after query fwd (output_attentions): 31.144GB q_len=18
+    after mass_by_rid: 31.119GB
+  case17: n_ctx=2136 span_hit=False held_whole=False score_base=0 score_masked=0
+DONE pilot: 17/18 cases

@@ -1,0 +1,75 @@
+
+=== M2 floor+ordered vs floor_pos ===
+n_queries=320  n_instances=80
+confound check: CLEAN
+accuracy: base=0.1938 masked=0.2812
+Delta=+0.0875 [+0.0563,+0.1187]  fixed=28  broken=0/62  invented(masked,corrected)=0/320
+
+=== M2 floor+schemafree vs floor_pos ===
+n_queries=320  n_instances=80
+confound check: CLEAN
+accuracy: base=0.1938 masked=0.2812
+Delta=+0.0875 [+0.0563,+0.1187]  fixed=28  broken=0/62  invented(masked,corrected)=0/320
+
+=== M3 floor+ordered vs floor_pos (176 excluded) ===
+n_queries=280  n_instances=70
+confound check: CLEAN
+accuracy: base=0.1286 masked=0.2607
+Delta=+0.1321 [+0.0893,+0.1750]  fixed=40  broken=3/36  invented(masked,corrected)=179/280
+
+=== M3 floor+schemafree vs floor_pos (176 excluded) ===
+n_queries=280  n_instances=70
+confound check: CLEAN
+accuracy: base=0.1286 masked=0.2107
+Delta=+0.0821 [+0.0464,+0.1214]  fixed=26  broken=3/36  invented(masked,corrected)=133/280
+
+=== M2 u_floor+mask vs u_floor (own baseline) ===
+n_queries=320  n_instances=80
+confound check: CLEAN
+accuracy: base=0.1969 masked=0.3250
+Delta=+0.1281 [+0.0906,+0.1688]  fixed=45  broken=4/63  invented(masked,corrected)=0/320
+
+=== M2 u_floor+mask vs floor_pos (headline) ===
+n_queries=320  n_instances=80
+confound check: 320 MISMATCHES: [(120, 0), (120, 1), (120, 2), (120, 3), (121, 0)]
+accuracy: base=0.1938 masked=0.3250
+Delta=+0.1313 [+0.0968,+0.1688]  fixed=42  broken=0/62  invented(masked,corrected)=0/320
+
+=== M3 u_floor+mask vs u_floor (own baseline) ===
+n_queries=320  n_instances=80
+confound check: CLEAN
+accuracy: base=0.1406 masked=0.2188
+Delta=+0.0781 [+0.0437,+0.1156]  fixed=30  broken=5/45  invented(masked,corrected)=156/320
+
+=== M3 u_floor+mask vs floor_pos (headline, 176 excluded) ===
+n_queries=280  n_instances=70
+confound check: 280 MISMATCHES: [(120, 0), (120, 1), (120, 2), (120, 3), (121, 0)]
+accuracy: base=0.1286 masked=0.2250
+Delta=+0.0964 [+0.0536,+0.1393]  fixed=33  broken=6/36  invented(masked,corrected)=140/280
+
+=== M2 oracle_causal+mask vs oracle_causal (own baseline) ===
+n_queries=320  n_instances=80
+confound check: CLEAN
+accuracy: base=0.6438 masked=0.9500
+Delta=+0.3063 [+0.2531,+0.3594]  fixed=102  broken=4/206  invented(masked,corrected)=0/320
+
+=== M2 oracle_causal+mask vs floor_pos ===
+n_queries=320  n_instances=80
+confound check: 320 MISMATCHES: [(120, 0), (120, 1), (120, 2), (120, 3), (121, 0)]
+accuracy: base=0.1938 masked=0.9500
+Delta=+0.7562 [+0.7094,+0.8031]  fixed=242  broken=0/62  invented(masked,corrected)=0/320
+
+=== M2 full_cache+mask vs full_cache (own baseline) ===
+n_queries=320  n_instances=80
+confound check: CLEAN
+accuracy: base=0.8906 masked=0.9437
+Delta=+0.0531 [+0.0219,+0.0844]  fixed=22  broken=5/285  invented(masked,corrected)=0/320
+
+=== M2 full_cache+mask vs floor_pos ===
+n_queries=320  n_instances=80
+confound check: 320 MISMATCHES: [(120, 0), (120, 1), (120, 2), (120, 3), (121, 0)]
+accuracy: base=0.1938 masked=0.9437
+Delta=+0.7500 [+0.7000,+0.7969]  fixed=242  broken=2/62  invented(masked,corrected)=0/320
+
+
+=== AUDIT COMPLETE ===

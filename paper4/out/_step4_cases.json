@@ -1,0 +1,462 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 8,
+  "qi": 0,
+  "rec_id": "R035",
+  "u_match": "R037",
+  "q_resid": -0.00025376612527776017,
+  "m_resid": -9.061569951766e-05,
+  "residual_gap": 0.00016315042576010017,
+  "q_token_len": 38,
+  "m_token_len": 38,
+  "q_numeric": [
+   683415,
+   562667
+  ],
+  "m_numeric": [
+   719725,
+   189221
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "snapkv",
+  "instance": 21,
+  "qi": 2,
+  "rec_id": "R036",
+  "u_match": "R037",
+  "q_resid": -0.00023817534629288627,
+  "m_resid": -0.0001065555865787987,
+  "residual_gap": 0.00013161975971408757,
+  "q_token_len": 38,
+  "m_token_len": 38,
+  "q_numeric": [
+   288287,
+   551916
+  ],
+  "m_numeric": [
+   154205,
+   594657
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "snapkv",
+  "instance": 23,
+  "qi": 3,
+  "rec_id": "R036",
+  "u_match": "R037",
+  "q_resid": -0.0001988618948816178,
+  "m_resid": -0.00014883644120316326,
+  "residual_gap": 5.002545367845454e-05,
+  "q_token_len": 39,
+  "m_token_len": 39,
+  "q_numeric": [
+   434825,
+   506459
+  ],
+  "m_numeric": [
+   771852,
+   298846
+  ],
+  "m_was_earlier_query": true,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "snapkv",
+  "instance": 50,
+  "qi": 1,
+  "rec_id": "R031",
+  "u_match": "R032",
+  "q_resid": -0.00023868173757307488,
+  "m_resid": -0.0001777080160957807,
+  "residual_gap": 6.0973721477294195e-05,
+  "q_token_len": 37,
+  "m_token_len": 38,
+  "q_numeric": [
+   405960,
+   436802
+  ],
+  "m_numeric": [
+   473701,
+   449842
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "snapkv",
+  "instance": 68,
+  "qi": 3,
+  "rec_id": "R034",
+  "u_match": "R035",
+  "q_resid": -0.0002530098801210678,
+  "m_resid": -0.0001457445166574363,
+  "residual_gap": 0.00010726536346363153,
+  "q_token_len": 40,
+  "m_token_len": 39,
+  "q_numeric": [
+   308875,
+   123008
+  ],
+  "m_numeric": [
+   367990,
+   762495
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "snapkv",
+  "instance": 69,
+  "qi": 1,
+  "rec_id": "R035",
+  "u_match": "R034",
+  "q_resid": -0.00017998096903149626,
+  "m_resid": -0.00011884080507903799,
+  "residual_gap": 6.114016395245827e-05,
+  "q_token_len": 38,
+  "m_token_len": 38,
+  "q_numeric": [
+   973919,
+   278286
+  ],
+  "m_numeric": [
+   874106,
+   768192
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "expected_attn",
+  "instance": 32,
+  "qi": 1,
+  "rec_id": "R034",
+  "u_match": "R035",
+  "q_resid": 0.0005211725244839722,
+  "m_resid": 0.00026844658801424524,
+  "residual_gap": -0.00025272593646972694,
+  "q_token_len": 40,
+  "m_token_len": 39,
+  "q_numeric": [
+   984333,
+   786060
+  ],
+  "m_numeric": [
+   266062,
+   995050
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "expected_attn",
+  "instance": 37,
+  "qi": 2,
+  "rec_id": "R033",
+  "u_match": "R032",
+  "q_resid": -0.0006814775720097943,
+  "m_resid": -0.0005078232683869916,
+  "residual_gap": 0.00017365430362280276,
+  "q_token_len": 40,
+  "m_token_len": 41,
+  "q_numeric": [
+   973880,
+   383043
+  ],
+  "m_numeric": [
+   885936,
+   261515
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "expected_attn",
+  "instance": 44,
+  "qi": 0,
+  "rec_id": "R033",
+  "u_match": "R034",
+  "q_resid": -0.0006288539122240788,
+  "m_resid": 0.0009939696820642288,
+  "residual_gap": 0.0016228235942883076,
+  "q_token_len": 42,
+  "m_token_len": 41,
+  "q_numeric": [
+   902559,
+   865470
+  ],
+  "m_numeric": [
+   765806,
+   495152
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "expected_attn",
+  "instance": 72,
+  "qi": 1,
+  "rec_id": "R035",
+  "u_match": "R034",
+  "q_resid": 0.000769432633551336,
+  "m_resid": 0.0009741032607043683,
+  "residual_gap": 0.0002046706271530323,
+  "q_token_len": 40,
+  "m_token_len": 40,
+  "q_numeric": [
+   706822,
+   701574
+  ],
+  "m_numeric": [
+   593099,
+   991651
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "expected_attn",
+  "instance": 82,
+  "qi": 2,
+  "rec_id": "R029",
+  "u_match": "R031",
+  "q_resid": 4.747805058463034e-05,
+  "m_resid": 0.0011288600775912231,
+  "residual_gap": 0.0010813820270065928,
+  "q_token_len": 38,
+  "m_token_len": 40,
+  "q_numeric": [
+   911096,
+   433095
+  ],
+  "m_numeric": [
+   826859,
+   962701
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 6,
+  "qi": 1,
+  "rec_id": "R031",
+  "u_match": "R030",
+  "q_resid": -0.00021369926465381967,
+  "m_resid": -0.0001029481138499773,
+  "residual_gap": 0.00011075115080384237,
+  "q_token_len": 40,
+  "m_token_len": 40,
+  "q_numeric": [
+   235961,
+   296385
+  ],
+  "m_numeric": [
+   454055,
+   698764
+  ],
+  "m_was_earlier_query": true,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 8,
+  "qi": 0,
+  "rec_id": "R035",
+  "u_match": "R037",
+  "q_resid": -0.00025376612527776017,
+  "m_resid": -9.061569951766e-05,
+  "residual_gap": 0.00016315042576010017,
+  "q_token_len": 38,
+  "m_token_len": 38,
+  "q_numeric": [
+   683415,
+   562667
+  ],
+  "m_numeric": [
+   719725,
+   189221
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "u_match": "R027",
+  "q_resid": -0.00025656463848179936,
+  "m_resid": -0.000173198841770169,
+  "residual_gap": 8.336579671163036e-05,
+  "q_token_len": 38,
+  "m_token_len": 40,
+  "q_numeric": [
+   496244,
+   283156
+  ],
+  "m_numeric": [
+   912777,
+   306916
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 21,
+  "qi": 2,
+  "rec_id": "R036",
+  "u_match": "R037",
+  "q_resid": -0.00023817534629288627,
+  "m_resid": -0.0001065555865787987,
+  "residual_gap": 0.00013161975971408757,
+  "q_token_len": 38,
+  "m_token_len": 38,
+  "q_numeric": [
+   288287,
+   551916
+  ],
+  "m_numeric": [
+   154205,
+   594657
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 52,
+  "qi": 2,
+  "rec_id": "R037",
+  "u_match": "R039",
+  "q_resid": -0.0001486437377437264,
+  "m_resid": 0.0028526558858956814,
+  "residual_gap": 0.0030012996236394077,
+  "q_token_len": 38,
+  "m_token_len": 40,
+  "q_numeric": [
+   278332,
+   314812
+  ],
+  "m_numeric": [
+   226378,
+   794015
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 57,
+  "qi": 1,
+  "rec_id": "R033",
+  "u_match": "R031",
+  "q_resid": -0.00024836191736575845,
+  "m_resid": -0.00015215315277391763,
+  "residual_gap": 9.620876459184082e-05,
+  "q_token_len": 40,
+  "m_token_len": 38,
+  "q_numeric": [
+   918411,
+   369640
+  ],
+  "m_numeric": [
+   939595,
+   914198
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 0,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 68,
+  "qi": 3,
+  "rec_id": "R034",
+  "u_match": "R035",
+  "q_resid": -0.0002530098801210678,
+  "m_resid": -0.0001457445166574363,
+  "residual_gap": 0.00010726536346363153,
+  "q_token_len": 40,
+  "m_token_len": 39,
+  "q_numeric": [
+   308875,
+   123008
+  ],
+  "m_numeric": [
+   367990,
+   762495
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 69,
+  "qi": 1,
+  "rec_id": "R035",
+  "u_match": "R034",
+  "q_resid": -0.00017998096903149626,
+  "m_resid": -0.00011884080507903799,
+  "residual_gap": 6.114016395245827e-05,
+  "q_token_len": 38,
+  "m_token_len": 38,
+  "q_numeric": [
+   973919,
+   278286
+  ],
+  "m_numeric": [
+   874106,
+   768192
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 2
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 78,
+  "qi": 0,
+  "rec_id": "R035",
+  "u_match": "R033",
+  "q_resid": -0.000183323597807455,
+  "m_resid": -0.0002083963235008437,
+  "residual_gap": -2.507272569338869e-05,
+  "q_token_len": 36,
+  "m_token_len": 41,
+  "q_numeric": [
+   623264,
+   347043
+  ],
+  "m_numeric": [
+   498318,
+   896125
+  ],
+  "m_was_earlier_query": false,
+  "query_vs_q_filler_overlap": 2,
+  "query_vs_m_filler_overlap": 0
+ }
+]

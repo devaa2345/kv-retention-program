@@ -1,0 +1,77 @@
+  inst928 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst928 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00016307830810546875 min_kept_score=0.00016307830810546875 invariant_holds=True
+  inst928 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.0001678466796875 min_kept_score=0.0001678466796875 invariant_holds=True
+  inst928 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 928 done, elapsed=0.05 min
+  inst931 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst931 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.000141143798828125 min_kept_score=0.000141143798828125 invariant_holds=True
+  inst931 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00013828277587890625 min_kept_score=0.00013828277587890625 invariant_holds=True
+  inst931 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 931 done, elapsed=0.10 min
+  inst932 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst932 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00014019012451171875 min_kept_score=0.00014019012451171875 invariant_holds=True
+  inst932 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.000133514404296875 min_kept_score=0.0001354217529296875 invariant_holds=True
+  inst932 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 932 done, elapsed=0.14 min
+  inst933 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst933 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00012493133544921875 min_kept_score=0.00012493133544921875 invariant_holds=True
+  inst933 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.0001277923583984375 min_kept_score=0.0001277923583984375 invariant_holds=True
+  inst933 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 933 done, elapsed=0.18 min
+  inst935 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst935 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00010919570922851562 min_kept_score=0.00010967254638671875 invariant_holds=True
+  inst935 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00011157989501953125 min_kept_score=0.00011205673217773438 invariant_holds=True
+  inst935 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 935 done, elapsed=0.24 min
+  inst936 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst936 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00015926361083984375 min_kept_score=0.00016021728515625 invariant_holds=True
+  inst936 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.000164031982421875 min_kept_score=0.00016498565673828125 invariant_holds=True
+  inst936 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 936 done, elapsed=0.28 min
+  inst938 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst938 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00015163421630859375 min_kept_score=0.00015163421630859375 invariant_holds=True
+  inst938 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.0001316070556640625 min_kept_score=0.0001316070556640625 invariant_holds=True
+  inst938 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 938 done, elapsed=0.32 min
+  inst941 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst941 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00012493133544921875 min_kept_score=0.00012493133544921875 invariant_holds=True
+  inst941 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00012302398681640625 min_kept_score=0.00012302398681640625 invariant_holds=True
+  inst941 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 941 done, elapsed=0.37 min
+  inst942 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst942 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00012159347534179688 min_kept_score=0.0001220703125 invariant_holds=True
+  inst942 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00011920928955078125 min_kept_score=0.00011968612670898438 invariant_holds=True
+  inst942 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 942 done, elapsed=0.40 min
+  inst943 q0 floor_pos: keephash_match=True answer_match=True score_match=True
+  inst943 q1 floor_pos: keephash_match=True answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00015163421630859375 min_kept_score=0.00015163421630859375 invariant_holds=True
+  inst943 q0 snapkv: keephash_match=False answer_match=True score_match=True
+    [snapkv score boundary, layer0 head0] max_dropped_score=0.00014972686767578125 min_kept_score=0.00014972686767578125 invariant_holds=True
+  inst943 q1 snapkv: keephash_match=False answer_match=True score_match=True
+instance 943 done, elapsed=0.44 min
+
+DONE: n_compared=40 skipped_fallback=0
+keep-hash match rate: 20/40
+answer match rate: 40/40
+score match rate: 40/40
+answer diffs WITH matching keep-hash (bf16-near-tie candidates): 0
+answer diffs WITH mismatched keep-hash (NOT bf16 near-ties -- real discrepancy): 0

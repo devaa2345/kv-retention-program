@@ -1,0 +1,123 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+=== M2: 153/640 exact reproductions ===
+  MISMATCH inst928 q0 floor_pos_tight_focus_mask sent52:
+    decoded: ' MD 194D is the designation for an unnamed 0 @.@ 02 @-@ mile ( 0 @.@ 032 km ) connector between MD 194 and MD 853E , the old alignment that parallels the northbound direction of the modern highway south of Angell Road .\n\n'
+    source : 'MD 194D is the designation for an unnamed 0 @.@ 02 @-@ mile ( 0 @.@ 032 km ) connector between MD 194 and MD 853E , the old alignment that parallels the northbound direction of the modern highway south of Angell Road .'
+  MISMATCH inst928 q1 floor_pos_tight_focus_mask sent49:
+    decoded: ' Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+    source : 'Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+  MISMATCH inst928 q1 snapkv_tight_focus_mask sent49:
+    decoded: ' Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+    source : 'Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+  MISMATCH inst931 q0 floor_pos_tight_focus_mask sent42:
+    decoded: ' According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+    source : 'According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+  MISMATCH inst931 q1 floor_pos_tight_focus_mask sent42:
+    decoded: ' According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+    source : 'According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+  MISMATCH inst931 q1 snapkv_tight_focus_mask sent22:
+    decoded: ' Some documents prove this theory was discussed before and after the method was chosen.'
+    source : 'Some documents prove this theory was discussed before and after the method was chosen.'
+  MISMATCH inst932 q0 floor_pos_tight_focus_mask sent47:
+    decoded: ' " \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+    source : '" \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+  MISMATCH inst932 q1 floor_pos_tight_focus_mask sent38:
+    decoded: ' George Lenczowski notes, "Military supplies did not exhaust Nixon\'s eagerness to prevent Israel\'s collapse...This [$2.2 billion] decision triggered a collective OPEC response." Libya immediately announced it would embargo oil shipments to the United States.'
+    source : 'George Lenczowski notes, "Military supplies did not exhaust Nixon\'s eagerness to prevent Israel\'s collapse...This [$2.2 billion] decision triggered a collective OPEC response." Libya immediately announced it would embargo oil shipments to the United States.'
+  MISMATCH inst932 q0 snapkv_tight_focus_mask sent47:
+    decoded: ' " \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+    source : '" \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+  MISMATCH inst933 q0 floor_pos_tight_focus_mask sent63:
+    decoded: " The connection between Calvert 's resignation and his conversion to Roman Catholicism was a complex one ."
+    source : "The connection between Calvert 's resignation and his conversion to Roman Catholicism was a complex one ."
+  MISMATCH inst933 q1 floor_pos_tight_focus_mask sent65:
+    decoded: ' George Abbot , ( 1562 @-@ 1633 ) , the reigning Archbishop of Canterbury , ( and ecclesiastical head of the independent Church of England ) , reported that political opposition to Calvert , combined with his loss of office , had " made him discontented and , as the saying is , " Desperatio facit monachum " , so hee apparently did turne papist , which hee now professeth , this being the third time that he hath bene to blame that way [ sic ] " .'
+    source : 'George Abbot , ( 1562 @-@ 1633 ) , the reigning Archbishop of Canterbury , ( and ecclesiastical head of the independent Church of England ) , reported that political opposition to Calvert , combined with his loss of office , had " made him discontented and , as the saying is , " Desperatio facit monachum " , so hee apparently did turne papist , which hee now professeth , this being the third time that he hath bene to blame that way [ sic ] " .'
+  MISMATCH inst933 q1 snapkv_tight_focus_mask sent31:
+    decoded: ' Ramon and Perfect began the match , but Flair entered after Perfect insulted him .'
+    source : 'Ramon and Perfect began the match , but Flair entered after Perfect insulted him .'
+  MISMATCH inst935 q0 floor_pos_tight_focus_mask sent46:
+    decoded: ' They are also capable of spitting a powerful jet of water into the faces of their captors , making grunting noises in between jets ( making the tawny shark one of the few species of sharks to produce a noise ) ; whether this is a deliberate defensive behavior is uncertain .'
+    source : 'They are also capable of spitting a powerful jet of water into the faces of their captors , making grunting noises in between jets ( making the tawny shark one of the few species of sharks to produce a noise ) ; whether this is a deliberate defensive behavior is uncertain .'
+  MISMATCH inst935 q0 snapkv_tight_focus_mask sent35:
+    decoded: ' Mitochondria have also been observed to follow chloroplasts as they move.\n\n'
+    source : 'Mitochondria have also been observed to follow chloroplasts as they move.'
+  MISMATCH inst936 q0 floor_pos_tight_focus_mask sent39:
+    decoded: ' Though Luther saw the Muslim faith as a tool of the devil, he was indifferent to its practice: "Let the Turk believe and live as he will, just as one lets the papacy and other false Christians live." He opposed banning the publication of the Qur\'an, wanting it exposed to scrutiny.\n\n'
+    source : 'Though Luther saw the Muslim faith as a tool of the devil, he was indifferent to its practice: "Let the Turk believe and live as he will, just as one lets the papacy and other false Christians live." He opposed banning the publication of the Qur\'an, wanting it exposed to scrutiny.'
+  ... and 472 more
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-6abb902b-4d579b8522bc6fcd2dc5908c;65c9e147-b89a-4ded-9b92-926b67d97d36)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct.
+401 Client Error. (Request ID: Root=1-6abb902b-4d579b8522bc6fcd2dc5908c;65c9e147-b89a-4ded-9b92-926b67d97d36)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+During handling of the above exception, another exception occurred:
+
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 419, in cached_files
+    hf_hub_download(
+  File "/opt/p2venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1028, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1175, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/opt/p2venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1915, in _raise_on_head_call_error
+    raise head_call_error
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-6abb902b-3f084cfb1c7909c6283ffecb;5bda5d84-52c6-4519-b874-15d2a7894ff5)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/INNOCREW/Blockage/paper4/out/_retpolicy_dev/text_access_check.py", line 67, in <module>
+    main()
+  File "/mnt/d/INNOCREW/Blockage/paper4/out/_retpolicy_dev/text_access_check.py", line 24, in main
+    tok = AutoTokenizer.from_pretrained(model_name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 628, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 531, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 572, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 627, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 276, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/p2venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 483, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct.
+401 Client Error. (Request ID: Root=1-6abb902b-3f084cfb1c7909c6283ffecb;5bda5d84-52c6-4519-b874-15d2a7894ff5)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in.

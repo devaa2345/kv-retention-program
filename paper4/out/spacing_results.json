@@ -1,0 +1,12 @@
+{
+ "M2": {
+  "verdict": "not_scored",
+  "n_contam": 4,
+  "n_matched": 50
+ },
+ "M3": {
+  "verdict": "not_scored",
+  "n_contam": 1,
+  "n_matched": 50
+ }
+}

@@ -1,0 +1,681 @@
+{
+ "floor": [
+  {
+   "instance": 0,
+   "qi": 0,
+   "rec_id": "R038",
+   "old_tag": "other",
+   "max_rid": "R038",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R036",
+   "old_tag": "other",
+   "max_rid": "R036",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 3,
+   "qi": 0,
+   "rec_id": "R030",
+   "old_tag": "other",
+   "max_rid": "R030",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 3,
+   "qi": 3,
+   "rec_id": "R037",
+   "old_tag": "other",
+   "max_rid": "R037",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 5,
+   "qi": 2,
+   "rec_id": "R034",
+   "old_tag": "misattribution (distant)",
+   "max_rid": "R034",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 8,
+   "qi": 3,
+   "rec_id": "R039",
+   "old_tag": "other",
+   "max_rid": "R039",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 9,
+   "qi": 1,
+   "rec_id": "R029",
+   "old_tag": "other",
+   "max_rid": "R029",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 10,
+   "qi": 0,
+   "rec_id": "R037",
+   "old_tag": "other",
+   "max_rid": "R037",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 12,
+   "qi": 1,
+   "rec_id": "R033",
+   "old_tag": "other",
+   "max_rid": "R033",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 14,
+   "qi": 1,
+   "rec_id": "R038",
+   "old_tag": "other",
+   "max_rid": "R038",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 22,
+   "qi": 0,
+   "rec_id": "R034",
+   "old_tag": "misattribution (distant)",
+   "max_rid": "R034",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 28,
+   "qi": 3,
+   "rec_id": "R034",
+   "old_tag": "other",
+   "max_rid": "R034",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 30,
+   "qi": 3,
+   "rec_id": "R036",
+   "old_tag": "other",
+   "max_rid": "R035",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 35,
+   "qi": 1,
+   "rec_id": "R033",
+   "old_tag": "contamination",
+   "max_rid": "R033",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 36,
+   "qi": 2,
+   "rec_id": "R037",
+   "old_tag": "other",
+   "max_rid": "R037",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 38,
+   "qi": 1,
+   "rec_id": "R035",
+   "old_tag": "other",
+   "max_rid": "R035",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 42,
+   "qi": 2,
+   "rec_id": "R039",
+   "old_tag": "other",
+   "max_rid": "R039",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 45,
+   "qi": 2,
+   "rec_id": "R036",
+   "old_tag": "other",
+   "max_rid": "R036",
+   "is_match": true,
+   "n_records": 41
+  }
+ ],
+ "oracle": [
+  {
+   "instance": 0,
+   "qi": 2,
+   "rec_id": "R018",
+   "old_tag": "other",
+   "max_rid": "R018",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R036",
+   "old_tag": "other",
+   "max_rid": "R036",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 1,
+   "qi": 2,
+   "rec_id": "R005",
+   "old_tag": "other",
+   "max_rid": "R005",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 1,
+   "qi": 3,
+   "rec_id": "R006",
+   "old_tag": "other",
+   "max_rid": "R006",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 3,
+   "qi": 0,
+   "rec_id": "R030",
+   "old_tag": "other",
+   "max_rid": "R030",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 3,
+   "qi": 3,
+   "rec_id": "R037",
+   "old_tag": "other",
+   "max_rid": "R037",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 4,
+   "qi": 3,
+   "rec_id": "R013",
+   "old_tag": "other",
+   "max_rid": "R013",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 5,
+   "qi": 1,
+   "rec_id": "R024",
+   "old_tag": "misattribution (distant)",
+   "max_rid": "R024",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 5,
+   "qi": 2,
+   "rec_id": "R034",
+   "old_tag": "misattribution (distant)",
+   "max_rid": "R034",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 8,
+   "qi": 3,
+   "rec_id": "R039",
+   "old_tag": "other",
+   "max_rid": "R039",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 9,
+   "qi": 1,
+   "rec_id": "R029",
+   "old_tag": "other",
+   "max_rid": "R029",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 10,
+   "qi": 0,
+   "rec_id": "R037",
+   "old_tag": "other",
+   "max_rid": "R037",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 10,
+   "qi": 1,
+   "rec_id": "R008",
+   "old_tag": "other",
+   "max_rid": "R008",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 11,
+   "qi": 0,
+   "rec_id": "R002",
+   "old_tag": "other",
+   "max_rid": "R002",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 12,
+   "qi": 0,
+   "rec_id": "R006",
+   "old_tag": "other",
+   "max_rid": "R006",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 12,
+   "qi": 1,
+   "rec_id": "R033",
+   "old_tag": "other",
+   "max_rid": "R033",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "old_tag": "other",
+   "max_rid": "R028",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 14,
+   "qi": 1,
+   "rec_id": "R038",
+   "old_tag": "other",
+   "max_rid": "R038",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 15,
+   "qi": 3,
+   "rec_id": "R007",
+   "old_tag": "other",
+   "max_rid": "R007",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 19,
+   "qi": 1,
+   "rec_id": "R015",
+   "old_tag": "other",
+   "max_rid": "R015",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 20,
+   "qi": 1,
+   "rec_id": "R018",
+   "old_tag": "other",
+   "max_rid": "R018",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 21,
+   "qi": 0,
+   "rec_id": "R008",
+   "old_tag": "other",
+   "max_rid": "R008",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 22,
+   "qi": 0,
+   "rec_id": "R034",
+   "old_tag": "contamination",
+   "max_rid": "R034",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 22,
+   "qi": 1,
+   "rec_id": "R008",
+   "old_tag": "other",
+   "max_rid": "R008",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 23,
+   "qi": 2,
+   "rec_id": "R022",
+   "old_tag": "other",
+   "max_rid": "R022",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 27,
+   "qi": 1,
+   "rec_id": "R005",
+   "old_tag": "other",
+   "max_rid": "R005",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 27,
+   "qi": 3,
+   "rec_id": "R012",
+   "old_tag": "other",
+   "max_rid": "R012",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 28,
+   "qi": 2,
+   "rec_id": "R014",
+   "old_tag": "other",
+   "max_rid": "R014",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 28,
+   "qi": 3,
+   "rec_id": "R034",
+   "old_tag": "other",
+   "max_rid": "R034",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 29,
+   "qi": 2,
+   "rec_id": "R009",
+   "old_tag": "other",
+   "max_rid": "R001",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 30,
+   "qi": 2,
+   "rec_id": "R002",
+   "old_tag": "other",
+   "max_rid": "R002",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 30,
+   "qi": 3,
+   "rec_id": "R036",
+   "old_tag": "contamination",
+   "max_rid": "R035",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 31,
+   "qi": 3,
+   "rec_id": "R026",
+   "old_tag": "other",
+   "max_rid": "R026",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 33,
+   "qi": 0,
+   "rec_id": "R017",
+   "old_tag": "misattribution (distant)",
+   "max_rid": "R013",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 33,
+   "qi": 2,
+   "rec_id": "R016",
+   "old_tag": "other",
+   "max_rid": "R013",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 34,
+   "qi": 0,
+   "rec_id": "R013",
+   "old_tag": "other",
+   "max_rid": "R013",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 34,
+   "qi": 3,
+   "rec_id": "R024",
+   "old_tag": "other",
+   "max_rid": "R024",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 35,
+   "qi": 1,
+   "rec_id": "R033",
+   "old_tag": "contamination",
+   "max_rid": "R034",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 36,
+   "qi": 0,
+   "rec_id": "R024",
+   "old_tag": "other",
+   "max_rid": "R024",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 36,
+   "qi": 1,
+   "rec_id": "R022",
+   "old_tag": "other",
+   "max_rid": "R022",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 36,
+   "qi": 2,
+   "rec_id": "R037",
+   "old_tag": "other",
+   "max_rid": "R037",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 36,
+   "qi": 3,
+   "rec_id": "R019",
+   "old_tag": "other",
+   "max_rid": "R019",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 37,
+   "qi": 1,
+   "rec_id": "R004",
+   "old_tag": "other",
+   "max_rid": "R004",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 38,
+   "qi": 1,
+   "rec_id": "R035",
+   "old_tag": "other",
+   "max_rid": "R035",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 39,
+   "qi": 0,
+   "rec_id": "R030",
+   "old_tag": "other",
+   "max_rid": "R030",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 40,
+   "qi": 0,
+   "rec_id": "R021",
+   "old_tag": "other",
+   "max_rid": "R021",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 41,
+   "qi": 0,
+   "rec_id": "R003",
+   "old_tag": "other",
+   "max_rid": "R003",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 42,
+   "qi": 2,
+   "rec_id": "R039",
+   "old_tag": "other",
+   "max_rid": "R039",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 43,
+   "qi": 3,
+   "rec_id": "R003",
+   "old_tag": "other",
+   "max_rid": "R003",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 44,
+   "qi": 0,
+   "rec_id": "R033",
+   "old_tag": "other",
+   "max_rid": "R033",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 45,
+   "qi": 1,
+   "rec_id": "R009",
+   "old_tag": "other",
+   "max_rid": "R009",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 45,
+   "qi": 2,
+   "rec_id": "R036",
+   "old_tag": "other",
+   "max_rid": "R036",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 45,
+   "qi": 3,
+   "rec_id": "R031",
+   "old_tag": "other",
+   "max_rid": "R031",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 47,
+   "qi": 2,
+   "rec_id": "R018",
+   "old_tag": "contamination",
+   "max_rid": "R019",
+   "is_match": false,
+   "n_records": 41
+  },
+  {
+   "instance": 48,
+   "qi": 1,
+   "rec_id": "R030",
+   "old_tag": "other",
+   "max_rid": "R030",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 48,
+   "qi": 2,
+   "rec_id": "R007",
+   "old_tag": "other",
+   "max_rid": "R007",
+   "is_match": true,
+   "n_records": 41
+  },
+  {
+   "instance": 49,
+   "qi": 1,
+   "rec_id": "R005",
+   "old_tag": "other",
+   "max_rid": "R005",
+   "is_match": true,
+   "n_records": 41
+  }
+ ]
+}

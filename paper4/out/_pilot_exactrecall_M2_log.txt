@@ -1,0 +1,29 @@
+loading wikitext-2...
+Using the latest cached version of the dataset since wikitext couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /mnt/d/hf_cache/datasets/wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Sun Jul 26 06:21:21 2026).
+  case0: n_ctx=2406 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case1: n_ctx=2019 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case2: n_ctx=1765 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case3: n_ctx=1899 needle_retained=True span_hit=False score_base=1 score_masked=0 invented_masked=0
+  case4: n_ctx=2547 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case5: n_ctx=1850 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case6: n_ctx=2219 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case7: n_ctx=2013 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case8: n_ctx=1993 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case9: n_ctx=1653 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case10: n_ctx=2097 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case11: n_ctx=1589 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case12: n_ctx=2117 needle_retained=True span_hit=False score_base=1 score_masked=0 invented_masked=0
+  case13: n_ctx=1950 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case14: n_ctx=1969 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case15: n_ctx=2173 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case16: n_ctx=1755 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case17: n_ctx=1888 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case18: n_ctx=1811 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case19: n_ctx=1905 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case20: n_ctx=1684 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case21: n_ctx=1785 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case22: n_ctx=2104 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+  case23: n_ctx=2124 needle_retained=True span_hit=True score_base=1 score_masked=1 invented_masked=0
+  case24: n_ctx=1698 needle_retained=False span_hit=False score_base=0 score_masked=0 invented_masked=0
+DONE exactrecall pilot: 25/25 cases

@@ -1,0 +1,50 @@
+Produced on RTX 5070 (Machine N). Paper 4 Stage 3, oracle units, n=50, prereg 131278082f3ee35593929ff35be3a7a85b32e1f0ca5a8075eec840e70c85838c
+
+MARK-1 c = 1 DIAGNOSTIC (amendment A3.2 -- NOT a pass/fail gate).
+Registered inertness test is the singleton-unit identity (A3.1), see out/stage3_preflight_identity.json.
+
+== M2
+  C= 32  floor 0.075  U-snapkv         - snapkv         dU -0.010 [-0.025, +0.000]  d p_g +0.0009  d units_complete +0.09
+  C= 32  floor 0.075  U-adakv_snapkv   - adakv_snapkv   dU +0.000 [+0.000, +0.000]  d p_g +0.0013  d units_complete +0.09
+  C= 32  floor 0.075  U-expected_attn  - expected_attn  dU +0.015 [-0.015, +0.045]  d p_g +0.0106  d units_complete +0.09
+  C= 32  floor 0.075  U-keydiff        - keydiff        dU +0.020 [+0.005, +0.040]  d p_g +0.0087  d units_complete +0.12  [CI excludes 0]
+  C= 64  floor 0.085  U-snapkv         - snapkv         dU +0.000 [-0.025, +0.025]  d p_g +0.0008  d units_complete +0.19
+  C= 64  floor 0.085  U-adakv_snapkv   - adakv_snapkv   dU +0.010 [-0.020, +0.040]  d p_g +0.0004  d units_complete +0.21
+  C= 64  floor 0.085  U-expected_attn  - expected_attn  dU +0.000 [-0.040, +0.040]  d p_g +0.0082  d units_complete +0.35
+  C= 64  floor 0.085  U-keydiff        - keydiff        dU -0.005 [-0.015, +0.000]  d p_g +0.0090  d units_complete +0.34
+  C=128  floor 0.130  U-snapkv         - snapkv         dU -0.005 [-0.015, +0.000]  d p_g +0.0015  d units_complete +0.37
+  C=128  floor 0.130  U-adakv_snapkv   - adakv_snapkv   dU +0.015 [+0.000, +0.035]  d p_g -0.0002  d units_complete +0.39
+  C=128  floor 0.130  U-expected_attn  - expected_attn  dU +0.010 [-0.015, +0.035]  d p_g +0.0026  d units_complete +1.10
+  C=128  floor 0.130  U-keydiff        - keydiff        dU +0.025 [-0.015, +0.065]  d p_g +0.0195  d units_complete +0.45
+  C=256  floor 0.205  U-snapkv         - snapkv         dU +0.000 [-0.020, +0.020]  d p_g +0.0008  d units_complete +0.76
+  C=256  floor 0.205  U-adakv_snapkv   - adakv_snapkv   dU +0.000 [-0.015, +0.015]  d p_g +0.0012  d units_complete +0.76
+  C=256  floor 0.205  U-expected_attn  - expected_attn  dU +0.005 [-0.010, +0.025]  d p_g +0.0003  d units_complete +2.63
+  C=256  floor 0.205  U-keydiff        - keydiff        dU +0.000 [-0.025, +0.030]  d p_g +0.0067  d units_complete +0.80
+  C=512  floor 0.300  U-snapkv         - snapkv         dU +0.005 [-0.010, +0.025]  d p_g -0.0002  d units_complete +1.23
+  C=512  floor 0.300  U-adakv_snapkv   - adakv_snapkv   dU +0.000 [-0.020, +0.020]  d p_g -0.0006  d units_complete +1.15
+  C=512  floor 0.300  U-expected_attn  - expected_attn  dU +0.020 [+0.005, +0.040]  d p_g -0.0003  d units_complete +5.00  [CI excludes 0]
+  C=512  floor 0.300  U-keydiff        - keydiff        dU -0.020 [-0.050, +0.005]  d p_g +0.0027  d units_complete +2.21
+
+== M3
+  C= 32  floor 0.080  U-snapkv         - snapkv         dU -0.010 [-0.035, +0.015]  d p_g +0.0011  d units_complete +0.10
+  C= 32  floor 0.080  U-adakv_snapkv   - adakv_snapkv   dU +0.000 [-0.025, +0.030]  d p_g +0.0004  d units_complete +0.10
+  C= 32  floor 0.080  U-expected_attn  - expected_attn  dU +0.000 [-0.030, +0.030]  d p_g +0.0151  d units_complete +0.01
+  C= 32  floor 0.080  U-keydiff        - keydiff        dU +0.000 [+0.000, +0.000]  d p_g +0.0112  d units_complete +0.12
+  C= 64  floor 0.085  U-snapkv         - snapkv         dU +0.025 [-0.005, +0.055]  d p_g +0.0013  d units_complete +0.23
+  C= 64  floor 0.085  U-adakv_snapkv   - adakv_snapkv   dU +0.005 [-0.010, +0.020]  d p_g +0.0006  d units_complete +0.22
+  C= 64  floor 0.085  U-expected_attn  - expected_attn  dU +0.050 [+0.025, +0.080]  d p_g +0.0119  d units_complete +0.09  [CI excludes 0]
+  C= 64  floor 0.085  U-keydiff        - keydiff        dU -0.015 [-0.045, +0.015]  d p_g +0.0208  d units_complete +0.26
+  C=128  floor 0.100  U-snapkv         - snapkv         dU +0.030 [+0.000, +0.060]  d p_g +0.0011  d units_complete +0.42
+  C=128  floor 0.100  U-adakv_snapkv   - adakv_snapkv   dU -0.005 [-0.030, +0.020]  d p_g +0.0008  d units_complete +0.45
+  C=128  floor 0.100  U-expected_attn  - expected_attn  dU +0.025 [+0.000, +0.050]  d p_g +0.0033  d units_complete +0.50
+  C=128  floor 0.100  U-keydiff        - keydiff        dU +0.050 [+0.020, +0.085]  d p_g +0.0200  d units_complete +0.55  [CI excludes 0]
+  C=256  floor 0.150  U-snapkv         - snapkv         dU -0.005 [-0.030, +0.020]  d p_g +0.0001  d units_complete +0.74
+  C=256  floor 0.150  U-adakv_snapkv   - adakv_snapkv   dU -0.005 [-0.025, +0.010]  d p_g +0.0000  d units_complete +0.79
+  C=256  floor 0.150  U-expected_attn  - expected_attn  dU +0.005 [-0.030, +0.040]  d p_g -0.0015  d units_complete +1.85
+  C=256  floor 0.150  U-keydiff        - keydiff        dU -0.010 [-0.025, +0.000]  d p_g +0.0019  d units_complete +1.19
+  C=512  floor 0.275  U-snapkv         - snapkv         dU +0.005 [+0.000, +0.015]  d p_g -0.0001  d units_complete +1.11
+  C=512  floor 0.275  U-adakv_snapkv   - adakv_snapkv   dU -0.005 [-0.015, +0.000]  d p_g +0.0001  d units_complete +1.09
+  C=512  floor 0.275  U-expected_attn  - expected_attn  dU +0.015 [+0.000, +0.035]  d p_g -0.0021  d units_complete +4.58
+  C=512  floor 0.275  U-keydiff        - keydiff        dU +0.010 [+0.000, +0.025]  d p_g -0.0007  d units_complete +2.16
+
+Channels (A3.2): d p_g is the score-variance gold-retention shift -- material for KeyDiff/ExpectedAttention, ~0 for SnapKV/AdaKV; d units_complete is context-structure reallocation. Neither is a gate; the gate is the singleton-unit identity (A3.1).

@@ -1,0 +1,562 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 0,
+  "qi": 3,
+  "q_slot": 0.09375,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 1,
+  "qi": 2,
+  "q_slot": 0.12388392857142858,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 3,
+  "qi": 3,
+  "q_slot": 0.40736607142857145,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 5,
+  "qi": 0,
+  "q_slot": 0.11607142857142858,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 9,
+  "qi": 2,
+  "q_slot": 0.10044642857142858,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 10,
+  "qi": 2,
+  "q_slot": 0.34598214285714285,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 14,
+  "qi": 3,
+  "q_slot": 0.23660714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 21,
+  "qi": 3,
+  "q_slot": 0.08370535714285714,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 22,
+  "qi": 2,
+  "q_slot": 0.26339285714285715,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 23,
+  "qi": 0,
+  "q_slot": 0.328125,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 23,
+  "qi": 2,
+  "q_slot": 0.328125,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 24,
+  "qi": 3,
+  "q_slot": 0.2265625,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 25,
+  "qi": 0,
+  "q_slot": 0.3794642857142857,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 30,
+  "qi": 0,
+  "q_slot": 0.24665178571428573,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 36,
+  "qi": 2,
+  "q_slot": 0.22767857142857142,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 39,
+  "qi": 2,
+  "q_slot": 0.390625,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 46,
+  "qi": 0,
+  "q_slot": 0.4408482142857143,
+  "tag": "contamination"
+ },
+ {
+  "base": "snapkv",
+  "instance": 47,
+  "qi": 1,
+  "q_slot": 0.5513392857142857,
+  "tag": "refusal"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 0,
+  "qi": 3,
+  "q_slot": 0.15848214285714285,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 1,
+  "qi": 2,
+  "q_slot": 0.19642857142857142,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 3,
+  "qi": 3,
+  "q_slot": 0.3861607142857143,
+  "tag": "contamination"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 5,
+  "qi": 0,
+  "q_slot": 0.19084821428571427,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 6,
+  "qi": 2,
+  "q_slot": 0.48549107142857145,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 9,
+  "qi": 2,
+  "q_slot": 0.19754464285714285,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 10,
+  "qi": 2,
+  "q_slot": 0.41183035714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 14,
+  "qi": 3,
+  "q_slot": 0.27232142857142855,
+  "tag": "contamination"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 21,
+  "qi": 3,
+  "q_slot": 0.15959821428571427,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 22,
+  "qi": 2,
+  "q_slot": 0.2689732142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 23,
+  "qi": 0,
+  "q_slot": 0.3158482142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 23,
+  "qi": 2,
+  "q_slot": 0.3158482142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 24,
+  "qi": 3,
+  "q_slot": 0.23660714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 25,
+  "qi": 0,
+  "q_slot": 0.42857142857142855,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 30,
+  "qi": 0,
+  "q_slot": 0.23995535714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 36,
+  "qi": 2,
+  "q_slot": 0.24330357142857142,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 39,
+  "qi": 2,
+  "q_slot": 0.3872767857142857,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 43,
+  "qi": 1,
+  "q_slot": 0.42745535714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 46,
+  "qi": 0,
+  "q_slot": 0.4174107142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 47,
+  "qi": 1,
+  "q_slot": 0.5044642857142857,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 0,
+  "qi": 3,
+  "q_slot": 0.08705357142857142,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 1,
+  "qi": 2,
+  "q_slot": 0.0859375,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 3,
+  "qi": 3,
+  "q_slot": 0.23660714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 5,
+  "qi": 0,
+  "q_slot": 0.07589285714285714,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 2,
+  "q_slot": 0.36049107142857145,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 9,
+  "qi": 2,
+  "q_slot": 0.10602678571428571,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 10,
+  "qi": 2,
+  "q_slot": 0.3627232142857143,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 14,
+  "qi": 3,
+  "q_slot": 0.3203125,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 21,
+  "qi": 3,
+  "q_slot": 0.04352678571428571,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 22,
+  "qi": 2,
+  "q_slot": 0.1640625,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 0,
+  "q_slot": 0.22879464285714285,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 2,
+  "q_slot": 0.22879464285714285,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 24,
+  "qi": 3,
+  "q_slot": 0.29017857142857145,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 25,
+  "qi": 0,
+  "q_slot": 0.3091517857142857,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 30,
+  "qi": 0,
+  "q_slot": 0.20982142857142858,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 36,
+  "qi": 2,
+  "q_slot": 0.12165178571428571,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 39,
+  "qi": 2,
+  "q_slot": 0.22321428571428573,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 43,
+  "qi": 1,
+  "q_slot": 0.27566964285714285,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 46,
+  "qi": 0,
+  "q_slot": 0.39285714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 46,
+  "qi": 1,
+  "q_slot": 0.39285714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 47,
+  "qi": 1,
+  "q_slot": 0.43080357142857145,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 0,
+  "qi": 3,
+  "q_slot": 0.010044642857142858,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 1,
+  "qi": 2,
+  "q_slot": 0.04241071428571429,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 3,
+  "qi": 3,
+  "q_slot": 0.056919642857142856,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 5,
+  "qi": 0,
+  "q_slot": 0.03125,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 6,
+  "qi": 2,
+  "q_slot": 0.12834821428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 9,
+  "qi": 2,
+  "q_slot": 0.07700892857142858,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 10,
+  "qi": 2,
+  "q_slot": 0.37611607142857145,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 14,
+  "qi": 3,
+  "q_slot": 0.2533482142857143,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 21,
+  "qi": 3,
+  "q_slot": 0.0078125,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 22,
+  "qi": 2,
+  "q_slot": 0.03236607142857143,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 23,
+  "qi": 0,
+  "q_slot": 0.044642857142857144,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 23,
+  "qi": 2,
+  "q_slot": 0.044642857142857144,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 24,
+  "qi": 3,
+  "q_slot": 0.24441964285714285,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 25,
+  "qi": 0,
+  "q_slot": 0.11272321428571429,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 30,
+  "qi": 0,
+  "q_slot": 0.08258928571428571,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 36,
+  "qi": 2,
+  "q_slot": 0.04352678571428571,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 39,
+  "qi": 2,
+  "q_slot": 0.03236607142857143,
+  "tag": "other"
+ },
+ {
+  "base": "keydiff",
+  "instance": 43,
+  "qi": 1,
+  "q_slot": 0.12053571428571429,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 46,
+  "qi": 0,
+  "q_slot": 0.15959821428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 46,
+  "qi": 1,
+  "q_slot": 0.15959821428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "keydiff",
+  "instance": 47,
+  "qi": 1,
+  "q_slot": 0.21986607142857142,
+  "tag": "refusal"
+ }
+]

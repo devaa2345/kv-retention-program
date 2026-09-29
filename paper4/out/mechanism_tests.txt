@@ -1,0 +1,82 @@
+Mechanism tests C2, C1, C3, C4 -- rules frozen at MECHANISM_RULES.md (commit bf05e1b).
+CPU only, produced on RTX 5070 (Machine N).
+
+  (skip M2 c=8 C=32: floor 0.025 degenerate)
+  (skip M2 c=8 C=64: floor 0.025 degenerate)
+  (skip M2 c=8 C=128: floor 0.035 degenerate)
+  (skip M2 c=19 C=32: floor 0.005 degenerate)
+== C2 denominator artifact: conversion gap floor_pos - U-X, per denominator
+   model c    C     pair           V_slot gap  V_any gap  V_maj gap
+   M2    1    32    snapkv             +0.348     +1.577     +0.075
+   M2    1    32    adakv_snapkv       +0.076     +1.546     -0.386
+   M2    1    32    expected_attn      -0.142     +1.290     -2.304
+   M2    1    32    keydiff            +1.196     +1.810     +0.018
+   M2    1    64    snapkv             +0.027     +1.282     -0.706
+   M2    1    64    adakv_snapkv       -0.009     +1.285     -0.752
+   M2    1    64    expected_attn      -0.123     +0.980     -1.017
+   M2    1    64    keydiff            +1.415     +1.650     +0.271
+   M2    1    128   snapkv             -0.110     +0.782     -0.662
+   M2    1    128   adakv_snapkv       -0.318     +0.719     -0.912
+   M2    1    128   expected_attn      -0.111     +0.570     -0.322
+   M2    1    128   keydiff            +0.523     +1.025     -4.200
+   M2    1    256   snapkv             -0.091     +0.461     -0.096
+   M2    1    256   adakv_snapkv       -0.221     +0.411     -0.290
+   M2    1    256   expected_attn      +0.047     +0.436     +0.178
+   M2    1    256   keydiff            -0.060     +0.371     +0.363
+   M2    1    512   snapkv             +0.014     +0.253     +0.192
+   M2    1    512   adakv_snapkv       -0.035     +0.238     +0.157
+   M2    1    512   expected_attn      +0.047     +0.258     +0.237
+   M2    1    512   keydiff            +0.100     +0.278     +0.278
+   M2    8    256   snapkv             +0.046     +0.312     +0.020
+   M2    8    256   adakv_snapkv       -0.072     +0.285     -0.141
+   M2    8    256   expected_attn      +0.054     +0.342     -0.409
+   M2    8    256   keydiff            -0.167     +0.288     -0.278
+   M2    8    512   snapkv             +0.117     +0.432     -0.032
+   M2    8    512   adakv_snapkv       -0.012     +0.377     -0.229
+   M2    8    512   expected_attn      -0.041     +0.350     -0.270
+   M2    8    512   keydiff            +0.258     +0.541     +0.202
+   M2    40   512   snapkv             +0.197     +0.496        n/a
+   M2    40   512   adakv_snapkv       +0.220     +0.501        n/a
+   M3    1    32    snapkv             -0.886     +0.752     -2.433
+   M3    1    32    adakv_snapkv       -1.680     +0.667     -3.933
+   M3    1    32    expected_attn      -0.887     +0.442     -5.183
+   M3    1    32    keydiff            +0.738     +1.012     +0.333
+   M3    1    64    snapkv             -0.720     +0.637     -2.633
+   M3    1    64    adakv_snapkv       -1.461     +0.537     -4.464
+   M3    1    64    expected_attn      -0.527     +0.363     -1.981
+   M3    1    64    keydiff            +0.594     +0.917     -0.871
+   M3    1    128   snapkv             -0.550     +0.458     -1.534
+   M3    1    128   adakv_snapkv       -1.016     +0.418     -3.181
+   M3    1    128   expected_attn      -0.243     +0.298     -0.050
+   M3    1    128   keydiff            -0.241     +0.283     +0.005
+   M3    1    256   snapkv             -0.282     +0.304     -0.293
+   M3    1    256   adakv_snapkv       -0.750     +0.209     -1.670
+   M3    1    256   expected_attn      -0.086     +0.224     +0.212
+   M3    1    256   keydiff            -0.029     +0.109     +0.109
+   M3    1    512   snapkv             -0.109     +0.163     +0.140
+   M3    1    512   adakv_snapkv       -0.303     +0.153     +0.058
+   M3    1    512   expected_attn      +0.022     +0.178     +0.178
+   M3    1    512   keydiff            +0.084     +0.128     +0.128
+   M3    40   512   snapkv             +0.205     +0.298        n/a
+   M3    40   512   adakv_snapkv       +0.132     +0.273        n/a
+   M2 mean gap: q_slot +0.106  q_any +0.705  q_maj -0.393
+   M3 mean gap: q_slot -0.363  q_any +0.401  q_maj -1.353
+   C2 VERDICT: REAL
+
+== C1: agree_jaccard
+   M2 n=3000 rows  beta/SD +0.0542 [+0.0424, +0.0673]  r(z,q_slot) -0.32  -> supports
+   M3 n=2200 rows  beta/SD +0.0481 [+0.0292, +0.0673]  r(z,q_slot) -0.35  -> supports
+   M2 agreement by arm: floor_pos 1.000  U-keydiff 0.536  keydiff 0.531  U-snapkv 0.481  snapkv 0.475  U-adakv_snapkv 0.462  adakv_snapkv 0.457  U-expected_attn 0.376  expected_attn 0.375
+   M3 agreement by arm: floor_pos 1.000  U-keydiff 0.558  keydiff 0.552  U-snapkv 0.447  snapkv 0.440  U-adakv_snapkv 0.427  adakv_snapkv 0.421  U-expected_attn 0.405  expected_attn 0.398
+   C1 VERDICT: REAL
+
+== C3: dist_gold
+   M2 n=3000 rows  beta/SD +0.0317 [+0.0119, +0.0522]  r(z,q_slot) +0.32  -> opposite sign
+   M3 n=2200 rows  beta/SD +0.0651 [+0.0379, +0.0898]  r(z,q_slot) +0.61  -> opposite sign
+   C3 VERDICT: NOT IT
+
+== C4: exemplar_frac
+   M2 n=3000 rows  beta/SD -0.0861 [-0.1027, -0.0699]  r(z,q_slot) +0.24  -> opposite sign
+   M3 n=2200 rows  beta/SD -0.0294 [-0.1046, +0.0355]  r(z,q_slot) +0.74  -> null
+   C4 VERDICT: NOT IT
+

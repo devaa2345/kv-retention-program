@@ -1,0 +1,28 @@
+mdl  arm            inst  q    gold   TAG                      reasoning
+M2   snapkv         3     1    R029   hallucination            answer contains numbers not present anywhere in the context (['432109', '563214']); weak/no match to any real record
+M2   snapkv         6     1    R031   hallucination            answer contains numbers not present anywhere in the context (['512345', '654321']); weak/no match to any real record
+M2   snapkv         6     3    R032   contamination            answer is (almost) exactly record R030, 2 record(s) from the queried one
+M2   snapkv         12    2    R031   hallucination            answer contains numbers not present anywhere in the context (['123456', '345678']); weak/no match to any real record
+M2   adakv_snapkv   6     1    R031   contamination            answer is (almost) exactly record R030, 1 record(s) from the queried one
+M2   adakv_snapkv   6     3    R032   contamination            answer is (almost) exactly record R030, 2 record(s) from the queried one
+M2   adakv_snapkv   21    2    R036   contamination            answer is (almost) exactly record R037, 1 record(s) from the queried one
+M2   adakv_snapkv   26    1    R033   misattribution (distant) answer matches record R038, 5 records away -- not adjacent
+M2   expected_attn  2     2    R039   contamination            answer is (almost) exactly record R040, 1 record(s) from the queried one
+M2   expected_attn  2     3    R028   no visible pattern       no record match, no fabrication signature, not a refusal
+M2   expected_attn  6     1    R031   contamination            answer is (almost) exactly record R029, 2 record(s) from the queried one
+M2   expected_attn  7     2    R029   hallucination            answer contains numbers not present anywhere in the context (['321456', '757090']); weak/no match to any real record
+M3   snapkv         0     3    R030   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+M3   snapkv         1     2    R032   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+M3   snapkv         5     0    R028   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+M3   snapkv         9     2    R033   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+M3   adakv_snapkv   1     2    R032   misattribution (distant) answer matches record R005, 27 records away -- not adjacent
+M3   adakv_snapkv   23    0    R031   no visible pattern       no record match, no fabrication signature, not a refusal
+M3   adakv_snapkv   24    3    R037   hallucination            answer contains numbers not present anywhere in the context (['649374']); weak/no match to any real record
+M3   adakv_snapkv   36    2    R030   misattribution (distant) answer matches record R024, 6 records away -- not adjacent
+M3   expected_attn  0     3    R030   misattribution (distant) answer matches record R001, 29 records away -- not adjacent
+M3   expected_attn  1     2    R032   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+M3   expected_attn  9     2    R033   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+M3   expected_attn  14    3    R030   refusal                  model asserts the record is absent/unprovided though it is complete in this slot
+
+M2: {'hallucination': 4, 'contamination': 6, 'misattribution (distant)': 1, 'no visible pattern': 1}
+M3: {'refusal': 7, 'misattribution (distant)': 3, 'no visible pattern': 1, 'hallucination': 1}

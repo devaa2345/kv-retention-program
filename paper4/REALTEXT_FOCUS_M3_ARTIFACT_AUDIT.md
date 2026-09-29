@@ -1,0 +1,21 @@
+# Audit of uncommitted M3 focused-evidence artifacts
+
+**Disposition:** exploratory pipeline check only. Do not count this as a preregistered M3 replication, include its accuracy as a confirmatory paper result, or use these 76 instances again for confirmation. No M3 generation was performed for this audit.
+
+## Provenance and sample exposure
+
+The five M3 artifacts are untracked files. The focused-evidence capture and generation scripts were committed for M2 in `a3d2705` and subsequently changed in the working tree only to accept `--model M3`, load `MODELS[1]`, check that model's tokenized `n_ctx`, and label records M3. The pointer (`last_attention` for floor, `lexical_bm25` for SnapKV), A1 focus insertion, and `literal_v1` decoder code are unchanged in that diff. The M3 source modifications have no pre-run commit or recorded source hash, so exact execution-source provenance cannot be proven from Git alone. The scripts' filesystem modification time is 2026-09-28 20:36 local, before capture creation around 20:38–20:40 and result creation around 20:41–20:44. Those timestamps support, but cannot prove, execution of the current source. No M3 preregistration or command log was found in the repository.
+
+The output references **the same 76-instance manifest** (indices 504–596) that was committed for M2 confirmation in `207438e` and scored in `0228042` at 20:25, before the M3 artifacts were created. Manifest SHA-256: `1d25bf5b273ff4cbf6d636e60c92f82799389adf617ad7626fcf0d610bb44641`. Thus these cases and M2 outcomes were already exposed before the M3 run. I found no evidence of an M3-specific threshold/pointer/mask choice based on them; absence of such a record does not establish that no data-dependent choice occurred. The M3 artifacts are not a fresh held-out confirmation.
+
+## CPU-only integrity and protocol checks
+
+`out/_realtext_focus_m3_audit.py` reruns deterministic checks over all 608 records (76 instances × 2 SQuAD queries × 4 arms). `out/_realtext_focus_score.py` also passes its paired confound and pointer checks. Each arm has 152 completed queries. All 304 focused rows match their corresponding unmasked arm on keep-set hash, prefill budget, gold and held status; all 304 selected sentences match the corresponding saved prefill-only prediction. Every masked raw output is an exact substring of its selected source sentence, and corrected full-context invented values are zero. The recorded strict exact scores recompute from raw output and gold with only casefold and whitespace normalization. This verifies the artifact's internal consistency, not its untouched pre-run status.
+
+Each M3 `n_ctx` matches the original manifest's Llama-3.2-3B token count. Every prefill budget is `round(0.2802*n_ctx)` per KV head, with the same mandatory sink/window and press builder as M2. Cached model configurations specify 8 KV heads for M3 and 2 for M2; the ratio is comparable within each model, while absolute KV bytes differ across models. The M3 focus operation adds a mean 47.26 post-prefill tokens for SnapKV and 52.81 for floor (maxima 123 and 108). The added tokens are **outside** the 0.2802 retention budget. This is the earlier unmatched-memory protocol, not the later `B0−128` M2 matched-memory control; it cannot be compared as a matched-memory replication.
+
+The result artifact SHA-256 is `87c0d1d52e6a81fd18fecb2b3b8da21b5a1d6aeee4863a1cfc6fbdd2e6de66be`. Capture SHA-256 values are `ebd0bab3b00fabdb06891e638d60be1dcffd6348c5deb833e6be2cfd166188db` (floor) and `39af2611c06acf747cc358f216cb4c7b238b5ab003177c647fd96186484ce6b8` (SnapKV). This audit does not modify the source artifacts.
+
+## Consequence for next tests
+
+The M3 files support prioritizing a **clean M3 confirmation of the unchanged unmatched-focus pipeline** on fresh, globally unused SQuAD questions. Freeze code and decisions before generating those answers. Develop any tighter-allocation method separately and jointly plan its M2/M3 memory accounting and sample size on fresh development data. A literal per-query 44-token reserve is insufficient for previously observed focus lengths as high as 123 tokens; the new design needs a deterministic fallback or an exact allocation rule and must report both pre-answer and peak KV. Do not use these exposed M3 instances to tune that rule.

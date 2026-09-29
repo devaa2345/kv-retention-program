@@ -1,2 +1,4 @@
 __pycache__/
 out/_*.log
+out/_*.py
+runs/nvidia/p4_s3_keepsets_*.npz

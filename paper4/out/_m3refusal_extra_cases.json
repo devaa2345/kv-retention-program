@@ -1,0 +1,723 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 56,
+  "qi": 0,
+  "q_slot": 0.3203125,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 56,
+  "qi": 1,
+  "q_slot": 0.3203125,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 57,
+  "qi": 3,
+  "q_slot": 0.32700892857142855,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 62,
+  "qi": 0,
+  "q_slot": 0.40401785714285715,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 66,
+  "qi": 3,
+  "q_slot": 0.5669642857142857,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 67,
+  "qi": 3,
+  "q_slot": 0.23772321428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 76,
+  "qi": 0,
+  "q_slot": 0.296875,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 80,
+  "qi": 3,
+  "q_slot": 0.33705357142857145,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 84,
+  "qi": 0,
+  "q_slot": 0.28348214285714285,
+  "tag": "contamination"
+ },
+ {
+  "base": "snapkv",
+  "instance": 89,
+  "qi": 3,
+  "q_slot": 0.3392857142857143,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 95,
+  "qi": 2,
+  "q_slot": 0.35267857142857145,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 96,
+  "qi": 2,
+  "q_slot": 0.37611607142857145,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 96,
+  "qi": 3,
+  "q_slot": 0.37611607142857145,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 104,
+  "qi": 2,
+  "q_slot": 0.21428571428571427,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 114,
+  "qi": 2,
+  "q_slot": 0.16071428571428573,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 117,
+  "qi": 2,
+  "q_slot": 0.22991071428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 118,
+  "qi": 3,
+  "q_slot": 0.2924107142857143,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 123,
+  "qi": 0,
+  "q_slot": 0.28013392857142855,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 123,
+  "qi": 2,
+  "q_slot": 0.28013392857142855,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 126,
+  "qi": 0,
+  "q_slot": 0.24888392857142858,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 129,
+  "qi": 2,
+  "q_slot": 0.07142857142857142,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 130,
+  "qi": 2,
+  "q_slot": 0.30580357142857145,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 132,
+  "qi": 3,
+  "q_slot": 0.3236607142857143,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 133,
+  "qi": 1,
+  "q_slot": 0.22321428571428573,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 136,
+  "qi": 0,
+  "q_slot": 0.40848214285714285,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 138,
+  "qi": 1,
+  "q_slot": 0.421875,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 139,
+  "qi": 1,
+  "q_slot": 0.19642857142857142,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 139,
+  "qi": 2,
+  "q_slot": 0.19642857142857142,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 142,
+  "qi": 1,
+  "q_slot": 0.15178571428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 145,
+  "qi": 2,
+  "q_slot": 0.24441964285714285,
+  "tag": "other"
+ },
+ {
+  "base": "snapkv",
+  "instance": 147,
+  "qi": 3,
+  "q_slot": 0.27901785714285715,
+  "tag": "refusal"
+ },
+ {
+  "base": "snapkv",
+  "instance": 149,
+  "qi": 2,
+  "q_slot": 0.26450892857142855,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 54,
+  "qi": 3,
+  "q_slot": 0.31919642857142855,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 56,
+  "qi": 0,
+  "q_slot": 0.18303571428571427,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 56,
+  "qi": 1,
+  "q_slot": 0.18303571428571427,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 57,
+  "qi": 3,
+  "q_slot": 0.23214285714285715,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 62,
+  "qi": 0,
+  "q_slot": 0.3404017857142857,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 66,
+  "qi": 3,
+  "q_slot": 0.46205357142857145,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 67,
+  "qi": 3,
+  "q_slot": 0.30580357142857145,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 76,
+  "qi": 0,
+  "q_slot": 0.1328125,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 80,
+  "qi": 3,
+  "q_slot": 0.2779017857142857,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 84,
+  "qi": 0,
+  "q_slot": 0.17410714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 89,
+  "qi": 3,
+  "q_slot": 0.20982142857142858,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 95,
+  "qi": 2,
+  "q_slot": 0.3158482142857143,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 96,
+  "qi": 2,
+  "q_slot": 0.24553571428571427,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 96,
+  "qi": 3,
+  "q_slot": 0.24553571428571427,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 98,
+  "qi": 0,
+  "q_slot": 0.21986607142857142,
+  "tag": "contamination"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 104,
+  "qi": 2,
+  "q_slot": 0.24107142857142858,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 108,
+  "qi": 3,
+  "q_slot": 0.3325892857142857,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 114,
+  "qi": 2,
+  "q_slot": 0.1484375,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 117,
+  "qi": 2,
+  "q_slot": 0.17299107142857142,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 118,
+  "qi": 3,
+  "q_slot": 0.20535714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 123,
+  "qi": 0,
+  "q_slot": 0.24665178571428573,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 123,
+  "qi": 2,
+  "q_slot": 0.24665178571428573,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 126,
+  "qi": 0,
+  "q_slot": 0.11941964285714286,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 129,
+  "qi": 2,
+  "q_slot": 0.17410714285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 130,
+  "qi": 2,
+  "q_slot": 0.18861607142857142,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 132,
+  "qi": 3,
+  "q_slot": 0.19642857142857142,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 133,
+  "qi": 1,
+  "q_slot": 0.23995535714285715,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 135,
+  "qi": 3,
+  "q_slot": 0.42857142857142855,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 136,
+  "qi": 0,
+  "q_slot": 0.4174107142857143,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 138,
+  "qi": 1,
+  "q_slot": 0.3984375,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 139,
+  "qi": 1,
+  "q_slot": 0.05357142857142857,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 139,
+  "qi": 2,
+  "q_slot": 0.05357142857142857,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 140,
+  "qi": 3,
+  "q_slot": 0.34375,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 142,
+  "qi": 1,
+  "q_slot": 0.10602678571428571,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 145,
+  "qi": 2,
+  "q_slot": 0.15066964285714285,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 147,
+  "qi": 3,
+  "q_slot": 0.12946428571428573,
+  "tag": "refusal"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 148,
+  "qi": 3,
+  "q_slot": 0.30245535714285715,
+  "tag": "other"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 149,
+  "qi": 2,
+  "q_slot": 0.33705357142857145,
+  "tag": "refusal"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 54,
+  "qi": 3,
+  "q_slot": 0.43526785714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 56,
+  "qi": 0,
+  "q_slot": 0.3404017857142857,
+  "tag": "contamination"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 56,
+  "qi": 1,
+  "q_slot": 0.3404017857142857,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 57,
+  "qi": 3,
+  "q_slot": 0.29575892857142855,
+  "tag": "contamination"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 62,
+  "qi": 0,
+  "q_slot": 0.4419642857142857,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 66,
+  "qi": 3,
+  "q_slot": 0.5390625,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 67,
+  "qi": 3,
+  "q_slot": 0.26674107142857145,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 80,
+  "qi": 3,
+  "q_slot": 0.32700892857142855,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 84,
+  "qi": 0,
+  "q_slot": 0.27455357142857145,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 89,
+  "qi": 3,
+  "q_slot": 0.3671875,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 95,
+  "qi": 2,
+  "q_slot": 0.41517857142857145,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 96,
+  "qi": 2,
+  "q_slot": 0.3705357142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 96,
+  "qi": 3,
+  "q_slot": 0.3705357142857143,
+  "tag": "refusal"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 98,
+  "qi": 0,
+  "q_slot": 0.3482142857142857,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 104,
+  "qi": 2,
+  "q_slot": 0.23214285714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 114,
+  "qi": 2,
+  "q_slot": 0.22209821428571427,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 117,
+  "qi": 2,
+  "q_slot": 0.2689732142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 118,
+  "qi": 3,
+  "q_slot": 0.3169642857142857,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 123,
+  "qi": 0,
+  "q_slot": 0.296875,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 123,
+  "qi": 2,
+  "q_slot": 0.296875,
+  "tag": "refusal"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 126,
+  "qi": 0,
+  "q_slot": 0.265625,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 129,
+  "qi": 2,
+  "q_slot": 0.16741071428571427,
+  "tag": "contamination"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 130,
+  "qi": 2,
+  "q_slot": 0.31026785714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 132,
+  "qi": 3,
+  "q_slot": 0.30245535714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 133,
+  "qi": 1,
+  "q_slot": 0.23214285714285715,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 135,
+  "qi": 3,
+  "q_slot": 0.44642857142857145,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 136,
+  "qi": 0,
+  "q_slot": 0.45424107142857145,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 139,
+  "qi": 1,
+  "q_slot": 0.2767857142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 139,
+  "qi": 2,
+  "q_slot": 0.2767857142857143,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 142,
+  "qi": 1,
+  "q_slot": 0.22209821428571427,
+  "tag": "contamination"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 147,
+  "qi": 3,
+  "q_slot": 0.31473214285714285,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 148,
+  "qi": 3,
+  "q_slot": 0.3716517857142857,
+  "tag": "other"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 149,
+  "qi": 2,
+  "q_slot": 0.27566964285714285,
+  "tag": "other"
+ }
+]

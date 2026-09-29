@@ -1,0 +1,18 @@
+PREREG_SPACING.md (31f318d9...) results. K=24. c=40, C=512, n=50.
+Contamination-tagged accuracy is the primary readout, never overall accuracy alone.
+
+== M2
+  completion-matching band (+/-1 units_complete): 50/50 matched, 0 outside band
+  relaxation log: mean n_relaxations/instance 34.9 (range 21-55); layers fully relaxed mean 0.76/instance
+  violation sizes relaxed (K - actual gap): mean 16.3, max 23, n=1747
+  contamination-tagged queries in matched instances: 4
+  CONTAMINATION-QUERY-COUNT PRECONDITION FAILS (< 20): M2 reported as NOT SCORED for this test (prereg section 'decision rule', distinct from the completeness-matching precondition above, which passed cleanly).
+
+== M3
+  completion-matching band (+/-1 units_complete): 50/50 matched, 0 outside band
+  relaxation log: mean n_relaxations/instance 66.6 (range 41-98); layers fully relaxed mean 0.00/instance
+  violation sizes relaxed (K - actual gap): mean 10.4, max 23, n=3330
+  contamination-tagged queries in matched instances: 1
+  CONTAMINATION-QUERY-COUNT PRECONDITION FAILS (< 20): M3 reported as NOT SCORED for this test (prereg section 'decision rule', distinct from the completeness-matching precondition above, which passed cleanly).
+
+Scope reminder: this test addresses M2's dominant failure mode (contamination) and M3's minority contamination cases. It says nothing about M3's refusal failures (31% of its population), which remain unexplained and out of scope here.

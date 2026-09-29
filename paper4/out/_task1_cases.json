@@ -1,0 +1,582 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 2,
+  "qi": 0,
+  "rec_id": "R035",
+  "query": "Reproduce record R035 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry",
+  "u_ans": "R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry",
+  "fabricated_numbers": [
+   "448320"
+  ],
+  "match_rec": "R032",
+  "match_dist": 3,
+  "match_score": 6,
+  "ground_truth": "R035 | Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry"
+ },
+ {
+  "base": "snapkv",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry",
+  "u_ans": "R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody",
+  "fabricated_numbers": [
+   "432109",
+   "563214"
+  ],
+  "match_rec": "R024",
+  "match_dist": 5,
+  "match_score": 2,
+  "ground_truth": "R029 | Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry"
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 1,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing",
+  "u_ans": "R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry",
+  "fabricated_numbers": [
+   "512345",
+   "654321"
+  ],
+  "match_rec": "R002",
+  "match_dist": 29,
+  "match_score": 2,
+  "ground_truth": "R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing"
+ },
+ {
+  "base": "snapkv",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry",
+  "u_ans": "R029 | Calidale | Clearing | 591234 | Pinecrest | Closed | 654321 | Calidale | Settlement",
+  "fabricated_numbers": [
+   "591234",
+   "654321"
+  ],
+  "match_rec": "R013",
+  "match_dist": 16,
+  "match_score": 2,
+  "ground_truth": "R029 | Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry"
+ },
+ {
+  "base": "snapkv",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury",
+  "u_ans": "R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting",
+  "fabricated_numbers": [
+   "123456",
+   "345678"
+  ],
+  "match_rec": "R007",
+  "match_dist": 24,
+  "match_score": 2,
+  "ground_truth": "R031 | Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury"
+ },
+ {
+  "base": "snapkv",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "query": "Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement",
+  "u_ans": "R032|Dornamore|Treasury|555555|Fairhollow|Draft|999999|Dornamore|Compliance",
+  "fabricated_numbers": [
+   "555555",
+   "999999"
+  ],
+  "match_rec": "R011",
+  "match_dist": 21,
+  "match_score": 4,
+  "ground_truth": "R032 | Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement"
+ },
+ {
+  "base": "snapkv",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "query": "Reproduce record R033 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+  "u_ans": "R033 | Caldacson | Settlement | 984570 | Drayton | Open |",
+  "fabricated_numbers": [
+   "984570"
+  ],
+  "match_rec": "R025",
+  "match_dist": 8,
+  "match_score": 3,
+  "ground_truth": "R033 | Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement"
+ },
+ {
+  "base": "snapkv",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments",
+  "u_ans": "R031|Dornolson|Actuarial|Northgate|Open|130745|R031|Dornolson|Actuarial|Northgate|Open|130745",
+  "fabricated_numbers": [
+   "130745"
+  ],
+  "match_rec": "R015",
+  "match_dist": 16,
+  "match_score": 2,
+  "ground_truth": "R031 | Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments"
+ },
+ {
+  "base": "snapkv",
+  "instance": 37,
+  "qi": 3,
+  "rec_id": "R034",
+  "query": "Reproduce record R034 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting",
+  "u_ans": "R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 234567 | Ellamhardt | Registry",
+  "fabricated_numbers": [
+   "234567"
+  ],
+  "match_rec": "R033",
+  "match_dist": 1,
+  "match_score": 5,
+  "ground_truth": "R034 | Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting"
+ },
+ {
+  "base": "snapkv",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance",
+  "u_ans": "R029 | Caldorfield | Underwriting | 156324 | Kingsfell | Cleared | 729536 | Caldorfield | Underwriting",
+  "fabricated_numbers": [
+   "156324",
+   "729536"
+  ],
+  "match_rec": "R009",
+  "match_dist": 20,
+  "match_score": 2,
+  "ground_truth": "R029 | Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance"
+ },
+ {
+  "base": "snapkv",
+  "instance": 48,
+  "qi": 1,
+  "rec_id": "R030",
+  "query": "Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+  "u_ans": "R030 | Underwriting | 785634 | Oakstead | Open | 456789 | R030",
+  "fabricated_numbers": [
+   "456789",
+   "785634"
+  ],
+  "match_rec": "R013",
+  "match_dist": 17,
+  "match_score": 2,
+  "ground_truth": "R030 | Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry",
+  "u_ans": "R029|Caldenridge|Quarterly Walkthrough|654321|Fairhollow|Closed|774570|Caldenridge|Registry",
+  "fabricated_numbers": [
+   "654321"
+  ],
+  "match_rec": "R039",
+  "match_dist": 10,
+  "match_score": 3,
+  "ground_truth": "R029 | Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+  "u_ans": "R031 | Baroldahl | Underwriting | 221864 | Harborline | Cleared | 287733 | Baroldahl | Underwriting",
+  "fabricated_numbers": [
+   "221864"
+  ],
+  "match_rec": "R038",
+  "match_dist": 7,
+  "match_score": 3,
+  "ground_truth": "R031 | Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "query": "Reproduce record R033 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+  "u_ans": "R033 | Caldacson | Custody | 689874 | Draycott | Final | 237654 | Caldacson | Compliance",
+  "fabricated_numbers": [
+   "237654",
+   "689874"
+  ],
+  "match_rec": "R020",
+  "match_dist": 13,
+  "match_score": 3,
+  "ground_truth": "R033 | Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 32,
+  "qi": 0,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation",
+  "u_ans": "Baramold | Treasury | 543821 | Larkmede | Open | 654321 | Baramold | Registry",
+  "fabricated_numbers": [
+   "543821",
+   "654321"
+  ],
+  "match_rec": "R901",
+  "match_dist": 31,
+  "match_score": 2,
+  "ground_truth": "R031 | Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments",
+  "u_ans": "R031 | Dornolson | Actuarial | 634567 | Granthill | Pending | 456789 | Dornolson | Treasury",
+  "fabricated_numbers": [
+   "456789",
+   "634567"
+  ],
+  "match_rec": "R015",
+  "match_dist": 16,
+  "match_score": 2,
+  "ground_truth": "R031 | Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 46,
+  "qi": 2,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments",
+  "u_ans": "R031|Ellolhardt|Actuarial|175878|Elmsworth|Held|345678|Ellolhardt|Actuarial",
+  "fabricated_numbers": [
+   "345678"
+  ],
+  "match_rec": "R018",
+  "match_dist": 13,
+  "match_score": 2,
+  "ground_truth": "R031 | Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 0,
+  "rec_id": "R030",
+  "query": "Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial",
+  "u_ans": "R030|Baramker|Valuation|454055|Oakstead|Final|698765|Baramker|Payments",
+  "fabricated_numbers": [
+   "698765"
+  ],
+  "match_rec": "R004",
+  "match_dist": 26,
+  "match_score": 3,
+  "ground_truth": "R030 | Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 3,
+  "rec_id": "R032",
+  "query": "Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury",
+  "u_ans": "R032|Dornuswick|Procurement|454123|Oakstead|Final|698765|Dornuswick|Payments|",
+  "fabricated_numbers": [
+   "454123",
+   "698765"
+  ],
+  "match_rec": "R004",
+  "match_dist": 28,
+  "match_score": 3,
+  "ground_truth": "R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 7,
+  "qi": 2,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation",
+  "u_ans": "R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody",
+  "fabricated_numbers": [
+   "321456",
+   "757090"
+  ],
+  "match_rec": "R025",
+  "match_dist": 4,
+  "match_score": 2,
+  "ground_truth": "R029 | Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry",
+  "u_ans": "R029|Barolker|Clearing|496244|Oakstead|Closed|305916|Barolker|Custody",
+  "fabricated_numbers": [
+   "305916"
+  ],
+  "match_rec": "R013",
+  "match_dist": 16,
+  "match_score": 3,
+  "ground_truth": "R029 | Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury",
+  "u_ans": "R031 | Dornacdahl | Actuarial | 321904 | Oakstead | Draft | 456720 | Dornacdahl | Settlement",
+  "fabricated_numbers": [
+   "321904",
+   "456720"
+  ],
+  "match_rec": "R025",
+  "match_dist": 6,
+  "match_score": 2,
+  "ground_truth": "R031 | Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 15,
+  "qi": 0,
+  "rec_id": "R034",
+  "query": "Reproduce record R034 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Ellenhardt | Custody | 961365 | Draymouth | Draft | 830332 | Ellenhardt | Payments",
+  "u_ans": "R034 | Dornacres | Settlement | 210398 | Oakwood | Open | 74563",
+  "fabricated_numbers": [
+   "210398",
+   "74563"
+  ],
+  "match_rec": "R024",
+  "match_dist": 10,
+  "match_score": 2,
+  "ground_truth": "R034 | Ellenhardt | Custody | 961365 | Draymouth | Draft | 830332 | Ellenhardt | Payments"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+  "u_ans": "R031 | Ellenbrook | Clearing | 523104 | Elmsworth | Final | 345678 | Ellenbrook | Treasury",
+  "fabricated_numbers": [
+   "345678",
+   "523104"
+  ],
+  "match_rec": "R019",
+  "match_dist": 12,
+  "match_score": 3,
+  "ground_truth": "R031 | Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 3,
+  "rec_id": "R036",
+  "query": "Reproduce record R036 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance",
+  "u_ans": "R036 | Barenhardt | Actuarial | 781852 | Pinebury | Draft | 298846 | Barenhardt | Settlement",
+  "fabricated_numbers": [
+   "781852"
+  ],
+  "match_rec": "R037",
+  "match_dist": 1,
+  "match_score": 5,
+  "ground_truth": "R036 | Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "query": "Reproduce record R033 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+  "u_ans": "R033|Ellanolhardt|Compliance|513487|Northgate|Final|219764|R033",
+  "fabricated_numbers": [
+   "513487"
+  ],
+  "match_rec": "R038",
+  "match_dist": 5,
+  "match_score": 3,
+  "ground_truth": "R033 | Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 31,
+  "qi": 1,
+  "rec_id": "R034",
+  "query": "Reproduce record R034 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornorwick | Payments | 229221 | Granthill | Closed | 428547 | Dornorwick | Actuarial",
+  "u_ans": "Dornicastle|Payments|229211|Grantham|Closed|428547|Dornicastle|Payments",
+  "fabricated_numbers": [
+   "229211"
+  ],
+  "match_rec": "R006",
+  "match_dist": 28,
+  "match_score": 2,
+  "ground_truth": "R034 | Dornorwick | Payments | 229221 | Granthill | Closed | 428547 | Dornorwick | Actuarial"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments",
+  "u_ans": "Barunstead|Underwriting|923456|Northgate|Final|987654",
+  "fabricated_numbers": [
+   "923456",
+   "987654"
+  ],
+  "match_rec": "R900",
+  "match_dist": 32,
+  "match_score": 2,
+  "ground_truth": "R031 | Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "query": "Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance",
+  "u_ans": "R029|Dornamker|Actuarial|439144|Granthill|Final|684469|Dornamker|Payments",
+  "fabricated_numbers": [
+   "439144"
+  ],
+  "match_rec": "R026",
+  "match_dist": 3,
+  "match_score": 2,
+  "ground_truth": "R029 | Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 39,
+  "qi": 0,
+  "rec_id": "R030",
+  "query": "Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting",
+  "u_ans": "R030 | Elloldahl | Valuation | 941798 | Kingshill | Pending | 653214 | Elloldahl | Procurement",
+  "fabricated_numbers": [
+   "653214"
+  ],
+  "match_rec": "R037",
+  "match_dist": 7,
+  "match_score": 2,
+  "ground_truth": "R030 | Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 45,
+  "qi": 3,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement",
+  "u_ans": "R031 | Calderhill | Custody | 745623 | Kingsley | Pending |",
+  "fabricated_numbers": [
+   "745623"
+  ],
+  "match_rec": "R005",
+  "match_dist": 26,
+  "match_score": 1,
+  "ground_truth": "R031 | Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 48,
+  "qi": 1,
+  "rec_id": "R030",
+  "query": "Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+  "u_ans": "Ellidock | Payments | 456789 | Grantham | Review | 234567",
+  "fabricated_numbers": [
+   "234567",
+   "456789"
+  ],
+  "match_rec": "R002",
+  "match_dist": 28,
+  "match_score": 2,
+  "ground_truth": "R030 | Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments"
+ },
+ {
+  "base": "keydiff",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+  "u_ans": "Baridson | Treasury | 567890 | Southgate | Final | 789012 | Baridson | Treasury",
+  "fabricated_numbers": [
+   "567890",
+   "789012"
+  ],
+  "match_rec": "R900",
+  "match_dist": 32,
+  "match_score": 2,
+  "ground_truth": "R031 | Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation"
+ },
+ {
+  "base": "keydiff",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "query": "Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement",
+  "u_ans": "R032 | Aldermill | Settlement | 562012 | Northgate | Cleared | 653211 | Aldermill | Settlement",
+  "fabricated_numbers": [
+   "562012",
+   "653211"
+  ],
+  "match_rec": "R900",
+  "match_dist": 33,
+  "match_score": 2,
+  "ground_truth": "R032 | Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement"
+ },
+ {
+  "base": "keydiff",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "query": "Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, separated by vertical bars.",
+  "gold": "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments",
+  "u_ans": "Brackenwell | Clearing | 321098 | Fairhollow | Final | 89203 | Brackenwell | Clearing",
+  "fabricated_numbers": [
+   "321098",
+   "89203"
+  ],
+  "match_rec": "R023",
+  "match_dist": 8,
+  "match_score": 2,
+  "ground_truth": "R031 | Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments"
+ }
+]

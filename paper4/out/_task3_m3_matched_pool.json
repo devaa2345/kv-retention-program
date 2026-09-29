@@ -1,0 +1,92 @@
+{
+ "snapkv": [
+  {
+   "instance": 6,
+   "qi": 2,
+   "rec_id": "R039",
+   "q_slot": 0.48660714285714285,
+   "gold": "Ellethridge | Treasury | 530619 | Pinebury | Closed | 247535 | Ellethridge | Clearing | 174850 | Granthill | Cleared"
+  },
+  {
+   "instance": 43,
+   "qi": 1,
+   "rec_id": "R030",
+   "q_slot": 0.4263392857142857,
+   "gold": "Ellirson | Compliance | 615296 | Fairhollow | Review | 903138 | Ellirson | Actuarial | 205165 | Pinebury | Review"
+  },
+  {
+   "instance": 46,
+   "qi": 1,
+   "rec_id": "R035",
+   "q_slot": 0.4408482142857143,
+   "gold": "Caldunhardt | Valuation | 479132 | Westmoor | Cleared | 670736 | Caldunhardt | Compliance | 327155 | Westmoor | Review"
+  }
+ ],
+ "expected_attn": [
+  {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.29017857142857145,
+   "gold": "Dornirson | Custody | 284558 | Northgate | Final | 953514 | Dornirson | Valuation | 996592 | Kingsfell | Cleared"
+  }
+ ],
+ "keydiff": [
+  {
+   "instance": 14,
+   "qi": 0,
+   "rec_id": "R001",
+   "q_slot": 0.2533482142857143,
+   "gold": "Ellundahl | Payments | 941644 | Oakstead | Closed | 900283 | Ellundahl | Clearing | 907746 | Ashcombe | Open"
+  },
+  {
+   "instance": 15,
+   "qi": 3,
+   "rec_id": "R001",
+   "q_slot": 0.2845982142857143,
+   "gold": "Caldenwell | Underwriting | 212599 | Larkmede | Review | 854368 | Caldenwell | Valuation | 212596 | Granthill | Cleared"
+  },
+  {
+   "instance": 16,
+   "qi": 0,
+   "rec_id": "R001",
+   "q_slot": 0.265625,
+   "gold": "Dornirfield | Reconciliation | 261942 | Kingsfell | Open | 910203 | Dornirfield | Actuarial | 126303 | Larkmede | Pending"
+  },
+  {
+   "instance": 18,
+   "qi": 1,
+   "rec_id": "R040",
+   "q_slot": 0.2935267857142857,
+   "gold": "Dornethson | Payments | 642756 | Kingsfell | Review | 402385 | Dornethson | Compliance | 699386 | Ashcombe | Open"
+  },
+  {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.24441964285714285,
+   "gold": "Dornirson | Custody | 284558 | Northgate | Final | 953514 | Dornirson | Valuation | 996592 | Kingsfell | Cleared"
+  },
+  {
+   "instance": 32,
+   "qi": 3,
+   "rec_id": "R001",
+   "q_slot": 0.24330357142857142,
+   "gold": "Baramson | Payments | 573555 | Northgate | Pending | 791418 | Baramson | Custody | 164937 | Elmsworth | Pending"
+  },
+  {
+   "instance": 41,
+   "qi": 2,
+   "rec_id": "R001",
+   "q_slot": 0.21875,
+   "gold": "Dornacwell | Custody | 556621 | Ashcombe | Draft | 843838 | Dornacwell | Custody | 905742 | Pinebury | Final"
+  },
+  {
+   "instance": 48,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.23549107142857142,
+   "gold": "Dornamhardt | Underwriting | 346976 | Elmsworth | Pending | 125227 | Dornamhardt | Procurement | 715638 | Northgate | Review"
+  }
+ ]
+}

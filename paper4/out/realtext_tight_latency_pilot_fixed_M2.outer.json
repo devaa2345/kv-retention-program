@@ -1,0 +1,11 @@
+{
+  "model": "M2",
+  "data": "realtext_tight_latency_pilot_8.jsonl",
+  "output": "realtext_tight_latency_pilot_fixed_M2.jsonl",
+  "outer_start_utc": "2026-09-29T04:56:13.7402817+00:00",
+  "outer_end_utc": "2026-09-29T04:57:13.8854730+00:00",
+  "outer_wall_sec": 60.1440218,
+  "wsl_to_python_process_start_sec": 1.520867109298706,
+  "python_job_wall_sec": 52.468644302,
+  "outer_minus_python_job_sec": 7.675377497999996
+}

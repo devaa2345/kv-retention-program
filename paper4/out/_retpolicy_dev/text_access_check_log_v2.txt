@@ -1,0 +1,94 @@
+=== M2: 153/640 exact reproductions ===
+  MISMATCH inst928 q0 floor_pos_tight_focus_mask sent52:
+    decoded: ' MD 194D is the designation for an unnamed 0 @.@ 02 @-@ mile ( 0 @.@ 032 km ) connector between MD 194 and MD 853E , the old alignment that parallels the northbound direction of the modern highway south of Angell Road .\n\n'
+    source : 'MD 194D is the designation for an unnamed 0 @.@ 02 @-@ mile ( 0 @.@ 032 km ) connector between MD 194 and MD 853E , the old alignment that parallels the northbound direction of the modern highway south of Angell Road .'
+  MISMATCH inst928 q1 floor_pos_tight_focus_mask sent49:
+    decoded: ' Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+    source : 'Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+  MISMATCH inst928 q1 snapkv_tight_focus_mask sent49:
+    decoded: ' Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+    source : 'Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+  MISMATCH inst931 q0 floor_pos_tight_focus_mask sent42:
+    decoded: ' According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+    source : 'According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+  MISMATCH inst931 q1 floor_pos_tight_focus_mask sent42:
+    decoded: ' According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+    source : 'According to Harry Thompson , such political ideas were common in Belgium at the time , and Hergé \'s milieu was permeated with conservative ideas revolving around " patriotism , Catholicism , strict morality , discipline , and naivety " .'
+  MISMATCH inst931 q1 snapkv_tight_focus_mask sent22:
+    decoded: ' Some documents prove this theory was discussed before and after the method was chosen.'
+    source : 'Some documents prove this theory was discussed before and after the method was chosen.'
+  MISMATCH inst932 q0 floor_pos_tight_focus_mask sent47:
+    decoded: ' " \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+    source : '" \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+  MISMATCH inst932 q1 floor_pos_tight_focus_mask sent38:
+    decoded: ' George Lenczowski notes, "Military supplies did not exhaust Nixon\'s eagerness to prevent Israel\'s collapse...This [$2.2 billion] decision triggered a collective OPEC response." Libya immediately announced it would embargo oil shipments to the United States.'
+    source : 'George Lenczowski notes, "Military supplies did not exhaust Nixon\'s eagerness to prevent Israel\'s collapse...This [$2.2 billion] decision triggered a collective OPEC response." Libya immediately announced it would embargo oil shipments to the United States.'
+  MISMATCH inst932 q0 snapkv_tight_focus_mask sent47:
+    decoded: ' " \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+    source : '" \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+  MISMATCH inst933 q0 floor_pos_tight_focus_mask sent63:
+    decoded: " The connection between Calvert 's resignation and his conversion to Roman Catholicism was a complex one ."
+    source : "The connection between Calvert 's resignation and his conversion to Roman Catholicism was a complex one ."
+  MISMATCH inst933 q1 floor_pos_tight_focus_mask sent65:
+    decoded: ' George Abbot , ( 1562 @-@ 1633 ) , the reigning Archbishop of Canterbury , ( and ecclesiastical head of the independent Church of England ) , reported that political opposition to Calvert , combined with his loss of office , had " made him discontented and , as the saying is , " Desperatio facit monachum " , so hee apparently did turne papist , which hee now professeth , this being the third time that he hath bene to blame that way [ sic ] " .'
+    source : 'George Abbot , ( 1562 @-@ 1633 ) , the reigning Archbishop of Canterbury , ( and ecclesiastical head of the independent Church of England ) , reported that political opposition to Calvert , combined with his loss of office , had " made him discontented and , as the saying is , " Desperatio facit monachum " , so hee apparently did turne papist , which hee now professeth , this being the third time that he hath bene to blame that way [ sic ] " .'
+  MISMATCH inst933 q1 snapkv_tight_focus_mask sent31:
+    decoded: ' Ramon and Perfect began the match , but Flair entered after Perfect insulted him .'
+    source : 'Ramon and Perfect began the match , but Flair entered after Perfect insulted him .'
+  MISMATCH inst935 q0 floor_pos_tight_focus_mask sent46:
+    decoded: ' They are also capable of spitting a powerful jet of water into the faces of their captors , making grunting noises in between jets ( making the tawny shark one of the few species of sharks to produce a noise ) ; whether this is a deliberate defensive behavior is uncertain .'
+    source : 'They are also capable of spitting a powerful jet of water into the faces of their captors , making grunting noises in between jets ( making the tawny shark one of the few species of sharks to produce a noise ) ; whether this is a deliberate defensive behavior is uncertain .'
+  MISMATCH inst935 q0 snapkv_tight_focus_mask sent35:
+    decoded: ' Mitochondria have also been observed to follow chloroplasts as they move.\n\n'
+    source : 'Mitochondria have also been observed to follow chloroplasts as they move.'
+  MISMATCH inst936 q0 floor_pos_tight_focus_mask sent39:
+    decoded: ' Though Luther saw the Muslim faith as a tool of the devil, he was indifferent to its practice: "Let the Turk believe and live as he will, just as one lets the papacy and other false Christians live." He opposed banning the publication of the Qur\'an, wanting it exposed to scrutiny.\n\n'
+    source : 'Though Luther saw the Muslim faith as a tool of the devil, he was indifferent to its practice: "Let the Turk believe and live as he will, just as one lets the papacy and other false Christians live." He opposed banning the publication of the Qur\'an, wanting it exposed to scrutiny.'
+  ... and 472 more
+=== M3: 143/640 exact reproductions ===
+  MISMATCH inst928 q0 floor_pos_tight_focus_mask sent52:
+    decoded: ' MD 194D is the designation for an unnamed 0 @.@ 02 @-@ mile ( 0 @.@ 032 km ) connector between MD 194 and MD 853E, the old alignment that parallels the northbound direction of the modern highway south of Angell Road.\n\n'
+    source : 'MD 194D is the designation for an unnamed 0 @.@ 02 @-@ mile ( 0 @.@ 032 km ) connector between MD 194 and MD 853E , the old alignment that parallels the northbound direction of the modern highway south of Angell Road .'
+  MISMATCH inst928 q1 floor_pos_tight_focus_mask sent49:
+    decoded: ' Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+    source : 'Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+  MISMATCH inst928 q1 snapkv_tight_focus_mask sent49:
+    decoded: ' Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+    source : 'Zachęta National Gallery of Art, the oldest exhibition site in Warsaw, with a tradition stretching back to the mid-19th century organises exhibitions of modern art by Polish and international artists and promotes art in many other ways.'
+  MISMATCH inst931 q0 floor_pos_tight_focus_mask sent51:
+    decoded: 'The access code for the south archive is 75740516.\n\n'
+    source : 'The access code for the south archive is 75740516.'
+  MISMATCH inst931 q1 floor_pos_tight_focus_mask sent51:
+    decoded: 'The access code for the south archive is 75740516.\n\n'
+    source : 'The access code for the south archive is 75740516.'
+  MISMATCH inst932 q0 floor_pos_tight_focus_mask sent47:
+    decoded: ' " \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+    source : '" \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+  MISMATCH inst932 q1 floor_pos_tight_focus_mask sent38:
+    decoded: ' George Lenczowski notes, "Military supplies did not exhaust Nixon\'s eagerness to prevent Israel\'s collapse...This [$2.2 billion] decision triggered a collective OPEC response." Libya immediately announced it would embargo oil shipments to the United States.'
+    source : 'George Lenczowski notes, "Military supplies did not exhaust Nixon\'s eagerness to prevent Israel\'s collapse...This [$2.2 billion] decision triggered a collective OPEC response." Libya immediately announced it would embargo oil shipments to the United States.'
+  MISMATCH inst932 q0 snapkv_tight_focus_mask sent47:
+    decoded: ' " \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+    source : '" \n\n\nSociologist Jake Rosenfield of the University of Washington asserts that the decline of organized labor in the United States has played a more significant role in expanding the income gap than technological changes and globalization, which were also experienced by other industrialized nations that didn\'t experience steep surges in inequality.'
+  MISMATCH inst933 q0 floor_pos_tight_focus_mask sent65:
+    decoded: ' George Abbot, ( 1562 @-@ 1633 ), the reigning Archbishop of Canterbury, ( and ecclesiastical head of the independent Church of England ), reported that political opposition to Calvert, combined with his loss of office, had " made him discontented and, as the saying is, " Desperatio facit monachum ", so hee apparently did turne papist, which hee now professeth, this being the third time that he hath bene to blame that way [ sic ] ".'
+    source : 'George Abbot , ( 1562 @-@ 1633 ) , the reigning Archbishop of Canterbury , ( and ecclesiastical head of the independent Church of England ) , reported that political opposition to Calvert , combined with his loss of office , had " made him discontented and , as the saying is , " Desperatio facit monachum " , so hee apparently did turne papist , which hee now professeth , this being the third time that he hath bene to blame that way [ sic ] " .'
+  MISMATCH inst933 q1 floor_pos_tight_focus_mask sent65:
+    decoded: ' George Abbot, ( 1562 @-@ 1633 ), the reigning Archbishop of Canterbury, ( and ecclesiastical head of the independent Church of England ), reported that political opposition to Calvert, combined with his loss of office, had " made him discontented and, as the saying is, " Desperatio facit monachum ", so hee apparently did turne papist, which hee now professeth, this being the third time that he hath bene to blame that way [ sic ] ".'
+    source : 'George Abbot , ( 1562 @-@ 1633 ) , the reigning Archbishop of Canterbury , ( and ecclesiastical head of the independent Church of England ) , reported that political opposition to Calvert , combined with his loss of office , had " made him discontented and , as the saying is , " Desperatio facit monachum " , so hee apparently did turne papist , which hee now professeth , this being the third time that he hath bene to blame that way [ sic ] " .'
+  MISMATCH inst933 q1 snapkv_tight_focus_mask sent27:
+    decoded: ' Yet if Tetzel overstated the matter in regard to indulgences for the dead, his teaching on indulgences for the living was in line with Catholic dogma of the time.\n\n'
+    source : 'Yet if Tetzel overstated the matter in regard to indulgences for the dead, his teaching on indulgences for the living was in line with Catholic dogma of the time.'
+  MISMATCH inst935 q0 floor_pos_tight_focus_mask sent46:
+    decoded: ' They are also capable of spitting a powerful jet of water into the faces of their captors, making grunting noises in between jets ( making the tawny shark one of the few species of sharks to produce a noise ) ; whether this is a deliberate defensive behavior is uncertain.'
+    source : 'They are also capable of spitting a powerful jet of water into the faces of their captors , making grunting noises in between jets ( making the tawny shark one of the few species of sharks to produce a noise ) ; whether this is a deliberate defensive behavior is uncertain .'
+  MISMATCH inst935 q0 snapkv_tight_focus_mask sent35:
+    decoded: ' Mitochondria have also been observed to follow chloroplasts as they move.\n\n'
+    source : 'Mitochondria have also been observed to follow chloroplasts as they move.'
+  MISMATCH inst936 q0 floor_pos_tight_focus_mask sent39:
+    decoded: ' Though Luther saw the Muslim faith as a tool of the devil, he was indifferent to its practice: "Let the Turk believe and live as he will, just as one lets the papacy and other false Christians live." He opposed banning the publication of the Qur\'an, wanting it exposed to scrutiny.\n\n'
+    source : 'Though Luther saw the Muslim faith as a tool of the devil, he was indifferent to its practice: "Let the Turk believe and live as he will, just as one lets the papacy and other false Christians live." He opposed banning the publication of the Qur\'an, wanting it exposed to scrutiny.'
+  MISMATCH inst936 q1 floor_pos_tight_focus_mask sent40:
+    decoded: 'The access code for the north archive is 71941253.\n\n'
+    source : 'The access code for the north archive is 71941253.'
+  ... and 482 more

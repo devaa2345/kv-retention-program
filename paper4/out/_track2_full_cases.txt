@@ -1,0 +1,216 @@
+====================================================================================================
+M2 snapkv inst3 q1  rec=R029  gaps: before=1 after=1
+  QUERY:  Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry
+  FLOOR (correct): 'R029|Caldenwick|Compliance|128264|Elmsworth|Closed|615302|Caldenwick|Registry'
+  U-X   (wrong)  : 'R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody'
+  GROUND TRUTH RECORD: R029 | Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry
+  ADJACENT BEFORE (in U-X kept seq): ...8 | Dornolhardt | Clearing | Record R027 was reviewed at the quarterly walkthrough. | R029 | Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Calden...
+  ADJACENT AFTER  (in U-X kept seq): ...wick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry | R030 | Ellethson | Reconciliation | 162038 | Elmsworth | Open | 765279 | Elleth...
+====================================================================================================
+M2 snapkv inst6 q1  rec=R031  gaps: before=1 after=1
+  QUERY:  Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing
+  FLOOR (correct): 'R031|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing'
+  U-X   (wrong)  : 'R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry'
+  GROUND TRUTH RECORD: R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing
+  ADJACENT BEFORE (in U-X kept seq): ...Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial | R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ell...
+  ADJACENT AFTER  (in U-X kept seq): ... | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing | R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt...
+====================================================================================================
+M2 snapkv inst6 q3  rec=R032  gaps: before=1 after=1
+  QUERY:  Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury
+  FLOOR (correct): 'R032|Baramhardt|Compliance|424724|Oakstead|Held|883521|Baramhardt|Treasury'
+  U-X   (wrong)  : 'R032|Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial'
+  GROUND TRUTH RECORD: R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury
+  ADJACENT BEFORE (in U-X kept seq): ... | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing | R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt...
+  ADJACENT AFTER  (in U-X kept seq): ...amhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury | Filing details for record R040 were refreshed in the directory. | R033 | Calduswe...
+====================================================================================================
+M2 snapkv inst12 q2  rec=R031  gaps: before=1 after=1
+  QUERY:  Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury
+  FLOOR (correct): 'R031|Dornacdahl|Actuarial|331908|Granthill|Pending|482904|Dornacdahl|Treasury'
+  U-X   (wrong)  : 'R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting'
+  GROUND TRUTH RECORD: R031 | Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury
+  ADJACENT BEFORE (in U-X kept seq): ...dhardt | Actuarial | 253584 | Harborline | Held | 782150 | Ellidhardt | Treasury | R031 | Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacd...
+  ADJACENT AFTER  (in U-X kept seq): ...dahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury | Correspondence concerning record R027 was logged and filed without further acti...
+====================================================================================================
+M2 adakv_snapkv inst6 q1  rec=R031  gaps: before=1 after=1
+  QUERY:  Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing
+  FLOOR (correct): 'R031|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing'
+  U-X   (wrong)  : 'R031 | Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial'
+  GROUND TRUTH RECORD: R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing
+  ADJACENT BEFORE (in U-X kept seq): ...Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial | R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ell...
+  ADJACENT AFTER  (in U-X kept seq): ... | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing | R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt...
+====================================================================================================
+M2 adakv_snapkv inst6 q3  rec=R032  gaps: before=1 after=1
+  QUERY:  Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury
+  FLOOR (correct): 'R032|Baramhardt|Compliance|424724|Oakstead|Held|883521|Baramhardt|Treasury'
+  U-X   (wrong)  : 'R032|Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial'
+  GROUND TRUTH RECORD: R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury
+  ADJACENT BEFORE (in U-X kept seq): ... | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing | R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt...
+  ADJACENT AFTER  (in U-X kept seq): ...amhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury | Filing details for record R040 were refreshed in the directory. | R033 | Calduswe...
+====================================================================================================
+M2 adakv_snapkv inst21 q2  rec=R036  gaps: before=1 after=1
+  QUERY:  Reproduce record R036 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing
+  FLOOR (correct): 'R036|Caldamker|Registry|288287|Pinebury|Closed|551916|Caldamker|Clearing'
+  U-X   (wrong)  : 'R036|Baramhardt|Compliance|154205|Oakstead|Held|594657|Dornamhardt|Valuation'
+  GROUND TRUTH RECORD: R036 | Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing
+  ADJACENT BEFORE (in U-X kept seq): ...nt | Clearing | 398273 | Westmoor | Closed | 998875 | Ellenmont | Reconciliation | R036 | Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker |...
+  ADJACENT AFTER  (in U-X kept seq): ...aldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing | R037 | Baramhardt | Compliance | 154205 | Oakstead | Held | 594657 | Baramhardt...
+====================================================================================================
+M2 adakv_snapkv inst26 q1  rec=R033  gaps: before=1 after=1
+  QUERY:  Reproduce record R033 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury
+  FLOOR (correct): 'R033|Caldidridge|Underwriting|993443|Draymouth|Draft|248961|Caldidridge|Treasury'
+  U-X   (wrong)  : 'R033 | Ellenker | Valuation | 589721 | Oakstead | Review | 437183 | Ellenker | Clearing'
+  GROUND TRUTH RECORD: R033 | Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury
+  ADJACENT BEFORE (in U-X kept seq): ...rdahl | Valuation | 380264 | Ashcombe | Closed | 420498 | Caldordahl | Valuation | R033 | Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldi...
+  ADJACENT AFTER  (in U-X kept seq): ...ge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury | R034 | Dornorridge | Treasury | 350848 | Northgate | Held | 726872 | Dornorridg...
+====================================================================================================
+M2 expected_attn inst2 q2  rec=R039  gaps: before=1 after=1
+  QUERY:  Reproduce record R039 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial
+  FLOOR (correct): 'R039|Caldirwell|Custody|682999|Larkmede|Draft|277452|Caldirwell|Actuarial'
+  U-X   (wrong)  : 'R039 | Caldorson | Registry | 791498 | Granthill | Held | 167093 | Caldorson | Underwriting'
+  GROUND TRUTH RECORD: R039 | Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial
+  ADJACENT BEFORE (in U-X kept seq): ...rnenmont | Custody | 715462 | Fairhollow | Held | 855270 | Dornenmont | Registry | R039 | Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell |...
+  ADJACENT AFTER  (in U-X kept seq): ...ldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial | R040 | Caldorson | Registry | 791498 | Granthill | Held | 167093 | Caldorson | ...
+====================================================================================================
+M2 expected_attn inst2 q3  rec=R028  gaps: before=1 after=1
+  QUERY:  Reproduce record R028 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement
+  FLOOR (correct): 'R028|Caldoldahl|Payments|872264|Granthill|Cleared|758534|Caldoldahl|Procurement'
+  U-X   (wrong)  : 'R028 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |'
+  GROUND TRUTH RECORD: R028 | Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement
+  ADJACENT BEFORE (in U-X kept seq): ...Compliance | The standing delegation for record R008 remains unchanged this period. | R028 | Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldold...
+  ADJACENT AFTER  (in U-X kept seq): ...hl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement | R029 | Baramwick | Valuation | 883776 | Westmoor | Draft | 745139 | Baramwick |...
+====================================================================================================
+M2 expected_attn inst6 q1  rec=R031  gaps: before=1 after=1
+  QUERY:  Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing
+  FLOOR (correct): 'R031|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing'
+  U-X   (wrong)  : 'R031|Caldirwick|Compliance|402318|Draymouth|Review|476812|Caldirwick|Compliance|'
+  GROUND TRUTH RECORD: R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing
+  ADJACENT BEFORE (in U-X kept seq): ...Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial | R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ell...
+  ADJACENT AFTER  (in U-X kept seq): ... | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing | R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt...
+====================================================================================================
+M2 expected_attn inst7 q2  rec=R029  gaps: before=1 after=1
+  QUERY:  Reproduce record R029 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation
+  FLOOR (correct): 'R029|Caldunwick|Valuation|273118|Elmsworth|Pending|429709|Caldunwick|Reconciliation'
+  U-X   (wrong)  : 'R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody'
+  GROUND TRUTH RECORD: R029 | Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation
+  ADJACENT BEFORE (in U-X kept seq): ...ker | Procurement | Filing details for record R001 were refreshed in the directory. | R029 | Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldun...
+  ADJACENT AFTER  (in U-X kept seq): ... Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation | R030 | Caldorhardt | Clearing | 210288 | Larkmede | Cleared | 572913 | Caldorha...
+====================================================================================================
+M3 snapkv inst0 q3  rec=R030  gaps: before=1 after=1
+  QUERY:  Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open
+  FLOOR (correct): 'Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | El'
+  U-X   (wrong)  : "I can't provide the requested information as it is not available in the given text. However, I can t"
+  GROUND TRUTH RECORD: R030 | Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open
+  ADJACENT BEFORE (in U-X kept seq): ...ll | Draft | The standing delegation for record R005 remains unchanged this period. | R030 | Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dorne...
+  ADJACENT AFTER  (in U-X kept seq): ... | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open | R031 | Dornusmont | Clearing | 800689 | Ashcombe | Closed | 887601 | Dornusmont...
+====================================================================================================
+M3 snapkv inst1 q2  rec=R032  gaps: before=1 after=1
+  QUERY:  Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed
+  FLOOR (correct): 'R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 52051'
+  U-X   (wrong)  : 'There is no record R032 in the provided text.'
+  GROUND TRUTH RECORD: R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed
+  ADJACENT BEFORE (in U-X kept seq): ...msworth | Cleared | 227320 | Ellacridge | Registry | 433879 | Harborline | Draft | R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamda...
+  ADJACENT AFTER  (in U-X kept seq): ...arborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed | Correspondence concerning record R030 was logged and filed without further acti...
+====================================================================================================
+M3 snapkv inst5 q0  rec=R028  gaps: before=3 after=50
+  QUERY:  Reproduce record R028 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldorhardt | Underwriting | 830816 | Ashcombe | Draft | 409497 | Caldorhardt | Compliance | 610830 | Northgate | Held
+  FLOOR (correct): 'R028 | Caldorhardt | Underwriting | 830816 | Ashcombe | Draft | 409497 | Caldorhardt | Compliance | '
+  U-X   (wrong)  : 'There is no record R028. The records provided start from R001 and go up to R040.'
+  GROUND TRUTH RECORD: R028 | Caldorhardt | Underwriting | 830816 | Ashcombe | Draft | 409497 | Caldorhardt | Compliance | 610830 | Northgate | Held
+  ADJACENT BEFORE (in U-X kept seq): ...9153 | Fairhollow | Draft | A handover note covering record R003 was circulated to the desk. | R028 | Caldorhardt | Underwriting | 830816 | Ashcombe | Draft | 40949...
+  ADJACENT AFTER  (in U-X kept seq): ...arirhardt | Settlement | 870305 | Larkmede | Cleared | Filing details for record R038 were refreshed in the directory. | R030 | Dornunson | Actuarial | 882332 | Fai...
+====================================================================================================
+M3 snapkv inst9 q2  rec=R033  gaps: before=1 after=1
+  QUERY:  Reproduce record R033 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review
+  FLOOR (correct): 'Barirwell|Settlement|461465|Oakstead|Pending|620756|Barirwell|Custody|655028|Harborline|Review'
+  U-X   (wrong)  : 'There is no record R033 in the provided text.'
+  GROUND TRUTH RECORD: R033 | Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review
+  ADJACENT BEFORE (in U-X kept seq): ...orrespondence concerning record R015 was logged and filed without further action. | R033 | Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwe...
+  ADJACENT AFTER  (in U-X kept seq): ...Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review | R034 | Baridwick | Payments | 818350 | Kingsfell | Held | 405961 | Baridwick | ...
+====================================================================================================
+M3 adakv_snapkv inst1 q2  rec=R032  gaps: before=1 after=1
+  QUERY:  Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed
+  FLOOR (correct): 'R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 52051'
+  U-X   (wrong)  : 'Dornamker | Settlement | 234819 | Westmoor | Final | 421539'
+  GROUND TRUTH RECORD: R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed
+  ADJACENT BEFORE (in U-X kept seq): ...msworth | Cleared | 227320 | Ellacridge | Registry | 433879 | Harborline | Draft | R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamda...
+  ADJACENT AFTER  (in U-X kept seq): ...arborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed | Correspondence concerning record R030 was logged and filed without further acti...
+====================================================================================================
+M3 adakv_snapkv inst23 q0  rec=R031  gaps: before=1 after=1
+  QUERY:  Reproduce record R031 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Ellolridge | Compliance | 138809 | Ashcombe | Final | 860873 | Ellolridge | Settlement | 274624 | Fairhollow | Closed
+  FLOOR (correct): '138809|Ellolridge|Compliance|138809|Ashcombe|Final|860873|Ellolridge|Settlement|274624|Fairhollow|Cl'
+  U-X   (wrong)  : 'Ellamker | Treasury | 474312'
+  GROUND TRUTH RECORD: R031 | Ellolridge | Compliance | 138809 | Ashcombe | Final | 860873 | Ellolridge | Settlement | 274624 | Fairhollow | Closed
+  ADJACENT BEFORE (in U-X kept seq): ...| Westmoor | Open | 756529 | Caldamfield | Custody | 993990 | Granthill | Closed | R031 | Ellolridge | Compliance | 138809 | Ashcombe | Final | 860873 | Ellolridg...
+  ADJACENT AFTER  (in U-X kept seq): ...hcombe | Final | 860873 | Ellolridge | Settlement | 274624 | Fairhollow | Closed | Correspondence concerning record R023 was logged and filed without further acti...
+====================================================================================================
+M3 adakv_snapkv inst24 q3  rec=R037  gaps: before=1 after=1
+  QUERY:  Reproduce record R037 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Ellacfield | Reconciliation | 649176 | Elmsworth | Draft | 473163 | Ellacfield | Procurement | 696211 | Pinebury | Review
+  FLOOR (correct): 'R037 | Ellacfield | Reconciliation | 649176 | Elmsworth | Draft | 473163 | Ellacfield | Procurement '
+  U-X   (wrong)  : 'Settlement | 649374 |'
+  GROUND TRUTH RECORD: R037 | Ellacfield | Reconciliation | 649176 | Elmsworth | Draft | 473163 | Ellacfield | Procurement | 696211 | Pinebury | Review
+  ADJACENT BEFORE (in U-X kept seq): ...ranthill | Closed | 380262 | Ellorridge | Valuation | 111031 | Elmsworth | Draft | R037 | Ellacfield | Reconciliation | 649176 | Elmsworth | Draft | 473163 | Ella...
+  ADJACENT AFTER  (in U-X kept seq): ...msworth | Draft | 473163 | Ellacfield | Procurement | 696211 | Pinebury | Review | Correspondence concerning record R030 was logged and filed without further acti...
+====================================================================================================
+M3 adakv_snapkv inst36 q2  rec=R030  gaps: before=43 after=1
+  QUERY:  Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Barirhardt | Custody | 428100 | Granthill | Cleared | 757982 | Barirhardt | Settlement | 287785 | Harborline | Open
+  FLOOR (correct): 'R030 | Barirhardt | Custody | 428100 | Granthill | Cleared | 757982 | Barirhardt | Settlement | 2877'
+  U-X   (wrong)  : 'Caldunhardt | Registry | 698422 | Westmoor | Closed | 438233'
+  GROUND TRUTH RECORD: R030 | Barirhardt | Custody | 428100 | Granthill | Cleared | 757982 | Barirhardt | Settlement | 287785 | Harborline | Open
+  ADJACENT BEFORE (in U-X kept seq): ...aring | 522665 | Fairhollow | Held | Filing details for record R032 were refreshed in the directory. | R029 | Baroldahl | Compliance | 404968 | Fairhollow | Final |...
+  ADJACENT AFTER  (in U-X kept seq): ...nthill | Cleared | 757982 | Barirhardt | Settlement | 287785 | Harborline | Open | Filing details for record R037 were refreshed in the directory. | R031 | Dornuswi...
+====================================================================================================
+M3 expected_attn inst0 q3  rec=R030  gaps: before=6 after=2
+  QUERY:  Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open
+  FLOOR (correct): 'Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | El'
+  U-X   (wrong)  : 'Dornamker | Procurement | 572814 | Draymouth | Review | 234819'
+  GROUND TRUTH RECORD: R030 | Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open
+  ADJACENT BEFORE (in U-X kept seq): ...n | Compliance | 464247 | Kingsfell | Draft | The standing delegation for record R005 remains unchanged this period. | R030 | Dornenwell | Underwriting | 957029 | E...
+  ADJACENT AFTER  (in U-X kept seq): ...| Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open | R031 | Dornusmont | Clearing | 800689 | Ashcombe | Closed | 887601 | Dornusmont ...
+====================================================================================================
+M3 expected_attn inst1 q2  rec=R032  gaps: before=1 after=1
+  QUERY:  Reproduce record R032 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed
+  FLOOR (correct): 'R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 52051'
+  U-X   (wrong)  : 'There is no record R032 in the provided text.'
+  GROUND TRUTH RECORD: R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed
+  ADJACENT BEFORE (in U-X kept seq): ...msworth | Cleared | 227320 | Ellacridge | Registry | 433879 | Harborline | Draft | R032 | Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamda...
+  ADJACENT AFTER  (in U-X kept seq): ...arborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed | Correspondence concerning record R030 was logged and filed without further acti...
+====================================================================================================
+M3 expected_attn inst9 q2  rec=R033  gaps: before=1 after=40
+  QUERY:  Reproduce record R033 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review
+  FLOOR (correct): 'Barirwell|Settlement|461465|Oakstead|Pending|620756|Barirwell|Custody|655028|Harborline|Review'
+  U-X   (wrong)  : "I can't reproduce record R033 as it is not present in the provided text."
+  GROUND TRUTH RECORD: R033 | Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review
+  ADJACENT BEFORE (in U-X kept seq): ...orrespondence concerning record R015 was logged and filed without further action. | R033 | Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwe...
+  ADJACENT AFTER  (in U-X kept seq): ...| Kingsfell | Held | 405961 | Baridwick | Valuation | 472537 | Kingsfell | Held | R035 | Caldunstad | Valuation | 805575 | Granthill | Open | 642588 | Caldunstad ...
+====================================================================================================
+M3 expected_attn inst14 q3  rec=R030  gaps: before=1 after=1
+  QUERY:  Reproduce record R030 exactly, in full, in the format shown. Answer with the fields only, 
+  GOLD:   Caldolwick | Payments | 171699 | Westmoor | Review | 386611 | Caldolwick | Clearing | 922799 | Granthill | Held
+  FLOOR (correct): 'R030 | Caldolwick | Payments | 171699 | Westmoor | Review | 386611 | Caldolwick | Clearing | 922799 '
+  U-X   (wrong)  : 'There is no record R030 in the provided text.'
+  GROUND TRUTH RECORD: R030 | Caldolwick | Payments | 171699 | Westmoor | Review | 386611 | Caldolwick | Clearing | 922799 | Granthill | Held
+  ADJACENT BEFORE (in U-X kept seq): ...Granthill | Final | Filing details for record R011 were refreshed in the directory. | R030 | Caldolwick | Payments | 171699 | Westmoor | Review | 386611 | Caldolwic...
+  ADJACENT AFTER  (in U-X kept seq): ...| Westmoor | Review | 386611 | Caldolwick | Clearing | 922799 | Granthill | Held | R031 | Ellunridge | Underwriting | 826145 | Ashcombe | Held | 989075 | Ellunrid...

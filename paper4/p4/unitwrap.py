@@ -257,6 +257,13 @@ def make_unit_aware(press, ui: UnitIndex, C: int, capture=None, stats: dict | No
                 raise AssertionError(f"n_kept {n_kept} does not match C={C} + floors")
             S = scores[0].detach().to(torch.float64).cpu().numpy()
             keeps, st = unit_keep_per_head(S, ui, C)
+            # AMENDMENT A4: gather in DESCENDING SCORE order, matching ScorerPress.compress's
+            # topk order. The retained SET is unchanged; only the cache write order is. Attention
+            # is permutation-invariant in exact arithmetic, but bf16 accumulation over the key
+            # axis is not, and an order difference between X and U-X was measured to flip greedy
+            # decodes on 50-70% of instances (DIAGNOSIS_A6.md). Matching the order removes that
+            # confound from every X vs U-X contrast.
+            keeps = [k[np.argsort(-S[h][k], kind="stable")] for h, k in enumerate(keeps)]
             idx = torch.as_tensor(np.stack(keeps), dtype=torch.long, device=keys.device)
             idx = idx.unsqueeze(0).unsqueeze(-1).expand(-1, -1, -1, module.head_dim)
             keys = keys.gather(2, idx).contiguous()

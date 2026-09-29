@@ -1,0 +1,252 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 2,
+  "qi": 0,
+  "rec_id": "R035",
+  "match_rec": "R032",
+  "match_dist": 3,
+  "match_score": 6,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "match_rec": "R024",
+  "match_dist": 5,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 1,
+  "rec_id": "R031",
+  "match_rec": "R002",
+  "match_dist": 29,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "match_rec": "R013",
+  "match_dist": 16,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "match_rec": "R007",
+  "match_dist": 24,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "match_rec": "R011",
+  "match_dist": 21,
+  "match_score": 4,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 37,
+  "qi": 3,
+  "rec_id": "R034",
+  "match_rec": "R033",
+  "match_dist": 1,
+  "match_score": 5,
+  "contam_shaped": false
+ },
+ {
+  "base": "snapkv",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "match_rec": "R009",
+  "match_dist": 20,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "match_rec": "R038",
+  "match_dist": 7,
+  "match_score": 3,
+  "contam_shaped": false
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "match_rec": "R020",
+  "match_dist": 13,
+  "match_score": 3,
+  "contam_shaped": false
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 32,
+  "qi": 0,
+  "rec_id": "R031",
+  "match_rec": "R901",
+  "match_dist": 31,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "match_rec": "R015",
+  "match_dist": 16,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 46,
+  "qi": 2,
+  "rec_id": "R031",
+  "match_rec": "R018",
+  "match_dist": 13,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 0,
+  "rec_id": "R030",
+  "match_rec": "R004",
+  "match_dist": 26,
+  "match_score": 3,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 3,
+  "rec_id": "R032",
+  "match_rec": "R004",
+  "match_dist": 28,
+  "match_score": 3,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 7,
+  "qi": 2,
+  "rec_id": "R029",
+  "match_rec": "R025",
+  "match_dist": 4,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "match_rec": "R013",
+  "match_dist": 16,
+  "match_score": 3,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "match_rec": "R025",
+  "match_dist": 6,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "match_rec": "R019",
+  "match_dist": 12,
+  "match_score": 3,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 3,
+  "rec_id": "R036",
+  "match_rec": "R037",
+  "match_dist": 1,
+  "match_score": 5,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 31,
+  "qi": 1,
+  "rec_id": "R034",
+  "match_rec": "R006",
+  "match_dist": 28,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "match_rec": "R026",
+  "match_dist": 3,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "expected_attn",
+  "instance": 39,
+  "qi": 0,
+  "rec_id": "R030",
+  "match_rec": "R037",
+  "match_dist": 7,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "keydiff",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "match_rec": "R900",
+  "match_dist": 32,
+  "match_score": 2,
+  "contam_shaped": false
+ },
+ {
+  "base": "keydiff",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "match_rec": "R900",
+  "match_dist": 33,
+  "match_score": 2,
+  "contam_shaped": false
+ }
+]

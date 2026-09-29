@@ -1,0 +1,317 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 2,
+  "qi": 0,
+  "rec_id": "R035",
+  "answer": "R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "answer": "R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 1,
+  "rec_id": "R031",
+  "answer": "R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "answer": "R029 | Calidale | Clearing | 591234 | Pinecrest | Closed | 654321 | Calidale | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "answer": "R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "answer": "R032|Dornamore|Treasury|555555|Fairhollow|Draft|999999|Dornamore|Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "answer": "R033 | Caldacson | Settlement | 984570 | Drayton | Open |",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "answer": "R031|Dornolson|Actuarial|Northgate|Open|130745|R031|Dornolson|Actuarial|Northgate|Open|130745",
+  "tag": "malformed",
+  "reason": "field count 10 != 8; repeated block (decoding loop); non-6-digit value field(s): [(2, 'Northgate'), (5, 'Dornolson')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 37,
+  "qi": 3,
+  "rec_id": "R034",
+  "answer": "R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 234567 | Ellamhardt | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "answer": "R029 | Caldorfield | Underwriting | 156324 | Kingsfell | Cleared | 729536 | Caldorfield | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 48,
+  "qi": 1,
+  "rec_id": "R030",
+  "answer": "R030 | Underwriting | 785634 | Oakstead | Open | 456789 | R030",
+  "tag": "malformed",
+  "reason": "field count 5 != 8; non-6-digit value field(s): [(2, 'Oakstead')]"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 3,
+  "qi": 1,
+  "rec_id": "R029",
+  "answer": "R029|Caldenridge|Quarterly Walkthrough|654321|Fairhollow|Closed|774570|Caldenridge|Registry",
+  "tag": "mixed",
+  "reason": "8 fields present but field(s) contain multi-word/filler-like text: [(1, 'Quarterly Walkthrough')]"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "answer": "R031 | Baroldahl | Underwriting | 221864 | Harborline | Cleared | 287733 | Baroldahl | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "answer": "R033 | Caldacson | Custody | 689874 | Draycott | Final | 237654 | Caldacson | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 32,
+  "qi": 0,
+  "rec_id": "R031",
+  "answer": "Baramold | Treasury | 543821 | Larkmede | Open | 654321 | Baramold | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "answer": "R031 | Dornolson | Actuarial | 634567 | Granthill | Pending | 456789 | Dornolson | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "adakv_snapkv",
+  "instance": 46,
+  "qi": 2,
+  "rec_id": "R031",
+  "answer": "R031|Ellolhardt|Actuarial|175878|Elmsworth|Held|345678|Ellolhardt|Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 0,
+  "rec_id": "R030",
+  "answer": "R030|Baramker|Valuation|454055|Oakstead|Final|698765|Baramker|Payments",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 3,
+  "rec_id": "R032",
+  "answer": "R032|Dornuswick|Procurement|454123|Oakstead|Final|698765|Dornuswick|Payments|",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 7,
+  "qi": 2,
+  "rec_id": "R029",
+  "answer": "R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 11,
+  "qi": 1,
+  "rec_id": "R029",
+  "answer": "R029|Barolker|Clearing|496244|Oakstead|Closed|305916|Barolker|Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 12,
+  "qi": 2,
+  "rec_id": "R031",
+  "answer": "R031 | Dornacdahl | Actuarial | 321904 | Oakstead | Draft | 456720 | Dornacdahl | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 15,
+  "qi": 0,
+  "rec_id": "R034",
+  "answer": "R034 | Dornacres | Settlement | 210398 | Oakwood | Open | 74563",
+  "tag": "malformed",
+  "reason": "field count 6 != 8; non-6-digit value field(s): [(5, '74563')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "answer": "R031 | Ellenbrook | Clearing | 523104 | Elmsworth | Final | 345678 | Ellenbrook | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 3,
+  "rec_id": "R036",
+  "answer": "R036 | Barenhardt | Actuarial | 781852 | Pinebury | Draft | 298846 | Barenhardt | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 30,
+  "qi": 1,
+  "rec_id": "R033",
+  "answer": "R033|Ellanolhardt|Compliance|513487|Northgate|Final|219764|R033",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 31,
+  "qi": 1,
+  "rec_id": "R034",
+  "answer": "Dornicastle|Payments|229211|Grantham|Closed|428547|Dornicastle|Payments",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "answer": "Barunstead|Underwriting|923456|Northgate|Final|987654",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 2,
+  "rec_id": "R029",
+  "answer": "R029|Dornamker|Actuarial|439144|Granthill|Final|684469|Dornamker|Payments",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 39,
+  "qi": 0,
+  "rec_id": "R030",
+  "answer": "R030 | Elloldahl | Valuation | 941798 | Kingshill | Pending | 653214 | Elloldahl | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 45,
+  "qi": 3,
+  "rec_id": "R031",
+  "answer": "R031 | Calderhill | Custody | 745623 | Kingsley | Pending |",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 48,
+  "qi": 1,
+  "rec_id": "R030",
+  "answer": "Ellidock | Payments | 456789 | Grantham | Review | 234567",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "keydiff",
+  "instance": 16,
+  "qi": 1,
+  "rec_id": "R031",
+  "answer": "Baridson | Treasury | 567890 | Southgate | Final | 789012 | Baridson | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "keydiff",
+  "instance": 20,
+  "qi": 0,
+  "rec_id": "R032",
+  "answer": "R032 | Aldermill | Settlement | 562012 | Northgate | Cleared | 653211 | Aldermill | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "keydiff",
+  "instance": 35,
+  "qi": 3,
+  "rec_id": "R031",
+  "answer": "Brackenwell | Clearing | 321098 | Fairhollow | Final | 89203 | Brackenwell | Clearing",
+  "tag": "malformed",
+  "reason": "schema shape ok (8 fields) but value field has wrong digit count: [(5, '89203')]"
+ }
+]

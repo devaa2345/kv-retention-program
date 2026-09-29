@@ -1,0 +1,72 @@
+snapkv         inst2   q0  rec=R035  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry
+snapkv         inst3   q1  rec=R029  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody
+snapkv         inst6   q1  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry
+snapkv         inst11  q1  rec=R029  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R029 | Calidale | Clearing | 591234 | Pinecrest | Closed | 654321 | Calidale | Settlement
+snapkv         inst12  q2  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting
+snapkv         inst20  q0  rec=R032  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R032|Dornamore|Treasury|555555|Fairhollow|Draft|999999|Dornamore|Compliance
+snapkv         inst30  q1  rec=R033  malformed              field count 5 != 8
+   ans: R033 | Caldacson | Settlement | 984570 | Drayton | Open |
+snapkv         inst35  q3  rec=R031  malformed              field count 10 != 8; repeated block (decoding loop); non-6-digit value field(s): [(2, 'Northgate'), (5, 'Dornolson')]
+   ans: R031|Dornolson|Actuarial|Northgate|Open|130745|R031|Dornolson|Actuarial|Northgate|Open|130745
+snapkv         inst37  q3  rec=R034  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 234567 | Ellamhardt | Registry
+snapkv         inst38  q2  rec=R029  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R029 | Caldorfield | Underwriting | 156324 | Kingsfell | Cleared | 729536 | Caldorfield | Underwriting
+snapkv         inst48  q1  rec=R030  malformed              field count 5 != 8; non-6-digit value field(s): [(2, 'Oakstead')]
+   ans: R030 | Underwriting | 785634 | Oakstead | Open | 456789 | R030
+adakv_snapkv   inst3   q1  rec=R029  mixed                  8 fields present but field(s) contain multi-word/filler-like text: [(1, 'Quarterly Walkthrough')]
+   ans: R029|Caldenridge|Quarterly Walkthrough|654321|Fairhollow|Closed|774570|Caldenridge|Registry
+adakv_snapkv   inst16  q1  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031 | Baroldahl | Underwriting | 221864 | Harborline | Cleared | 287733 | Baroldahl | Underwriting
+adakv_snapkv   inst30  q1  rec=R033  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R033 | Caldacson | Custody | 689874 | Draycott | Final | 237654 | Caldacson | Compliance
+adakv_snapkv   inst32  q0  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: Baramold | Treasury | 543821 | Larkmede | Open | 654321 | Baramold | Registry
+adakv_snapkv   inst35  q3  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031 | Dornolson | Actuarial | 634567 | Granthill | Pending | 456789 | Dornolson | Treasury
+adakv_snapkv   inst46  q2  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031|Ellolhardt|Actuarial|175878|Elmsworth|Held|345678|Ellolhardt|Actuarial
+expected_attn  inst6   q0  rec=R030  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R030|Baramker|Valuation|454055|Oakstead|Final|698765|Baramker|Payments
+expected_attn  inst6   q3  rec=R032  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R032|Dornuswick|Procurement|454123|Oakstead|Final|698765|Dornuswick|Payments|
+expected_attn  inst7   q2  rec=R029  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody
+expected_attn  inst11  q1  rec=R029  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R029|Barolker|Clearing|496244|Oakstead|Closed|305916|Barolker|Custody
+expected_attn  inst12  q2  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031 | Dornacdahl | Actuarial | 321904 | Oakstead | Draft | 456720 | Dornacdahl | Settlement
+expected_attn  inst15  q0  rec=R034  malformed              field count 6 != 8
+   ans: R034 | Dornacres | Settlement | 210398 | Oakwood | Open | 74563
+expected_attn  inst16  q1  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R031 | Ellenbrook | Clearing | 523104 | Elmsworth | Final | 345678 | Ellenbrook | Treasury
+expected_attn  inst23  q3  rec=R036  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R036 | Barenhardt | Actuarial | 781852 | Pinebury | Draft | 298846 | Barenhardt | Settlement
+expected_attn  inst30  q1  rec=R033  malformed              field count 6 != 8
+   ans: R033|Ellanolhardt|Compliance|513487|Northgate|Final|219764|R033
+expected_attn  inst31  q1  rec=R034  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: Dornicastle|Payments|229211|Grantham|Closed|428547|Dornicastle|Payments
+expected_attn  inst35  q3  rec=R031  malformed              field count 6 != 8
+   ans: Barunstead|Underwriting|923456|Northgate|Final|987654
+expected_attn  inst38  q2  rec=R029  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R029|Dornamker|Actuarial|439144|Granthill|Final|684469|Dornamker|Payments
+expected_attn  inst39  q0  rec=R030  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R030 | Elloldahl | Valuation | 941798 | Kingshill | Pending | 653214 | Elloldahl | Procurement
+expected_attn  inst45  q3  rec=R031  malformed              field count 5 != 8
+   ans: R031 | Calderhill | Custody | 745623 | Kingsley | Pending |
+expected_attn  inst48  q1  rec=R030  malformed              field count 6 != 8
+   ans: Ellidock | Payments | 456789 | Grantham | Review | 234567
+keydiff        inst16  q1  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: Baridson | Treasury | 567890 | Southgate | Final | 789012 | Baridson | Treasury
+keydiff        inst20  q0  rec=R032  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: R032 | Aldermill | Settlement | 562012 | Northgate | Cleared | 653211 | Aldermill | Settlement
+keydiff        inst35  q3  rec=R031  plausible-fabrication  schema-conforming (8 single-token/6-digit fields), values fabricated
+   ans: Brackenwell | Clearing | 321098 | Fairhollow | Final | 89203 | Brackenwell | Clearing
+
+TALLY: {'plausible-fabrication': 26, 'malformed': 8, 'mixed': 1}  total: 35

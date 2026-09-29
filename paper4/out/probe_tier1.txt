@@ -1,0 +1,55 @@
+Tier-1 probe results, scored against CANDIDATES.md (commit 3156e6c).
+n=20 screen: CI half-width ~0.10, so NOT-IT means 'no LARGE effect', never 'no effect'.
+
+== M2 (n=20) arms: 10
+   accuracy: floor_pos 0.237  hybrid-snapkv 0.237  ascend-snapkv 0.225  U-snapkv 0.212  consensus-snapkv 0.212  sub-snapkv 0.212  early-snapkv 0.200  floor_sink32 0.200  snapkv 0.200  supra-snapkv 0.150
+   A1 head-consensus: consensus-snapkv 0.212 vs U-snapkv 0.212  delta +0.000 [-0.062, +0.062]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+       ge_floor (consensus-snapkv >= floor_pos): False
+   A2 early-prior: early-snapkv 0.200 vs U-snapkv 0.212  delta -0.013 [-0.050, +0.025]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+   A3 floor-hybrid: hybrid-snapkv 0.237 vs floor_pos 0.237  delta +0.000 [-0.100, +0.100]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+       ge_u (hybrid-snapkv >= U-snapkv): True
+   A4 supra-units: supra-snapkv 0.150 vs U-snapkv 0.212  delta -0.062 [-0.163, +0.025]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+   A4 sub-units (directional): sub-snapkv 0.212 vs U-snapkv 0.212  delta +0.000 [-0.050, +0.050]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+   A5 sink32: floor_sink32 0.200 vs floor_pos 0.237  delta -0.037 [-0.087, +0.013]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+   A6 gather-order (expect NOT-IT): ascend-snapkv 0.225 vs snapkv 0.200  delta +0.025 [+0.000, +0.062]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+       generations_byte_identical: 10/20
+       hygiene_violation: True
+
+== M3 (n=20) arms: 6
+   accuracy: floor_pos 0.175  consensus-snapkv 0.150  U-snapkv 0.125  hybrid-snapkv 0.125  ascend-snapkv 0.113  snapkv 0.113
+   A1 head-consensus: consensus-snapkv 0.150 vs U-snapkv 0.125  delta +0.025 [-0.050, +0.113]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+       ge_floor (consensus-snapkv >= floor_pos): False
+   A3 floor-hybrid: hybrid-snapkv 0.125 vs floor_pos 0.175  delta -0.050 [-0.138, +0.025]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+       ge_u (hybrid-snapkv >= U-snapkv): True
+   A6 gather-order (expect NOT-IT): ascend-snapkv 0.113 vs snapkv 0.113  delta +0.000 [+0.000, +0.000]
+       paired_CI_excludes_zero_positive: False
+       paired_CI_excludes_zero: False
+       generations_byte_identical: 11/20
+       hygiene_violation: True
+
+== VERDICTS (replication rule: must clear on BOTH models)
+  A1 head-consensus: NOT-IT on M2 (discovery model) -- delta +0.000 [-0.062, +0.062]
+  A2 early-prior: NOT-IT on M2 (discovery model) -- delta -0.013 [-0.050, +0.025]
+  A3 floor-hybrid: NOT-IT on M2 (discovery model) -- delta +0.000 [-0.100, +0.100]
+  A4 supra-units: NOT-IT on M2 (discovery model) -- delta -0.062 [-0.163, +0.025]
+  A4 sub-units (directional): NOT-IT on M2 (discovery model) -- delta +0.000 [-0.050, +0.050]
+  A5 sink32: NOT-IT on M2 (discovery model) -- delta -0.037 [-0.087, +0.013]
+  A6 gather-order (expect NOT-IT): REAL (HYGIENE VIOLATION); M3 VIOLATION

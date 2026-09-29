@@ -1,0 +1,11 @@
+{
+ "pooled_pearson_r": -0.3703641251096652,
+ "pooled_pearson_p": 0.022086053677390652,
+ "pooled_spearman_rho": -0.3014936580004712,
+ "pooled_spearman_p": 0.06583975025739261,
+ "pairdiff_pearson_r": -0.35970929575893873,
+ "pairdiff_pearson_p": 0.13036777493059115,
+ "pairdiff_spearman_rho": -0.22222241509658494,
+ "pairdiff_spearman_p": 0.3605109316600367,
+ "mean_pos_diff": 6.842105263157895
+}

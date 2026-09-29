@@ -1,0 +1,326 @@
+{
+ "held_whole": [
+  {
+   "instance": 120,
+   "qi": 2,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 121,
+   "qi": 0,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 121,
+   "qi": 3,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 123,
+   "qi": 0,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 126,
+   "qi": 0,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 126,
+   "qi": 1,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 126,
+   "qi": 2,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "held_whole": true,
+   "match": true
+  },
+  {
+   "instance": 127,
+   "qi": 1,
+   "rec_id": "R040",
+   "max_rid": "R037",
+   "held_whole": true,
+   "match": false
+  }
+ ],
+ "evicted": [
+  {
+   "instance": 120,
+   "qi": 0,
+   "rec_id": "R003",
+   "max_rid": "R036",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 120,
+   "qi": 1,
+   "rec_id": "R011",
+   "max_rid": "R030",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 120,
+   "qi": 3,
+   "rec_id": "R025",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 121,
+   "qi": 1,
+   "rec_id": "R006",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 121,
+   "qi": 2,
+   "rec_id": "R022",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 122,
+   "qi": 0,
+   "rec_id": "R017",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 122,
+   "qi": 1,
+   "rec_id": "R028",
+   "max_rid": "R029",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 122,
+   "qi": 2,
+   "rec_id": "R025",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 122,
+   "qi": 3,
+   "rec_id": "R016",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 123,
+   "qi": 1,
+   "rec_id": "R024",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 123,
+   "qi": 2,
+   "rec_id": "R023",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 123,
+   "qi": 3,
+   "rec_id": "R004",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 124,
+   "qi": 0,
+   "rec_id": "R025",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 124,
+   "qi": 1,
+   "rec_id": "R021",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 124,
+   "qi": 2,
+   "rec_id": "R003",
+   "max_rid": "R029",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 124,
+   "qi": 3,
+   "rec_id": "R017",
+   "max_rid": "R035",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 125,
+   "qi": 0,
+   "rec_id": "R003",
+   "max_rid": "R031",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 125,
+   "qi": 1,
+   "rec_id": "R020",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 125,
+   "qi": 2,
+   "rec_id": "R023",
+   "max_rid": "R028",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 125,
+   "qi": 3,
+   "rec_id": "R015",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 126,
+   "qi": 3,
+   "rec_id": "R020",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 127,
+   "qi": 0,
+   "rec_id": "R021",
+   "max_rid": "R036",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 127,
+   "qi": 2,
+   "rec_id": "R022",
+   "max_rid": "R036",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 127,
+   "qi": 3,
+   "rec_id": "R012",
+   "max_rid": "R036",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 128,
+   "qi": 0,
+   "rec_id": "R022",
+   "max_rid": "R028",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 128,
+   "qi": 1,
+   "rec_id": "R018",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 128,
+   "qi": 2,
+   "rec_id": "R019",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 128,
+   "qi": 3,
+   "rec_id": "R027",
+   "max_rid": "R028",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 129,
+   "qi": 0,
+   "rec_id": "R010",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 129,
+   "qi": 1,
+   "rec_id": "R005",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 129,
+   "qi": 2,
+   "rec_id": "R015",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  },
+  {
+   "instance": 129,
+   "qi": 3,
+   "rec_id": "R019",
+   "max_rid": "R038",
+   "held_whole": false,
+   "match": false
+  }
+ ]
+}

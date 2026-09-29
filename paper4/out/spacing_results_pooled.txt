@@ -1,0 +1,29 @@
+PREREG_SPACING.md + Amendment S1 (1201f616...) results. K=24. c=40, C=512, n=50.
+Pooled across SnapKV + ExpectedAttention (AdaKV blocked, cross-head allocator mismatch).
+Confound check (d p_g, d units_complete) computed PER ARM before pooling.
+
+== M2
+  [snapkv] completion-matching: 50/50 matched, 0 outside band
+  [snapkv] relaxation log: mean n_relaxations/instance 34.9 (range 21-55); layers fully relaxed mean 0.76/instance; violation mean 16.3 max 23 n=1747
+  [snapkv] confound check: d p_g -0.0123, d units_complete -0.31  clean
+  [snapkv] contamination-tagged queries (matched instances): 4
+  [expected_attn] completion-matching: 50/50 matched, 0 outside band
+  [expected_attn] relaxation log: mean n_relaxations/instance 41.7 (range 29-57); layers fully relaxed mean 1.96/instance; violation mean 15.7 max 23 n=2087
+  [expected_attn] confound check: d p_g +0.0021, d units_complete -0.10  clean
+  [expected_attn] contamination-tagged queries (matched instances): 5
+  POOLED contamination-tagged queries: 9
+  CONTAMINATION-QUERY-COUNT PRECONDITION FAILS (< 20 pooled): M2 reported as NOT SCORED.
+
+== M3
+  [snapkv] completion-matching: 50/50 matched, 0 outside band
+  [snapkv] relaxation log: mean n_relaxations/instance 66.6 (range 41-98); layers fully relaxed mean 0.00/instance; violation mean 10.4 max 23 n=3330
+  [snapkv] confound check: d p_g -0.0138, d units_complete -0.52  clean
+  [snapkv] contamination-tagged queries (matched instances): 1
+  [expected_attn] completion-matching: 50/50 matched, 0 outside band
+  [expected_attn] relaxation log: mean n_relaxations/instance 45.5 (range 32-59); layers fully relaxed mean 0.00/instance; violation mean 12.2 max 23 n=2276
+  [expected_attn] confound check: d p_g -0.0019, d units_complete -0.25  clean
+  [expected_attn] contamination-tagged queries (matched instances): 0
+  POOLED contamination-tagged queries: 1
+  CONTAMINATION-QUERY-COUNT PRECONDITION FAILS (< 20 pooled): M3 reported as NOT SCORED.
+
+Scope reminder: this test addresses M2's dominant failure mode (contamination) and M3's minority contamination cases (SnapKV + ExpectedAttention only; AdaKV blocked). It says nothing about M3's refusal failures (31% of its population).

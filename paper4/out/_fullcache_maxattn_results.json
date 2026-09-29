@@ -1,0 +1,475 @@
+{
+ "wrong": [
+  {
+   "instance": 3,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "is_match": true
+  },
+  {
+   "instance": 5,
+   "qi": 1,
+   "rec_id": "R024",
+   "max_rid": "R024",
+   "is_match": true
+  },
+  {
+   "instance": 5,
+   "qi": 2,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "is_match": true
+  },
+  {
+   "instance": 7,
+   "qi": 0,
+   "rec_id": "R027",
+   "max_rid": "R027",
+   "is_match": true
+  },
+  {
+   "instance": 10,
+   "qi": 3,
+   "rec_id": "R019",
+   "max_rid": "R019",
+   "is_match": true
+  },
+  {
+   "instance": 12,
+   "qi": 2,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "is_match": true
+  },
+  {
+   "instance": 20,
+   "qi": 0,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "is_match": true
+  },
+  {
+   "instance": 23,
+   "qi": 1,
+   "rec_id": "R025",
+   "max_rid": "R025",
+   "is_match": true
+  },
+  {
+   "instance": 27,
+   "qi": 1,
+   "rec_id": "R005",
+   "max_rid": "R005",
+   "is_match": true
+  },
+  {
+   "instance": 30,
+   "qi": 3,
+   "rec_id": "R036",
+   "max_rid": "R035",
+   "is_match": false
+  },
+  {
+   "instance": 31,
+   "qi": 1,
+   "rec_id": "R034",
+   "max_rid": "R023",
+   "is_match": false
+  },
+  {
+   "instance": 33,
+   "qi": 0,
+   "rec_id": "R017",
+   "max_rid": "R013",
+   "is_match": false
+  },
+  {
+   "instance": 35,
+   "qi": 1,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "is_match": true
+  },
+  {
+   "instance": 37,
+   "qi": 1,
+   "rec_id": "R004",
+   "max_rid": "R004",
+   "is_match": true
+  },
+  {
+   "instance": 39,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "is_match": true
+  },
+  {
+   "instance": 40,
+   "qi": 1,
+   "rec_id": "R023",
+   "max_rid": "R023",
+   "is_match": true
+  },
+  {
+   "instance": 41,
+   "qi": 3,
+   "rec_id": "R027",
+   "max_rid": "R027",
+   "is_match": true
+  },
+  {
+   "instance": 42,
+   "qi": 0,
+   "rec_id": "R015",
+   "max_rid": "R014",
+   "is_match": false
+  },
+  {
+   "instance": 45,
+   "qi": 0,
+   "rec_id": "R011",
+   "max_rid": "R011",
+   "is_match": true
+  },
+  {
+   "instance": 46,
+   "qi": 1,
+   "rec_id": "R016",
+   "max_rid": "R016",
+   "is_match": true
+  }
+ ],
+ "correct": [
+  {
+   "instance": 0,
+   "qi": 0,
+   "rec_id": "R038",
+   "max_rid": "R038",
+   "is_match": true
+  },
+  {
+   "instance": 0,
+   "qi": 1,
+   "rec_id": "R021",
+   "max_rid": "R021",
+   "is_match": true
+  },
+  {
+   "instance": 0,
+   "qi": 2,
+   "rec_id": "R018",
+   "max_rid": "R018",
+   "is_match": true
+  },
+  {
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "is_match": true
+  },
+  {
+   "instance": 1,
+   "qi": 0,
+   "rec_id": "R012",
+   "max_rid": "R012",
+   "is_match": true
+  },
+  {
+   "instance": 1,
+   "qi": 2,
+   "rec_id": "R005",
+   "max_rid": "R005",
+   "is_match": true
+  },
+  {
+   "instance": 1,
+   "qi": 3,
+   "rec_id": "R006",
+   "max_rid": "R006",
+   "is_match": true
+  },
+  {
+   "instance": 2,
+   "qi": 0,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "is_match": true
+  },
+  {
+   "instance": 2,
+   "qi": 1,
+   "rec_id": "R014",
+   "max_rid": "R014",
+   "is_match": true
+  },
+  {
+   "instance": 2,
+   "qi": 2,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "is_match": true
+  },
+  {
+   "instance": 2,
+   "qi": 3,
+   "rec_id": "R028",
+   "max_rid": "R028",
+   "is_match": true
+  },
+  {
+   "instance": 3,
+   "qi": 1,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "is_match": true
+  },
+  {
+   "instance": 3,
+   "qi": 2,
+   "rec_id": "R015",
+   "max_rid": "R015",
+   "is_match": true
+  },
+  {
+   "instance": 3,
+   "qi": 3,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "is_match": true
+  },
+  {
+   "instance": 4,
+   "qi": 0,
+   "rec_id": "R015",
+   "max_rid": "R015",
+   "is_match": true
+  },
+  {
+   "instance": 4,
+   "qi": 1,
+   "rec_id": "R018",
+   "max_rid": "R018",
+   "is_match": true
+  },
+  {
+   "instance": 4,
+   "qi": 2,
+   "rec_id": "R003",
+   "max_rid": "R003",
+   "is_match": true
+  },
+  {
+   "instance": 4,
+   "qi": 3,
+   "rec_id": "R013",
+   "max_rid": "R013",
+   "is_match": true
+  },
+  {
+   "instance": 5,
+   "qi": 0,
+   "rec_id": "R012",
+   "max_rid": "R012",
+   "is_match": true
+  },
+  {
+   "instance": 5,
+   "qi": 3,
+   "rec_id": "R008",
+   "max_rid": "R008",
+   "is_match": true
+  },
+  {
+   "instance": 6,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "is_match": true
+  },
+  {
+   "instance": 6,
+   "qi": 1,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "is_match": true
+  },
+  {
+   "instance": 6,
+   "qi": 2,
+   "rec_id": "R023",
+   "max_rid": "R023",
+   "is_match": true
+  },
+  {
+   "instance": 6,
+   "qi": 3,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "is_match": true
+  },
+  {
+   "instance": 7,
+   "qi": 1,
+   "rec_id": "R023",
+   "max_rid": "R023",
+   "is_match": true
+  },
+  {
+   "instance": 7,
+   "qi": 2,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "is_match": true
+  },
+  {
+   "instance": 7,
+   "qi": 3,
+   "rec_id": "R016",
+   "max_rid": "R016",
+   "is_match": true
+  },
+  {
+   "instance": 8,
+   "qi": 0,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "is_match": true
+  },
+  {
+   "instance": 8,
+   "qi": 1,
+   "rec_id": "R018",
+   "max_rid": "R018",
+   "is_match": true
+  },
+  {
+   "instance": 8,
+   "qi": 3,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "is_match": true
+  },
+  {
+   "instance": 9,
+   "qi": 0,
+   "rec_id": "R021",
+   "max_rid": "R021",
+   "is_match": true
+  },
+  {
+   "instance": 9,
+   "qi": 1,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "is_match": true
+  },
+  {
+   "instance": 9,
+   "qi": 2,
+   "rec_id": "R020",
+   "max_rid": "R020",
+   "is_match": true
+  },
+  {
+   "instance": 9,
+   "qi": 3,
+   "rec_id": "R018",
+   "max_rid": "R018",
+   "is_match": true
+  },
+  {
+   "instance": 10,
+   "qi": 0,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "is_match": true
+  },
+  {
+   "instance": 10,
+   "qi": 1,
+   "rec_id": "R008",
+   "max_rid": "R008",
+   "is_match": true
+  },
+  {
+   "instance": 11,
+   "qi": 0,
+   "rec_id": "R002",
+   "max_rid": "R002",
+   "is_match": true
+  },
+  {
+   "instance": 11,
+   "qi": 1,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "is_match": true
+  },
+  {
+   "instance": 11,
+   "qi": 2,
+   "rec_id": "R020",
+   "max_rid": "R020",
+   "is_match": true
+  },
+  {
+   "instance": 11,
+   "qi": 3,
+   "rec_id": "R011",
+   "max_rid": "R011",
+   "is_match": true
+  },
+  {
+   "instance": 12,
+   "qi": 0,
+   "rec_id": "R006",
+   "max_rid": "R006",
+   "is_match": true
+  },
+  {
+   "instance": 12,
+   "qi": 1,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "is_match": true
+  },
+  {
+   "instance": 12,
+   "qi": 3,
+   "rec_id": "R012",
+   "max_rid": "R012",
+   "is_match": true
+  },
+  {
+   "instance": 13,
+   "qi": 0,
+   "rec_id": "R027",
+   "max_rid": "R027",
+   "is_match": true
+  },
+  {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "max_rid": "R028",
+   "is_match": true
+  },
+  {
+   "instance": 13,
+   "qi": 2,
+   "rec_id": "R004",
+   "max_rid": "R004",
+   "is_match": true
+  },
+  {
+   "instance": 13,
+   "qi": 3,
+   "rec_id": "R011",
+   "max_rid": "R011",
+   "is_match": true
+  }
+ ]
+}

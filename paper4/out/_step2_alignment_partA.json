@@ -1,0 +1,654 @@
+{
+ "n_checked": 81,
+ "n_aligned": 0,
+ "mismatches": [
+  {
+   "instance": 2,
+   "qi": 0,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Ellushardt|Treasury|747634|Pinebury|Review|994313|Ellushardt|Registry",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 2,
+   "qi": 2,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "gen": "R039|Caldirwell|Custody|682999|Larkmede|Draft|277452|Caldirwell|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 2,
+   "qi": 3,
+   "rec_id": "R028",
+   "max_rid": "R028",
+   "gen": "R028|Caldoldahl|Payments|872264|Granthill|Cleared|758534|Caldoldahl|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 3,
+   "qi": 1,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Caldenwick|Compliance|128264|Elmsworth|Closed|615302|Caldenwick|Registry",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 6,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 6,
+   "qi": 1,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 6,
+   "qi": 3,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Baramhardt|Compliance|424724|Oakstead|Held|883521|Baramhardt|Treasury",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 7,
+   "qi": 2,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Caldunwick|Valuation|273118|Elmsworth|Pending|429709|Caldunwick|Reconciliation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 8,
+   "qi": 0,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Barendahl|Procurement|683415|Ashcombe|Final|562667|Barendahl|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 11,
+   "qi": 1,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "Barolker|Clearing|496244|Oakstead|Closed|283156|Barolker|Registry",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 12,
+   "qi": 2,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Dornacdahl|Actuarial|331908|Granthill|Pending|482904|Dornacdahl|Treasury",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 15,
+   "qi": 0,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Ellenhardt|Custody|961365|Draymouth|Draft|830332|Ellenhardt|Payments",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 16,
+   "qi": 1,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Baroldahl|Payments|263056|Westmoor|Closed|287733|Baroldahl|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 20,
+   "qi": 0,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Dornolridge|Payments|229838|Pinebury|Cleared|438091|Dornolridge|Settlement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 21,
+   "qi": 2,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "gen": "R036|Caldamker|Registry|288287|Pinebury|Closed|551916|Caldamker|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 23,
+   "qi": 0,
+   "rec_id": "R037",
+   "max_rid": "R038",
+   "gen": "R037|Caldunhardt|Actuarial|771852|Pinebury|Draft|298846|Caldunhardt|Settlement",
+   "reason": "content mismatch (not a pure retokenization artifact)"
+  },
+  {
+   "instance": 23,
+   "qi": 3,
+   "rec_id": "R036",
+   "max_rid": "R038",
+   "gen": "R036|Barunstad|Procurement|434825|Elmsworth|Pending|506459|Barunstad|Compliance",
+   "reason": "content mismatch (not a pure retokenization artifact)"
+  },
+  {
+   "instance": 26,
+   "qi": 1,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "gen": "R033|Caldidridge|Underwriting|993443|Draymouth|Draft|248961|Caldidridge|Treasury",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 30,
+   "qi": 1,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "gen": "R033|Ellunridge|Compliance|513484|Westmoor|Final|438405|Ellunridge|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 31,
+   "qi": 1,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Dornorwick|Payments|229221|Granthill|Closed|428547|Dornorwick|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 32,
+   "qi": 0,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Baracker|Reconciliation|668853|Elmsworth|Closed|111616|Baracker|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 32,
+   "qi": 1,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Ellusdahl|Clearing|984333|Ashcombe|Review|786060|Ellusdahl|Registry",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 35,
+   "qi": 3,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Dornolfield|Settlement|321023|Westmoor|Draft|969790|Dornolfield|Payments|386089|Fairhollow|",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 37,
+   "qi": 2,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "gen": "R033|Ellamhardt|Treasury|973880|Westmoor|Review|383043|Ellamhardt|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 37,
+   "qi": 3,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Barammont|Underwriting|461048|Harborline|Open|827581|Barammont|Underwriting",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 38,
+   "qi": 0,
+   "rec_id": "R038",
+   "max_rid": "R038",
+   "gen": "R038|Dornirker|Procurement|299197|Harborline|Pending|952640|Dornirker|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 38,
+   "qi": 2,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Barenmont|Clearing|181035|Westmoor|Open|605462|Barenmont|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 39,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Elloldahl|Valuation|941798|Kingsfell|Pending|523133|Elloldahl|Underwriting",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 43,
+   "qi": 2,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "gen": "R037|Dornorson|Reconciliation|431165|Fairhollow|Pending|980487|Dornorson|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 44,
+   "qi": 0,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "gen": "R033|Dornenwick|Procurement|902559|Westmoor|Final|865470|Dornenwick|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 45,
+   "qi": 3,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Caldolson|Procurement|213839|Granthill|Draft|496439|Caldolson|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 46,
+   "qi": 2,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Caldacfield|Reconciliation|380946|Granthill|Review|877946|Caldacfield|Payments",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 48,
+   "qi": 1,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Caldendahl|Compliance|395254|Granthill|Pending|683019|Caldendahl|Payments",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 50,
+   "qi": 1,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Barunstad|Compliance|405960|Kingsfell|Open|436802|Barunstad|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 51,
+   "qi": 1,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Barirfield|Registry|358025|Northgate|Draft|110116|Barirfield|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 52,
+   "qi": 2,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "gen": "R037|Barunker|Payments|278332|Larkmede|Closed|314812|Barunker|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 53,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Ellushardt|Settlement|559969|Northgate|Held|310185|Ellushardt|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 53,
+   "qi": 1,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "gen": "R037|Elluswick|Procurement|812328|Pinebury|Review|783547|Elluswick|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 57,
+   "qi": 0,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Caldacwell|Reconciliation|363627|Ashcombe|Cleared|832233|Caldacwell|Registry|",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 57,
+   "qi": 1,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "gen": "R033|Caldamwell|Clearing|918411|Draymouth|Pending|369640|Caldamwell|Reconciliation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 58,
+   "qi": 3,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "gen": "R036|Dornidmont|Payments|780797|Larkmede|Draft|895539|Dornidmont|Custody",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 62,
+   "qi": 3,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Baramdahl|Registry|535719|Kingsfell|Open|290232|Baramdahl|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 63,
+   "qi": 1,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "gen": "R036|Dornirhardt|Treasury|583231|Pinebury|Closed|718138|Dornirhardt|Underwriting",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 66,
+   "qi": 0,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Ellidhardt|Payments|917589|Fairhollow|Held|191922|Ellidhardt|Settlement|194833|Kingsfell",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 66,
+   "qi": 2,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Caldenwell|Clearing|172858|Ashcombe|Review|311893|R032|Caldenwell|Clearing|194833|",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 67,
+   "qi": 2,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Baridmont|Payments|573770|Larkmede|Review|247641|Baridmont|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 68,
+   "qi": 3,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Ellamdahl|Treasury|308875|Granthill|Cleared|123008|Ellamdahl|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 69,
+   "qi": 1,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Caldirdahl|Settlement|973919|Fairhollow|Closed|278286|Caldirdahl|Settlement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 71,
+   "qi": 1,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "gen": "Ellundahl|Settlement|259582|Granthill|Open|403905|Ellundahl|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 72,
+   "qi": 1,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Barethdahl|Reconciliation|706822|Oakstead|Closed|701574|Barethdahl|Compliance|",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 73,
+   "qi": 1,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Barenwell|Actuarial|627087|Harborline|Final|204123|Barenwell|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 73,
+   "qi": 3,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Ellunfield|Procurement|389199|Elmsworth|Open|574373|Ellunfield|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 75,
+   "qi": 3,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Caldidker|Custody|690920|Pinebury|Closed|822338|Caldidker|Treasury",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 78,
+   "qi": 0,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Caldacker|Compliance|623264|Granthill|Open|347043|Caldacker|Settlement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 80,
+   "qi": 0,
+   "rec_id": "R037",
+   "max_rid": "R037",
+   "gen": "Ellenstad|Custody|788596|Elmsworth|Draft|750214|Ellenstad|Registry",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 80,
+   "qi": 1,
+   "rec_id": "R038",
+   "max_rid": "R038",
+   "gen": "R038|Dornethdahl|Registry|910987|Northgate|Held|253678|Dornethdahl|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 81,
+   "qi": 1,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Ellethfield|Payments|264046|Larkmede|Held|412522|Ellethfield|Underwriting",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 82,
+   "qi": 2,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Ellamwick|Clearing|911096|Oakstead|Closed|433095|Ellamwick|Settlement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 84,
+   "qi": 3,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "gen": "R039|Barenfield|Compliance|411859|Westmoor|Draft|456148|Barenfield|Reconciliation",
+   "reason": "content mismatch (not a pure retokenization artifact)"
+  },
+  {
+   "instance": 87,
+   "qi": 0,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Ellenwell|Custody|704825|Westmoor|Draft|305477|Ellenwell|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 87,
+   "qi": 3,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Dornidwick|Reconciliation|830990|Larkmede|Held|803774|Dornidwick|Custody",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 89,
+   "qi": 3,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "gen": "R039|Caldusmont|Procurement|875264|Fairhollow|Final|418104|Caldusmont|Compliance",
+   "reason": "content mismatch (not a pure retokenization artifact)"
+  },
+  {
+   "instance": 92,
+   "qi": 2,
+   "rec_id": "R039",
+   "max_rid": "R039",
+   "gen": "R039|Barusdahl|Actuarial|284931|Fairhollow|Review|669762|Barusdahl|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 94,
+   "qi": 2,
+   "rec_id": "R028",
+   "max_rid": "R028",
+   "gen": "R028|Baridfield|Clearing|560338|Oakstead|Pending|822715|Baridfield|Payments",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 95,
+   "qi": 0,
+   "rec_id": "R028",
+   "max_rid": "R028",
+   "gen": "R028|Dornolhardt|Underwriting|333081|Kingsfell|Held|744683|Dornolhardt|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 95,
+   "qi": 2,
+   "rec_id": "R034",
+   "max_rid": "R034",
+   "gen": "R034|Caldusker|Custody|674810|Pinebury|Review|168587|Caldusker|Settlement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 96,
+   "qi": 0,
+   "rec_id": "R030",
+   "max_rid": "R030",
+   "gen": "R030|Dornacson|Reconciliation|383230|Larkmede|Held|395309|Dornacson|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 99,
+   "qi": 2,
+   "rec_id": "R029",
+   "max_rid": "R029",
+   "gen": "R029|Caldamson|Settlement|803776|Pinebury|Cleared|438183|Caldamson|Custody",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 99,
+   "qi": 3,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Ellunwick|Registry|697556|Westmoor|Cleared|740378|Ellunwick|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 100,
+   "qi": 2,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Barenson|Compliance|149782|Kingsfell|Review|471611|Barenson|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 100,
+   "qi": 3,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Dornethridge|Valuation|742010|Northgate|Final|932255|Dornethridge|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 102,
+   "qi": 2,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Elluswick|Valuation|234156|Granthill|Review|641652|Elluswick|Clearing",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 104,
+   "qi": 0,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Ellamridge|Payments|811584|Granthill|Held|732764|Ellamridge|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 106,
+   "qi": 2,
+   "rec_id": "R038",
+   "max_rid": "R038",
+   "gen": "R038|Caldormont|Clearing|929336|Harborline|Draft|356457|Caldormont|Actuarial",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 107,
+   "qi": 1,
+   "rec_id": "R036",
+   "max_rid": "R036",
+   "gen": "R036|Dornenwick|Actuarial|442754|Fairhollow|Final|248142|Dornenwick|Compliance",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 111,
+   "qi": 0,
+   "rec_id": "R031",
+   "max_rid": "R031",
+   "gen": "R031|Ellacwell|Clearing|238488|Northgate|Draft|574347|Ellacwell|Valuation",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 113,
+   "qi": 1,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Ellolridge|Procurement|571574|Harborline|Cleared|658300|Ellolridge|Settlement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 115,
+   "qi": 0,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Ellusstad|Payments|856491|Fairhollow|Open|867282|Ellusstad|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 115,
+   "qi": 3,
+   "rec_id": "R033",
+   "max_rid": "R033",
+   "gen": "R033|Barorker|Valuation|211364|Fairhollow|Open|378654|Barorker|Custody",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 117,
+   "qi": 0,
+   "rec_id": "R032",
+   "max_rid": "R032",
+   "gen": "R032|Ellorstad|Actuarial|913245|Oakstead|Final|821786|Ellorstad|Treasury",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  },
+  {
+   "instance": 118,
+   "qi": 2,
+   "rec_id": "R035",
+   "max_rid": "R035",
+   "gen": "R035|Dornormont|Registry|916809|Oakstead|Closed|723269|Dornormont|Procurement",
+   "reason": "digit-chunking (same digits, different token boundary)"
+  }
+ ]
+}

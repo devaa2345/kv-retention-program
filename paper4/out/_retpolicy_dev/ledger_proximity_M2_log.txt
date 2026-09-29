@@ -1,0 +1,9 @@
+    inst 10/80  fails=0
+    inst 20/80  fails=0
+    inst 30/80  fails=0
+    inst 40/80  fails=0
+    inst 50/80  fails=0
+    inst 60/80  fails=0
+    inst 70/80  fails=0
+    inst 80/80  fails=0
+DONE: 80 instances, 0 failures

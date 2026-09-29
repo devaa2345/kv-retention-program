@@ -1,0 +1,43 @@
+PREREG_SPACING.md + Amendment S1 (1201f616...) -- n-raise scale-up.
+K=24, c=40, C=512. Target n: M2=120, M3=150 (per instruction).
+Pooled across SnapKV + ExpectedAttention (AdaKV blocked). Confound check per arm before pooling. Stage 3's frozen n=50 grid file is read, never modified.
+
+== M2  (target n=120)
+  [snapkv] rows present: 120/120 (u_rows=120, sp_rows=120)
+  [snapkv] completion-matching: 120/120 matched, 0 outside band
+  [snapkv] relaxation log: mean n_relaxations/instance 35.6 (range 20-55); layers fully relaxed mean 0.76/instance
+  [snapkv] confound check: d p_g -0.0156, d units_complete -0.32  clean
+  [snapkv] contamination-tagged queries (matched instances): 8
+  [expected_attn] rows present: 120/120 (u_rows=120, sp_rows=120)
+  [expected_attn] completion-matching: 120/120 matched, 0 outside band
+  [expected_attn] relaxation log: mean n_relaxations/instance 41.3 (range 28-57); layers fully relaxed mean 1.92/instance
+  [expected_attn] confound check: d p_g -0.0005, d units_complete -0.10  clean
+  [expected_attn] contamination-tagged queries (matched instances): 8
+  [adakv_snapkv] rows present: 120/120 (u_rows=120, sp_rows=120)
+  [adakv_snapkv] completion-matching: 120/120 matched, 0 outside band
+  [adakv_snapkv] relaxation log: mean n_relaxations/instance 39.1 (range 24-53); layers fully relaxed mean 0.68/instance
+  [adakv_snapkv] confound check: d p_g -0.0182, d units_complete -0.40  clean
+  [adakv_snapkv] contamination-tagged queries (matched instances): 10
+  POOLED contamination-tagged queries: 26  (floor: 20)
+  pooled contamination-tagged accuracy: spaced 0.000 vs unconstrained 0.000 (all wrong by construction)  delta +0.000 [+0.000, +0.000]
+  VERDICT (M2): NOT-IT
+
+== M3  (target n=150)
+  [snapkv] rows present: 150/150 (u_rows=150, sp_rows=150)
+  [snapkv] completion-matching: 150/150 matched, 0 outside band
+  [snapkv] relaxation log: mean n_relaxations/instance 65.0 (range 33-100); layers fully relaxed mean 0.00/instance
+  [snapkv] confound check: d p_g -0.0138, d units_complete -0.51  clean
+  [snapkv] contamination-tagged queries (matched instances): 2
+  [expected_attn] rows present: 150/150 (u_rows=150, sp_rows=150)
+  [expected_attn] completion-matching: 150/150 matched, 0 outside band
+  [expected_attn] relaxation log: mean n_relaxations/instance 46.4 (range 31-65); layers fully relaxed mean 0.00/instance
+  [expected_attn] confound check: d p_g -0.0067, d units_complete -0.25  clean
+  [expected_attn] contamination-tagged queries (matched instances): 1
+  [adakv_snapkv] rows present: 150/150 (u_rows=150, sp_rows=150)
+  [adakv_snapkv] completion-matching: 150/150 matched, 0 outside band
+  [adakv_snapkv] relaxation log: mean n_relaxations/instance 152.4 (range 119-196); layers fully relaxed mean 0.00/instance
+  [adakv_snapkv] confound check: d p_g -0.0288, d units_complete -0.80  clean
+  [adakv_snapkv] contamination-tagged queries (matched instances): 6
+  POOLED contamination-tagged queries: 9  (floor: 20)
+  PRECONDITION FAILS: M3 reported as NOT SCOREABLE at this cell, at n=150. Per instruction, not chased further.
+

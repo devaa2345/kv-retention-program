@@ -1,0 +1,19 @@
+loading SQuAD...
+  case0: span_hit=True held_whole=True score_base=1 verbatim_base=0 score_masked=0 invented_masked=0
+  case1: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case2: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case3: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case4: span_hit=False held_whole=True score_base=1 verbatim_base=0 score_masked=0 invented_masked=0
+  case5: span_hit=True held_whole=True score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case6: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case7: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case8: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case9: span_hit=True held_whole=True score_base=1 verbatim_base=0 score_masked=0 invented_masked=0
+  case10: span_hit=True held_whole=True score_base=1 verbatim_base=1 score_masked=1 invented_masked=0
+  case11: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case12: span_hit=True held_whole=True score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case14: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case15: span_hit=False held_whole=False score_base=0 verbatim_base=0 score_masked=0 invented_masked=0
+  case16: span_hit=True held_whole=True score_base=1 verbatim_base=1 score_masked=1 invented_masked=0
+  case17: span_hit=False held_whole=False score_base=0 verbatim_base=1 score_masked=0 invented_masked=0
+DONE pilot v2 (extractive=True, topk=3): 17/17 cases

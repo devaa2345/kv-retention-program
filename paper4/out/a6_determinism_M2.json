@@ -1,0 +1,25 @@
+{
+ "repeat": {
+  "floor_pos": [
+   10,
+   10
+  ],
+  "snapkv": [
+   10,
+   10
+  ],
+  "U-snapkv": [
+   10,
+   10
+  ],
+  "ascend-snapkv": [
+   10,
+   10
+  ]
+ },
+ "cross": {
+  "gen": 3,
+  "keep": 10
+ },
+ "n": 10
+}

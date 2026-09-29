@@ -1,0 +1,542 @@
+[
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 2,
+   "qi": 0,
+   "rec_id": "R035",
+   "answer": "R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.4965277777777778,
+   "n_near_matches": 4
+  },
+  "match": {
+   "instance": 2,
+   "qi": 2,
+   "rec_id": "R039",
+   "q_slot": 0.4965277777777778,
+   "gold": "Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial"
+  },
+  "case_resid": -0.0013085134491145367,
+  "case_raw": 0.0016681405097702653,
+  "case_pos": 53,
+  "case_n": 41,
+  "match_resid": 0.017946780374995523,
+  "match_raw": 0.02132883294733043,
+  "match_pos": 58,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 6,
+   "qi": 1,
+   "rec_id": "R031",
+   "answer": "R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 35,
+   "q_slot": 0.3576388888888889,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 6,
+   "qi": 0,
+   "rec_id": "R030",
+   "q_slot": 0.3576388888888889,
+   "gold": "Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial"
+  },
+  "case_resid": -0.0015520441724965414,
+  "case_raw": 0.0009471840151983066,
+  "case_pos": 50,
+  "case_n": 41,
+  "match_resid": 0.018744715592363476,
+  "match_raw": 0.021872342700181225,
+  "match_pos": 49,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 11,
+   "qi": 1,
+   "rec_id": "R029",
+   "answer": "R029 | Calidale | Clearing | 591234 | Pinecrest | Closed | 654321 | Calidale | Settlement",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 33,
+   "q_slot": 0.04513888888888889,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R016",
+   "q_slot": 0.06597222222222222,
+   "gold": "Dornethhardt | Procurement | 715275 | Draymouth | Closed | 301220 | Dornethhardt | Payments"
+  },
+  "case_resid": -0.0012107935351623957,
+  "case_raw": 0.000815226799849351,
+  "case_pos": 45,
+  "case_n": 41,
+  "match_resid": 0.02523063156292451,
+  "match_raw": 0.0269615381890046,
+  "match_pos": 28,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 12,
+   "qi": 2,
+   "rec_id": "R031",
+   "answer": "R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 37,
+   "q_slot": 0.1527777777777778,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 12,
+   "qi": 3,
+   "rec_id": "R012",
+   "q_slot": 0.1527777777777778,
+   "gold": "Dornirmont | Registry | 317550 | Draymouth | Pending | 826696 | Dornirmont | Settlement"
+  },
+  "case_resid": -0.0011481552351738742,
+  "case_raw": 0.0005132009090678283,
+  "case_pos": 48,
+  "case_n": 41,
+  "match_resid": 0.009670095857655369,
+  "match_raw": 0.011390919836610187,
+  "match_pos": 23,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 20,
+   "qi": 0,
+   "rec_id": "R032",
+   "answer": "R032|Dornamore|Treasury|555555|Fairhollow|Draft|999999|Dornamore|Compliance",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 35,
+   "q_slot": 0.1111111111111111,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 12,
+   "qi": 3,
+   "rec_id": "R012",
+   "q_slot": 0.1527777777777778,
+   "gold": "Dornirmont | Registry | 317550 | Draymouth | Pending | 826696 | Dornirmont | Settlement"
+  },
+  "case_resid": -0.0005032507052239632,
+  "case_raw": 0.001464194213068528,
+  "case_pos": 51,
+  "case_n": 41,
+  "match_resid": 0.009670095857655369,
+  "match_raw": 0.011390919836610187,
+  "match_pos": 23,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 37,
+   "qi": 3,
+   "rec_id": "R034",
+   "answer": "R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 234567 | Ellamhardt | Registry",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.3541666666666667,
+   "n_near_matches": 3
+  },
+  "match": {
+   "instance": 6,
+   "qi": 0,
+   "rec_id": "R030",
+   "q_slot": 0.3576388888888889,
+   "gold": "Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial"
+  },
+  "case_resid": 0.002373515224211338,
+  "case_raw": 0.005275494952779278,
+  "case_pos": 54,
+  "case_n": 41,
+  "match_resid": 0.018744715592363476,
+  "match_raw": 0.021872342700181225,
+  "match_pos": 49,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 38,
+   "qi": 2,
+   "rec_id": "R029",
+   "answer": "R029 | Caldorfield | Underwriting | 156324 | Kingsfell | Cleared | 729536 | Caldorfield | Underwriting",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.4340277777777778,
+   "n_near_matches": 3
+  },
+  "match": {
+   "instance": 38,
+   "qi": 0,
+   "rec_id": "R038",
+   "q_slot": 0.4340277777777778,
+   "gold": "Dornirker | Procurement | 299197 | Harborline | Pending | 952640 | Dornirker | Compliance"
+  },
+  "case_resid": -0.0019931508128497493,
+  "case_raw": 0.00025562660049685483,
+  "case_pos": 45,
+  "case_n": 41,
+  "match_resid": 0.016978295277510866,
+  "match_raw": 0.020770785775120728,
+  "match_pos": 57,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 6,
+   "qi": 0,
+   "rec_id": "R030",
+   "answer": "R030|Baramker|Valuation|454055|Oakstead|Final|698765|Baramker|Payments",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 35,
+   "q_slot": 0.2708333333333333,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 6,
+   "qi": 2,
+   "rec_id": "R023",
+   "q_slot": 0.2708333333333333,
+   "gold": "Dornenwick | Custody | 757424 | Westmoor | Closed | 412993 | Dornenwick | Treasury"
+  },
+  "case_resid": 0.009085081129068369,
+  "case_raw": 0.012061052552394104,
+  "case_pos": 49,
+  "case_n": 41,
+  "match_resid": 0.014557477478060882,
+  "match_raw": 0.016658627512292502,
+  "match_pos": 39,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 6,
+   "qi": 3,
+   "rec_id": "R032",
+   "answer": "R032|Dornuswick|Procurement|454123|Oakstead|Final|698765|Dornuswick|Payments|",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 32,
+   "q_slot": 0.2708333333333333,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 6,
+   "qi": 2,
+   "rec_id": "R023",
+   "q_slot": 0.2708333333333333,
+   "gold": "Dornenwick | Custody | 757424 | Westmoor | Closed | 412993 | Dornenwick | Treasury"
+  },
+  "case_resid": 0.004713445379385544,
+  "case_raw": 0.007527071458095518,
+  "case_pos": 51,
+  "case_n": 41,
+  "match_resid": 0.014557477478060882,
+  "match_raw": 0.016658627512292502,
+  "match_pos": 39,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 7,
+   "qi": 2,
+   "rec_id": "R029",
+   "answer": "R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 36,
+   "q_slot": 0.09375,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "q_slot": 0.11805555555555555,
+   "gold": "Dornenhardt | Reconciliation | 407997 | Draymouth | Cleared | 736808 | Dornenhardt | Underwriting"
+  },
+  "case_resid": 0.0013100272882457101,
+  "case_raw": 0.003237460932537583,
+  "case_pos": 46,
+  "case_n": 41,
+  "match_resid": 0.01648891403478081,
+  "match_raw": 0.01847608980731457,
+  "match_pos": 44,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 11,
+   "qi": 1,
+   "rec_id": "R029",
+   "answer": "R029|Barolker|Clearing|496244|Oakstead|Closed|305916|Barolker|Custody",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 33,
+   "q_slot": 0.1597222222222222,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "q_slot": 0.11805555555555555,
+   "gold": "Dornenhardt | Reconciliation | 407997 | Draymouth | Cleared | 736808 | Dornenhardt | Underwriting"
+  },
+  "case_resid": 0.012143917124117958,
+  "case_raw": 0.014207427946343006,
+  "case_pos": 45,
+  "case_n": 41,
+  "match_resid": 0.01648891403478081,
+  "match_raw": 0.01847608980731457,
+  "match_pos": 44,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 12,
+   "qi": 2,
+   "rec_id": "R031",
+   "answer": "R031 | Dornacdahl | Actuarial | 321904 | Oakstead | Draft | 456720 | Dornacdahl | Settlement",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 37,
+   "q_slot": 0.1909722222222222,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 15,
+   "qi": 1,
+   "rec_id": "R021",
+   "q_slot": 0.22569444444444445,
+   "gold": "Caldidfield | Settlement | 224603 | Larkmede | Held | 699648 | Caldidfield | Underwriting"
+  },
+  "case_resid": 0.002832239701801356,
+  "case_raw": 0.005167759412342237,
+  "case_pos": 48,
+  "case_n": 41,
+  "match_resid": 0.03032537132404794,
+  "match_raw": 0.03271968165317194,
+  "match_pos": 36,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 16,
+   "qi": 1,
+   "rec_id": "R031",
+   "answer": "R031 | Ellenbrook | Clearing | 523104 | Elmsworth | Final | 345678 | Ellenbrook | Treasury",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.16319444444444445,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "q_slot": 0.11805555555555555,
+   "gold": "Dornenhardt | Reconciliation | 407997 | Draymouth | Cleared | 736808 | Dornenhardt | Underwriting"
+  },
+  "case_resid": -0.00038405833531993594,
+  "case_raw": 0.0015916634978969941,
+  "case_pos": 48,
+  "case_n": 41,
+  "match_resid": 0.01648891403478081,
+  "match_raw": 0.01847608980731457,
+  "match_pos": 44,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 23,
+   "qi": 3,
+   "rec_id": "R036",
+   "answer": "R036 | Barenhardt | Actuarial | 781852 | Pinebury | Draft | 298846 | Barenhardt | Settlement",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.3888888888888889,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 23,
+   "qi": 0,
+   "rec_id": "R037",
+   "q_slot": 0.3888888888888889,
+   "gold": "Caldunhardt | Actuarial | 771852 | Pinebury | Draft | 298846 | Caldunhardt | Settlement"
+  },
+  "case_resid": -0.001285583184640564,
+  "case_raw": 0.0019469081688044424,
+  "case_pos": 54,
+  "case_n": 41,
+  "match_resid": 0.011207048575925442,
+  "match_raw": 0.014574837159901741,
+  "match_pos": 55,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 31,
+   "qi": 1,
+   "rec_id": "R034",
+   "answer": "Dornicastle|Payments|229211|Grantham|Closed|428547|Dornicastle|Payments",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 2,
+   "gold_len_tok": 37,
+   "q_slot": 0.1840277777777778,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 15,
+   "qi": 1,
+   "rec_id": "R021",
+   "q_slot": 0.22569444444444445,
+   "gold": "Caldidfield | Settlement | 224603 | Larkmede | Held | 699648 | Caldidfield | Underwriting"
+  },
+  "case_resid": 0.028602414941577406,
+  "case_raw": 0.037778651591413935,
+  "case_pos": 54,
+  "case_n": 41,
+  "match_resid": 0.03032537132404794,
+  "match_raw": 0.03271968165317194,
+  "match_pos": 36,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 38,
+   "qi": 2,
+   "rec_id": "R029",
+   "answer": "R029|Dornamker|Actuarial|439144|Granthill|Final|684469|Dornamker|Payments",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.4097222222222222,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 23,
+   "qi": 0,
+   "rec_id": "R037",
+   "q_slot": 0.3888888888888889,
+   "gold": "Caldunhardt | Actuarial | 771852 | Pinebury | Draft | 298846 | Caldunhardt | Settlement"
+  },
+  "case_resid": 0.01500170965636142,
+  "case_raw": 0.017152611330113435,
+  "case_pos": 45,
+  "case_n": 41,
+  "match_resid": 0.011207048575925442,
+  "match_raw": 0.014574837159901741,
+  "match_pos": 55,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 39,
+   "qi": 0,
+   "rec_id": "R030",
+   "answer": "R030 | Elloldahl | Valuation | 941798 | Kingshill | Pending | 653214 | Elloldahl | Procurement",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.16666666666666666,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "q_slot": 0.11805555555555555,
+   "gold": "Dornenhardt | Reconciliation | 407997 | Draymouth | Cleared | 736808 | Dornenhardt | Underwriting"
+  },
+  "case_resid": 0.013824799112705006,
+  "case_raw": 0.016149561207390865,
+  "case_pos": 46,
+  "case_n": 41,
+  "match_resid": 0.01648891403478081,
+  "match_raw": 0.01847608980731457,
+  "match_pos": 44,
+  "match_n": 41
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 16,
+   "qi": 1,
+   "rec_id": "R031",
+   "answer": "Baridson | Treasury | 567890 | Southgate | Final | 789012 | Baridson | Treasury",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 1,
+   "gold_len_tok": 34,
+   "q_slot": 0.1909722222222222,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 16,
+   "qi": 0,
+   "rec_id": "R003",
+   "q_slot": 0.1909722222222222,
+   "gold": "Baridson | Actuarial | 249794 | Draymouth | Draft | 683324 | Baridson | Clearing"
+  },
+  "case_resid": 0.0007582388326097483,
+  "case_raw": 0.00010038314296502272,
+  "case_pos": 48,
+  "case_n": 41,
+  "match_resid": 0.026808416956439,
+  "match_raw": 0.03178173388963946,
+  "match_pos": 11,
+  "match_n": 41
+ }
+]

@@ -1,0 +1,678 @@
+{
+ "floor": [
+  {
+   "instance": 0,
+   "qi": 0,
+   "rec_id": "R038",
+   "u_ans": "R038|Caldidfield|Settlement|880388|Northgate|Held|218066|Caldidfield|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R036",
+   "u_ans": "R036|Barenridge|Compliance|116331|Kingsfell|Draft|552658|Barenridge|Clearing",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 1,
+   "qi": 1,
+   "rec_id": "R040",
+   "u_ans": "Ellushardt|Registry|550858|Elmsworth|Held|958460",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 3,
+   "qi": 0,
+   "rec_id": "R030",
+   "u_ans": "R030|Ellthson|Reconciliation|162038|Elmsworth|Open|765279|Ellthson|Treasury",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 3,
+   "qi": 3,
+   "rec_id": "R037",
+   "u_ans": "R037|Caldormont|Clearing|966569|Northgate|Draft|398350|Caldormont|Reconciliation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 5,
+   "qi": 2,
+   "rec_id": "R034",
+   "u_ans": "R034|Barolhardt|Procurement|352208|Northgate|Cleared|521095|Barolhardt|Reconciliation",
+   "tag": "misattribution (distant)",
+   "reason": "matches record R016, 18 away, overlap=4"
+  },
+  {
+   "instance": 8,
+   "qi": 2,
+   "rec_id": "R040",
+   "u_ans": "Baramridge|Compliance|880278|Fairhollow|Review|648584",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 8,
+   "qi": 3,
+   "rec_id": "R039",
+   "u_ans": "R039|Caldunhardt|Underwriting|699633|Harborline|Review|940664|Baramridge|Valuation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 9,
+   "qi": 1,
+   "rec_id": "R029",
+   "u_ans": "R029|Dornormont|Underwriting|534097|Northgate|Pending|210265|Dornusdahl|Reconciliation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 10,
+   "qi": 0,
+   "rec_id": "R037",
+   "u_ans": "R037|Baramson|Actuarial|915818|Kingsfell|Pending|406864|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 12,
+   "qi": 1,
+   "rec_id": "R033",
+   "u_ans": "R033|Dornunfield|Compliance|257415|Fairhollow|Closed|931805|Dornunfield|Valuation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 14,
+   "qi": 1,
+   "rec_id": "R038",
+   "u_ans": "R038|Actuarial|Harborline|Cleared|159827|Ellethwick",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 21,
+   "qi": 1,
+   "rec_id": "R040",
+   "u_ans": "R040|Dornirker|Settlement|550337|Fairhollow|Draft|548191|Dornirker|Procurement",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 22,
+   "qi": 0,
+   "rec_id": "R034",
+   "u_ans": "R034|Baridhardt|Payments|653350|Kingsfell|Pending|901660|Baridhardt|Settlement",
+   "tag": "misattribution (distant)",
+   "reason": "matches record R030, 4 away, overlap=5"
+  },
+  {
+   "instance": 28,
+   "qi": 3,
+   "rec_id": "R034",
+   "u_ans": "R034|Baramdahl|Payments|798006|Larkmede|Pending|809871",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 30,
+   "qi": 3,
+   "rec_id": "R036",
+   "u_ans": "R036|Ellorfield|Valuation|399683|Ashcombe|Held|238135|Barunmont|Custody",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 35,
+   "qi": 1,
+   "rec_id": "R033",
+   "u_ans": "R033|Dornolfield|Settlement|321023|Westmoor|Draft|969790|Dornolfield|Payments|386089|Fairhollow|Final|2",
+   "tag": "contamination",
+   "reason": "matches record R031, 2 away, overlap=7"
+  },
+  {
+   "instance": 36,
+   "qi": 2,
+   "rec_id": "R037",
+   "u_ans": "Ellunwell|Procurement|348614|Harborline|Draft|381588",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 38,
+   "qi": 1,
+   "rec_id": "R035",
+   "u_ans": "R035|Dornusstad|Clearing|266428|Ashcombe|Final|886454|Dornusdahl|Procurement",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 42,
+   "qi": 2,
+   "rec_id": "R039",
+   "u_ans": "R039|Dornusdahl|Valuation|231320|Granthill|Cleared|926616|Dornusdahl|Registry",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 44,
+   "qi": 3,
+   "rec_id": "R040",
+   "u_ans": "Caldamson|Registry|725603|Northgate|Open|864877",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 45,
+   "qi": 2,
+   "rec_id": "R036",
+   "u_ans": "R036|Baridwick|Underwriting|509085|Fairhollow|Held|727005|Ellolfield|Treasury",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 49,
+   "qi": 3,
+   "rec_id": "R040",
+   "u_ans": "Caldethwick|Registry|246760|Fairhollow|Draft|325878",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  }
+ ],
+ "oracle": [
+  {
+   "instance": 0,
+   "qi": 2,
+   "rec_id": "R018",
+   "u_ans": "R018|Barenstad|Actuarial|Review|119275|Barenstad|Compliance",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R036",
+   "u_ans": "R036|Barenridge|Compliance|116331|Kingsfell|Draft|552658|Barenridge|Clearing",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 1,
+   "qi": 1,
+   "rec_id": "R040",
+   "u_ans": "Ellushardt|Registry|550858|Elmsworth|Held|958460",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 1,
+   "qi": 2,
+   "rec_id": "R005",
+   "u_ans": "Caldunson|Valuation|119905|Ashcombe|Closed|461834|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 1,
+   "qi": 3,
+   "rec_id": "R006",
+   "u_ans": "Barolhardt|Underwriting|500444|Pinebury|Review",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 3,
+   "qi": 0,
+   "rec_id": "R030",
+   "u_ans": "R030|Ellthson|Reconciliation|162038|Elmsworth|Open|765279|Ellthson|Treasury",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 3,
+   "qi": 3,
+   "rec_id": "R037",
+   "u_ans": "R037|Caldormont|Clearing|966569|Northgate|Draft|398350|Caldormont|Reconciliation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 4,
+   "qi": 3,
+   "rec_id": "R013",
+   "u_ans": "Barethmont|Procurement|594044|Kingsfell|Review|892225|Ellunker|Compliance",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 5,
+   "qi": 1,
+   "rec_id": "R024",
+   "u_ans": "R024|Ellacson|Procurement|301781|Larkmede|Final|990061|Barordahl|Procurement|",
+   "tag": "misattribution (distant)",
+   "reason": "matches record R012, 12 away, overlap=6"
+  },
+  {
+   "instance": 5,
+   "qi": 2,
+   "rec_id": "R034",
+   "u_ans": "R034|Barolhardt|Procurement|352208|Northgate|Cleared|521095|Barolhardt|Reconciliation",
+   "tag": "misattribution (distant)",
+   "reason": "matches record R016, 18 away, overlap=4"
+  },
+  {
+   "instance": 8,
+   "qi": 2,
+   "rec_id": "R040",
+   "u_ans": "Baramridge|Compliance|880278|Fairhollow|Review|648584",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 8,
+   "qi": 3,
+   "rec_id": "R039",
+   "u_ans": "R039|Caldunhardt|Underwriting|699633|Harborline|Review|940664|Baramridge|Valuation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 9,
+   "qi": 1,
+   "rec_id": "R029",
+   "u_ans": "R029|Dornormont|Underwriting|534097|Northgate|Pending|210265",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 10,
+   "qi": 0,
+   "rec_id": "R037",
+   "u_ans": "R037|Baramson|Actuarial|915818|Kingsfell|Pending|406864|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 10,
+   "qi": 1,
+   "rec_id": "R008",
+   "u_ans": "Barunstad|Valuation|660185|Fairhollow|Review|688521",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 11,
+   "qi": 0,
+   "rec_id": "R002",
+   "u_ans": "R002|Dornirstad|Compliance|332995|Northgate|Pending|466765",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 12,
+   "qi": 0,
+   "rec_id": "R006",
+   "u_ans": "Dornolwick|Compliance|701653|Westmoor|Open|492504",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 12,
+   "qi": 1,
+   "rec_id": "R033",
+   "u_ans": "R033|Caldolhardt|Compliance|257415|Fairhollow|Closed|931805|Caldolhardt|Valuation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 13,
+   "qi": 1,
+   "rec_id": "R028",
+   "u_ans": "R028|Dornenhardt|Reconciliation|407997|Draymouth|Cleared|736808",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 14,
+   "qi": 1,
+   "rec_id": "R038",
+   "u_ans": "R038|Actuarial|Cleared|Ellethwick|Harborline|159827|Ellethwick|Settlement",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 15,
+   "qi": 3,
+   "rec_id": "R007",
+   "u_ans": "Ellenson|Procurement|649291|Pinebury|Pending|985688",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 19,
+   "qi": 1,
+   "rec_id": "R015",
+   "u_ans": "Ellammont|Valuation|771182|Granthill|Final|602715",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 20,
+   "qi": 1,
+   "rec_id": "R018",
+   "u_ans": "Dornordahl|Registry|540035|Kingsfell|Open|461332|Settlement",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 21,
+   "qi": 0,
+   "rec_id": "R008",
+   "u_ans": "Caldidker|Larkmede|Final|594649|Caldidker|Custody",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 22,
+   "qi": 0,
+   "rec_id": "R034",
+   "u_ans": "R034|Ellacdahl|Settlement|548441|Westmoor|Review|362024|Ellacdahl|Valuation",
+   "tag": "contamination",
+   "reason": "matches record R033, 1 away, overlap=6"
+  },
+  {
+   "instance": 22,
+   "qi": 1,
+   "rec_id": "R008",
+   "u_ans": "Ellamwick|Registry|662883|Draymouth|Open|863838",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 23,
+   "qi": 2,
+   "rec_id": "R022",
+   "u_ans": "Dorniddahl|Settlement|855836|Fairhollow|Held|735985|Dorniddahl|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 27,
+   "qi": 1,
+   "rec_id": "R005",
+   "u_ans": "Caldusker|Custody|267556|Fairhollow|Cleared|Caldusker|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 27,
+   "qi": 3,
+   "rec_id": "R012",
+   "u_ans": "R012|Reconciliation|636869|Northgate|Cleared|215167|Ellenson|Treasury",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 28,
+   "qi": 2,
+   "rec_id": "R014",
+   "u_ans": "R014|Barolwick|Underwriting|246553|Kingsfell|Review|675195|Dornirson|Reconciliation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 28,
+   "qi": 3,
+   "rec_id": "R034",
+   "u_ans": "R034|Baramdahl|Payments|798006|Larkmede|Pending|809871",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 29,
+   "qi": 2,
+   "rec_id": "R009",
+   "u_ans": "R009|Ellusridge|Reconciliation|656594|Ashcombe|Review|971810",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 30,
+   "qi": 2,
+   "rec_id": "R002",
+   "u_ans": "R002|Caldirfield|Payments|661948|Elmsworth|Cleared|686476",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 30,
+   "qi": 3,
+   "rec_id": "R036",
+   "u_ans": "R036|Ellorfield|Settlement|987042|Kingsfell|Review|214154|Ellorfield|Clearing",
+   "tag": "contamination",
+   "reason": "matches record R035, 1 away, overlap=7"
+  },
+  {
+   "instance": 31,
+   "qi": 3,
+   "rec_id": "R026",
+   "u_ans": "R026|Barenker|Registry|193672|Pinebury|Pending|584188",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 33,
+   "qi": 0,
+   "rec_id": "R017",
+   "u_ans": "R017|Ellamwell|Custody|560741|Ashcombe|Open|109712|Ellamwell|Settlement|Closed|711334|Registry",
+   "tag": "misattribution (distant)",
+   "reason": "matches record R013, 4 away, overlap=7"
+  },
+  {
+   "instance": 33,
+   "qi": 2,
+   "rec_id": "R016",
+   "u_ans": "R016|Ellamwell|Registry|645396|Ashcombe|Review|563994|Dornethridge|Payments",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 34,
+   "qi": 0,
+   "rec_id": "R013",
+   "u_ans": "R013|Reconciliation|719613|Kingsfell|Review|853479|Actuarial",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 34,
+   "qi": 3,
+   "rec_id": "R024",
+   "u_ans": "R024|Caldusson|Settlement|615152|Larkmede|Cleared|413121|R024|Caldusson|Settlement|615152",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 35,
+   "qi": 1,
+   "rec_id": "R033",
+   "u_ans": "R033|Dornolfield|Settlement|321023|Westmoor|Draft|969790|Dornolfield|Payments|386089|Fairhollow|Final|2",
+   "tag": "contamination",
+   "reason": "matches record R031, 2 away, overlap=7"
+  },
+  {
+   "instance": 36,
+   "qi": 0,
+   "rec_id": "R024",
+   "u_ans": "Dornorridge|Settlement|165240|Westmoor|Pending|158413|Dornorridge|Registry",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 36,
+   "qi": 1,
+   "rec_id": "R022",
+   "u_ans": "R022|Dornolmont|Registry|535656|Harborline|Pending|855463",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 36,
+   "qi": 2,
+   "rec_id": "R037",
+   "u_ans": "Ellunwell|Procurement|348614|Harborline|Draft|381588",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 36,
+   "qi": 3,
+   "rec_id": "R019",
+   "u_ans": "Caldidmont|Underwriting|806336|Westmoor|Held|809364|Dornolmont|Valuation",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 37,
+   "qi": 1,
+   "rec_id": "R004",
+   "u_ans": "Actuarial|797335|Pinebury|Draft|394761",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 38,
+   "qi": 1,
+   "rec_id": "R035",
+   "u_ans": "R035|Dornusstad|Clearing|266428|Ashcombe|Final|886454|Dornusdahl|Procurement",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 39,
+   "qi": 0,
+   "rec_id": "R030",
+   "u_ans": "R030|Elloldahl|Valuation|941798|Kingsfell|Pending|523133|Underwriting",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 40,
+   "qi": 0,
+   "rec_id": "R021",
+   "u_ans": "R021|Ellamson|Clearing|646447|Westmoor|Review|474132|R021",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 41,
+   "qi": 0,
+   "rec_id": "R003",
+   "u_ans": "Barunhardt|Payments|379225|Pinebury|Draft|943816",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 42,
+   "qi": 2,
+   "rec_id": "R039",
+   "u_ans": "R039|Dornusdahl|Valuation|231320|Granthill|Cleared|926616|Dornusdahl|Registry",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 43,
+   "qi": 3,
+   "rec_id": "R003",
+   "u_ans": "Caldorridge|Payments|163051|Harborline|Pending|597323",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 44,
+   "qi": 0,
+   "rec_id": "R033",
+   "u_ans": "R033|Dornenwick|Procurement|902559|Westmoor|Final|865470|Dornenwick|Registry",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 44,
+   "qi": 3,
+   "rec_id": "R040",
+   "u_ans": "Caldamson|Registry|725603|Northgate|Open|864877",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 45,
+   "qi": 1,
+   "rec_id": "R009",
+   "u_ans": "Barusdahl|Settlement|529919|Westmoor|Final|655664|Ellorwick|Treasury",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 45,
+   "qi": 2,
+   "rec_id": "R036",
+   "u_ans": "R036|Baridwick|Underwriting|509085|Fairhollow|Held|727005|Ellolfield|Treasury",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 45,
+   "qi": 3,
+   "rec_id": "R031",
+   "u_ans": "R031|Caldolson|Procurement|213839|Granthill|Draft|496439|",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 47,
+   "qi": 2,
+   "rec_id": "R018",
+   "u_ans": "R018|Dornenwell|Procurement|718853|Pinebury|Held|983524|Dornenwell|Clearing",
+   "tag": "contamination",
+   "reason": "matches record R017, 1 away, overlap=7"
+  },
+  {
+   "instance": 48,
+   "qi": 1,
+   "rec_id": "R030",
+   "u_ans": "Caldendahl|395254|Granthill|Pending|683019|Caldendahl|Payments|",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 48,
+   "qi": 2,
+   "rec_id": "R007",
+   "u_ans": "Caldacmont|Registry|393403|Pinebury|Held|987502|",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 49,
+   "qi": 1,
+   "rec_id": "R005",
+   "u_ans": "Caldirmont|Compliance|240162|Oakstead|Draft|203057|",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  },
+  {
+   "instance": 49,
+   "qi": 3,
+   "rec_id": "R040",
+   "u_ans": "Caldethwick|Registry|246760|Fairhollow|Draft|325878|",
+   "tag": "other",
+   "reason": "no record match, no fabrication signature, not a refusal"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+    inst 9 done  9.0 min  fails=0  degenerate=0
+    inst 19 done  17.6 min  fails=0  degenerate=1
+    inst 29 done  27.3 min  fails=0  degenerate=1
+    inst 39 done  36.2 min  fails=0  degenerate=4
+    inst 49 done  45.0 min  fails=0  degenerate=7
+    inst 59 done  54.4 min  fails=0  degenerate=8
+    inst 69 done  63.3 min  fails=0  degenerate=11
+    inst 79 done  74.0 min  fails=0  degenerate=11
+    inst 89 done  84.2 min  fails=0  degenerate=12
+    inst 99 done  94.9 min  fails=0  degenerate=13
+    inst 109 done  105.0 min  fails=0  degenerate=13
+    inst 119 done  114.9 min  fails=0  degenerate=13
+DONE floor lam=2.0: 114.94 min, 0 failures, 13 degenerate

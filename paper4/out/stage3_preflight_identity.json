@@ -1,0 +1,325 @@
+{
+ "produced_on": "RTX 5070 (Machine N)",
+ "rows": [
+  {
+   "model_tag": "M2",
+   "C": 32,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 32,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 59,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 32,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 32,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 64,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 64,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 54,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 64,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 64,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 128,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 128,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 38,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 128,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 128,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 256,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 256,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 25,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 256,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 256,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 512,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 512,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 19,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 512,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M2",
+   "C": 512,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 72,
+   "slots": 72
+  },
+  {
+   "model_tag": "M3",
+   "C": 32,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 32,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 183,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 32,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 32,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 64,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 64,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 151,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 64,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 64,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 128,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 128,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 137,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 128,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 128,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 256,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 256,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 115,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 256,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 256,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 512,
+   "method": "snapkv",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 512,
+   "method": "adakv_snapkv",
+   "identity_ok": true,
+   "slots_exact": 86,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 512,
+   "method": "expected_attn",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  },
+  {
+   "model_tag": "M3",
+   "C": 512,
+   "method": "keydiff",
+   "identity_ok": true,
+   "slots_exact": 224,
+   "slots": 224
+  }
+ ]
+}

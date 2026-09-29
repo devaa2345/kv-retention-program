@@ -1,0 +1,1702 @@
+[
+ {
+  "instance": 0,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R038 | Caldidfield | Settlement | 490219 | Northgate | Held | 218066 | Caldidfield | Payments",
+   "Caldunfield | Clearing | 555048 | Larkmede | Pending | 435995 | Caldunfield | Registry",
+   "R018 | Barenstad | Actuarial | 490246 | Draymouth | Review | 119275 | Barenstad | Compliance",
+   "Barenridge | Compliance | 116331 | Kingsfell | Draft | 552658 | Barenridge | Compliance"
+  ],
+  "answers": [
+   "Caldidfield | Settlement | 490219 | Northgate | Held | 218066 | Caldidfield | Payments",
+   "Caldunfield | Clearing | 555048 | Larkmede | Pending | 435995 | Caldunfield | Registry",
+   "Barenstad | Actuarial | 490246 | Draymouth | Review | 119275 | Barenstad | Compliance",
+   "Barenridge | Compliance | 116331 | Kingsfell | Draft | 552658 | Barenridge | Compliance"
+  ],
+  "rec_ids": [
+   "R038",
+   "R021",
+   "R018",
+   "R036"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 1,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R012 | Dornenfield | Payments | 588052 | Pinebury | Review | 320865 | Dornenfield | Settlement",
+   "Ellushardt | Registry | 550858 | Elmsworth | Held | 958460 | Ellushardt | Payments",
+   "Caldunson | Valuation | 119905 | Ashcombe | Closed | 461834 | Caldunson | Payments",
+   "Barolhardt | Underwriting | 500444 | Pinebury | Review | 764084 | Barolhardt | Actuarial"
+  ],
+  "answers": [
+   "Dornenfield | Payments | 588052 | Pinebury | Review | 320865 | Dornenfield | Settlement",
+   "Ellushardt | Registry | 550858 | Elmsworth | Held | 958460 | Ellushardt | Payments",
+   "Caldunson | Valuation | 119905 | Ashcombe | Closed | 461834 | Caldunson | Payments",
+   "Barolhardt | Underwriting | 500444 | Pinebury | Review | 764084 | Barolhardt | Actuarial"
+  ],
+  "rec_ids": [
+   "R012",
+   "R040",
+   "R005",
+   "R006"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 2,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R035 | Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry",
+   "Ellolwell | Underwriting | 885226 | Draymouth | Draft | 587748 | Ellolwell | Reconciliation",
+   "R039 | Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial",
+   "R028 | Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement"
+  ],
+  "answers": [
+   "Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry",
+   "Ellolwell | Underwriting | 885226 | Draymouth | Draft | 587748 | Ellolwell | Reconciliation",
+   "Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial",
+   "Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement"
+  ],
+  "rec_ids": [
+   "R035",
+   "R014",
+   "R039",
+   "R028"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 3,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellethson | Reconciliation | 162038 | Elmsworth | Closed | 765279 | Ellethson | Treasury",
+   "R029 | Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry",
+   "Barenwick | Settlement | 304489 | Granthill | Held | 965179 | Barenwick | Reconciliation",
+   "R037 | Caldormont | Clearing | 966569 | Northgate | Draft | 398350 | Caldormont | Clearing"
+  ],
+  "answers": [
+   "Ellethson | Reconciliation | 162038 | Elmsworth | Open | 765279 | Ellethson | Treasury",
+   "Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry",
+   "Barenwick | Settlement | 304489 | Granthill | Held | 965179 | Barenwick | Reconciliation",
+   "Caldormont | Clearing | 966569 | Northgate | Draft | 398350 | Caldormont | Clearing"
+  ],
+  "rec_ids": [
+   "R030",
+   "R029",
+   "R015",
+   "R037"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 4,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellunwick | Procurement | 805981 | Granthill | Closed | 655079 | Ellunwick | Treasury",
+   "R018 | Ellushardt | Registry | 311105 | Pinebury | Closed | 373833 | Ellushardt | Underwriting",
+   "Dornacstad | Settlement | 599555 | Westmoor | Final | 878066 | Dornacstad | Settlement",
+   "Barethmont | Procurement | 594044 | Kingsfell | Review | 892225 | Barethmont | Compliance"
+  ],
+  "answers": [
+   "Ellunwick | Procurement | 805981 | Granthill | Closed | 655079 | Ellunwick | Treasury",
+   "Ellushardt | Registry | 311105 | Pinebury | Closed | 373833 | Ellushardt | Underwriting",
+   "Dornacstad | Settlement | 599555 | Westmoor | Final | 878066 | Dornacstad | Settlement",
+   "Barethmont | Procurement | 594044 | Kingsfell | Review | 892225 | Barethmont | Compliance"
+  ],
+  "rec_ids": [
+   "R015",
+   "R018",
+   "R003",
+   "R013"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 5,
+  "score": 0.5,
+  "per_variant": [
+   1.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "gen": [
+   "R012 | Barordahl | Valuation | 301781 | Larkmede | Final | 990061 | Barordahl | Procurement",
+   "R024 | Ellacson | Procurement | 702636 | Northgate | Final | 841826 | Ellacson | Treasury",
+   "Barolhardt | Procurement | 352208 | Ashcombe | Cleared | 521095 | Barolhardt | Registry",
+   "R008 | Ellushardt | Compliance | 773801 | Fairhollow | Review | 780911 | Ellushardt | Clearing"
+  ],
+  "answers": [
+   "Barordahl | Valuation | 301781 | Larkmede | Final | 990061 | Barordahl | Procurement",
+   "Ellacson | Procurement | 702636 | Northgate | Review | 841826 | Ellacson | Treasury",
+   "Barolhardt | Procurement | 352208 | Ashcombe | Cleared | 521095 | Barolhardt | Reconciliation",
+   "Ellushardt | Compliance | 773801 | Fairhollow | Review | 780911 | Ellushardt | Clearing"
+  ],
+  "rec_ids": [
+   "R012",
+   "R024",
+   "R034",
+   "R008"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 6,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R030 | Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial",
+   "R031 | Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing",
+   "R023 | Dornenwick | Custody | 757424 | Westmoor | Closed | 412993 | Dornenwick | Treasury",
+   "R032 | Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury"
+  ],
+  "answers": [
+   "Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial",
+   "Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing",
+   "Dornenwick | Custody | 757424 | Westmoor | Closed | 412993 | Dornenwick | Treasury",
+   "Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury"
+  ],
+  "rec_ids": [
+   "R030",
+   "R031",
+   "R023",
+   "R032"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 7,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Dornenstad | Treasury | 606557 | Harborline | Pending | 378656 | Dornenstad | Underwriting",
+   "R023 | Barusdahl | Settlement | 737970 | Northgate | Closed | 276581 | Barusdahl | Payments",
+   "Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation",
+   "R016 | Ellorker | Clearing | 987690 | Northgate | Pending | 198567 | Ellorker | Compliance"
+  ],
+  "answers": [
+   "Dornenstad | Underwriting | 257389 | Harborline | Cleared | 890525 | Dornenstad | Reconciliation",
+   "Barusdahl | Settlement | 737970 | Northgate | Closed | 276581 | Barusdahl | Payments",
+   "Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation",
+   "Ellorker | Clearing | 987690 | Northgate | Pending | 198567 | Ellorker | Compliance"
+  ],
+  "rec_ids": [
+   "R027",
+   "R023",
+   "R029",
+   "R016"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 8,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Barendahl | Procurement | 683415 | Ashcombe | Final | 562667 | Barendahl | Compliance",
+   "Barammont | Actuarial | 917841 | Kingsfell | Closed | 790145 | Barammont | Reconciliation",
+   "Baramridge | Compliance | 880278 | Fairhollow | Review | 648584 | Baramridge | Valuation",
+   "R039 | Caldunhardt | Underwriting | 699633 | Harborline | Review | 940664 | Caldunhardt | Settlement"
+  ],
+  "answers": [
+   "Barendahl | Procurement | 683415 | Ashcombe | Final | 562667 | Barendahl | Compliance",
+   "Barammont | Actuarial | 917841 | Kingsfell | Closed | 790145 | Barammont | Reconciliation",
+   "Baramridge | Compliance | 880278 | Fairhollow | Review | 648584 | Baramridge | Valuation",
+   "Caldunhardt | Underwriting | 699633 | Harborline | Review | 940664 | Caldunhardt | Settlement"
+  ],
+  "rec_ids": [
+   "R035",
+   "R018",
+   "R040",
+   "R039"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 9,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R021 | Dornethhardt | Custody | 263726 | Westmoor | Held | 151013 | Dornethhardt | Underwriting",
+   "R029 | Dornormont | Underwriting | 534097 | Northgate | Pending | 210265 | Dornormont | Actuarial",
+   "Baramker | Payments | 803590 | Oakstead | Held | 758066 | Baramker | Payments",
+   "R018 | Ellusstad | Treasury | 986357 | Fairhollow | Review | 926121 | Ellusstad | Reconciliation"
+  ],
+  "answers": [
+   "Dornethhardt | Custody | 263726 | Westmoor | Held | 151013 | Dornethhardt | Underwriting",
+   "Dornormont | Underwriting | 534097 | Northgate | Pending | 210265 | Dornormont | Actuarial",
+   "Baramker | Payments | 803590 | Oakstead | Held | 758066 | Baramker | Payments",
+   "Ellusstad | Treasury | 986357 | Fairhollow | Review | 926121 | Ellusstad | Reconciliation"
+  ],
+  "rec_ids": [
+   "R021",
+   "R029",
+   "R020",
+   "R018"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 10,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   0.0
+  ],
+  "gen": [
+   "R037 | Baramson | Actuarial | 915818 | Kingsfell | Pending | 406864 | Baramson | Payments",
+   "Barunstad | Valuation | 660185 | Fairhollow | Review | 688521 | Barunstad | Underwriting",
+   "Caldirfield | Reconciliation | 397646 | Westmoor | Closed | 177327 | Caldirfield | Registry",
+   "R019 | Dornolfield | Compliance | 941404 | Pinebury | Final | 219563 | Dornolfield | Compliance"
+  ],
+  "answers": [
+   "Baramson | Actuarial | 915818 | Kingsfell | Pending | 406864 | Baramson | Payments",
+   "Barunstad | Valuation | 660185 | Fairhollow | Review | 688521 | Barunstad | Underwriting",
+   "Caldirfield | Reconciliation | 397646 | Westmoor | Closed | 177327 | Caldirfield | Registry",
+   "Dornolfield | Compliance | 941404 | Pinebury | Final | 219563 | Dornolfield | Custody"
+  ],
+  "rec_ids": [
+   "R037",
+   "R008",
+   "R040",
+   "R019"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 11,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R002 | Dornirstad | Compliance | 332995 | Northgate | Pending | 466765 | Dornirstad | Actuarial",
+   "R029 | Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry",
+   "Caldacson | Payments | 329723 | Oakstead | Pending | 785011 | Caldacson | Actuarial",
+   "R011 | Baramdahl | Reconciliation | 793277 | Northgate | Open | 210932 | Baramdahl | Reconciliation"
+  ],
+  "answers": [
+   "Dornirstad | Compliance | 332995 | Northgate | Pending | 466765 | Dornirstad | Actuarial",
+   "Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry",
+   "Caldacson | Payments | 329723 | Oakstead | Pending | 785011 | Caldacson | Actuarial",
+   "Baramdahl | Reconciliation | 793277 | Northgate | Open | 210932 | Baramdahl | Reconciliation"
+  ],
+  "rec_ids": [
+   "R002",
+   "R029",
+   "R020",
+   "R011"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 12,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   1.0,
+   0.0,
+   1.0
+  ],
+  "gen": [
+   "R006 | Dornolwick | Compliance | 701653 | Westmoor | Open | 492504 | Dornolwick | Valuation",
+   "R033 | Caldolhardt | Compliance | 257415 | Fairhollow | Closed | 931805 | Caldolhardt | Clearing",
+   "R031 | Dornacdahl | Actuarial | 331908 | Harborline | Pending | 482904 | Dornacdahl | Treasury",
+   "R012 | Dornirmont | Registry | 317550 | Draymouth | Pending | 826696 | Dornirmont | Settlement"
+  ],
+  "answers": [
+   "Dornolwick | Compliance | 701653 | Westmoor | Open | 492504 | Dornolwick | Valuation",
+   "Caldolhardt | Compliance | 257415 | Fairhollow | Closed | 931805 | Caldolhardt | Clearing",
+   "Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury",
+   "Dornirmont | Registry | 317550 | Draymouth | Pending | 826696 | Dornirmont | Settlement"
+  ],
+  "rec_ids": [
+   "R006",
+   "R033",
+   "R031",
+   "R012"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 13,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R027 | Dornidson | Treasury | 794655 | Ashcombe | Open | 438889 | Dornidson | Custody",
+   "R028 | Dornenhardt | Reconciliation | 407997 | Draymouth | Cleared | 736808 | Dornenhardt | Underwriting",
+   "Dornirson | Valuation | 515211 | Granthill | Draft | 589235 | Dornirson | Underwriting",
+   "R011 | Dornethwell | Actuarial | 359617 | Harborline | Review | 279011 | Dornethwell | Underwriting"
+  ],
+  "answers": [
+   "Dornidson | Treasury | 794655 | Ashcombe | Open | 438889 | Dornidson | Custody",
+   "Dornenhardt | Reconciliation | 407997 | Draymouth | Cleared | 736808 | Dornenhardt | Underwriting",
+   "Dornirson | Valuation | 515211 | Granthill | Draft | 589235 | Dornirson | Underwriting",
+   "Dornethwell | Actuarial | 359617 | Harborline | Review | 279011 | Dornethwell | Underwriting"
+  ],
+  "rec_ids": [
+   "R027",
+   "R028",
+   "R004",
+   "R011"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 14,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R022 | Caldorstad | Reconciliation | 416018 | Harborline | Pending | 168463 | Caldorstad | Settlement",
+   "R038 | Ellethwick | Actuarial | 850966 | Harborline | Cleared | 159827 | Ellethwick | Settlement",
+   "Elliddahl | Compliance | 288429 | Kingsfell | Pending | 860205 | Elliddahl | Settlement",
+   "Ellolson | Payments | 662704 | Larkmede | Held | 254367 | Ellolson | Compliance"
+  ],
+  "answers": [
+   "Caldorstad | Reconciliation | 416018 | Harborline | Pending | 168463 | Caldorstad | Settlement",
+   "Ellethwick | Actuarial | 850966 | Harborline | Cleared | 159827 | Ellethwick | Settlement",
+   "Elliddahl | Compliance | 288429 | Kingsfell | Pending | 860205 | Elliddahl | Settlement",
+   "Ellolson | Payments | 662704 | Larkmede | Held | 254367 | Ellolson | Compliance"
+  ],
+  "rec_ids": [
+   "R022",
+   "R038",
+   "R006",
+   "R028"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 15,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellenhardt | Custody | 961365 | Draymouth | Draft | 830332 | Ellenhardt | Payments",
+   "R021 | Caldidfield | Settlement | 224603 | Larkmede | Held | 699648 | Caldidfield | Underwriting",
+   "R013 | Ellunstad | Payments | 815509 | Oakstead | Cleared | 924325 | Ellunstad | Payments",
+   "Ellenson | Procurement | 649291 | Pinebury | Pending | 985688 | Ellenson | Registry"
+  ],
+  "answers": [
+   "Ellenhardt | Custody | 961365 | Draymouth | Draft | 830332 | Ellenhardt | Payments",
+   "Caldidfield | Settlement | 224603 | Larkmede | Held | 699648 | Caldidfield | Underwriting",
+   "Ellunstad | Payments | 815509 | Oakstead | Cleared | 924325 | Ellunstad | Payments",
+   "Ellenson | Procurement | 649291 | Pinebury | Pending | 985688 | Ellenson | Registry"
+  ],
+  "rec_ids": [
+   "R034",
+   "R021",
+   "R013",
+   "R007"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 16,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Baridson | Actuarial | 249794 | Draymouth | Draft | 683324 | Baridson | Clearing",
+   "R031 | Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+   "R009 | Ellirwell | Procurement | 986532 | Oakstead | Cleared | 794852 | Ellirwell | Procurement",
+   "Dornordahl | Underwriting | 539941 | Draymouth | Pending | 476941 | Dornordahl | Settlement"
+  ],
+  "answers": [
+   "Baridson | Actuarial | 249794 | Draymouth | Draft | 683324 | Baridson | Clearing",
+   "Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+   "Ellirwell | Procurement | 986532 | Oakstead | Cleared | 794852 | Ellirwell | Procurement",
+   "Dornordahl | Underwriting | 539941 | Draymouth | Pending | 476941 | Dornordahl | Settlement"
+  ],
+  "rec_ids": [
+   "R003",
+   "R031",
+   "R009",
+   "R023"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 17,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R008 | Baridker | Underwriting | 765194 | Pinebury | Review | 291492 | Baridker | Actuarial",
+   "R019 | Barirson | Payments | 226554 | Kingsfell | Open | 423370 | Barirson | Underwriting",
+   "R015 | Ellethfield | Underwriting | 909330 | Oakstead | Cleared | 851885 | Ellethfield | Underwriting",
+   "R002 | Caldamhardt | Reconciliation | 802252 | Ashcombe | Held | 528636 | Caldamhardt | Compliance"
+  ],
+  "answers": [
+   "Baridker | Underwriting | 765194 | Pinebury | Review | 291492 | Baridker | Actuarial",
+   "Barirson | Payments | 226554 | Kingsfell | Open | 423370 | Barirson | Underwriting",
+   "Ellethfield | Underwriting | 909330 | Oakstead | Cleared | 851885 | Ellethfield | Underwriting",
+   "Caldamhardt | Reconciliation | 802252 | Ashcombe | Held | 528636 | Caldamhardt | Compliance"
+  ],
+  "rec_ids": [
+   "R008",
+   "R019",
+   "R015",
+   "R002"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 18,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellamson | Procurement | 994508 | Oakstead | Review | 618744 | Ellamson | Compliance",
+   "Barunridge | Actuarial | 530372 | Draymouth | Open | 137451 | Barunridge | Compliance",
+   "Barushardt | Treasury | 788757 | Granthill | Review | 341412 | Barushardt | Reconciliation",
+   "R004 | Caldidmont | Clearing | 724771 | Northgate | Pending | 885900 | Caldidmont | Settlement"
+  ],
+  "answers": [
+   "Ellamson | Procurement | 994508 | Oakstead | Review | 618744 | Ellamson | Compliance",
+   "Barunridge | Actuarial | 530372 | Draymouth | Open | 137451 | Barunridge | Compliance",
+   "Barushardt | Treasury | 788757 | Granthill | Review | 341412 | Barushardt | Reconciliation",
+   "Caldidmont | Clearing | 724771 | Northgate | Pending | 885900 | Caldidmont | Settlement"
+  ],
+  "rec_ids": [
+   "R002",
+   "R003",
+   "R006",
+   "R004"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 19,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellolridge | Payments | 658660 | Pinebury | Draft | 416646 | Ellolridge | Procurement",
+   "Ellammont | Valuation | 771182 | Granthill | Final | 602715 | Ellammont | Registry",
+   "R027 | Baramwick | Clearing | 409151 | Elmsworth | Closed | 210997 | Baramwick | Compliance",
+   "Caldenridge | Settlement | 296343 | Larkmede | Review | 725115 | Caldenridge | Reconciliation"
+  ],
+  "answers": [
+   "Ellolridge | Payments | 658660 | Pinebury | Draft | 416646 | Ellolridge | Procurement",
+   "Ellammont | Valuation | 771182 | Granthill | Final | 602715 | Ellammont | Registry",
+   "Baramwick | Clearing | 409151 | Elmsworth | Closed | 210997 | Baramwick | Compliance",
+   "Caldenridge | Settlement | 296343 | Larkmede | Review | 725115 | Caldenridge | Reconciliation"
+  ],
+  "rec_ids": [
+   "R025",
+   "R015",
+   "R027",
+   "R020"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 20,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Dornusmont | Reconciliation | 913875 | Kingsfell | Open | 278906 | Caldusmont | Underwriting",
+   "R018 | Dornordahl | Registry | 540035 | Kingsfell | Open | 461332 | Dornordahl | Settlement",
+   "R020 | Baracwick | Reconciliation | 948102 | Oakstead | Pending | 762888 | Baracwick | Procurement",
+   "Baramstad | Reconciliation | 516097 | Harborline | Draft | 303774 | Baramstad | Payments"
+  ],
+  "answers": [
+   "Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement",
+   "Dornordahl | Registry | 540035 | Kingsfell | Open | 461332 | Dornordahl | Settlement",
+   "Baracwick | Reconciliation | 948102 | Oakstead | Pending | 762888 | Baracwick | Procurement",
+   "Baramstad | Reconciliation | 516097 | Harborline | Draft | 303774 | Baramstad | Payments"
+  ],
+  "rec_ids": [
+   "R032",
+   "R018",
+   "R020",
+   "R014"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 21,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R008 | Caldidker | Registry | 834772 | Larkmede | Final | 594649 | Caldidker | Custody",
+   "Dornirker | Settlement | 550337 | Fairhollow | Draft | 548191 | Dornirker | Custody",
+   "R036 | Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing",
+   "Barusstad | Payments | 445128 | Granthill | Cleared | 431586 | Barusstad | Settlement"
+  ],
+  "answers": [
+   "Caldidker | Registry | 834772 | Larkmede | Final | 594649 | Caldidker | Custody",
+   "Dornirker | Settlement | 550337 | Fairhollow | Draft | 548191 | Dornirker | Custody",
+   "Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing",
+   "Barusstad | Payments | 445128 | Granthill | Cleared | 431586 | Barusstad | Settlement"
+  ],
+  "rec_ids": [
+   "R008",
+   "R040",
+   "R036",
+   "R020"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 22,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Caldunfield | Custody | 328327 | Westmoor | Pending | 663792 | Caldunfield | Valuation",
+   "Ellamwick | Registry | 662883 | Draymouth | Open | 863838 | Ellamwick | Underwriting",
+   "Baracker | Underwriting | 761080 | Ashcombe | Open | 860070 | Baracker | Procurement",
+   "Barammont | Compliance | 528212 | Draymouth | Final | 381479 | Barammont | Payments"
+  ],
+  "answers": [
+   "Caldunfield | Custody | 328327 | Westmoor | Pending | 663792 | Caldunfield | Valuation",
+   "Ellamwick | Registry | 662883 | Draymouth | Open | 863838 | Ellamwick | Underwriting",
+   "Baracker | Underwriting | 761080 | Ashcombe | Open | 860070 | Baracker | Procurement",
+   "Barammont | Compliance | 528212 | Draymouth | Final | 381479 | Barammont | Payments"
+  ],
+  "rec_ids": [
+   "R034",
+   "R008",
+   "R025",
+   "R015"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 23,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R037 | Caldunhardt | Actuarial | 771852 | Pinebury | Draft | 298846 | Caldunhardt | Settlement",
+   "Ellamwell | Procurement | 142250 | Northgate | Draft | 252478 | Ellamwell | Treasury",
+   "Dorniddahl | Settlement | 855836 | Fairhollow | Held | 735985 | Dorniddahl | Clearing",
+   "R036 | Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance"
+  ],
+  "answers": [
+   "Caldunhardt | Actuarial | 771852 | Pinebury | Draft | 298846 | Caldunhardt | Settlement",
+   "Ellamwick | Procurement | 142250 | Northgate | Draft | 252478 | Ellamwick | Payments",
+   "Dorniddahl | Settlement | 855836 | Fairhollow | Held | 735985 | Dorniddahl | Clearing",
+   "Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance"
+  ],
+  "rec_ids": [
+   "R037",
+   "R025",
+   "R022",
+   "R036"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 24,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Dornamstad | Settlement | 692090 | Fairhollow | Open | 237239 | Dornamstad | Registry",
+   "R016 | Dornethhardt | Procurement | 715275 | Draymouth | Closed | 301220 | Dornethhardt | Payments",
+   "Barirson | Actuarial | 458407 | Westmoor | Held | 408573 | Barirson | Actuarial",
+   "R006 | Dornenker | Reconciliation | 789774 | Harborline | Closed | 793577 | Dornenker | Underwriting"
+  ],
+  "answers": [
+   "Dornamstad | Settlement | 692090 | Fairhollow | Open | 237239 | Dornamstad | Registry",
+   "Dornethhardt | Procurement | 715275 | Draymouth | Closed | 301220 | Dornethhardt | Payments",
+   "Barirson | Actuarial | 458407 | Westmoor | Held | 408573 | Barirson | Actuarial",
+   "Dornenker | Reconciliation | 789774 | Harborline | Closed | 793577 | Dornenker | Underwriting"
+  ],
+  "rec_ids": [
+   "R021",
+   "R016",
+   "R005",
+   "R006"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 25,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R008 | Dornusstad | Reconciliation | 561619 | Fairhollow | Pending | 934669 | Dornusstad | Clearing",
+   "Ellethhardt | Payments | 392216 | Fairhollow | Final | 433607 | Ellethhardt | Valuation",
+   "R023 | Baruswick | Reconciliation | 311736 | Pinebury | Open | 289321 | Baruswick | Actuarial",
+   "R013 | Dornirfield | Reconciliation | 747768 | Granthill | Pending | 313432 | Dornirfield | Payments"
+  ],
+  "answers": [
+   "Dornusstad | Reconciliation | 561619 | Fairhollow | Pending | 934669 | Dornusstad | Clearing",
+   "Ellethhardt | Payments | 392216 | Fairhollow | Final | 433607 | Ellethhardt | Valuation",
+   "Baruswick | Reconciliation | 311736 | Pinebury | Open | 289321 | Baruswick | Actuarial",
+   "Dornirfield | Reconciliation | 747768 | Granthill | Pending | 313432 | Dornirfield | Payments"
+  ],
+  "rec_ids": [
+   "R008",
+   "R025",
+   "R023",
+   "R013"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 26,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellenker | Custody | 577708 | Draymouth | Cleared | 365058 | Ellenker | Clearing",
+   "R033 | Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury",
+   "R013 | Dornacker | Payments | 298132 | Northgate | Final | 900696 | Dornacker | Valuation",
+   "R006 | Dornolridge | Valuation | 513697 | Ashcombe | Cleared | 235943 | Dornolridge | Actuarial"
+  ],
+  "answers": [
+   "Ellenker | Custody | 577708 | Draymouth | Cleared | 365058 | Ellenker | Clearing",
+   "Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury",
+   "Dornacker | Payments | 298132 | Northgate | Final | 900696 | Dornacker | Valuation",
+   "Dornolridge | Valuation | 513697 | Ashcombe | Cleared | 235943 | Dornolridge | Actuarial"
+  ],
+  "rec_ids": [
+   "R028",
+   "R033",
+   "R013",
+   "R006"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 27,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Caldolker | Settlement | 268496 | Westmoor | Pending | 937629 | Caldolker | Treasury",
+   "Caldusker | Payments | 267556 | Fairhollow | Cleared | 625987 | Caldusker | Payments",
+   "R008 | Caldunson | Compliance | 659399 | Northgate | Draft | 181113 | Caldunson | Valuation",
+   "R012 | Ellenson | Reconciliation | 636869 | Northgate | Cleared | 215167 | Ellenson | Treasury"
+  ],
+  "answers": [
+   "Caldolker | Settlement | 268496 | Westmoor | Pending | 937629 | Caldolker | Treasury",
+   "Caldusker | Custody | 267556 | Fairhollow | Cleared | 625987 | Caldusker | Payments",
+   "Caldunson | Compliance | 659399 | Northgate | Draft | 181113 | Caldunson | Valuation",
+   "Ellenson | Reconciliation | 636869 | Northgate | Cleared | 215167 | Ellenson | Treasury"
+  ],
+  "rec_ids": [
+   "R021",
+   "R005",
+   "R008",
+   "R012"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 28,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Dornirson | Treasury | 745306 | Granthill | Closed | 431759 | Dornirson | Reconciliation",
+   "R009 | Dornacridge | Procurement | 229473 | Pinebury | Cleared | 676095 | Dornacridge | Underwriting",
+   "R014 | Barolwick | Underwriting | 246553 | Kingsfell | Review | 675195 | Barolwick | Settlement",
+   "R034 | Baramdahl | Payments | 183924 | Harborline | Pending | 809871 | Baramdahl | Registry"
+  ],
+  "answers": [
+   "Dornirson | Treasury | 745306 | Granthill | Closed | 431759 | Dornirson | Reconciliation",
+   "Dornacridge | Procurement | 229473 | Pinebury | Cleared | 676095 | Dornacridge | Underwriting",
+   "Barolwick | Underwriting | 246553 | Kingsfell | Review | 675195 | Barolwick | Settlement",
+   "Baramdahl | Payments | 183924 | Harborline | Pending | 809871 | Baramdahl | Registry"
+  ],
+  "rec_ids": [
+   "R016",
+   "R009",
+   "R014",
+   "R034"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 29,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Caldacker | Registry | 327634 | Granthill | Open | 127671 | Caldacker | Reconciliation",
+   "R010 | Baramson | Payments | 299340 | Pinebury | Draft | 374410 | Baramson | Underwriting",
+   "R009 | Ellusridge | Reconciliation | 656594 | Ashcombe | Review | 971810 | Ellusridge | Actuarial",
+   "Barendahl | Procurement | 403728 | Northgate | Open | 491894 | Barendahl | Procurement"
+  ],
+  "answers": [
+   "Caldacker | Registry | 327634 | Granthill | Open | 127671 | Caldacker | Reconciliation",
+   "Baramson | Payments | 299340 | Pinebury | Draft | 374410 | Baramson | Underwriting",
+   "Ellusridge | Reconciliation | 656594 | Ashcombe | Review | 971810 | Ellusridge | Actuarial",
+   "Barendahl | Procurement | 403728 | Northgate | Open | 491894 | Barendahl | Procurement"
+  ],
+  "rec_ids": [
+   "R003",
+   "R010",
+   "R009",
+   "R001"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 30,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   0.0
+  ],
+  "gen": [
+   "R014 | Dornamdahl | Reconciliation | 510209 | Ashcombe | Open | 319037 | Dornamdahl | Settlement",
+   "R033 | Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+   "R002 | Caldirfield | Payments | 661948 | Elmsworth | Cleared | 686476 | Caldirfield | Compliance",
+   "Ellidfield | Valuation | 987042 | Kingsfell | Review | 214154 | Ellidfield | Custody"
+  ],
+  "answers": [
+   "Dornamdahl | Reconciliation | 510209 | Ashcombe | Open | 319037 | Dornamdahl | Settlement",
+   "Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+   "Caldirfield | Payments | 661948 | Elmsworth | Cleared | 686476 | Caldirfield | Compliance",
+   "Barunmont | Valuation | 399683 | Ashcombe | Held | 238135 | Barunmont | Custody"
+  ],
+  "rec_ids": [
+   "R014",
+   "R033",
+   "R002",
+   "R036"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 31,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R023 | Baridson | Actuarial | 510396 | Elmsworth | Cleared | 526997 | Baridson | Underwriting",
+   "R034 | Baridson | Actuarial | 510396 | Elmsworth | Cleared | 526997 | Baridson | Underwriting",
+   "R014 | Ellacwell | Compliance | 509719 | Kingsfell | Open | 358776 | Ellacwell | Actuarial",
+   "Barenker | Registry | 193672 | Pinebury | Pending | 584188 | Barenker | Registry"
+  ],
+  "answers": [
+   "Baridson | Actuarial | 510396 | Elmsworth | Cleared | 526997 | Baridson | Underwriting",
+   "Dornorwick | Payments | 229221 | Granthill | Closed | 428547 | Dornorwick | Actuarial",
+   "Ellacwell | Compliance | 509719 | Kingsfell | Open | 358776 | Ellacwell | Actuarial",
+   "Barenker | Registry | 193672 | Pinebury | Pending | 584188 | Barenker | Registry"
+  ],
+  "rec_ids": [
+   "R023",
+   "R034",
+   "R014",
+   "R026"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 32,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R031 | Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation",
+   "Ellusdahl | Clearing | 984333 | Ashcombe | Review | 786060 | Ellusdahl | Registry",
+   "Barolfield | Treasury | 887419 | Oakstead | Held | 297862 | Barolfield | Reconciliation",
+   "R016 | Barirker | Compliance | 761635 | Ashcombe | Review | 395407 | Barirker | Reconciliation"
+  ],
+  "answers": [
+   "Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation",
+   "Ellusdahl | Clearing | 984333 | Ashcombe | Review | 786060 | Ellusdahl | Registry",
+   "Barolfield | Treasury | 887419 | Oakstead | Held | 297862 | Barolfield | Reconciliation",
+   "Barirker | Compliance | 761635 | Ashcombe | Review | 395407 | Barirker | Reconciliation"
+  ],
+  "rec_ids": [
+   "R031",
+   "R034",
+   "R026",
+   "R016"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 33,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellamwell | Custody | 560741 | Ashcombe | Open | 109712 | Ellamwell | Settlement",
+   "Dornidwick | Underwriting | 631605 | Kingsfell | Final | 701007 | Dornidwick | Custody",
+   "R016 | Dornethridge | Registry | 645396 | Larkmede | Review | 563994 | Dornethridge | Payments",
+   "Ellamwell | Custody | 560741 | Ashcombe | Open | 109712 | Ellamwell | Settlement"
+  ],
+  "answers": [
+   "Caldolker | Settlement | 359918 | Kingsfell | Closed | 711334 | Caldolker | Registry",
+   "Dornidwick | Underwriting | 631605 | Kingsfell | Final | 701007 | Dornidwick | Custody",
+   "Dornethridge | Registry | 645396 | Larkmede | Review | 563994 | Dornethridge | Payments",
+   "Ellamwell | Custody | 560741 | Ashcombe | Open | 109712 | Ellamwell | Settlement"
+  ],
+  "rec_ids": [
+   "R017",
+   "R027",
+   "R016",
+   "R013"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 34,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R013 | Ellendahl | Reconciliation | 719613 | Kingsfell | Review | 853479 | Ellendahl | Actuarial",
+   "R007 | Caldethker | Actuarial | 672127 | Larkmede | Closed | 747133 | Caldethker | Reconciliation",
+   "Ellidmont | Settlement | 509696 | Oakstead | Closed | 741027 | Ellidmont | Reconciliation",
+   "R024 | Caldusson | Settlement | 615152 | Larkmede | Cleared | 413121 | Caldusson | Underwriting"
+  ],
+  "answers": [
+   "Ellendahl | Reconciliation | 719613 | Kingsfell | Review | 853479 | Ellendahl | Actuarial",
+   "Caldethker | Actuarial | 672127 | Larkmede | Closed | 747133 | Caldethker | Reconciliation",
+   "Ellidmont | Settlement | 509696 | Oakstead | Closed | 741027 | Ellidmont | Reconciliation",
+   "Caldusson | Settlement | 615152 | Larkmede | Cleared | 413121 | Caldusson | Underwriting"
+  ],
+  "rec_ids": [
+   "R013",
+   "R007",
+   "R022",
+   "R024"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 35,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Caldethridge | Underwriting | 929727 | Fairhollow | Held | 398302 | Caldethridge | Treasury",
+   "R033 | Baramfield | Compliance | 386089 | Fairhollow | Final | 269211 | Baramfield | Actuarial",
+   "R013 | Caldunker | Registry | 789263 | Elmsworth | Pending | 782505 | Caldunker | Compliance",
+   "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments"
+  ],
+  "answers": [
+   "Caldethridge | Underwriting | 929727 | Fairhollow | Held | 398302 | Caldethridge | Treasury",
+   "Caldamhardt | Actuarial | 747829 | Draymouth | Cleared | 609481 | Caldamhardt | Valuation",
+   "Caldunker | Registry | 789263 | Elmsworth | Pending | 782505 | Caldunker | Compliance",
+   "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments"
+  ],
+  "rec_ids": [
+   "R001",
+   "R033",
+   "R013",
+   "R031"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 36,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R024 | Dornorridge | Settlement | 165240 | Westmoor | Pending | 158413 | Dornorridge | Custody",
+   "R022 | Dornolmont | Registry | 535656 | Harborline | Pending | 855463 | Dornolmont | Custody",
+   "Ellunwell | Procurement | 348614 | Harborline | Draft | 381588 | Ellunwell | Payments",
+   "R019 | Caldidmont | Underwriting | 806336 | Westmoor | Held | 809364 | Caldidmont | Valuation"
+  ],
+  "answers": [
+   "Dornorridge | Settlement | 165240 | Westmoor | Pending | 158413 | Dornorridge | Custody",
+   "Dornolmont | Registry | 535656 | Harborline | Pending | 855463 | Dornolmont | Custody",
+   "Ellunwell | Procurement | 348614 | Harborline | Draft | 381588 | Ellunwell | Payments",
+   "Caldidmont | Underwriting | 806336 | Westmoor | Held | 809364 | Caldidmont | Valuation"
+  ],
+  "rec_ids": [
+   "R024",
+   "R022",
+   "R037",
+   "R019"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 37,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellirfield | Treasury | 470775 | Oakstead | Review | 521049 | Ellirfield | Registry",
+   "Brackenhold | Actuarial | 797335 | Pinebury | Draft | 394761 | Brackenhold | Custody",
+   "Ellamhardt | Treasury | 973880 | Westmoor | Review | 383043 | Ellamhardt | Actuarial",
+   "R034 | Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting"
+  ],
+  "answers": [
+   "Ellirfield | Treasury | 470775 | Oakstead | Review | 521049 | Ellirfield | Registry",
+   "Ellamwick | Actuarial | 797335 | Pinebury | Draft | 394761 | Ellamwick | Custody",
+   "Ellamhardt | Treasury | 973880 | Westmoor | Review | 383043 | Ellamhardt | Actuarial",
+   "Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting"
+  ],
+  "rec_ids": [
+   "R024",
+   "R004",
+   "R033",
+   "R034"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 38,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R038 | Dornirker | Procurement | 299197 | Harborline | Pending | 952640 | Dornirker | Compliance",
+   "R035 | Dornusstad | Clearing | 266428 | Ashcombe | Final | 886454 | Dornusstad | Clearing",
+   "Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance",
+   "Dornolwell | Procurement | 652470 | Pinebury | Cleared | 131022 | Dornolwell | Actuarial"
+  ],
+  "answers": [
+   "Dornirker | Procurement | 299197 | Harborline | Pending | 952640 | Dornirker | Compliance",
+   "Dornusstad | Clearing | 266428 | Ashcombe | Final | 886454 | Dornusstad | Clearing",
+   "Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance",
+   "Dornolwell | Procurement | 652470 | Pinebury | Cleared | 131022 | Dornolwell | Actuarial"
+  ],
+  "rec_ids": [
+   "R038",
+   "R035",
+   "R029",
+   "R021"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 39,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellirridge | Settlement | 384892 | Westmoor | Review | 504429 | Ellirridge | Underwriting | 941798 | Kingsfell | Pending | 5",
+   "R024 | Caldusdahl | Procurement | 562101 | Larkmede | Held | 784216 | Caldusdahl | Underwriting",
+   "R015 | Dornushardt | Compliance | 436261 | Larkmede | Draft | 753187 | Dornushardt | Reconciliation",
+   "Ellusker | Registry | 661992 | Fairhollow | Cleared | 773867 | Ellusker | Clearing"
+  ],
+  "answers": [
+   "Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting",
+   "Caldusdahl | Procurement | 562101 | Larkmede | Held | 784216 | Caldusdahl | Underwriting",
+   "Dornushardt | Compliance | 436261 | Larkmede | Draft | 753187 | Dornushardt | Reconciliation",
+   "Ellusker | Registry | 661992 | Fairhollow | Cleared | 773867 | Ellusker | Clearing"
+  ],
+  "rec_ids": [
+   "R030",
+   "R024",
+   "R015",
+   "R025"
+  ],
+  "stop_flags": [
+   "cap",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 40,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Ellamson | Clearing | 646447 | Westmoor | Review | 474132 | Ellamson | Treasury",
+   "R023 | Caldunson | Valuation | 972824 | Larkmede | Review | 978520 | Caldunson | Procurement",
+   "R012 | Ellidstad | Procurement | 900890 | Harborline | Draft | 569389 | Ellidstad | Clearing",
+   "R015 | Dornethwick | Payments | 978809 | Westmoor | Held | 377628 | Dornethwick | Payments"
+  ],
+  "answers": [
+   "Ellamson | Clearing | 646447 | Westmoor | Review | 474132 | Ellamson | Treasury",
+   "Caldunson | Valuation | 934253 | Larkmede | Review | 978520 | Caldunson | Procurement",
+   "Ellidstad | Procurement | 900890 | Harborline | Draft | 569389 | Ellidstad | Clearing",
+   "Dornethwick | Payments | 978809 | Westmoor | Held | 377628 | Dornethwick | Payments"
+  ],
+  "rec_ids": [
+   "R021",
+   "R023",
+   "R012",
+   "R015"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 41,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   0.0
+  ],
+  "gen": [
+   "Barunhardt | Payments | 379225 | Pinebury | Draft | 943816 | Barunhardt | Compliance",
+   "R016 | Baramstad | Reconciliation | 120537 | Westmoor | Open | 449384 | Baramstad | Underwriting",
+   "R004 | Dornidfield | Reconciliation | 452085 | Fairhollow | Final | 982240 | Dornidfield | Clearing",
+   "R027 | Caldunridge | Underwriting | 652817 | Kingsfell | Final | 842627 | Caldunridge | Payments"
+  ],
+  "answers": [
+   "Barunhardt | Payments | 379225 | Pinebury | Draft | 943816 | Barunhardt | Compliance",
+   "Baramstad | Reconciliation | 120537 | Westmoor | Open | 449384 | Baramstad | Underwriting",
+   "Dornidfield | Reconciliation | 452085 | Fairhollow | Final | 982240 | Dornidfield | Clearing",
+   "Caldunridge | Underwriting | 652817 | Kingsfell | Final | 842627 | Caldunridge | Settlement"
+  ],
+  "rec_ids": [
+   "R003",
+   "R016",
+   "R004",
+   "R027"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 42,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R015 | Caldorfield | Compliance | 887852 | Elmsworth | Open | 722526 | Caldorfield | Compliance",
+   "R019 | Ellunwick | Reconciliation | 454455 | Kingsfell | Held | 798505 | Ellunwick | Custody",
+   "R039 | Dornusdahl | Valuation | 231320 | Granthill | Cleared | 247749 | Dornusdahl | Registry",
+   "Ellacwick | Custody | 485000 | Kingsfell | Open | 804269 | Ellacwick | Procurement"
+  ],
+  "answers": [
+   "Ellolwick | Settlement | 712823 | Elmsworth | Pending | 125615 | Ellolwick | Settlement",
+   "Ellunwick | Reconciliation | 454455 | Kingsfell | Held | 798505 | Ellunwick | Custody",
+   "Dornusdahl | Valuation | 231320 | Granthill | Cleared | 247749 | Dornusdahl | Registry",
+   "Ellacwick | Custody | 485000 | Kingsfell | Open | 804269 | Ellacwick | Procurement"
+  ],
+  "rec_ids": [
+   "R015",
+   "R019",
+   "R039",
+   "R025"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 43,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R014 | Ellusstad | Compliance | 454770 | Granthill | Final | 627359 | Ellusstad | Actuarial",
+   "R006 | Ellorwick | Compliance | 962401 | Fairhollow | Closed | 695108 | Ellorwick | Procurement",
+   "R037 | Dornorson | Reconciliation | 431165 | Fairhollow | Pending | 980487 | Dornorson | Actuarial",
+   "Caldorridge | Payments | 163051 | Harborline | Pending | 597323 | Caldorridge | Clearing"
+  ],
+  "answers": [
+   "Ellusstad | Compliance | 454770 | Granthill | Final | 627359 | Ellusstad | Actuarial",
+   "Ellorwick | Compliance | 962401 | Fairhollow | Closed | 695108 | Ellorwick | Procurement",
+   "Dornorson | Reconciliation | 431165 | Fairhollow | Pending | 980487 | Dornorson | Actuarial",
+   "Caldorridge | Payments | 163051 | Harborline | Pending | 597323 | Caldorridge | Clearing"
+  ],
+  "rec_ids": [
+   "R014",
+   "R006",
+   "R037",
+   "R003"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 44,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R033 | Dornenwick | Procurement | 902559 | Westmoor | Final | 865470 | Dornenwick | Clearing",
+   "R015 | Ellenhardt | Compliance | 710595 | Granthill | Review | 883606 | Ellenhardt | Registry",
+   "Ellorwell | Registry | 392278 | Larkmede | Draft | 807462 | Ellorwell | Compliance",
+   "Caldamson | Registry | 725603 | Northgate | Open | 864877 | Caldamson | Clearing"
+  ],
+  "answers": [
+   "Dornenwick | Procurement | 902559 | Westmoor | Final | 865470 | Dornenwick | Clearing",
+   "Ellenhardt | Compliance | 710595 | Granthill | Review | 883606 | Ellenhardt | Registry",
+   "Ellorwell | Registry | 392278 | Larkmede | Draft | 807462 | Ellorwell | Compliance",
+   "Caldamson | Registry | 725603 | Northgate | Open | 864877 | Caldamson | Clearing"
+  ],
+  "rec_ids": [
+   "R033",
+   "R015",
+   "R026",
+   "R040"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 45,
+  "score": 0.75,
+  "per_variant": [
+   0.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "R011 | Ellorwick | Treasury | 579212 | Northgate | Open | 103842 | Ellorwick | Treasury",
+   "Barusdahl | Settlement | 529919 | Westmoor | Final | 655664 | Barusdahl | Payments",
+   "R036 | Ellolfield | Settlement | 509085 | Draymouth | Held | 727005 | Ellolfield | Treasury",
+   "Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement"
+  ],
+  "answers": [
+   "Ellorwick | Registry | 579212 | Northgate | Open | 103842 | Ellorwick | Treasury",
+   "Barusdahl | Settlement | 529919 | Westmoor | Final | 655664 | Barusdahl | Payments",
+   "Ellolfield | Settlement | 509085 | Draymouth | Held | 727005 | Ellolfield | Treasury",
+   "Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement"
+  ],
+  "rec_ids": [
+   "R011",
+   "R009",
+   "R036",
+   "R031"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 46,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   0.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Barunwick | Clearing | 381177 | Pinebury | Open | 649701 | Barunwick | Custody",
+   "R016 | Caldamker | Actuarial | 924147 | Westmoor | Draft | 494938 | Caldamker | Compliance",
+   "R031 | Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments",
+   "Caldormont | Compliance | 543467 | Northgate | Cleared | 938316 | Caldormont | Underwriting"
+  ],
+  "answers": [
+   "Barunwick | Clearing | 381177 | Pinebury | Open | 649701 | Barunwick | Custody",
+   "Caldamker | Custody | 924147 | Westmoor | Draft | 494938 | Caldamker | Actuarial",
+   "Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments",
+   "Caldormont | Compliance | 543467 | Northgate | Cleared | 938316 | Caldormont | Underwriting"
+  ],
+  "rec_ids": [
+   "R020",
+   "R016",
+   "R031",
+   "R027"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 47,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Barirhardt | Clearing | 680228 | Draymouth | Review | 409841 | Barirhardt | Clearing",
+   "R017 | Dornenwell | Procurement | 718853 | Pinebury | Held | 983524 | Dornenwell | Clearing",
+   "R018 | Caldamwell | Procurement | 595222 | Kingsfell | Cleared | 438301 | Caldamwell | Payments",
+   "Barolwick | Reconciliation | 405218 | Granthill | Closed | 528168 | Barolwick | Actuarial"
+  ],
+  "answers": [
+   "Barirhardt | Clearing | 680228 | Draymouth | Review | 409841 | Barirhardt | Clearing",
+   "Dornenwell | Procurement | 718853 | Pinebury | Held | 983524 | Dornenwell | Clearing",
+   "Caldamwell | Procurement | 595222 | Kingsfell | Cleared | 438301 | Caldamwell | Payments",
+   "Barolwick | Reconciliation | 405218 | Granthill | Closed | 528168 | Barolwick | Actuarial"
+  ],
+  "rec_ids": [
+   "R019",
+   "R017",
+   "R018",
+   "R026"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 48,
+  "score": 1.0,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gen": [
+   "Dornirstad | Registry | 243754 | Harborline | Held | 412360 | Dornirstad | Custody",
+   "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+   "Caldacmont | Registry | 393403 | Pinebury | Held | 987502 | Caldacmont | Payments",
+   "Barolson | Payments | 593276 | Ashcombe | Held | 212371 | Barolson | Procurement"
+  ],
+  "answers": [
+   "Dornirstad | Registry | 243754 | Harborline | Held | 412360 | Dornirstad | Custody",
+   "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+   "Caldacmont | Registry | 393403 | Pinebury | Held | 987502 | Caldacmont | Payments",
+   "Barolson | Payments | 593276 | Ashcombe | Held | 212371 | Barolson | Procurement"
+  ],
+  "rec_ids": [
+   "R024",
+   "R030",
+   "R007",
+   "R015"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ },
+ {
+  "instance": 49,
+  "score": 0.75,
+  "per_variant": [
+   1.0,
+   1.0,
+   1.0,
+   0.0
+  ],
+  "gen": [
+   "R014 | Barunstad | Custody | 104361 | Northgate | Review | 156200 | Barunstad | Custody",
+   "Caldirmont | Compliance | 240162 | Oakstead | Draft | 203057 | Caldirmont | Registry",
+   "Ellethfield | Underwriting | 803023 | Northgate | Final | 989101 | Ellethfield | Compliance",
+   "R040 | Caldethwick | Registry | 246760 | Fairhollow | Draft | 325878 | Caldethwick | Treasury"
+  ],
+  "answers": [
+   "Barunstad | Custody | 104361 | Northgate | Review | 156200 | Barunstad | Custody",
+   "Caldirmont | Compliance | 240162 | Oakstead | Draft | 203057 | Caldirmont | Registry",
+   "Ellethfield | Underwriting | 803023 | Northgate | Final | 989101 | Ellethfield | Compliance",
+   "Caldethwick | Registry | 246760 | Fairhollow | Draft | 325878 | Caldethwick | Settlement"
+  ],
+  "rec_ids": [
+   "R014",
+   "R005",
+   "R003",
+   "R040"
+  ],
+  "stop_flags": [
+   "eos",
+   "eos",
+   "eos",
+   "eos"
+  ]
+ }
+]

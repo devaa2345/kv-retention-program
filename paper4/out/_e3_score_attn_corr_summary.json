@@ -1,0 +1,16 @@
+{
+ "snapkv": {
+  "n": 48,
+  "pearson_r": 0.458,
+  "pearson_p": 0.0011,
+  "spearman_rho": 0.833,
+  "spearman_p": 0.0
+ },
+ "expected_attn": {
+  "n": 54,
+  "pearson_r": 0.479,
+  "pearson_p": 0.0002,
+  "spearman_rho": 0.602,
+  "spearman_p": 0.0
+ }
+}

@@ -1,0 +1,42 @@
+[
+ {
+  "instance": 37,
+  "qi": 3,
+  "rec_id": "R034",
+  "gold": "Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting",
+  "natural_gen": "R034|Barammont|Underwriting|461048|Harborline|Open|827581|Barammont|Underwriting",
+  "bonus_gen": "R034|Barammont|Underwriting|461048|Harborline|Open|827581"
+ },
+ {
+  "instance": 39,
+  "qi": 0,
+  "rec_id": "R030",
+  "gold": "Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting",
+  "natural_gen": "R030|Elloldahl|Valuation|941798|Kingsfell|Pending|523133|Elloldahl|Underwriting",
+  "bonus_gen": "R030|Ellirridge|Settlement|384892|Westmoor|Review|504429|Ellirridge|Underwriting"
+ },
+ {
+  "instance": 48,
+  "qi": 1,
+  "rec_id": "R030",
+  "gold": "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+  "natural_gen": "R030|Caldendahl|Compliance|395254|Granthill|Pending|683019|Caldendahl|Payments",
+  "bonus_gen": "395254|Caldendahl|Compliance|683019|Pending|651255|Payments"
+ },
+ {
+  "instance": 53,
+  "qi": 1,
+  "rec_id": "R037",
+  "gold": "Elluswick | Procurement | 812328 | Pinebury | Review | 783547 | Elluswick | Valuation",
+  "natural_gen": "R037|Elluswick|Procurement|812328|Pinebury|Review|783547|Elluswick|Valuation",
+  "bonus_gen": "R037|Elluswick|Procurement|812328|Pinebury|Review|783547|Elluswick|Settlement"
+ },
+ {
+  "instance": 73,
+  "qi": 1,
+  "rec_id": "R034",
+  "gold": "Barenwell | Actuarial | 627087 | Harborline | Final | 204123 | Barenwell | Valuation",
+  "natural_gen": "R034|Barenwell|Actuarial|627087|Harborline|Final|204123|Barenwell|Valuation",
+  "bonus_gen": "R034|Barenwell|Actuarial|627087|Harborline|Final|204123|Ellenson|Registry"
+ }
+]

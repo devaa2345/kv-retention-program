@@ -1,0 +1,17 @@
+{
+ "M2": {
+  "verdict": "NOT-IT",
+  "delta": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "n_pooled": 26,
+  "n_target": 120
+ },
+ "M3": {
+  "verdict": "not_scoreable",
+  "n_pooled": 9,
+  "n_target": 150
+ }
+}

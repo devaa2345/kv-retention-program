@@ -1,0 +1,46 @@
+[
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 2,
+   "qi": 0,
+   "rec_id": "R035",
+   "answer": "R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.4965277777777778,
+   "n_near_matches": 4
+  },
+  "match": {
+   "instance": 2,
+   "qi": 2,
+   "rec_id": "R039",
+   "q_slot": 0.4965277777777778,
+   "gold": "Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial"
+  }
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 3,
+   "qi": 1,
+   "rec_id": "R029",
+   "answer": "R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody",
+   "tag": "plausible-fabrication",
+   "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated",
+   "div_token_idx": 0,
+   "gold_len_tok": 34,
+   "q_slot": 0.3784722222222222,
+   "n_near_matches": 2
+  },
+  "match": {
+   "instance": 44,
+   "qi": 3,
+   "rec_id": "R040",
+   "q_slot": 0.3958333333333333,
+   "gold": "Caldamson | Registry | 725603 | Northgate | Open | 864877 | Caldamson | Clearing"
+  }
+ }
+]

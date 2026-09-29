@@ -1,0 +1,1307 @@
+[
+ {
+  "base": "snapkv",
+  "instance": 50,
+  "qi": 1,
+  "u_ans": "R031|Caldusker|Reconciliation|473701|Pinebury|Pending|449842|Caldusker|Settlement",
+  "answer": "Barunstad | Compliance | 405960 | Kingsfell | Open | 436802 | Barunstad | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 50,
+  "qi": 1,
+  "u_ans": "Record R031 | Treasury | 456789 | Kingsfell | Draft | 345678",
+  "answer": "Barunstad | Compliance | 405960 | Kingsfell | Open | 436802 | Barunstad | Compliance",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 51,
+  "qi": 1,
+  "u_ans": "R030|Ellolbury|Actuarial|Pinebury|Draft|824696|Ellolbury|Revaluation",
+  "answer": "Barirfield | Registry | 358025 | Northgate | Draft | 110116 | Barirfield | Valuation",
+  "tag": "malformed",
+  "reason": "field count 7 != 8; non-6-digit value field(s): [(2, 'Pinebury'), (5, 'Ellolbury')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 51,
+  "qi": 1,
+  "u_ans": "R030 | Dornirmont | Procurement | 338805 | Pinebury | Held | 826730 | Dornirmont | Compliance",
+  "answer": "Barirfield | Registry | 358025 | Northgate | Draft | 110116 | Barirfield | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 2,
+  "qi": 0,
+  "u_ans": "R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry",
+  "answer": "Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 2,
+  "qi": 3,
+  "u_ans": "R028|Caldoldahl|Payments|872264|Granthill|Cleared|758",
+  "answer": "Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement",
+  "tag": "malformed",
+  "reason": "field count 6 != 8; non-6-digit value field(s): [(5, '758')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 2,
+  "qi": 0,
+  "u_ans": "R035 | Caldorson | Registry | 791498 | Granthill | Held | 167093 | Caldorson | Underwriting",
+  "answer": "Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 2,
+  "qi": 2,
+  "u_ans": "R039 | Caldorson | Registry | 791498 | Granthill | Held | 167093 | Caldorson | Underwriting",
+  "answer": "Caldirwell | Custody | 682999 | Larkmede | Draft | 277452 | Caldirwell | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 2,
+  "qi": 3,
+  "u_ans": "R028 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
+  "answer": "Caldoldahl | Payments | 872264 | Granthill | Cleared | 758534 | Caldoldahl | Procurement",
+  "tag": "malformed",
+  "reason": "field count 0 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 3,
+  "qi": 1,
+  "u_ans": "R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody",
+  "answer": "Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 3,
+  "qi": 1,
+  "u_ans": "R029|Caldusdahl|Procurement|864909|Fairhollow|Closed|774570|Caldusdahl|Procurement",
+  "answer": "Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 1,
+  "u_ans": "R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry",
+  "answer": "Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 6,
+  "qi": 3,
+  "u_ans": "R032|Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial",
+  "answer": "Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 0,
+  "u_ans": "R030|Baramker|Valuation|454055|Oakstead|Final|698765|Baramker|Payments",
+  "answer": "Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 1,
+  "u_ans": "R031|Caldirwick|Compliance|402318|Draymouth|Review|476812|Caldirwick|Compliance|",
+  "answer": "Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 6,
+  "qi": 3,
+  "u_ans": "R032|Dornuswick|Procurement|454123|Oakstead|Final|698765|Dornuswick|Payments|",
+  "answer": "Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 7,
+  "qi": 2,
+  "u_ans": "R029|Dornenwick|Underwriting|701907|Pinebury|Open|650235|Dornenwick|Valuation",
+  "answer": "Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 7,
+  "qi": 2,
+  "u_ans": "R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody",
+  "answer": "Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 8,
+  "qi": 0,
+  "u_ans": "R035 | Barirridge | Treasury | 719725 | Granthill | Final | 189221 | Barirridge | Treasury",
+  "answer": "Barendahl | Procurement | 683415 | Ashcombe | Final | 562667 | Barendahl | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 8,
+  "qi": 0,
+  "u_ans": "R035 | Ellamwick | Treasury | 880278 | Fairhollow | Review | 648584 | Ellamwick | Compliance",
+  "answer": "Barendahl | Procurement | 683415 | Ashcombe | Final | 562667 | Barendahl | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 11,
+  "qi": 1,
+  "u_ans": "R029 | Calidale | Clearing | 591234 | Pinecrest | Closed | 654321 | Calidale | Settlement",
+  "answer": "Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 11,
+  "qi": 1,
+  "u_ans": "R029|Barolker|Clearing|496244|Oakstead|Closed|305916|Barolker|Custody",
+  "answer": "Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 12,
+  "qi": 2,
+  "u_ans": "R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting",
+  "answer": "Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 12,
+  "qi": 2,
+  "u_ans": "R031 | Dornacdahl | Actuarial | 321904 | Oakstead | Draft | 456720 | Dornacdahl | Settlement",
+  "answer": "Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 15,
+  "qi": 0,
+  "u_ans": "R034 | Dornacres | Settlement | 210398 | Oakwood | Open | 74563",
+  "answer": "Ellenhardt | Custody | 961365 | Draymouth | Draft | 830332 | Ellenhardt | Payments",
+  "tag": "malformed",
+  "reason": "field count 6 != 8; non-6-digit value field(s): [(5, '74563')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 16,
+  "qi": 1,
+  "u_ans": "R031 | Barolmont | Underwriting | 613317 | Harborline | Cleared | 347350 | Barolmont | Clearing",
+  "answer": "Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 16,
+  "qi": 1,
+  "u_ans": "R031 | Ellenbrook | Clearing | 523104 | Elmsworth | Final | 345678 | Ellenbrook | Treasury",
+  "answer": "Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 20,
+  "qi": 0,
+  "u_ans": "R032|Dornamore|Treasury|555555|Fairhollow|Draft|999999|Dornamore|Compliance",
+  "answer": "Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 20,
+  "qi": 0,
+  "u_ans": "R032 | Caledwell | Procurement | 386148 | Pinebury | Open |",
+  "answer": "Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 21,
+  "qi": 2,
+  "u_ans": "R036|Baramhardt|Compliance|712955|Oakstead|Held|594657|Baramhardt|Valuation",
+  "answer": "Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 21,
+  "qi": 2,
+  "u_ans": "Caldiddar| Treasury| 398273| Westmoor| Closed| 998875| Caldiddar| Reconciliation",
+  "answer": "Caldamker | Registry | 288287 | Pinebury | Closed | 551916 | Caldamker | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 23,
+  "qi": 3,
+  "u_ans": "R036 | Caldunhardt | Actuarial | 771852 | Pinebury | Draft | 298846 | Caldunhardt | Settlement",
+  "answer": "Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 23,
+  "qi": 3,
+  "u_ans": "R036 | Barenhardt | Actuarial | 781852 | Pinebury | Draft | 298846 | Barenhardt | Settlement",
+  "answer": "Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 26,
+  "qi": 1,
+  "u_ans": "R033|Ellenker|Reconciliation|589721|Larkmede|Review|437183|Ellenker|Clearing",
+  "answer": "Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 26,
+  "qi": 1,
+  "u_ans": "R033 | Dornidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Dornidridge | Treasury",
+  "answer": "Caldidridge | Underwriting | 993443 | Draymouth | Draft | 248961 | Caldidridge | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 30,
+  "qi": 1,
+  "u_ans": "R033 | Caldacson | Settlement | 984570 | Drayton | Open |",
+  "answer": "Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 30,
+  "qi": 1,
+  "u_ans": "R033|Ellanolhardt|Compliance|513487|Northgate|Final|219764|R033",
+  "answer": "Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 31,
+  "qi": 1,
+  "u_ans": "R034 | Caldunfield | Compliance | 949797 | Ashcombe | Final | 249853 | Caldunfield | Clearing",
+  "answer": "Dornorwick | Payments | 229221 | Granthill | Closed | 428547 | Dornorwick | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 31,
+  "qi": 1,
+  "u_ans": "Dornicastle|Payments|229211|Grantham|Closed|428547|Dornicastle|Payments",
+  "answer": "Dornorwick | Payments | 229221 | Granthill | Closed | 428547 | Dornorwick | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 32,
+  "qi": 0,
+  "u_ans": "R031|Baramhardt|Underwriting|440208|Ashcombe|Open|138144|Baramhardt|Registry",
+  "answer": "Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 32,
+  "qi": 1,
+  "u_ans": "R034|Ellusdahl|Clearing|984333|Ashcombe|Review",
+  "answer": "Ellusdahl | Clearing | 984333 | Ashcombe | Review | 786060 | Ellusdahl | Registry",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 32,
+  "qi": 0,
+  "u_ans": "Barolfield|Treasury|887419|Northgate|Cleared|297862|Barolfield|Reconciliation",
+  "answer": "Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 32,
+  "qi": 1,
+  "u_ans": "R034 | Ellolwick | Custody | 266062 | Kingsfell | Final | 995050 | Ellolwick | Procurement",
+  "answer": "Ellusdahl | Clearing | 984333 | Ashcombe | Review | 786060 | Ellusdahl | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 35,
+  "qi": 3,
+  "u_ans": "R031|Dornolson|Actuarial|Northgate|Open|130745|R031|Dornolson|Actuarial|Northgate|Open|130745",
+  "answer": "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments",
+  "tag": "malformed",
+  "reason": "field count 10 != 8; repeated block (decoding loop); non-6-digit value field(s): [(2, 'Northgate'), (5, 'Dornolson')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 35,
+  "qi": 3,
+  "u_ans": "Barunstead|Underwriting|923456|Northgate|Final|987654",
+  "answer": "Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 37,
+  "qi": 2,
+  "u_ans": "R033 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
+  "answer": "Ellamhardt | Treasury | 973880 | Westmoor | Review | 383043 | Ellamhardt | Actuarial",
+  "tag": "malformed",
+  "reason": "field count 0 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 37,
+  "qi": 3,
+  "u_ans": "R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 234567 | Ellamhardt | Registry",
+  "answer": "Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 37,
+  "qi": 2,
+  "u_ans": "R032 | Caldushardt | Reconciliation | 885936 | Elmsworth | Pending | 261515 | Caldushardt | Payments",
+  "answer": "Ellamhardt | Treasury | 973880 | Westmoor | Review | 383043 | Ellamhardt | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 37,
+  "qi": 3,
+  "u_ans": "R034 | Baramont | Underwriting | 461048 | Drayton | Open | 827581 | Baramont | Underwriting",
+  "answer": "Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 38,
+  "qi": 2,
+  "u_ans": "R029 | Caldorfield | Underwriting | 156324 | Kingsfell | Cleared | 729536 | Caldorfield | Underwriting",
+  "answer": "Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 0,
+  "u_ans": "R038 | Dornacson | Custody | 288937 | Harborline | Final | 970989 | Dornacson | Compliance",
+  "answer": "Dornirker | Procurement | 299197 | Harborline | Pending | 952640 | Dornirker | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 38,
+  "qi": 2,
+  "u_ans": "R029|Dornamker|Actuarial|439144|Granthill|Final|684469|Dornamker|Payments",
+  "answer": "Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 39,
+  "qi": 0,
+  "u_ans": "R030|Elloldahl|Valuation|941798|Kingsfell|Pending|523133|",
+  "answer": "Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 39,
+  "qi": 0,
+  "u_ans": "R030 | Elloldahl | Valuation | 941798 | Kingshill | Pending | 653214 | Elloldahl | Procurement",
+  "answer": "Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 43,
+  "qi": 2,
+  "u_ans": "R037 | Caldolstad | Compliance | 364239 | Pinebury | Open | 709281 | Ellethridge | Custody",
+  "answer": "Dornorson | Reconciliation | 431165 | Fairhollow | Pending | 980487 | Dornorson | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 44,
+  "qi": 0,
+  "u_ans": "R033|Caldethfield|Treasury|497499|Harborline|Final|853983|Caldethfield|Registry",
+  "answer": "Dornenwick | Procurement | 902559 | Westmoor | Final | 865470 | Dornenwick | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 44,
+  "qi": 0,
+  "u_ans": "R033 | Baramwick | Custody | 765806 | Elmsworth | Cleared | 495152 | Baramwick | Underwriting",
+  "answer": "Dornenwick | Procurement | 902559 | Westmoor | Final | 865470 | Dornenwick | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 45,
+  "qi": 3,
+  "u_ans": "R031 | Barirdahl | Registry | 633065 | Draymouth | Pending |",
+  "answer": "Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 45,
+  "qi": 3,
+  "u_ans": "R031 | Calderhill | Custody | 745623 | Kingsley | Pending |",
+  "answer": "Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 46,
+  "qi": 2,
+  "u_ans": "R031|Caldamhardt|Reconciliation|945875|Elmsworth|Final|477688|Caldamhardt|Reconciliation",
+  "answer": "Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 46,
+  "qi": 2,
+  "u_ans": "R030 | Dornusstad | Clearing | 903090 | Westmoor | Pending | 292583 | Dornusstad | Registry",
+  "answer": "Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 48,
+  "qi": 1,
+  "u_ans": "R030 | Underwriting | 785634 | Oakstead | Open | 456789 | R030",
+  "answer": "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+  "tag": "malformed",
+  "reason": "field count 5 != 8; non-6-digit value field(s): [(2, 'Oakstead')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 48,
+  "qi": 1,
+  "u_ans": "Ellidock | Payments | 456789 | Grantham | Review | 234567",
+  "answer": "Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 52,
+  "qi": 2,
+  "u_ans": "R037|Ellolridge|Payments|278332|Larkmede|Closed|314812|Ellolridge|Compliance",
+  "answer": "Barunker | Payments | 278332 | Larkmede | Closed | 314812 | Barunker | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 52,
+  "qi": 2,
+  "u_ans": "Ellusstad|Acting|Registry|475634|Pinebury|Draft|826345|Ellusstad|Procurement",
+  "answer": "Barunker | Payments | 278332 | Larkmede | Closed | 314812 | Barunker | Procurement",
+  "tag": "malformed",
+  "reason": "field count 9 != 8; non-6-digit value field(s): [(2, 'Registry'), (5, 'Draft')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 53,
+  "qi": 1,
+  "u_ans": "R037|Elluswick|Procurement|812328|Northgate|Final|783547|Elluswick|Valuation",
+  "answer": "Elluswick | Procurement | 812328 | Pinebury | Review | 783547 | Elluswick | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 53,
+  "qi": 0,
+  "u_ans": "R030 | Caldunwell | Reconciliation | 984954 | Northgate | Pending | 973974 | Caldunwell | Compliance",
+  "answer": "Ellushardt | Settlement | 559969 | Northgate | Held | 310185 | Ellushardt | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 53,
+  "qi": 1,
+  "u_ans": "Ellusker|Procurement|812328|Northgate|Review",
+  "answer": "Elluswick | Procurement | 812328 | Pinebury | Review | 783547 | Elluswick | Valuation",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 57,
+  "qi": 0,
+  "u_ans": "R029|Barunridge|Actuarial|868867|Oakstead|Open|872132|Caldarbridge|Underwriting",
+  "answer": "Caldacwell | Reconciliation | 363627 | Ashcombe | Cleared | 832233 | Caldacwell | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 57,
+  "qi": 1,
+  "u_ans": "R033|Caldammont|Underwriting|940231|Drayton|Pending|803249|Caldammont|Settlement",
+  "answer": "Caldamwell | Clearing | 918411 | Draymouth | Pending | 369640 | Caldamwell | Reconciliation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 57,
+  "qi": 0,
+  "u_ans": "Caldammont|Underwriting|163912|Drayton|Pending|834562|Caldammont|Clearing",
+  "answer": "Caldacwell | Reconciliation | 363627 | Ashcombe | Cleared | 832233 | Caldacwell | Registry",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 57,
+  "qi": 1,
+  "u_ans": "R033|Caldamwell|Clearing|918411|Draycott|Pending|872303|Calamwell|Clearing",
+  "answer": "Caldamwell | Clearing | 918411 | Draymouth | Pending | 369640 | Caldamwell | Reconciliation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 58,
+  "qi": 3,
+  "u_ans": "R036|Dornikker|Payment|780797|Pinebury|Held|895539|Dornikker|Custody",
+  "answer": "Dornidmont | Payments | 780797 | Larkmede | Draft | 895539 | Dornidmont | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 58,
+  "qi": 3,
+  "u_ans": "R036 | Dornamker | Payments | 780797 | Northgate | Closed | 806302 | Dornamker | Custody",
+  "answer": "Dornidmont | Payments | 780797 | Larkmede | Draft | 895539 | Dornidmont | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 62,
+  "qi": 3,
+  "u_ans": "R030|Barenwick|Procurement|684176|Granthill|Held",
+  "answer": "Baramdahl | Registry | 535719 | Kingsfell | Open | 290232 | Baramdahl | Compliance",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 62,
+  "qi": 3,
+  "u_ans": "R030 | D | Northgate | 837802 | Harborline | Open | 741186 | Ellethker | Clearing",
+  "answer": "Baramdahl | Registry | 535719 | Kingsfell | Open | 290232 | Baramdahl | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 63,
+  "qi": 1,
+  "u_ans": "Dornusdahl | Treasury | 548244 | Harborline | Open | 966887 | Dornusdahl | Valuation",
+  "answer": "Dornirhardt | Treasury | 583231 | Pinebury | Closed | 718138 | Dornirhardt | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 63,
+  "qi": 1,
+  "u_ans": "Dornimont | Compliance | 450127 | Fairhaven | Final | Dornimont | Underwriting",
+  "answer": "Dornirhardt | Treasury | 583231 | Pinebury | Closed | 718138 | Dornirhardt | Underwriting",
+  "tag": "malformed",
+  "reason": "field count 7 != 8; non-6-digit value field(s): [(5, 'Dornimont')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 66,
+  "qi": 0,
+  "u_ans": "R031|Ellidhardt|Payments|917589|Fairhollow|Held|191922|Ellidhardt|Actuarial",
+  "answer": "Ellidhardt | Payments | 917589 | Fairhollow | Held | 191922 | Ellidhardt | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 66,
+  "qi": 2,
+  "u_ans": "R032|Dornunridge|Payments|917589|Harbor|Cleared|440629|Dornunridge|Valuation",
+  "answer": "Caldenwell | Clearing | 172858 | Ashcombe | Review | 311893 | Caldenwell | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 66,
+  "qi": 0,
+  "u_ans": "R031 | Barunridge | Valuation | 654321 | Kingsfell | Open | 893456",
+  "answer": "Ellidhardt | Payments | 917589 | Fairhollow | Held | 191922 | Ellidhardt | Settlement",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 66,
+  "qi": 2,
+  "u_ans": "R032|Caldenorth|Procurement|789456|Fairhollow|Draft|234567",
+  "answer": "Caldenwell | Clearing | 172858 | Ashcombe | Review | 311893 | Caldenwell | Clearing",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 67,
+  "qi": 2,
+  "u_ans": "R031 | Bariddahl | Payments | 573770 | Larkmede | Pending | 247641 | Bariddahl | Payments",
+  "answer": "Baridmont | Payments | 573770 | Larkmede | Review | 247641 | Baridmont | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 67,
+  "qi": 2,
+  "u_ans": "Dornethhardt | Settlement | 955692 | Oakstead | Pending | 373416 | Dornethhardt | Clearing",
+  "answer": "Baridmont | Payments | 573770 | Larkmede | Review | 247641 | Baridmont | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 68,
+  "qi": 3,
+  "u_ans": "R034|Caldirstad|Registry|367990|Draymouth|Open|762495|Caldirstad|Underwriting",
+  "answer": "Ellamdahl | Treasury | 308875 | Granthill | Cleared | 123008 | Ellamdahl | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 68,
+  "qi": 3,
+  "u_ans": "R034 | Ellushert | Clearing | 347082 | Larkmede | Held | 831678 | Ellushert | Walkthrough",
+  "answer": "Ellamdahl | Treasury | 308875 | Granthill | Cleared | 123008 | Ellamdahl | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 69,
+  "qi": 1,
+  "u_ans": "R035|Barirhardt|Underwriting|Pinebury|Review|874106|Kingsfell|Clear|768192|Barirhardt|Registry",
+  "answer": "Caldirdahl | Settlement | 973919 | Fairhollow | Closed | 278286 | Caldirdahl | Settlement",
+  "tag": "malformed",
+  "reason": "field count 10 != 8; non-6-digit value field(s): [(2, 'Pinebury'), (5, 'Kingsfell')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 71,
+  "qi": 1,
+  "u_ans": "R036|Ellundahl|Compliance|259582|Granthill|Open|403905|Ellundahl|Valuation",
+  "answer": "Ellundahl | Settlement | 259582 | Granthill | Open | 403905 | Ellundahl | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 71,
+  "qi": 1,
+  "u_ans": "R036 | Caldirstad | Settlement | 259582 | Fairhollow | Open | 403905 | Caldirstad | Compliance",
+  "answer": "Ellundahl | Settlement | 259582 | Granthill | Open | 403905 | Ellundahl | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 72,
+  "qi": 1,
+  "u_ans": "Dornamker|Settlement|593099|Fairhollow|Final|991651|Dornamker|Payments",
+  "answer": "Barethdahl | Reconciliation | 706822 | Oakstead | Closed | 701574 | Barethdahl | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 73,
+  "qi": 1,
+  "u_ans": "R034 | | | | | |",
+  "answer": "Barenwell | Actuarial | 627087 | Harborline | Final | 204123 | Barenwell | Valuation",
+  "tag": "malformed",
+  "reason": "field count 0 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 73,
+  "qi": 3,
+  "u_ans": "R032 | Dornenwood | Procurement | 789012 | Granthill | Final | 456789 | Dornenwood | Procurement",
+  "answer": "Ellunfield | Procurement | 389199 | Elmsworth | Open | 574373 | Ellunfield | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 73,
+  "qi": 1,
+  "u_ans": "R034 | Dornenhardt | Clearing | 847713 | Oakstead | Review | 937083 | Dornenhardt | Settlement",
+  "answer": "Barenwell | Actuarial | 627087 | Harborline | Final | 204123 | Barenwell | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 73,
+  "qi": 3,
+  "u_ans": "R032 | Ellunfield | Clearing | 847713 | Oakstead | Review | 937083 | Dornenhardt | Settlement",
+  "answer": "Ellunfield | Procurement | 389199 | Elmsworth | Open | 574373 | Ellunfield | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 75,
+  "qi": 3,
+  "u_ans": "R032|Dorniridge|Compliance|164340|Northgate|Pending|249245|R032",
+  "answer": "Caldidker | Custody | 690920 | Pinebury | Closed | 822338 | Caldidker | Treasury",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 75,
+  "qi": 3,
+  "u_ans": "Caldamhardt | Payments | 346400 | Harborline | Final | 783962 | Caldamhardt | Valuation",
+  "answer": "Caldidker | Custody | 690920 | Pinebury | Closed | 822338 | Caldidker | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 77,
+  "qi": 0,
+  "u_ans": "R028|NOT PROVIDED|NOT PROVIDED|NOT PROVIDED|NOT PROVIDED|NOT PROVIDED|NOT PROVIDED",
+  "answer": "Caldirwell | Registry | 580930 | Fairhollow | Final | 268652 | Caldirwell | Settlement",
+  "tag": "malformed",
+  "reason": "field count 6 != 8; repeated block (decoding loop); non-6-digit value field(s): [(2, 'NOT PROVIDED'), (5, 'NOT PROVIDED')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 77,
+  "qi": 0,
+  "u_ans": "R028|Caldolker|Valuation|648217|Draymouth|Open|",
+  "answer": "Caldirwell | Registry | 580930 | Fairhollow | Final | 268652 | Caldirwell | Settlement",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 78,
+  "qi": 0,
+  "u_ans": "R035 | Dornidfield | Compliance | 498318 | Harborline | Cleared | 896125 | Dornidfield | Underwriting",
+  "answer": "Caldacker | Compliance | 623264 | Granthill | Open | 347043 | Caldacker | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 78,
+  "qi": 0,
+  "u_ans": "R035|B Caldenn|Compliance|623214|Granthill|Open|347122|B Caldenn|Settlement",
+  "answer": "Caldacker | Compliance | 623264 | Granthill | Open | 347043 | Caldacker | Settlement",
+  "tag": "mixed",
+  "reason": "8 fields present but field(s) contain multi-word/filler-like text: [(0, 'B Caldenn'), (6, 'B Caldenn')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 80,
+  "qi": 0,
+  "u_ans": "R037|Ellenstad|Settlement|940713|Larkmead|Held|753211",
+  "answer": "Ellenstad | Custody | 788596 | Elmsworth | Draft | 750214 | Ellenstad | Registry",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 80,
+  "qi": 0,
+  "u_ans": "Qwen|Ellenstad|Custody|788596|Elmsworth|Draft|750214|Qwen|Ellenstad|Custody|788596|",
+  "answer": "Ellenstad | Custody | 788596 | Elmsworth | Draft | 750214 | Ellenstad | Registry",
+  "tag": "malformed",
+  "reason": "field count 11 != 8; non-6-digit value field(s): [(2, 'Custody'), (5, 'Draft')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 80,
+  "qi": 1,
+  "u_ans": "R038 | Dornethdahl | Custody | 788596 | Elmsworth | Final | 750214 | Dornethdahl | Registry",
+  "answer": "Dornethdahl | Registry | 910987 | Northgate | Held | 253678 | Dornethdahl | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 81,
+  "qi": 1,
+  "u_ans": "R029|Actuarial|301371|Elmsworth|Draft|Ellolmont|Registry",
+  "answer": "Ellethfield | Payments | 264046 | Larkmede | Held | 412522 | Ellethfield | Underwriting",
+  "tag": "malformed",
+  "reason": "field count 6 != 8; non-6-digit value field(s): [(2, 'Elmsworth'), (5, 'Registry')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 81,
+  "qi": 1,
+  "u_ans": "R029| Ellethfield| Payments| 264046| Draymouth| Held| 412522| Ellethfield| Underwriting",
+  "answer": "Ellethfield | Payments | 264046 | Larkmede | Held | 412522 | Ellethfield | Underwriting",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 82,
+  "qi": 2,
+  "u_ans": "Barirhardt|Underwriting|413403|Oakstead|Final|399089",
+  "answer": "Ellamwick | Clearing | 911096 | Oakstead | Closed | 433095 | Ellamwick | Settlement",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 82,
+  "qi": 2,
+  "u_ans": "R029|Ellamwick|Underwriting|826859|Kingsfell|Final|962701|Caldamwell|Actuarial",
+  "answer": "Ellamwick | Clearing | 911096 | Oakstead | Closed | 433095 | Ellamwick | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 84,
+  "qi": 3,
+  "u_ans": "R039|Barenfield|Compliance|411859|Westmoor|Draft|582447|Barorfield|Reconciliation",
+  "answer": "Barenfield | Compliance | 411859 | Westmoor | Draft | 456148 | Barenfield | Reconciliation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 87,
+  "qi": 0,
+  "u_ans": "R029|Elnwell|Custody|704825|Westmoor|Draft|305477|Elnwell|Clearing",
+  "answer": "Ellenwell | Custody | 704825 | Westmoor | Draft | 305477 | Ellenwell | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 87,
+  "qi": 0,
+  "u_ans": "R029 | Caldunhardt | Underwriting | 556789 | Ashcombe | Final | 667890 | Caldunhardt | Treasury",
+  "answer": "Ellenwell | Custody | 704825 | Westmoor | Draft | 305477 | Ellenwell | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 87,
+  "qi": 3,
+  "u_ans": "R034 | Dornolhardt | Payments | 420000 | Harborline | Open | 312000 | Dornolhardt | Reconciliation",
+  "answer": "Dornidwick | Reconciliation | 830990 | Larkmede | Held | 803774 | Dornidwick | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 89,
+  "qi": 3,
+  "u_ans": "R039 | Caldusmont | Procurement | 365691 | Larkmede | Pending | 641725 | Caldusmont | Compliance",
+  "answer": "Caldusmont | Procurement | 875264 | Fairhollow | Final | 418104 | Caldusmont | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 92,
+  "qi": 2,
+  "u_ans": "R039 | Ellorridge | Actuarial | 722172 | Kingsfell | Cleared | 285386 | Ellorridge | Custody",
+  "answer": "Barusdahl | Actuarial | 284931 | Fairhollow | Review | 669762 | Barusdahl | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 94,
+  "qi": 2,
+  "u_ans": "R028|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|None|",
+  "answer": "Baridfield | Clearing | 560338 | Oakstead | Pending | 822715 | Baridfield | Payments",
+  "tag": "malformed",
+  "reason": "field count 22 != 8; repeated block (decoding loop); non-6-digit value field(s): [(2, 'None'), (5, 'None')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 94,
+  "qi": 2,
+  "u_ans": "R028 | Barunstad | Underwriting | 547269 | Larkmede | Draft | 115803 | Dornunstad | Payments",
+  "answer": "Baridfield | Clearing | 560338 | Oakstead | Pending | 822715 | Baridfield | Payments",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 95,
+  "qi": 0,
+  "u_ans": "R028 | Ellorwick | Clearing | 897873 | Draymouth | Closed | 959133 | Ellorwick | Reconciliation",
+  "answer": "Dornolhardt | Underwriting | 333081 | Kingsfell | Held | 744683 | Dornolhardt | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 95,
+  "qi": 2,
+  "u_ans": "R034 | Ellorstad | Payments | 987654 | Westmoor | Closed | 567890 | Ellorstad | Compliance",
+  "answer": "Caldusker | Custody | 674810 | Pinebury | Review | 168587 | Caldusker | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 95,
+  "qi": 0,
+  "u_ans": "R028|Dornacridge|Procurement|794294|Harborline|Held|418302|Dornacridge|Custody",
+  "answer": "Dornolhardt | Underwriting | 333081 | Kingsfell | Held | 744683 | Dornolhardt | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 95,
+  "qi": 2,
+  "u_ans": "R034 | Baramwell | Clearing | 335003 | Harborline | Pending | 152873 | Baramwell | Payments",
+  "answer": "Caldusker | Custody | 674810 | Pinebury | Review | 168587 | Caldusker | Settlement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 96,
+  "qi": 0,
+  "u_ans": "Dornunson|Reconciliation|395345|Larkfield|Held|397416|Dornunson|Reconciliation",
+  "answer": "Dornacson | Reconciliation | 383230 | Larkmede | Held | 395309 | Dornacson | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 96,
+  "qi": 0,
+  "u_ans": "Dornacson|Reconciliation|383230|Larkmede|Held|",
+  "answer": "Dornacson | Reconciliation | 383230 | Larkmede | Held | 395309 | Dornacson | Clearing",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 99,
+  "qi": 2,
+  "u_ans": "R029|Dornamker|Payments|155546|Westmoor|Draft|953194|Dornamker|Valuation",
+  "answer": "Caldamson | Settlement | 803776 | Pinebury | Cleared | 438183 | Caldamson | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 99,
+  "qi": 3,
+  "u_ans": "R032|Dornamker|Payments|155546|Westmoor|Draft|953194|Dornamker|Valuation",
+  "answer": "Ellunwick | Registry | 697556 | Westmoor | Cleared | 740378 | Ellunwick | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 99,
+  "qi": 2,
+  "u_ans": "R029|Caldams|Settlement|803776|Pinecrest|Open|432156|R029",
+  "answer": "Caldamson | Settlement | 803776 | Pinebury | Cleared | 438183 | Caldamson | Custody",
+  "tag": "malformed",
+  "reason": "field count 6 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 99,
+  "qi": 3,
+  "u_ans": "R032|Dornamker|Registry|803776|Northgate|Final|",
+  "answer": "Ellunwick | Registry | 697556 | Westmoor | Cleared | 740378 | Ellunwick | Compliance",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 100,
+  "qi": 2,
+  "u_ans": "R032 | Ellacastle | Final | 378900 | Ellacastle | Reconciliation",
+  "answer": "Barenson | Compliance | 149782 | Kingsfell | Review | 471611 | Barenson | Valuation",
+  "tag": "malformed",
+  "reason": "field count 5 != 8"
+ },
+ {
+  "base": "snapkv",
+  "instance": 100,
+  "qi": 3,
+  "u_ans": "R035 | Dornidwick | Reconciliation | 582772 | Ashcombe | Review | 207467 | Dornidwick | Registry",
+  "answer": "Dornethridge | Valuation | 742010 | Northgate | Final | 932255 | Dornethridge | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 100,
+  "qi": 2,
+  "u_ans": "R032 | Caldichardt | Settlement | 343824 | Ashcombe | Cleared | 207467 | Caldichardt | Reconciliation | Elmsworth |",
+  "answer": "Barenson | Compliance | 149782 | Kingsfell | Review | 471611 | Barenson | Valuation",
+  "tag": "malformed",
+  "reason": "field count 9 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 100,
+  "qi": 3,
+  "u_ans": "R035 | Dornidwick | Custody | 180002 | Ashcombe | Review | 556700 | Dornidwick | Valuation",
+  "answer": "Dornethridge | Valuation | 742010 | Northgate | Final | 932255 | Dornethridge | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 102,
+  "qi": 2,
+  "u_ans": "R035|Baracfield|Settlement|289300|Westmoor|Draft|158704|Baracfield|Actuarial",
+  "answer": "Elluswick | Valuation | 234156 | Granthill | Review | 641652 | Elluswick | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 102,
+  "qi": 2,
+  "u_ans": "R035 | Caldusker | Valuation | 234156 | Pinebury | Review | 641652 | Caldusker | Underwriting",
+  "answer": "Elluswick | Valuation | 234156 | Granthill | Review | 641652 | Elluswick | Clearing",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 104,
+  "qi": 0,
+  "u_ans": "R035|Dornoldahl|Payment|351880|Harborline|Pending|822614|Dornethson|Treasury",
+  "answer": "Ellamridge | Payments | 811584 | Granthill | Held | 732764 | Ellamridge | Actuarial",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 106,
+  "qi": 2,
+  "u_ans": "INTERNAL|LEDGER|R038|Caldorhwell|Settlement|302537|Northgate|Closed|929999|Ellethwick|Settlement",
+  "answer": "Caldormont | Clearing | 929336 | Harborline | Draft | 356457 | Caldormont | Actuarial",
+  "tag": "malformed",
+  "reason": "field count 10 != 8; non-6-digit value field(s): [(2, 'Caldorhwell'), (5, 'Northgate')]"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 107,
+  "qi": 1,
+  "u_ans": "R036|Dornedahl|Underwriting|446670|Oakstead|Final|727002|Ellidmont|Treasury",
+  "answer": "Dornenwick | Actuarial | 442754 | Fairhollow | Final | 248142 | Dornenwick | Compliance",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 111,
+  "qi": 0,
+  "u_ans": "R031 | Baruswick | Compliance | 712345 | Kingsfell | Final | 654321 | Baruswick | Compliance",
+  "answer": "Ellacwell | Clearing | 238488 | Northgate | Draft | 574347 | Ellacwell | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 111,
+  "qi": 0,
+  "u_ans": "R031 | Ellunmont | Clearing | 983456 | Harborline | Pending | 456789 | Ellunmont | Actuarial",
+  "answer": "Ellacwell | Clearing | 238488 | Northgate | Draft | 574347 | Ellacwell | Valuation",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 113,
+  "qi": 1,
+  "u_ans": "R035 | Ellolhardt | Settlement | 370180 | Northgate | Held | Ellolhardt | Settlement",
+  "answer": "Ellolridge | Procurement | 571574 | Harborline | Cleared | 658300 | Ellolridge | Settlement",
+  "tag": "malformed",
+  "reason": "field count 7 != 8; non-6-digit value field(s): [(5, 'Ellolhardt')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 115,
+  "qi": 0,
+  "u_ans": "R032|Dornidson|Actuarial|993421|Kingsbridge|Final|994322|Dornidson|Compliance",
+  "answer": "Ellusstad | Payments | 856491 | Fairhollow | Open | 867282 | Ellusstad | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 115,
+  "qi": 3,
+  "u_ans": "R033|Dornacker|Underwriting|178205|Larkmede|Closed|289124|Dornacker|Actuarial",
+  "answer": "Barorker | Valuation | 211364 | Fairhollow | Open | 378654 | Barorker | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 115,
+  "qi": 0,
+  "u_ans": "R032| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |",
+  "answer": "Ellusstad | Payments | 856491 | Fairhollow | Open | 867282 | Ellusstad | Procurement",
+  "tag": "malformed",
+  "reason": "field count 0 != 8"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 115,
+  "qi": 3,
+  "u_ans": "R033 | Dornirwick | Compliance | 654321 | Northgate | Pending | 765432 | Dornirwick | Clearing",
+  "answer": "Barorker | Valuation | 211364 | Fairhollow | Open | 378654 | Barorker | Custody",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "snapkv",
+  "instance": 117,
+  "qi": 0,
+  "u_ans": "R032|Dornunwick|Underwriting|240220|Northgate|Cleared|999124|Dornunwick|Treasury",
+  "answer": "Ellorstad | Actuarial | 913245 | Oakstead | Final | 821786 | Ellorstad | Treasury",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 117,
+  "qi": 0,
+  "u_ans": "R032||913245|Northgate|Final|923757|Caldenhardt|Underwriting",
+  "answer": "Ellorstad | Actuarial | 913245 | Oakstead | Final | 821786 | Ellorstad | Treasury",
+  "tag": "malformed",
+  "reason": "field count 6 != 8; non-6-digit value field(s): [(2, 'Final'), (5, 'Underwriting')]"
+ },
+ {
+  "base": "snapkv",
+  "instance": 118,
+  "qi": 2,
+  "u_ans": "R035|Ellutham|Registry|878188|Northgate|Closed|256366|Ellutham|Treasury",
+  "answer": "Dornormont | Registry | 916809 | Oakstead | Closed | 723269 | Dornormont | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ },
+ {
+  "base": "expected_attn",
+  "instance": 118,
+  "qi": 2,
+  "u_ans": "R035 | Caldunndahl | Registry | 640539 | Oakstead | Draft | 123456 | Caldunndahl | Valuation",
+  "answer": "Dornormont | Registry | 916809 | Oakstead | Closed | 723269 | Dornormont | Procurement",
+  "tag": "plausible-fabrication",
+  "reason": "schema-conforming (8 single-token/6-digit fields), values fabricated"
+ }
+]

@@ -1,0 +1,93 @@
+format/EOS ids: [91, 220, 760, 151645]
+
+=== Correct cases: n=10 ===
+  [hard] inst2 q0: BREAK  out='R|994313|747634|Pinebury|Review|9|994313|Ellushardt|Registry'
+  [soft2] inst2 q0: OK  out='R035|Ellushardt|Treasury|747634|Pinebury|Review|994313|Ellushardt|Registry'
+  [soft5] inst2 q0: OK  out='R035|Ellushardt|Treasury|747634|Pinebury|Review|994313|Ellushardt|Registry'
+  [hard] inst2 q2: OK  out='Caldirwell|Custody|682999|Larkmede|Draft|277452|Caldirwell|Actuarial'
+  [soft2] inst2 q2: OK  out='R039|Caldirwell|Custody|682999|Larkmede|Draft|277452|Caldirwell|Actuarial'
+  [soft5] inst2 q2: OK  out='R039|Caldirwell|Custody|682999|Larkmede|Draft|277452|Caldirwell|Actuarial'
+  [hard] inst2 q3: BREAK  out='872264|Caldoldahl|Payments|Cleared|758534|Caldoldahl|Procurement'
+  [soft2] inst2 q3: OK  out='R028|Caldoldahl|Payments|872264|Granthill|Cleared|758534|Caldoldahl|Procurement'
+  [soft5] inst2 q3: OK  out='R028|Caldoldahl|Payments|872264|Granthill|Cleared|758534|Caldoldahl|Procurement'
+  [hard] inst3 q1: BREAK  out='R|128264|Elmsworth|Closed|615302|Elmsworth|Registry'
+  [soft2] inst3 q1: OK  out='R029|Caldenwick|Compliance|128264|Elmsworth|Closed|615302|Caldenwick|Registry'
+  [soft5] inst3 q1: OK  out='R029|Caldenwick|Compliance|128264|Elmsworth|Closed|615302|Caldenwick|Registry'
+  [hard] inst6 q0: OK  out='Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial'
+  [soft2] inst6 q0: OK  out='R030|Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial'
+  [soft5] inst6 q0: OK  out='R030|Baramker|Valuation|454055|Ashcombe|Final|698764|Baramker|Actuarial'
+  [hard] inst6 q1: OK  out='R|23|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing'
+  [soft2] inst6 q1: OK  out='R031|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing'
+  [soft5] inst6 q1: OK  out='R031|Ellunhardt|Reconciliation|235961|Fairhollow|Draft|296385|Ellunhardt|Clearing'
+  [hard] inst6 q3: OK  out='Baramhardt|Compliance|424724|Oakstead|Held|883521|Baramhardt|Treasury'
+  [soft2] inst6 q3: OK  out='R032|Baramhardt|Compliance|424724|Oakstead|Held|883521|Baramhardt|Treasury'
+  [soft5] inst6 q3: OK  out='R032|Baramhardt|Compliance|424724|Oakstead|Held|883521|Baramhardt|Treasury'
+  [hard] inst7 q2: BREAK  out='R|2|2|273118|Elmsworth|Pending|429709|Caldunwick|Reconciliation|'
+  [soft2] inst7 q2: OK  out='R029|Caldunwick|Valuation|273118|Elmsworth|Pending|429709|Caldunwick|Reconciliation'
+  [soft5] inst7 q2: OK  out='R029|Caldunwick|Valuation|273118|Elmsworth|Pending|429709|Caldunwick|Reconciliation'
+  [hard] inst8 q0: OK  out='Barendahl|Procurement|683415|Ashcombe|Final|562667|Barendahl|Compliance'
+  [soft2] inst8 q0: OK  out='R035|Barendahl|Procurement|683415|Ashcombe|Final|562667|Barendahl|Compliance'
+  [soft5] inst8 q0: OK  out='R035|Barendahl|Procurement|683415|Ashcombe|Final|562667|Barendahl|Compliance'
+  [hard] inst11 q1: OK  out='Barolker|Clearing|496244|Oakstead|Closed|283156|Barolker|Registry'
+  [soft2] inst11 q1: OK  out='Barolker|Clearing|496244|Oakstead|Closed|283156|Barolker|Registry'
+  [soft5] inst11 q1: OK  out='Barolker|Clearing|496244|Oakstead|Closed|283156|Barolker|Registry'
+
+sanity check: 0/10 cases had the natural gold token marked illegal at some step
+  hard: 6/10 reproduced, 4 broken
+  soft2: 10/10 reproduced, 0 broken
+  soft5: 10/10 reproduced, 0 broken
+
+=== Fabrication cases: n=15 ===
+  [hard] inst2 q0 max_rid=R037: still wrong  out='Ellid | Ellid | | Ellid | | 922356 | Ellid | | 276772 | Ellid | |'
+  [soft2] inst2 q0 max_rid=R037: still wrong  out='R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry'
+  [soft5] inst2 q0 max_rid=R037: still wrong  out='R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry'
+  [hard] inst3 q1 max_rid=R029: still wrong  out='R| 128| 128| 128| 128| 128| 128| Closed| 128| 128| 128| '
+  [soft2] inst3 q1 max_rid=R029: still wrong  out='R029 | Ellidhardt | Custody | 612345 | Kingsfell | Pending | 123456 | Ellidhardt | Compliance'
+  [soft5] inst3 q1 max_rid=R029: still wrong  out='R029 | Caldumark | Compliance | 615302 | Cragmoor | Closed | 615302 | Caldumark | Compliance'
+  [hard] inst6 q1 max_rid=R018: still wrong  out='|272410|Pinebury|Final|124807|Baridstad|Payments'
+  [soft2] inst6 q1 max_rid=R018: still wrong  out='R031 | Barndar | Procurement | 123456 | Pinebury | Final | 897654 | Barndar | Payments'
+  [soft5] inst6 q1 max_rid=R018: still wrong  out='R031 | Baridstad | Procurement | 123456 | Pinebury | Final | 234567 | Baridstad | Payments'
+  [hard] inst11 q1 max_rid=R013: still wrong  out='Elloldahl | Clearing | 250040 | Oakstead | Closed | 124582 | Elloldahl | Clearing'
+  [soft2] inst11 q1 max_rid=R013: still wrong  out='Elloldhardt|Valuation|250040|Oakstead|Closed|124582|Elloldhardt|Clearing'
+  [soft5] inst11 q1 max_rid=R013: still wrong  out='Elloldahl | Clearing | Oakstead | Closed | 124582 | Elloldahl | Clearing'
+  [hard] inst12 q2 max_rid=R038: still wrong  out='Dornenhardt | Valuation | 197198 | Pinebury | Final | 104262 | Dornenhardt | Underwriting'
+  [soft2] inst12 q2 max_rid=R038: still wrong  out='R031 | Baramill | Final | 123456 | Pinebury | Final | 123456 | Baramill | Final'
+  [soft5] inst12 q2 max_rid=R038: still wrong  out='R031 | Dornenfield | Final | 104262 | Pinebury | Underwriting'
+  [hard] inst20 q0 max_rid=R038: still wrong  out=''
+  [soft2] inst20 q0 max_rid=R038: still wrong  out='R032|Dornamore|Treasury|555555|Fairhollow|Final|111111|Dornamore|Compliance'
+  [soft5] inst20 q0 max_rid=R038: still wrong  out='R032|Dornamore|Settlement|512237|Fairhollow|Final|110023|Dornamore|Settlement'
+  [hard] inst30 q1 max_rid=R035: still wrong  out='R|R|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|2|'
+  [soft2] inst30 q1 max_rid=R035: still wrong  out='R033|Caldacson|Settlement|987042|Kingsfell|Review|214154|Caldacson|Procurement'
+  [soft5] inst30 q1 max_rid=R035: still wrong  out='R033|Caldacson|Settlement|987042|Kingsfell|Review|214154|Caldacson|Procurement'
+  [hard] inst35 q3 max_rid=R034: still wrong  out='R|  8|  8|  8|  8|  8|  8|  8|  8|  8|  8|  8|  8| '
+  [soft2] inst35 q3 max_rid=R034: still wrong  out='R031|Dornolson|Procurement|634529|Northgate|Open|412378|Dornolson|Actuarial'
+  [soft5] inst35 q3 max_rid=R034: still wrong  out='R031|Dornolson|Procurement|793594|Northgate|Pending|'
+  [hard] inst37 q3 max_rid=R038: still wrong  out='Baramwell|Actuarial|939896|Harborline|Open|491242|Baramwell|Actuarial'
+  [soft2] inst37 q3 max_rid=R038: still wrong  out='R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 483045 | Ellamhardt | Actuarial'
+  [soft5] inst37 q3 max_rid=R038: still wrong  out='R034 | Baramwell | Actuarial | 939896 | Harborline | Open | 491242 | Baramwell | Actuarial'
+  [hard] inst38 q2 max_rid=R028: still wrong  out='Dornac | 881518 | Elmsworth | Final | 457274 | Dornac | Custody'
+  [soft2] inst38 q2 max_rid=R028: still wrong  out='Dornacres | 456789 | Kingsfell | Cleared | 895432 | Dornacres | Actuarial'
+  [soft5] inst38 q2 max_rid=R028: still wrong  out='Dornacres | 456789 | Elmsworth | Final | 881512 | Dornacres | Actuarial'
+  [hard] inst48 q1 max_rid=R900: still wrong  out='| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |'
+  [soft2] inst48 q1 max_rid=R900: still wrong  out='R030 | Underwriting | 789123 | Oakstead | Final | 456789 | Dornolite | Underwriting'
+  [soft5] inst48 q1 max_rid=R900: still wrong  out='R030 | Treasury | 882640 | Northgate | Final | 471203 | Northgate'
+  [hard] inst6 q0 max_rid=R030: still wrong  out='|Baramker|Valuation|454055|Ash|Final|698764|Baramker|Actuarial'
+  [soft2] inst6 q0 max_rid=R030: still wrong  out='R030 | Baramker | Valuation | 454055 | Oakstead | Final | 678963 | Baramker | Actuarial'
+  [soft5] inst6 q0 max_rid=R030: still wrong  out='R030 | Baramker | Valuation | 454055 | Oakstead | Final | 698764 | Baramker | Actuarial'
+  [hard] inst6 q3 max_rid=R032: still wrong  out='C  | 424724 | Oakstead | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | '
+  [soft2] inst6 q3 max_rid=R032: still wrong  out='R032 | Dornirwick | Compliance | 424724 | Oakstead | Final | 585523 | Dornirwick | Compliance'
+  [soft5] inst6 q3 max_rid=R032: still wrong  out='R032 | Caledronk | Compliance | 424724 | Oakstead | Held | 462799 | Caledronk | Compliance'
+  [hard] inst7 q2 max_rid=R038: still wrong  out='Barormont|Custody|381177|Pend|701289|Barormont|Custody|'
+  [soft2] inst7 q2 max_rid=R038: still wrong  out='R029 | Caldorridge | Custody | 750620 | Oakstead | Closed | 345678 | Caldorridge | Custody'
+  [soft5] inst7 q2 max_rid=R038: still wrong  out='R029 | Baramridge | Custody | 701289 | Kingsfell | Pending | 701289 | Baramridge | Custody'
+  [hard] inst11 q1 max_rid=R029: still wrong  out='|R|2|2||B|C|O|R|2|2|C|O|R|2|2|C|O|R|2|2|C|O|R|2|2'
+  [soft2] inst11 q1 max_rid=R029: FIXED  out='R029|Barolker|Clearing|496244|Oakstead|Closed|283156|Barolker|Registry'
+  [soft5] inst11 q1 max_rid=R029: FIXED  out='R029|Barolker|Clearing|496244|Oakstead|Closed|283156|Barolker|Registry'
+
+fabrication conversion:
+  hard: 0/15 converted to correct
+  soft2: 1/15 converted to correct
+  soft5: 1/15 converted to correct
+hard mask: invented values blocked: 15/15
+
+DONE

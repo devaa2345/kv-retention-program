@@ -1,0 +1,245 @@
+==========================================================================================
+snapkv         inst  2 q0  rec=R035  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R035 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Ellushardt | Treasury | 747634 | Pinebury | Review | 994313 | Ellushardt | Registry'
+  ANSWER: 'R035|Ellidstad|Reconciliation|448320|Kingsfell|Cleared|944892|Ellidstad|Registry'
+  fabricated numbers: ['448320']
+  best other-record match: R032 dist=3 score=6
+==========================================================================================
+snapkv         inst  3 q1  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry'
+  ANSWER: 'R029 | Ellidhardt | Custody | 563214 | Fairhollow | Pending | 432109 | Ellidhardt | Custody'
+  fabricated numbers: ['432109', '563214']
+  best other-record match: R024 dist=5 score=2
+==========================================================================================
+snapkv         inst  6 q1  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Ellunhardt | Reconciliation | 235961 | Fairhollow | Draft | 296385 | Ellunhardt | Clearing'
+  ANSWER: 'R031|Baramusker|Registry|512345|Kingsfell|Final|654321|Baramusker|Registry'
+  fabricated numbers: ['512345', '654321']
+  best other-record match: R002 dist=29 score=2
+==========================================================================================
+snapkv         inst 11 q1  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry'
+  ANSWER: 'R029 | Calidale | Clearing | 591234 | Pinecrest | Closed | 654321 | Calidale | Settlement'
+  fabricated numbers: ['591234', '654321']
+  best other-record match: R013 dist=16 score=2
+==========================================================================================
+snapkv         inst 12 q2  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury'
+  ANSWER: 'R031 | Baramill | Final | 123456 | Westmoor | Held | 345678 | Baramill | Underwriting'
+  fabricated numbers: ['123456', '345678']
+  best other-record match: R007 dist=24 score=2
+==========================================================================================
+snapkv         inst 20 q0  rec=R032  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R032 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement'
+  ANSWER: 'R032|Dornamore|Treasury|555555|Fairhollow|Draft|999999|Dornamore|Compliance'
+  fabricated numbers: ['555555', '999999']
+  best other-record match: R011 dist=21 score=4
+==========================================================================================
+snapkv         inst 30 q1  rec=R033  gold_fields=8 ans_fields=7
+  QUERY : Reproduce record R033 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement'
+  ANSWER: 'R033 | Caldacson | Settlement | 984570 | Drayton | Open |'
+  fabricated numbers: ['984570']
+  best other-record match: R025 dist=8 score=3
+==========================================================================================
+snapkv         inst 35 q3  rec=R031  gold_fields=8 ans_fields=12
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments'
+  ANSWER: 'R031|Dornolson|Actuarial|Northgate|Open|130745|R031|Dornolson|Actuarial|Northgate|Open|130745'
+  fabricated numbers: ['130745']
+  best other-record match: R015 dist=16 score=2
+==========================================================================================
+snapkv         inst 37 q3  rec=R034  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R034 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Barammont | Underwriting | 461048 | Harborline | Open | 827581 | Barammont | Underwriting'
+  ANSWER: 'R034 | Ellamhardt | Treasury | 973880 | Westmoor | Review | 234567 | Ellamhardt | Registry'
+  fabricated numbers: ['234567']
+  best other-record match: R033 dist=1 score=5
+==========================================================================================
+snapkv         inst 38 q2  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance'
+  ANSWER: 'R029 | Caldorfield | Underwriting | 156324 | Kingsfell | Cleared | 729536 | Caldorfield | Underwriting'
+  fabricated numbers: ['156324', '729536']
+  best other-record match: R009 dist=20 score=2
+==========================================================================================
+snapkv         inst 48 q1  rec=R030  gold_fields=8 ans_fields=7
+  QUERY : Reproduce record R030 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments'
+  ANSWER: 'R030 | Underwriting | 785634 | Oakstead | Open | 456789 | R030'
+  fabricated numbers: ['456789', '785634']
+  best other-record match: R013 dist=17 score=2
+==========================================================================================
+adakv_snapkv   inst  3 q1  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldenwick | Compliance | 128264 | Elmsworth | Closed | 615302 | Caldenwick | Registry'
+  ANSWER: 'R029|Caldenridge|Quarterly Walkthrough|654321|Fairhollow|Closed|774570|Caldenridge|Registry'
+  fabricated numbers: ['654321']
+  best other-record match: R039 dist=10 score=3
+==========================================================================================
+adakv_snapkv   inst 16 q1  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation'
+  ANSWER: 'R031 | Baroldahl | Underwriting | 221864 | Harborline | Cleared | 287733 | Baroldahl | Underwriting'
+  fabricated numbers: ['221864']
+  best other-record match: R038 dist=7 score=3
+==========================================================================================
+adakv_snapkv   inst 30 q1  rec=R033  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R033 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement'
+  ANSWER: 'R033 | Caldacson | Custody | 689874 | Draycott | Final | 237654 | Caldacson | Compliance'
+  fabricated numbers: ['237654', '689874']
+  best other-record match: R020 dist=13 score=3
+==========================================================================================
+adakv_snapkv   inst 32 q0  rec=R031  gold_fields=8 ans_fields=8
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Baracker | Reconciliation | 668853 | Elmsworth | Closed | 111616 | Baracker | Valuation'
+  ANSWER: 'Baramold | Treasury | 543821 | Larkmede | Open | 654321 | Baramold | Registry'
+  fabricated numbers: ['543821', '654321']
+  best other-record match: R901 dist=31 score=2
+==========================================================================================
+adakv_snapkv   inst 35 q3  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments'
+  ANSWER: 'R031 | Dornolson | Actuarial | 634567 | Granthill | Pending | 456789 | Dornolson | Treasury'
+  fabricated numbers: ['456789', '634567']
+  best other-record match: R015 dist=16 score=2
+==========================================================================================
+adakv_snapkv   inst 46 q2  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldacfield | Reconciliation | 380946 | Granthill | Review | 877946 | Caldacfield | Payments'
+  ANSWER: 'R031|Ellolhardt|Actuarial|175878|Elmsworth|Held|345678|Ellolhardt|Actuarial'
+  fabricated numbers: ['345678']
+  best other-record match: R018 dist=13 score=2
+==========================================================================================
+expected_attn  inst  6 q0  rec=R030  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R030 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Baramker | Valuation | 454055 | Ashcombe | Final | 698764 | Baramker | Actuarial'
+  ANSWER: 'R030|Baramker|Valuation|454055|Oakstead|Final|698765|Baramker|Payments'
+  fabricated numbers: ['698765']
+  best other-record match: R004 dist=26 score=3
+==========================================================================================
+expected_attn  inst  6 q3  rec=R032  gold_fields=8 ans_fields=10
+  QUERY : Reproduce record R032 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Baramhardt | Compliance | 424724 | Oakstead | Held | 883521 | Baramhardt | Treasury'
+  ANSWER: 'R032|Dornuswick|Procurement|454123|Oakstead|Final|698765|Dornuswick|Payments|'
+  fabricated numbers: ['454123', '698765']
+  best other-record match: R004 dist=28 score=3
+==========================================================================================
+expected_attn  inst  7 q2  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldunwick | Valuation | 273118 | Elmsworth | Pending | 429709 | Caldunwick | Reconciliation'
+  ANSWER: 'R029 | Caldorridge | Custody | 757090 | Oakstead | Closed | 321456 | Caldorridge | Custody'
+  fabricated numbers: ['321456', '757090']
+  best other-record match: R025 dist=4 score=2
+==========================================================================================
+expected_attn  inst 11 q1  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Barolker | Clearing | 496244 | Oakstead | Closed | 283156 | Barolker | Registry'
+  ANSWER: 'R029|Barolker|Clearing|496244|Oakstead|Closed|305916|Barolker|Custody'
+  fabricated numbers: ['305916']
+  best other-record match: R013 dist=16 score=3
+==========================================================================================
+expected_attn  inst 12 q2  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornacdahl | Actuarial | 331908 | Granthill | Pending | 482904 | Dornacdahl | Treasury'
+  ANSWER: 'R031 | Dornacdahl | Actuarial | 321904 | Oakstead | Draft | 456720 | Dornacdahl | Settlement'
+  fabricated numbers: ['321904', '456720']
+  best other-record match: R025 dist=6 score=2
+==========================================================================================
+expected_attn  inst 15 q0  rec=R034  gold_fields=8 ans_fields=7
+  QUERY : Reproduce record R034 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Ellenhardt | Custody | 961365 | Draymouth | Draft | 830332 | Ellenhardt | Payments'
+  ANSWER: 'R034 | Dornacres | Settlement | 210398 | Oakwood | Open | 74563'
+  fabricated numbers: ['210398', '74563']
+  best other-record match: R024 dist=10 score=2
+==========================================================================================
+expected_attn  inst 16 q1  rec=R031  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation'
+  ANSWER: 'R031 | Ellenbrook | Clearing | 523104 | Elmsworth | Final | 345678 | Ellenbrook | Treasury'
+  fabricated numbers: ['345678', '523104']
+  best other-record match: R019 dist=12 score=3
+==========================================================================================
+expected_attn  inst 23 q3  rec=R036  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R036 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Barunstad | Procurement | 434825 | Elmsworth | Pending | 506459 | Barunstad | Compliance'
+  ANSWER: 'R036 | Barenhardt | Actuarial | 781852 | Pinebury | Draft | 298846 | Barenhardt | Settlement'
+  fabricated numbers: ['781852']
+  best other-record match: R037 dist=1 score=5
+==========================================================================================
+expected_attn  inst 30 q1  rec=R033  gold_fields=8 ans_fields=8
+  QUERY : Reproduce record R033 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Ellunridge | Compliance | 513484 | Westmoor | Final | 438405 | Ellunridge | Procurement'
+  ANSWER: 'R033|Ellanolhardt|Compliance|513487|Northgate|Final|219764|R033'
+  fabricated numbers: ['513487']
+  best other-record match: R038 dist=5 score=3
+==========================================================================================
+expected_attn  inst 31 q1  rec=R034  gold_fields=8 ans_fields=8
+  QUERY : Reproduce record R034 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornorwick | Payments | 229221 | Granthill | Closed | 428547 | Dornorwick | Actuarial'
+  ANSWER: 'Dornicastle|Payments|229211|Grantham|Closed|428547|Dornicastle|Payments'
+  fabricated numbers: ['229211']
+  best other-record match: R006 dist=28 score=2
+==========================================================================================
+expected_attn  inst 35 q3  rec=R031  gold_fields=8 ans_fields=6
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments'
+  ANSWER: 'Barunstead|Underwriting|923456|Northgate|Final|987654'
+  fabricated numbers: ['923456', '987654']
+  best other-record match: R900 dist=32 score=2
+==========================================================================================
+expected_attn  inst 38 q2  rec=R029  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R029 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Barenmont | Clearing | 181035 | Westmoor | Open | 605462 | Barenmont | Compliance'
+  ANSWER: 'R029|Dornamker|Actuarial|439144|Granthill|Final|684469|Dornamker|Payments'
+  fabricated numbers: ['439144']
+  best other-record match: R026 dist=3 score=2
+==========================================================================================
+expected_attn  inst 39 q0  rec=R030  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R030 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Elloldahl | Valuation | 941798 | Kingsfell | Pending | 523133 | Elloldahl | Underwriting'
+  ANSWER: 'R030 | Elloldahl | Valuation | 941798 | Kingshill | Pending | 653214 | Elloldahl | Procurement'
+  fabricated numbers: ['653214']
+  best other-record match: R037 dist=7 score=2
+==========================================================================================
+expected_attn  inst 45 q3  rec=R031  gold_fields=8 ans_fields=7
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldolson | Procurement | 213839 | Granthill | Draft | 496439 | Caldolson | Procurement'
+  ANSWER: 'R031 | Calderhill | Custody | 745623 | Kingsley | Pending |'
+  fabricated numbers: ['745623']
+  best other-record match: R005 dist=26 score=1
+==========================================================================================
+expected_attn  inst 48 q1  rec=R030  gold_fields=8 ans_fields=6
+  QUERY : Reproduce record R030 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Caldendahl | Compliance | 395254 | Granthill | Pending | 683019 | Caldendahl | Payments'
+  ANSWER: 'Ellidock | Payments | 456789 | Grantham | Review | 234567'
+  fabricated numbers: ['234567', '456789']
+  best other-record match: R002 dist=28 score=2
+==========================================================================================
+keydiff        inst 16 q1  rec=R031  gold_fields=8 ans_fields=8
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Baroldahl | Payments | 263056 | Westmoor | Closed | 287733 | Baroldahl | Valuation'
+  ANSWER: 'Baridson | Treasury | 567890 | Southgate | Final | 789012 | Baridson | Treasury'
+  fabricated numbers: ['567890', '789012']
+  best other-record match: R900 dist=32 score=2
+==========================================================================================
+keydiff        inst 20 q0  rec=R032  gold_fields=8 ans_fields=9
+  QUERY : Reproduce record R032 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornolridge | Payments | 229838 | Pinebury | Cleared | 438091 | Dornolridge | Settlement'
+  ANSWER: 'R032 | Aldermill | Settlement | 562012 | Northgate | Cleared | 653211 | Aldermill | Settlement'
+  fabricated numbers: ['562012', '653211']
+  best other-record match: R900 dist=33 score=2
+==========================================================================================
+keydiff        inst 35 q3  rec=R031  gold_fields=8 ans_fields=8
+  QUERY : Reproduce record R031 exactly, in full, in the format shown. Answer wi
+  GOLD  : 'Dornolfield | Settlement | 321023 | Westmoor | Draft | 969790 | Dornolfield | Payments'
+  ANSWER: 'Brackenwell | Clearing | 321098 | Fairhollow | Final | 89203 | Brackenwell | Clearing'
+  fabricated numbers: ['321098', '89203']
+  best other-record match: R023 dist=8 score=2

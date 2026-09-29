@@ -1,0 +1,1 @@
+DONE floor lam=2.0: 1.61 min, 0 failures, 0 degenerate

@@ -1,0 +1,467 @@
+[
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R030",
+   "gold": "Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open",
+   "u_ans": "I can't provide the requested information as it is not available in the given text. However, I can tell you that record R030 is not present in the given text.",
+   "q_slot": 0.09375,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 1,
+   "qi": 2,
+   "rec_id": "R032",
+   "gold": "Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed",
+   "u_ans": "There is no record R032 in the provided text.",
+   "q_slot": 0.12388392857142858,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 5,
+   "qi": 0,
+   "rec_id": "R028",
+   "gold": "Caldorhardt | Underwriting | 830816 | Ashcombe | Draft | 409497 | Caldorhardt | Compliance | 610830 | Northgate | Held",
+   "u_ans": "There is no record R028. The records provided start from R001 and go up to R040.",
+   "q_slot": 0.11607142857142858,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 9,
+   "qi": 2,
+   "rec_id": "R033",
+   "gold": "Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review",
+   "u_ans": "There is no record R033 in the provided text.",
+   "q_slot": 0.10044642857142858,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 21,
+   "qi": 3,
+   "rec_id": "R031",
+   "gold": "Baramwell | Procurement | 972251 | Draymouth | Review | 140311 | Baramwell | Settlement | 931978 | Elmsworth | Pending",
+   "u_ans": "There is no record R031 in the provided data.",
+   "q_slot": 0.08370535714285714,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 22,
+   "qi": 2,
+   "rec_id": "R033",
+   "gold": "Calduswell | Actuarial | 223191 | Draymouth | Held | 134262 | Calduswell | Settlement | 644684 | Oakstead | Review",
+   "u_ans": "There is no record R033 in the provided text.",
+   "q_slot": 0.26339285714285715,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 23,
+   "qi": 2,
+   "rec_id": "R032",
+   "gold": "Ellunstad | Underwriting | 513594 | Draymouth | Closed | 920859 | Ellunstad | Actuarial | 265082 | Fairhollow | Final",
+   "u_ans": "I couldn't find any record R032 in the provided list.",
+   "q_slot": 0.328125,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 25,
+   "qi": 0,
+   "rec_id": "R028",
+   "gold": "Barendahl | Custody | 949611 | Westmoor | Review | 543503 | Barendahl | Actuarial | 519994 | Granthill | Closed",
+   "u_ans": "There is no record R028 in the provided data.",
+   "q_slot": 0.3794642857142857,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 43,
+   "qi": 1,
+   "rec_id": "R030",
+   "q_slot": 0.4263392857142857,
+   "gold": "Ellirson | Compliance | 615296 | Fairhollow | Review | 903138 | Ellirson | Actuarial | 205165 | Pinebury | Review"
+  }
+ },
+ {
+  "case": {
+   "base": "snapkv",
+   "instance": 47,
+   "qi": 1,
+   "rec_id": "R037",
+   "gold": "Barachardt | Reconciliation | 850094 | Kingsfell | Closed | 251440 | Barachardt | Clearing | 691385 | Harborline | Closed",
+   "u_ans": "There is no record R037 in the provided text.",
+   "q_slot": 0.5513392857142857,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 1,
+   "qi": 2,
+   "rec_id": "R032",
+   "gold": "Dornamdahl | Compliance | 141846 | Harborline | Held | 559654 | Dornamdahl | Registry | 520519 | Fairhollow | Closed",
+   "u_ans": "There is no record R032 in the provided text.",
+   "q_slot": 0.0859375,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 9,
+   "qi": 2,
+   "rec_id": "R033",
+   "gold": "Barirwell | Settlement | 461465 | Oakstead | Pending | 620756 | Barirwell | Custody | 655028 | Harborline | Review",
+   "u_ans": "I can't reproduce record R033 as it is not present in the provided text.",
+   "q_slot": 0.10602678571428571,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 14,
+   "qi": 3,
+   "rec_id": "R030",
+   "gold": "Caldolwick | Payments | 171699 | Westmoor | Review | 386611 | Caldolwick | Clearing | 922799 | Granthill | Held",
+   "u_ans": "There is no record R030 in the provided text.",
+   "q_slot": 0.3203125,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.29017857142857145,
+   "gold": "Dornirson | Custody | 284558 | Northgate | Final | 953514 | Dornirson | Valuation | 996592 | Kingsfell | Cleared"
+  }
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 21,
+   "qi": 3,
+   "rec_id": "R031",
+   "gold": "Baramwell | Procurement | 972251 | Draymouth | Review | 140311 | Baramwell | Settlement | 931978 | Elmsworth | Pending",
+   "u_ans": "There is no record R031 in the provided text.",
+   "q_slot": 0.04352678571428571,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 22,
+   "qi": 2,
+   "rec_id": "R033",
+   "gold": "Calduswell | Actuarial | 223191 | Draymouth | Held | 134262 | Calduswell | Settlement | 644684 | Oakstead | Review",
+   "u_ans": "There is no record R033 in the provided text.",
+   "q_slot": 0.1640625,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 23,
+   "qi": 0,
+   "rec_id": "R031",
+   "gold": "Ellolridge | Compliance | 138809 | Ashcombe | Final | 860873 | Ellolridge | Settlement | 274624 | Fairhollow | Closed",
+   "u_ans": "There is no record R031 in the provided data.",
+   "q_slot": 0.22879464285714285,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 23,
+   "qi": 2,
+   "rec_id": "R032",
+   "gold": "Ellunstad | Underwriting | 513594 | Draymouth | Closed | 920859 | Ellunstad | Actuarial | 265082 | Fairhollow | Final",
+   "u_ans": "There is no record R032 in the provided data.",
+   "q_slot": 0.22879464285714285,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 25,
+   "qi": 0,
+   "rec_id": "R028",
+   "gold": "Barendahl | Custody | 949611 | Westmoor | Review | 543503 | Barendahl | Actuarial | 519994 | Granthill | Closed",
+   "u_ans": "There is no record R028 in the provided data.",
+   "q_slot": 0.3091517857142857,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.29017857142857145,
+   "gold": "Dornirson | Custody | 284558 | Northgate | Final | 953514 | Dornirson | Valuation | 996592 | Kingsfell | Cleared"
+  }
+ },
+ {
+  "case": {
+   "base": "expected_attn",
+   "instance": 43,
+   "qi": 1,
+   "rec_id": "R030",
+   "gold": "Ellirson | Compliance | 615296 | Fairhollow | Review | 903138 | Ellirson | Actuarial | 205165 | Pinebury | Review",
+   "u_ans": "There is no record R030 in the provided text.",
+   "q_slot": 0.27566964285714285,
+   "n_near_matches": 1
+  },
+  "match": {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.29017857142857145,
+   "gold": "Dornirson | Custody | 284558 | Northgate | Final | 953514 | Dornirson | Valuation | 996592 | Kingsfell | Cleared"
+  }
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 0,
+   "qi": 3,
+   "rec_id": "R030",
+   "gold": "Dornenwell | Underwriting | 957029 | Elmsworth | Final | 289640 | Dornenwell | Custody | 234357 | Elmsworth | Open",
+   "u_ans": "There is no record R030 in the provided data.",
+   "q_slot": 0.010044642857142858,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 3,
+   "qi": 3,
+   "rec_id": "R036",
+   "gold": "Caldunridge | Underwriting | 590414 | Westmoor | Draft | 134347 | Caldunridge | Registry | 527345 | Fairhollow | Draft",
+   "u_ans": "There is no record R036 in the provided text.",
+   "q_slot": 0.056919642857142856,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 6,
+   "qi": 2,
+   "rec_id": "R039",
+   "gold": "Ellethridge | Treasury | 530619 | Pinebury | Closed | 247535 | Ellethridge | Clearing | 174850 | Granthill | Cleared",
+   "u_ans": "There is no record R039 in the provided text.",
+   "q_slot": 0.12834821428571427,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 21,
+   "qi": 3,
+   "rec_id": "R031",
+   "gold": "Baramwell | Procurement | 972251 | Draymouth | Review | 140311 | Baramwell | Settlement | 931978 | Elmsworth | Pending",
+   "u_ans": "There is no record R031 in the provided text.",
+   "q_slot": 0.0078125,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 22,
+   "qi": 2,
+   "rec_id": "R033",
+   "gold": "Calduswell | Actuarial | 223191 | Draymouth | Held | 134262 | Calduswell | Settlement | 644684 | Oakstead | Review",
+   "u_ans": "There is no record R033 in the provided text.",
+   "q_slot": 0.03236607142857143,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 23,
+   "qi": 0,
+   "rec_id": "R031",
+   "gold": "Ellolridge | Compliance | 138809 | Ashcombe | Final | 860873 | Ellolridge | Settlement | 274624 | Fairhollow | Closed",
+   "u_ans": "There is no record R031 in the provided extract.",
+   "q_slot": 0.044642857142857144,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 23,
+   "qi": 2,
+   "rec_id": "R032",
+   "gold": "Ellunstad | Underwriting | 513594 | Draymouth | Closed | 920859 | Ellunstad | Actuarial | 265082 | Fairhollow | Final",
+   "u_ans": "There is no record R032 in the provided text.",
+   "q_slot": 0.044642857142857144,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 24,
+   "qi": 3,
+   "rec_id": "R037",
+   "gold": "Ellacfield | Reconciliation | 649176 | Elmsworth | Draft | 473163 | Ellacfield | Procurement | 696211 | Pinebury | Review",
+   "u_ans": "There is no record R037 in the provided data.",
+   "q_slot": 0.24441964285714285,
+   "n_near_matches": 8
+  },
+  "match": {
+   "instance": 24,
+   "qi": 1,
+   "rec_id": "R001",
+   "q_slot": 0.24441964285714285,
+   "gold": "Dornirson | Custody | 284558 | Northgate | Final | 953514 | Dornirson | Valuation | 996592 | Kingsfell | Cleared"
+  }
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 25,
+   "qi": 0,
+   "rec_id": "R028",
+   "gold": "Barendahl | Custody | 949611 | Westmoor | Review | 543503 | Barendahl | Actuarial | 519994 | Granthill | Closed",
+   "u_ans": "There is no record R028 in the provided data.",
+   "q_slot": 0.11272321428571429,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 30,
+   "qi": 0,
+   "rec_id": "R034",
+   "gold": "Ellusdahl | Treasury | 860699 | Ashcombe | Cleared | 436751 | Ellusdahl | Registry | 444767 | Pinebury | Final",
+   "u_ans": "There is no record R034 in the provided data.",
+   "q_slot": 0.08258928571428571,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 36,
+   "qi": 2,
+   "rec_id": "R030",
+   "gold": "Barirhardt | Custody | 428100 | Granthill | Cleared | 757982 | Barirhardt | Settlement | 287785 | Harborline | Open",
+   "u_ans": "There is no record R030 in the provided data.",
+   "q_slot": 0.04352678571428571,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 43,
+   "qi": 1,
+   "rec_id": "R030",
+   "gold": "Ellirson | Compliance | 615296 | Fairhollow | Review | 903138 | Ellirson | Actuarial | 205165 | Pinebury | Review",
+   "u_ans": "There is no record R030 in the provided text.",
+   "q_slot": 0.12053571428571429,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 46,
+   "qi": 0,
+   "rec_id": "R037",
+   "gold": "Dornundahl | Underwriting | 471712 | Westmoor | Cleared | 535865 | Dornundahl | Actuarial | 359606 | Granthill | Pending",
+   "u_ans": "There is no record R037 in the provided text.",
+   "q_slot": 0.15959821428571427,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 46,
+   "qi": 1,
+   "rec_id": "R035",
+   "gold": "Caldunhardt | Valuation | 479132 | Westmoor | Cleared | 670736 | Caldunhardt | Compliance | 327155 | Westmoor | Review",
+   "u_ans": "I can't provide the line with the given record id R035 as it is not present in the given text.",
+   "q_slot": 0.15959821428571427,
+   "n_near_matches": 0
+  },
+  "match": null
+ },
+ {
+  "case": {
+   "base": "keydiff",
+   "instance": 47,
+   "qi": 1,
+   "rec_id": "R037",
+   "gold": "Barachardt | Reconciliation | 850094 | Kingsfell | Closed | 251440 | Barachardt | Clearing | 691385 | Harborline | Closed",
+   "u_ans": "There is no record R037 in the provided text.",
+   "q_slot": 0.21986607142857142,
+   "n_near_matches": 6
+  },
+  "match": {
+   "instance": 41,
+   "qi": 2,
+   "rec_id": "R001",
+   "q_slot": 0.21875,
+   "gold": "Dornacwell | Custody | 556621 | Ashcombe | Draft | 843838 | Dornacwell | Custody | 905742 | Pinebury | Final"
+  }
+ }
+]

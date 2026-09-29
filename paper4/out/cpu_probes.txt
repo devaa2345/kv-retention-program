@@ -1,0 +1,20 @@
+CPU-only tier-1 candidates A7, A8, A9 -- CANDIDATES.md (commit 3156e6c). No GPU.
+
+== A7 budget-gated unit policy (k = 4, fixed before scoring)
+   RULE DEFECT, reported not rewritten: the gated policy selects EITHER floor_pos OR
+   U-snapkv in each cell, so its per-cell accuracy EQUALS one of them. 'Exceeds both
+   in a majority of cells' is therefore unsatisfiable by construction.
+   VERDICT: NOT SCORED (rule defect). Descriptive result below.
+   M2: 7 admissible cells; gated mean 0.351 vs floor 0.154 vs U-snapkv 0.415; gate picked the better arm in 4/7 cells; picks ['floor', 'floor', 'U', 'U', 'U', 'U', 'U']
+   M3: 5 admissible cells; gated mean 0.477 vs floor 0.138 vs U-snapkv 0.592; gate picked the better arm in 3/5 cells; picks ['floor', 'floor', 'U', 'U', 'U']
+
+== A8 unit content composition (numeric fraction of retained gold)
+   M2: n=2800 beta/SD -0.0850 [-0.1018, -0.0691] r(z,q_slot) -0.23 -> opposite
+   M3: NOT SCORED (no variation)
+   A8 VERDICT: NOT IT (both models required)
+
+== A9 layer-selective precondition (U-snapkv per-layer completion spread)
+   M2: best-quartile layer completion 0.510, worst 0.236, ratio 2.16x
+   M3: best-quartile layer completion 0.523, worst 0.274, ratio 1.91x
+   A9 VERDICT: NOT IT
+

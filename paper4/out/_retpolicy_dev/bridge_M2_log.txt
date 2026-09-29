@@ -1,0 +1,6 @@
+built 40 extractive bridge cases
+    10/40 elapsed=0.14 min
+    20/40 elapsed=0.25 min
+    30/40 elapsed=0.34 min
+    40/40 elapsed=0.45 min
+DONE M2: 40 cases, elapsed=0.45 min

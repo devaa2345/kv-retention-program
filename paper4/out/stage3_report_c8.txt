@@ -1,0 +1,25 @@
+Paper 4 Stage 3 -- cost level c=8. Produced on RTX 5070 (Machine N).
+Split follows DIAGNOSIS_EA.md: SnapKV/AdaKV carry the fragmentation claim; ExpectedAttention/KeyDiff are reported with their confound, never Delta_U alone.
+
+== M2
+  admissible: C=256 (floor 0.085), C=512 (floor 0.200)
+  degenerate: C=32 (floor 0.025), C=64 (floor 0.025), C=128 (floor 0.035)
+  -- PRIMARY: fragmentation claim (SnapKV, AdaKV). Keep-set evidence per slot, instances 0-4:
+     C    method                    dU [95% CI]  overlap      gold X->U    record X->U     other X->U  unitsC X->U
+     256  snapkv         -0.025 [-0.045, -0.005]     0.93    6.6->6.7      55.6->50.7    200.4->205.3    4.1->7.9  
+     256  adakv_snapkv   -0.010 [-0.045, +0.025]     0.93    6.3->6.2      56.2->51.5    199.8->204.5    4.0->8.1  
+     512  snapkv         +0.035 [-0.010, +0.085]     0.94   11.5->11.4    110.5->109.4   401.5->402.6    7.1->15.5 
+     512  adakv_snapkv   +0.010 [-0.035, +0.055]     0.94   11.4->11.7    110.1->109.9   401.9->402.1    7.2->15.8 
+  -- REPORTED WITH CONFOUND: ExpectedAttention, KeyDiff. Delta_U is not interpretable alone: gold retention shifts alongside packing.
+     C    method                    dU [95% CI]      d p_g     d unitsC gold X->U (slot)
+     256  expected_attn  +0.035 [+0.010, +0.065]    +0.0083        +6.37    5.0->5.9   
+     256  keydiff        -0.015 [-0.035, +0.000]    -0.0682        +2.16    3.3->0.7   
+     512  expected_attn  +0.190 [+0.130, +0.250]    +0.0836       +15.17    9.9->12.7  
+     512  keydiff        -0.030 [-0.060, +0.000]    -0.0799        +6.28    8.4->5.8   
+
+== does the c=1/c=8 correlation pattern hold at c=8?
+   (Delta_U vs d p_g across this level's admissible cells; c=1/c=8 gave r=+0.944 for ExpectedAttention, and ~0 d p_g for SnapKV/AdaKV)
+   snapkv           n=2  mean d p_g -0.0085  (too few cells for r)
+   adakv_snapkv     n=2  mean d p_g -0.0031  (too few cells for r)
+   expected_attn    n=2  mean d p_g +0.0459  (too few cells for r)
+   keydiff          n=2  mean d p_g -0.0741  (too few cells for r)

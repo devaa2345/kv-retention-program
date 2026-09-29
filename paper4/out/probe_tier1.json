@@ -1,0 +1,164 @@
+{
+ "M2": {
+  "A1 head-consensus": {
+   "arm": "consensus-snapkv",
+   "comp": "U-snapkv",
+   "delta": [
+    0.0,
+    -0.0625,
+    0.0625
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false,
+    "ge_floor (consensus-snapkv >= floor_pos)": false
+   },
+   "acc_arm": 0.2125,
+   "acc_comp": 0.2125
+  },
+  "A2 early-prior": {
+   "arm": "early-snapkv",
+   "comp": "U-snapkv",
+   "delta": [
+    -0.0125,
+    -0.05,
+    0.025
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false
+   },
+   "acc_arm": 0.2,
+   "acc_comp": 0.2125
+  },
+  "A3 floor-hybrid": {
+   "arm": "hybrid-snapkv",
+   "comp": "floor_pos",
+   "delta": [
+    0.0,
+    -0.1,
+    0.1
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false,
+    "ge_u (hybrid-snapkv >= U-snapkv)": true
+   },
+   "acc_arm": 0.2375,
+   "acc_comp": 0.2375
+  },
+  "A4 supra-units": {
+   "arm": "supra-snapkv",
+   "comp": "U-snapkv",
+   "delta": [
+    -0.0625,
+    -0.1625,
+    0.025
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false
+   },
+   "acc_arm": 0.15,
+   "acc_comp": 0.2125
+  },
+  "A4 sub-units (directional)": {
+   "arm": "sub-snapkv",
+   "comp": "U-snapkv",
+   "delta": [
+    0.0,
+    -0.05,
+    0.05
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false
+   },
+   "acc_arm": 0.2125,
+   "acc_comp": 0.2125
+  },
+  "A5 sink32": {
+   "arm": "floor_sink32",
+   "comp": "floor_pos",
+   "delta": [
+    -0.0375,
+    -0.0875,
+    0.0125
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false
+   },
+   "acc_arm": 0.2,
+   "acc_comp": 0.2375
+  },
+  "A6 gather-order (expect NOT-IT)": {
+   "arm": "ascend-snapkv",
+   "comp": "snapkv",
+   "delta": [
+    0.025,
+    0.0,
+    0.0625
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false,
+    "generations_byte_identical": "10/20",
+    "hygiene_violation": true
+   },
+   "acc_arm": 0.225,
+   "acc_comp": 0.2
+  }
+ },
+ "M3": {
+  "A1 head-consensus": {
+   "arm": "consensus-snapkv",
+   "comp": "U-snapkv",
+   "delta": [
+    0.025,
+    -0.05,
+    0.1125
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false,
+    "ge_floor (consensus-snapkv >= floor_pos)": false
+   },
+   "acc_arm": 0.15,
+   "acc_comp": 0.125
+  },
+  "A3 floor-hybrid": {
+   "arm": "hybrid-snapkv",
+   "comp": "floor_pos",
+   "delta": [
+    -0.05,
+    -0.1375,
+    0.025
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false,
+    "ge_u (hybrid-snapkv >= U-snapkv)": true
+   },
+   "acc_arm": 0.125,
+   "acc_comp": 0.175
+  },
+  "A6 gather-order (expect NOT-IT)": {
+   "arm": "ascend-snapkv",
+   "comp": "snapkv",
+   "delta": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "conjuncts": {
+    "paired_CI_excludes_zero_positive": false,
+    "paired_CI_excludes_zero": false,
+    "generations_byte_identical": "11/20",
+    "hygiene_violation": true
+   },
+   "acc_arm": 0.1125,
+   "acc_comp": 0.1125
+  }
+ }
+}
